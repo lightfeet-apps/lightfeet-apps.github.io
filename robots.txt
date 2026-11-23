@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lightfeet-apps.github.io/sitemap.xml
+Sitemap: https://lightfeetapps.com/sitemap.xml

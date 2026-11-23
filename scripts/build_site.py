@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Generates Lightfeet Apps root landing pages, PlusMinus support/marketing/FAQ/privacy
-pages (EN & FI), and the unified root sitemap.xml for lightfeet-apps.github.io.
+pages (EN & FI), and the unified root sitemap.xml for lightfeetapps.com.
 
 Note: WakeUp pages under /wakeup/ are mirrored separately from wakeup-support and
 are not overwritten by this script.
@@ -12,7 +12,7 @@ import os
 from xml.sax.saxutils import escape as xml_escape
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_URL = "https://lightfeet-apps.github.io"
+BASE_URL = "https://lightfeetapps.com"
 SUPPORT_EMAIL = "lightfeet.apps@gmail.com"
 WAKEUP_LANGS = ["", "fi", "sv", "de", "es", "fr"]
 PLUSMINUS_LANGS = [

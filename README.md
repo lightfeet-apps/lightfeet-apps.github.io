@@ -1,6 +1,6 @@
 # Lightfeet Apps GitHub Pages
 
-Unified support, FAQ, marketing, and privacy policy website published at `https://lightfeet-apps.github.io/`.
+Unified support, FAQ, marketing, and privacy policy website published at `https://lightfeetapps.com/`.
 
 ## Repository Structure
 
@@ -35,7 +35,7 @@ Note that `wakeup/` is mirrored from `wakeup-support` and is not overwritten by 
 
 While the separate `lightfeet-apps/wakeup-support` repository still has GitHub Pages enabled, **do not create a `wakeup-support/` directory in this repository**, because GitHub Pages routes project sites at `/wakeup-support/` separately from the organization root site.
 
-Once all App Store Connect, Search Console, and in-app WakeUp links are updated to point to `https://lightfeet-apps.github.io/wakeup/...`:
+Once all App Store Connect, Search Console, and in-app WakeUp links are updated to point to `https://lightfeetapps.com/wakeup/...`:
 
 1. Keep `wakeup/` in this repository as the active location.
 2. Disable GitHub Pages in `lightfeet-apps/wakeup-support` (Repository Settings → Pages) or archive that repository when ready.
