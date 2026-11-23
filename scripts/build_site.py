@@ -13,7 +13,8 @@ from xml.sax.saxutils import escape as xml_escape
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_URL = "https://lightfeetapps.com"
-SUPPORT_EMAIL = "lightfeet.apps@gmail.com"
+CONTACT_EMAIL = "contact@lightfeetapps.com"
+SUPPORT_EMAIL = "support@lightfeetapps.com"
 WAKEUP_LANGS = ["", "fi", "sv", "de", "es", "fr"]
 PLUSMINUS_LANGS = [
     {"code": "en", "name": "English", "dir": ""},
@@ -834,7 +835,7 @@ def build_root_index(lang_code: str) -> str:
         <footer>
             <p class="contact-line">
                 {d["contact_label"]}
-                <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>
+                <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>
             </p>
             <nav class="lang-nav" aria-label="{d["nav_aria"]}">
             {lang_links}
