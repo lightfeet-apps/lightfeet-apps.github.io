@@ -132,7 +132,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Safe to Spend looks higher or lower than expected:",
-                    "Make sure <strong>Current Available Money</strong> reflects your real balance right now, and review any unpaid or overdue bills in <strong>Live</strong>. Expected income arriving before your next payday is shown as a quiet reminder and is not included in Safe to Spend until you mark it received. You can also inspect the full calculation rules in <strong>Settings &rarr; How Calculations Work</strong>."
+                    "Make sure <strong>Current Available Money</strong> reflects your real balance right now, and review any unpaid or overdue bills in <strong>Live</strong>. Scheduled future recurring income arriving before your next primary payday is automatically factored into Safe to Spend using the tightest cash-flow point (without letting you spend money before it arrives), while one-time, overdue, and due-today income waits until you mark it received. You can also inspect the full calculation rules in <strong>Settings &rarr; How Calculations Work</strong>."
                 ),
                 (
                     "Avoiding double-deductions when marking bills paid:",
@@ -168,11 +168,12 @@ PLUSMINUS_DATA = {
             "items": [
                 {
                     "question": "How is Safe to Spend calculated?",
-                    "intro": "<strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It uses a transparent 3-line formula:",
+                    "intro": "<strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It starts from a clear formula and automatically handles staggered recurring incomes:",
                     "bullets": [
                         "<strong>Current Available Money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.",
                         "<strong>Minus unpaid bills:</strong> Unpaid recurring bills and one-time bills due before your next primary payday, plus any overdue unpaid bills from the immediately preceding pay period.",
-                        "<strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the rest of the current payday cycle."
+                        "<strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the active cash-flow horizon.",
+                        "<strong>Tightest cash-flow point for multiple incomes:</strong> When scheduled future recurring income arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later bills don't cause false shortages while you never spend money before it arrives. The breakdown card always matches that limiting horizon line by line, and the headline label clearly indicates <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> whenever upcoming income is factored in."
                     ],
                     "note": "<strong>Tip:</strong> You can review the calculation breakdown at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>."
                 },
@@ -180,7 +181,7 @@ PLUSMINUS_DATA = {
                     "question": "What is the difference between Live and Plan?",
                     "intro": "PlusMinus separates day-to-day spending awareness from your long-term monthly baseline across two distinct tabs:",
                     "bullets": [
-                        "<strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current Available Money</strong>, deducts bills due in this pay period and remaining food, and tells you your current <strong>Safe to Spend</strong>.",
+                        "<strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current Available Money</strong>, evaluates unpaid bills, remaining food, and any future scheduled recurring incomes across the tightest cash-flow point, and tells you your current <strong>Safe to Spend</strong>.",
                         "<strong>Plan:</strong> Shows your steady-state <strong>Planned Monthly Remainder</strong> (normalized monthly income minus normalized monthly bills minus your monthly food budget), completely independent of today's bank balance or payday cycle length."
                     ],
                     "note": "<strong>Why both views?</strong> A yearly insurance bill or shorter February pay period affects how much cash you can spend right now in <strong>Live</strong>, while <strong>Plan</strong> tells you whether your normal income covers your regular expenses over time."
@@ -205,11 +206,13 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Why isn't upcoming income added to Safe to Spend automatically?",
-                    "intro": "PlusMinus keeps <strong>Safe to Spend</strong> strictly grounded in money you actually have on hand right now:",
+                    "question": "How does upcoming income affect Safe to Spend?",
+                    "intro": "PlusMinus works cleanly whether you have one main paycheck or 2&ndash;3 staggered recurring incomes arriving on different days:",
                     "bullets": [
-                        "<strong>Quiet reminder chip:</strong> If another recurring or one-time income is expected before your next primary payday, it appears quietly in <strong>Live</strong> as an upcoming income reminder so you know it is on the way.",
-                        "<strong>Never inflated prematurely:</strong> Future unreceived income is never added to <strong>Safe to Spend</strong> until you actually receive it and update <strong>Current Available Money</strong> (or mark the income received and add it to your balance)."
+                        "<strong>Future recurring income (automatic cash-flow bottleneck):</strong> Active recurring income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later bills while never letting you spend money before it arrives.",
+                        "<strong>Clear labels and exact breakdown:</strong> When upcoming recurring income raises the figure above cash on hand alone, the hero label updates to <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> (with the full-period figure below) or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> (with a <code>+ Upcoming income</code> row in the breakdown).",
+                        "<strong>One-time, overdue, and due-today income:</strong> One-time payments (such as tax refunds) and overdue or due-today incomes are never projected ahead of receipt &mdash; they appear as reminder rows and count once marked <strong>Received</strong> (or reflected in <strong>Current Money</strong>).",
+                        "<strong>No double-counting when received:</strong> Marking an included recurring income <strong>Received</strong> and adding it to <strong>Current Money</strong> moves it cleanly into your balance without double-counting."
                     ]
                 },
                 {
@@ -287,13 +290,13 @@ PLUSMINUS_DATA = {
             "subtitle": "Set your recurring income, recurring bills, payday, and monthly food budget once. Glance at your balance and see what is genuinely free to spend — without logging every coffee.",
             "section1_title": "Clarity in under five seconds",
             "features": [
-                ("Live Safe to Spend", "Current Available Money minus unpaid bills before payday minus your remaining food estimate — clearly broken down on three lines."),
+                ("Live Safe to Spend", "Current Available Money, unpaid bills, remaining food estimate, and staggered recurring incomes evaluated at the tightest cash-flow point &mdash; always broken down line by line."),
                 ("Steady Monthly Plan", "Separate monthly overview normalizing weekly, biweekly, custom-month, and yearly bills without today's cash getting in the way."),
                 ("Private & Local-First", "Everything stays on your device. No accounts, no bank logins, no analytics, and no tracking — ever."),
             ],
             "section2_title": "Everything you need, nothing you don't",
             "list_items": [
-                "Live Safe to Spend calculated up to your next primary payday",
+                "Live Safe to Spend calculated up to your next primary payday &mdash; with automatic multi-income cash-flow handling",
                 "Automatic daily food budget proration with instant custom period override",
                 "Double-deduction protection when marking bills paid or updating balances",
                 "Weekly, biweekly, monthly, yearly, custom-month, and one-time items",
@@ -310,7 +313,7 @@ PLUSMINUS_DATA = {
             "copyright": "&copy; 2026 PlusMinus",
             "nav_aria": "Language selection",
             "featureList": [
-                "Live Safe to Spend calculation until next primary payday",
+                "Live Safe to Spend calculation until next primary payday with multi-income cash-flow bottleneck",
                 "Normalized Target Monthly Budget plan",
                 "Automatic daily food budget proration with custom override",
                 "Two-button double-deduction prevention when marking bills paid",
@@ -387,7 +390,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Käytettävissä nyt -summa näyttää odotettua suuremmalta tai pienemmältä:",
-                    "Varmista, että <strong>Käytettävissä oleva raha nyt</strong> vastaa tämänhetkistä saldoasi, ja tarkista maksamattomat tai myöhässä olevat laskut <strong>Tilanne</strong>-näkymästä. Ennen seuraavaa palkkapäivää tulevat tulot näkyvät muistutuksena eivätkä kasvata käytettävissä olevaa summaa ennen kuin ne merkitään saaduiksi. Voit myös tarkistaa laskentasäännöt kohdasta <strong>Asetukset &rarr; Miten laskenta toimii</strong>."
+                    "Varmista, että <strong>Käytettävissä oleva raha nyt</strong> vastaa tämänhetkistä saldoasi, ja tarkista maksamattomat tai myöhässä olevat laskut <strong>Tilanne</strong>-näkymästä. Ennen seuraavaa ensisijaista palkkapäivää tulevat säännölliset tulot huomioidaan automaattisesti tiukimman kassavirtakohdan mukaan (ilman että rahaa voi kuluttaa etukäteen), kun taas kertaluontoiset, myöhässä olevat ja tänään erääntyvät tulot odottavat saaduksi kuittaamista. Voit myös tarkistaa laskentasäännöt kohdasta <strong>Asetukset &rarr; Miten laskenta toimii</strong>."
                 ),
                 (
                     "Kaksoisvähennysten estäminen laskuja kuitattaessa:",
@@ -423,11 +426,12 @@ PLUSMINUS_DATA = {
             "items": [
                 {
                     "question": "Miten Käytettävissä nyt -summa lasketaan?",
-                    "intro": "<strong>Tilanne</strong>-näkymä vastaa yhteen arjen tärkeimpään kysymykseen: <em>Paljonko voin turvallisesti käyttää juuri nyt ennen seuraavaa ensisijaista palkkapäivää?</em> Laskelma perustuu selkeään kolmen rivin kaavaan:",
+                    "intro": "<strong>Tilanne</strong>-näkymä vastaa yhteen arjen tärkeimpään kysymykseen: <em>Paljonko voin turvallisesti käyttää juuri nyt ennen seuraavaa ensisijaista palkkapäivää?</em> Laskelma lähtee selkeästä kaavasta ja mukautuu automaattisesti myös useampaan eri päivinä saapuvaan tuloon:",
                     "bullets": [
                         "<strong>Käytettävissä oleva raha nyt:</strong> Käsin päivittämäsi tilin tai käteisen saldo tällä hetkellä, näkyvissä olevan päivitysajankohdan kanssa.",
                         "<strong>Miinus maksamattomat laskut:</strong> Kaikki ennen seuraavaa ensisijaista palkkapäivää erääntyvät maksamattomat toistuvat laskut ja kertaluontoiset menot sekä edelliseltä jaksolta maksamatta jääneet laskut.",
-                        "<strong>Miinus arvioitu jäljellä oleva ruoka-arvio:</strong> Palkkajakson jäljellä oleville päiville suhteutettu ruokabudjetti."
+                        "<strong>Miinus arvioitu jäljellä oleva ruoka-arvio:</strong> Aktiivisen tarkastelujakson jäljellä oleville päiville suhteutettu ruokabudjetti.",
+                        "<strong>Tiukin kassavirtakohta useilla tuloilla:</strong> Jos ennen seuraavaa ensisijaista palkkapäivää saapuu tulevia säännöllisiä tuloja, PlusMinus tarkistaa tilanteen ennen kutakin tulopäivää ja jakson lopussa ja valitsee tiukimman kohdan. Näin myöhemmät laskut eivät aiheuta turhaa vajetta, mutta rahaa ei koskaan pääse kuluttamaan etukäteen. Erittelykortti täsmää aina valitun tarkastelukohdan riveihin, ja otsikko tarkentuu muotoon <code>KÄYTETTÄVISSÄ &middot; SEURAAVAAN TULOON</code> tai <code>KÄYTETTÄVISSÄ &middot; SIS. TULEVAT TULOT</code> aina, kun tulevat tulot vaikuttavat laskelmaan."
                     ],
                     "note": "<strong>Vinkki:</strong> Voit tarkistaa koko laskentakaavan milloin tahansa sovelluksesta kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>."
                 },
@@ -435,7 +439,7 @@ PLUSMINUS_DATA = {
                     "question": "Mitä eroa on Tilanne- ja Kuukausi-näkymillä?",
                     "intro": "PlusMinus erottaa arjen käyttövaran ja pitkän aikavälin kuukausitasapainon kahdeksi selkeäksi välilehdeksi:",
                     "bullets": [
-                        "<strong>Tilanne:</strong> Näyttää tilanteen juuri nyt seuraavaan ensisijaiseen palkkapäivään saakka. Se lähtee todellisesta <strong>Raha nyt</strong> -saldosta, vähentää tällä jaksolla erääntyvät laskut ja jäljellä olevan ruoka-arvion ja kertoo paljonko on <strong>Käytettävissä nyt</strong>.",
+                        "<strong>Tilanne:</strong> Näyttää tilanteen juuri nyt seuraavaan ensisijaiseen palkkapäivään saakka. Se lähtee todellisesta <strong>Nykyinen raha</strong> -saldosta, tarkastelee tällä jaksolla erääntyvät laskut, jäljellä olevan ruoka-arvion ja tulevat säännölliset tulot tiukimman kassavirtakohdan mukaan ja kertoo paljonko on <strong>Käytettävissä nyt</strong>.",
                         "<strong>Kuukausi:</strong> Näyttää tasatun <strong>Kuukausibudjetin ylijäämän</strong> (tasatut kuukausitulot miinus tasatut kuukausilaskut miinus kuukauden ruokabudjetti) täysin riippumattomana tämän päivän pankkisaldosta."
                     ],
                     "note": "<strong>Miksi kaksi näkymää?</strong> Esimerkiksi kerran vuodessa erääntyvä vakuutus tai lyhyempi palkkajakso vaikuttaa suoraan siihen, paljonko rahaa on käytettävissä nyt <strong>Tilanne</strong>-näkymässä, kun taas <strong>Kuukausi</strong> kertoo, riittävätkö normaalitulosi kattamaan säännölliset kulusi."
@@ -460,11 +464,13 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Miksi tulevaa tuloa ei lisätä automaattisesti Käytettävissä nyt -summaan?",
-                    "intro": "PlusMinus pitää <strong>Käytettävissä nyt</strong> -summan tiukasti kiinni todellisessa, tällä hetkellä käytössäsi olevassa rahassa:",
+                    "question": "Miten tulevat tulot vaikuttavat Käytettävissä nyt -summaan?",
+                    "intro": "PlusMinus toimii luotettavasti riippumatta siitä, saatko yhden pääpalkan vai 2&ndash;3 eri päivinä saapuvaa säännöllistä tuloa:",
                     "bullets": [
-                        "<strong>Hiljainen muistutus:</strong> Jos ennen seuraavaa ensisijaista palkkapäivää on tulossa toinen tulo (kuten etuus, palkka tai kertaluontoinen tulo), se näkyy <strong>Tilanne</strong>-näkymässä muistutuksena.",
-                        "<strong>Ei ennenaikaisia oletuksia:</strong> Tulevaa tuloa ei lasketa käytettävissä olevaan rahaan ennen kuin olet oikeasti saanut sen ja päivittänyt saldosi (tai kuitannut tulon saaduksi ja lisännyt sen saldoon)."
+                        "<strong>Tulevat säännölliset tulot (automaattinen kassavirtapullonkaula):</strong> Aktiiviset säännölliset tulot, joiden maksupäivä on aidosti tulevaisuudessa (tämän päivän sekä viikonloppusiirron mahdollisen nimellisen palkkapäivän jälkeen) ennen seuraavaa ensisijaista palkkapäivää, huomioidaan automaattisesti tiukimman kassavirtakohdan kautta. Näin jakson loppupuolen laskut eivät aiheuta turhaa miinusta, mutta tulevaa tuloa ei voi koskaan kuluttaa etukäteen.",
+                        "<strong>Selkeä otsake ja täsmäävä erittely:</strong> Kun tulevat säännölliset tulot nostavat summaa pelkkään käteispohjaan verrattuna, päänäytön otsikko tarkentuu muotoon <code>KÄYTETTÄVISSÄ &middot; SEURAAVAAN TULOON</code> (ja alla näkyy myös koko jakson luku) tai <code>KÄYTETTÄVISSÄ &middot; SIS. TULEVAT TULOT</code> (erittelyssä rivinä <code>+ Tulevat tulot</code>).",
+                        "<strong>Kertaluontoiset, myöhässä olevat ja tänään odotetut tulot:</strong> Kertaluontoisia tuloja (kuten veronpalautus) sekä myöhässä olevia tai tänään odotettuja tuloja ei koskaan lasketa ennakkoon — ne näkyvät muistutuslistalla ja vaikuttavat vasta, kun kuittaat ne <strong>Saatu</strong>-napilla (tai päivität saldon).",
+                        "<strong>Ei tuplalaskentaa kuittaamisen yhteydessä:</strong> Kun kuittaat mukana olleen säännöllisen tulon saaduksi ja lisäät sen saldoon, summa siirtyy siististi <strong>Nykyiseen rahaan</strong> ilman kaksinkertaista laskentaa."
                     ]
                 },
                 {
@@ -542,13 +548,13 @@ PLUSMINUS_DATA = {
             "subtitle": "Määritä toistuvat tulot, laskut, palkkapäivä ja kuukauden ruokabudjetti kerran. Kurkkaa saldosi ja näe heti todellinen käyttövarasi — ilman jokaisen kahvin kirjaamista.",
             "section1_title": "Selkeyttä alle viidessä sekunnissa",
             "features": [
-                ("Käytettävissä juuri nyt", "Käytettävissä oleva raha miinus ennen palkkapäivää erääntyvät laskut miinus jäljellä oleva ruoka-arvio — selkeänä kolmen rivin laskelmana."),
+                ("Käytettävissä juuri nyt", "Nykyinen raha, maksamattomat laskut, ruoka-arvio ja eri päivinä saapuvat säännölliset tulot tiukimman kassavirtakohdan mukaan &mdash; aina rivi riviltä eriteltynä."),
                 ("Tasainen kuukausisuunnitelma", "Erillinen kuukausinäkymä, joka tasaa viikoittaiset, valittujen kuukausien ja vuosittaiset laskut ilman että päivän saldo sotkee kokonaiskuvaa."),
                 ("Yksityinen ja paikallinen", "Kaikki tiedot pysyvät laitteellasi. Ei käyttäjätilejä, ei pankkiyhteyksiä, ei analytiikkaa eikä seurantaa."),
             ],
             "section2_title": "Kaikki oleellinen, ei mitään ylimääräistä",
             "list_items": [
-                "Käytettävissä nyt -laskenta seuraavaan ensisijaiseen palkkapäivään",
+                "Käytettävissä nyt -laskenta seuraavaan ensisijaiseen palkkapäivään &mdash; myös useammalla eri päivinä saapuvalla tulolla",
                 "Automaattinen päiväkohtainen ruoka-arvio sekä oma kiinteä arvio tarvittaessa",
                 "Kaksoisvähennysten esto laskuja maksetuksi kuitatessa ja saldoa päivittäessä",
                 "Viikoittaiset, joka 2. viikko, kuukausittaiset, valittujen kuukausien, vuosittaiset ja kertaluontoiset erät",
@@ -565,7 +571,7 @@ PLUSMINUS_DATA = {
             "copyright": "&copy; 2026 PlusMinus",
             "nav_aria": "Kielivalinta",
             "featureList": [
-                "Käytettävissä nyt -laskenta seuraavaan ensisijaiseen palkkapäivään",
+                "Käytettävissä nyt -laskenta seuraavaan ensisijaiseen palkkapäivään ja monituloisen kassavirran tuki",
                 "Tasattu kuukausibudjetti (Kuukausi-näkymä)",
                 "Automaattinen päiväkohtainen ruoka-arvio ja oma jaksoarvio",
                 "Kaksoisvähennysten esto kahden vaihtoehdon vahvistuksella",
@@ -1852,9 +1858,10 @@ def build_sitemap() -> str:
 
     # PlusMinus pages under /plusminus/ (8)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
+        lastmod = "2026-11-23" if page == "privacy.html" else "2026-11-24"
         for lang in ["", "fi"]:
             prefix = f"{lang}/" if lang else ""
-            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", "2026-11-23"))
+            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", lastmod))
 
     entries = "\n".join(
         f"""    <url>

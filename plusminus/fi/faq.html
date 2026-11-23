@@ -252,7 +252,7 @@
             <li><a href="#faq-2">Mitä eroa on Tilanne- ja Kuukausi-näkymillä?</a></li>
             <li><a href="#faq-3">Miten ruokabudjetti toimii, ja voinko asettaa sille oman arvion?</a></li>
             <li><a href="#faq-4">Miten PlusMinus estää saman laskun vähentämisen kahteen kertaan?</a></li>
-            <li><a href="#faq-5">Miksi tulevaa tuloa ei lisätä automaattisesti Käytettävissä nyt -summaan?</a></li>
+            <li><a href="#faq-5">Miten tulevat tulot vaikuttavat Käytettävissä nyt -summaan?</a></li>
             <li><a href="#faq-6">Miten valitut kuukaudet, vuosittaiset, viikoittaiset ja kertaluontoiset erät toimivat?</a></li>
             <li><a href="#faq-7">Miten Ensisijainen palkkapäivä ja viikonloppujen siirto toimivat?</a></li>
             <li><a href="#faq-8">Mitä tarkoittavat Seuraavalla jaksolla, etukäteen maksaminen ja Kuittaa vanhemmat?</a></li>
@@ -268,11 +268,12 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Miten Käytettävissä nyt -summa lasketaan?</h2>
-        <p><strong>Tilanne</strong>-näkymä vastaa yhteen arjen tärkeimpään kysymykseen: <em>Paljonko voin turvallisesti käyttää juuri nyt ennen seuraavaa ensisijaista palkkapäivää?</em> Laskelma perustuu selkeään kolmen rivin kaavaan:</p>
+        <p><strong>Tilanne</strong>-näkymä vastaa yhteen arjen tärkeimpään kysymykseen: <em>Paljonko voin turvallisesti käyttää juuri nyt ennen seuraavaa ensisijaista palkkapäivää?</em> Laskelma lähtee selkeästä kaavasta ja mukautuu automaattisesti myös useampaan eri päivinä saapuvaan tuloon:</p>
         <ul>
             <li><strong>Käytettävissä oleva raha nyt:</strong> Käsin päivittämäsi tilin tai käteisen saldo tällä hetkellä, näkyvissä olevan päivitysajankohdan kanssa.</li>
             <li><strong>Miinus maksamattomat laskut:</strong> Kaikki ennen seuraavaa ensisijaista palkkapäivää erääntyvät maksamattomat toistuvat laskut ja kertaluontoiset menot sekä edelliseltä jaksolta maksamatta jääneet laskut.</li>
-            <li><strong>Miinus arvioitu jäljellä oleva ruoka-arvio:</strong> Palkkajakson jäljellä oleville päiville suhteutettu ruokabudjetti.</li>
+            <li><strong>Miinus arvioitu jäljellä oleva ruoka-arvio:</strong> Aktiivisen tarkastelujakson jäljellä oleville päiville suhteutettu ruokabudjetti.</li>
+            <li><strong>Tiukin kassavirtakohta useilla tuloilla:</strong> Jos ennen seuraavaa ensisijaista palkkapäivää saapuu tulevia säännöllisiä tuloja, PlusMinus tarkistaa tilanteen ennen kutakin tulopäivää ja jakson lopussa ja valitsee tiukimman kohdan. Näin myöhemmät laskut eivät aiheuta turhaa vajetta, mutta rahaa ei koskaan pääse kuluttamaan etukäteen. Erittelykortti täsmää aina valitun tarkastelukohdan riveihin, ja otsikko tarkentuu muotoon <code>KÄYTETTÄVISSÄ &middot; SEURAAVAAN TULOON</code> tai <code>KÄYTETTÄVISSÄ &middot; SIS. TULEVAT TULOT</code> aina, kun tulevat tulot vaikuttavat laskelmaan.</li>
         </ul>
         <div class="note">
             <strong>Vinkki:</strong> Voit tarkistaa koko laskentakaavan milloin tahansa sovelluksesta kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>.
@@ -284,7 +285,7 @@
         <h2>Mitä eroa on Tilanne- ja Kuukausi-näkymillä?</h2>
         <p>PlusMinus erottaa arjen käyttövaran ja pitkän aikavälin kuukausitasapainon kahdeksi selkeäksi välilehdeksi:</p>
         <ul>
-            <li><strong>Tilanne:</strong> Näyttää tilanteen juuri nyt seuraavaan ensisijaiseen palkkapäivään saakka. Se lähtee todellisesta <strong>Raha nyt</strong> -saldosta, vähentää tällä jaksolla erääntyvät laskut ja jäljellä olevan ruoka-arvion ja kertoo paljonko on <strong>Käytettävissä nyt</strong>.</li>
+            <li><strong>Tilanne:</strong> Näyttää tilanteen juuri nyt seuraavaan ensisijaiseen palkkapäivään saakka. Se lähtee todellisesta <strong>Nykyinen raha</strong> -saldosta, tarkastelee tällä jaksolla erääntyvät laskut, jäljellä olevan ruoka-arvion ja tulevat säännölliset tulot tiukimman kassavirtakohdan mukaan ja kertoo paljonko on <strong>Käytettävissä nyt</strong>.</li>
             <li><strong>Kuukausi:</strong> Näyttää tasatun <strong>Kuukausibudjetin ylijäämän</strong> (tasatut kuukausitulot miinus tasatut kuukausilaskut miinus kuukauden ruokabudjetti) täysin riippumattomana tämän päivän pankkisaldosta.</li>
         </ul>
         <div class="note">
@@ -319,11 +320,13 @@
     </div>
 
     <div class="faq-item" id="faq-5">
-        <h2>Miksi tulevaa tuloa ei lisätä automaattisesti Käytettävissä nyt -summaan?</h2>
-        <p>PlusMinus pitää <strong>Käytettävissä nyt</strong> -summan tiukasti kiinni todellisessa, tällä hetkellä käytössäsi olevassa rahassa:</p>
+        <h2>Miten tulevat tulot vaikuttavat Käytettävissä nyt -summaan?</h2>
+        <p>PlusMinus toimii luotettavasti riippumatta siitä, saatko yhden pääpalkan vai 2&ndash;3 eri päivinä saapuvaa säännöllistä tuloa:</p>
         <ul>
-            <li><strong>Hiljainen muistutus:</strong> Jos ennen seuraavaa ensisijaista palkkapäivää on tulossa toinen tulo (kuten etuus, palkka tai kertaluontoinen tulo), se näkyy <strong>Tilanne</strong>-näkymässä muistutuksena.</li>
-            <li><strong>Ei ennenaikaisia oletuksia:</strong> Tulevaa tuloa ei lasketa käytettävissä olevaan rahaan ennen kuin olet oikeasti saanut sen ja päivittänyt saldosi (tai kuitannut tulon saaduksi ja lisännyt sen saldoon).</li>
+            <li><strong>Tulevat säännölliset tulot (automaattinen kassavirtapullonkaula):</strong> Aktiiviset säännölliset tulot, joiden maksupäivä on aidosti tulevaisuudessa (tämän päivän sekä viikonloppusiirron mahdollisen nimellisen palkkapäivän jälkeen) ennen seuraavaa ensisijaista palkkapäivää, huomioidaan automaattisesti tiukimman kassavirtakohdan kautta. Näin jakson loppupuolen laskut eivät aiheuta turhaa miinusta, mutta tulevaa tuloa ei voi koskaan kuluttaa etukäteen.</li>
+            <li><strong>Selkeä otsake ja täsmäävä erittely:</strong> Kun tulevat säännölliset tulot nostavat summaa pelkkään käteispohjaan verrattuna, päänäytön otsikko tarkentuu muotoon <code>KÄYTETTÄVISSÄ &middot; SEURAAVAAN TULOON</code> (ja alla näkyy myös koko jakson luku) tai <code>KÄYTETTÄVISSÄ &middot; SIS. TULEVAT TULOT</code> (erittelyssä rivinä <code>+ Tulevat tulot</code>).</li>
+            <li><strong>Kertaluontoiset, myöhässä olevat ja tänään odotetut tulot:</strong> Kertaluontoisia tuloja (kuten veronpalautus) sekä myöhässä olevia tai tänään odotettuja tuloja ei koskaan lasketa ennakkoon — ne näkyvät muistutuslistalla ja vaikuttavat vasta, kun kuittaat ne <strong>Saatu</strong>-napilla (tai päivität saldon).</li>
+            <li><strong>Ei tuplalaskentaa kuittaamisen yhteydessä:</strong> Kun kuittaat mukana olleen säännöllisen tulon saaduksi ja lisäät sen saldoon, summa siirtyy siististi <strong>Nykyiseen rahaan</strong> ilman kaksinkertaista laskentaa.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Takaisin alkuun</a>
     </div>

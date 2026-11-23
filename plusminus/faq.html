@@ -252,7 +252,7 @@
             <li><a href="#faq-2">What is the difference between Live and Plan?</a></li>
             <li><a href="#faq-3">How does the Food Budget work, and can I override it for the current period?</a></li>
             <li><a href="#faq-4">How does PlusMinus prevent deducting the same bill twice?</a></li>
-            <li><a href="#faq-5">Why isn't upcoming income added to Safe to Spend automatically?</a></li>
+            <li><a href="#faq-5">How does upcoming income affect Safe to Spend?</a></li>
             <li><a href="#faq-6">How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?</a></li>
             <li><a href="#faq-7">How do Primary Payday and weekend payday shifting work?</a></li>
             <li><a href="#faq-8">What are Coming Next Period, paying bills early, and older unsettled bills?</a></li>
@@ -268,11 +268,12 @@
 
     <div class="faq-item" id="faq-1">
         <h2>How is Safe to Spend calculated?</h2>
-        <p><strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It uses a transparent 3-line formula:</p>
+        <p><strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It starts from a clear formula and automatically handles staggered recurring incomes:</p>
         <ul>
             <li><strong>Current Available Money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.</li>
             <li><strong>Minus unpaid bills:</strong> Unpaid recurring bills and one-time bills due before your next primary payday, plus any overdue unpaid bills from the immediately preceding pay period.</li>
-            <li><strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the rest of the current payday cycle.</li>
+            <li><strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the active cash-flow horizon.</li>
+            <li><strong>Tightest cash-flow point for multiple incomes:</strong> When scheduled future recurring income arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later bills don't cause false shortages while you never spend money before it arrives. The breakdown card always matches that limiting horizon line by line, and the headline label clearly indicates <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> whenever upcoming income is factored in.</li>
         </ul>
         <div class="note">
             <strong>Tip:</strong> You can review the calculation breakdown at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>.
@@ -284,7 +285,7 @@
         <h2>What is the difference between Live and Plan?</h2>
         <p>PlusMinus separates day-to-day spending awareness from your long-term monthly baseline across two distinct tabs:</p>
         <ul>
-            <li><strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current Available Money</strong>, deducts bills due in this pay period and remaining food, and tells you your current <strong>Safe to Spend</strong>.</li>
+            <li><strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current Available Money</strong>, evaluates unpaid bills, remaining food, and any future scheduled recurring incomes across the tightest cash-flow point, and tells you your current <strong>Safe to Spend</strong>.</li>
             <li><strong>Plan:</strong> Shows your steady-state <strong>Planned Monthly Remainder</strong> (normalized monthly income minus normalized monthly bills minus your monthly food budget), completely independent of today's bank balance or payday cycle length.</li>
         </ul>
         <div class="note">
@@ -319,11 +320,13 @@
     </div>
 
     <div class="faq-item" id="faq-5">
-        <h2>Why isn't upcoming income added to Safe to Spend automatically?</h2>
-        <p>PlusMinus keeps <strong>Safe to Spend</strong> strictly grounded in money you actually have on hand right now:</p>
+        <h2>How does upcoming income affect Safe to Spend?</h2>
+        <p>PlusMinus works cleanly whether you have one main paycheck or 2&ndash;3 staggered recurring incomes arriving on different days:</p>
         <ul>
-            <li><strong>Quiet reminder chip:</strong> If another recurring or one-time income is expected before your next primary payday, it appears quietly in <strong>Live</strong> as an upcoming income reminder so you know it is on the way.</li>
-            <li><strong>Never inflated prematurely:</strong> Future unreceived income is never added to <strong>Safe to Spend</strong> until you actually receive it and update <strong>Current Available Money</strong> (or mark the income received and add it to your balance).</li>
+            <li><strong>Future recurring income (automatic cash-flow bottleneck):</strong> Active recurring income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later bills while never letting you spend money before it arrives.</li>
+            <li><strong>Clear labels and exact breakdown:</strong> When upcoming recurring income raises the figure above cash on hand alone, the hero label updates to <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> (with the full-period figure below) or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> (with a <code>+ Upcoming income</code> row in the breakdown).</li>
+            <li><strong>One-time, overdue, and due-today income:</strong> One-time payments (such as tax refunds) and overdue or due-today incomes are never projected ahead of receipt &mdash; they appear as reminder rows and count once marked <strong>Received</strong> (or reflected in <strong>Current Money</strong>).</li>
+            <li><strong>No double-counting when received:</strong> Marking an included recurring income <strong>Received</strong> and adding it to <strong>Current Money</strong> moves it cleanly into your balance without double-counting.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
