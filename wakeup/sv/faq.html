@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WakeUp FAQ – Vanliga frågor</title>
+    <meta name="description" content="Vanliga frågor och guider för WakeUp på iPhone och iPad: alarmens tillförlitlighet, egna larmljud, standardljud, tidszoner, kategorier, sortering, avfärda, snabbjustering, pausa, slumringstid, tidsredigerare, nedräkning, Live-aktiviteter, mörkt/ljust läge och språkstöd.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup/sv/faq.html">
+    <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup/faq.html">
+    <link rel="alternate" hreflang="en" href="https://lightfeet-apps.github.io/wakeup/faq.html">
+    <link rel="alternate" hreflang="fi" href="https://lightfeet-apps.github.io/wakeup/fi/faq.html">
+    <link rel="alternate" hreflang="sv" href="https://lightfeet-apps.github.io/wakeup/sv/faq.html">
+    <link rel="alternate" hreflang="de" href="https://lightfeet-apps.github.io/wakeup/de/faq.html">
+    <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup/es/faq.html">
+    <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup/fr/faq.html">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+
+        .toc {
+            background: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .toc-title {
+            margin: 0 0 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.45;
+        }
+
+        .toc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .top-nav a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .top-nav .back-link {
+            font-weight: 600;
+        }
+
+        .top-nav-links {
+            color: #888;
+        }
+
+        .toc-contact-tip {
+            margin: 18px 0 0;
+            padding-top: 14px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        .toc-contact-tip a {
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc-contact-tip a:hover {
+            text-decoration: underline;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            background: #f6f7f9;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+            scroll-margin-top: 24px;
+        }
+
+        .faq-item h2 {
+            margin: 0 0 16px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+            margin: 0 0 16px;
+        }
+
+        ol li, ul li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul ul, ol ul {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+
+        ul ul li, ol ul li {
+            margin-bottom: 6px;
+        }
+
+        .note {
+            background: #fff;
+            border-left: 4px solid #007aff;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #444;
+            margin-top: 16px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-to-top:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        a {
+            color: #007aff;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
+        }
+
+        .lang-nav {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .lang-nav a {
+            color: #666;
+            text-decoration: none;
+            padding: 2px 4px;
+        }
+
+        .lang-nav a:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .lang-nav a.active {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .copyright {
+            margin: 0;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <nav class="top-nav" aria-label="Site navigation">
+        <a href="index.html" class="back-link">← WakeUp Support</a>
+        <span class="top-nav-links">
+            <a href="marketing.html">Om WakeUp</a>
+            &middot;
+            <a href="privacy.html">Integritetspolicy</a>
+        </span>
+    </nav>
+
+    <h1>Vanliga frågor</h1>
+    <p class="subtitle">Hjälp, tips och guider för WakeUp.</p>
+
+    <nav class="toc" aria-label="På den här sidan">
+        <h2 class="toc-title">På den här sidan</h2>
+        <ol>
+            <li><a href="#faq-1">Ringer alarmet om enheten är i ljudlöst läge, i Stör ej eller om appen är stängd?</a></li>
+            <li><a href="#faq-2">Hur följer jag alarm och nedräkning på låsskärmen eller i Dynamic Island?</a></li>
+            <li><a href="#faq-3">Varför kräver WakeUp iOS 26 eller senare?</a></li>
+            <li><a href="#faq-4">Hur fungerar funktionen för att avfärda nästa alarm (Dismiss)?</a></li>
+            <li><a href="#faq-5">Hur fungerar snabbjustering (Quick Adjust +/-)?</a></li>
+            <li><a href="#faq-6">Jag ska resa. Vad behöver jag tänka på?</a></li>
+            <li><a href="#faq-7">Vad är alarmkategorier och hur använder jag dem?</a></li>
+            <li><a href="#faq-8">Hur fungerar markering av nästa alarm och nedräkning?</a></li>
+            <li><a href="#faq-9">Hur fungerar det att pausa ett återkommande alarm?</a></li>
+            <li><a href="#faq-10">Hur ändrar jag tidsinmatningsmetod (tidsredigerare)?</a></li>
+            <li><a href="#faq-11">Hur kan jag sortera mina alarm?</a></li>
+            <li><a href="#faq-12">Importera ett eget larmljud till WakeUp</a></li>
+            <li><a href="#faq-13">Vilka krav och begränsningar gäller för anpassade larmljud?</a></li>
+            <li><a href="#faq-14">Hur ändrar jag standardljudet eller uppdaterar alla alarm samtidigt?</a></li>
+            <li><a href="#faq-15">Hur redigerar jag flera alarm samtidigt (Redigera alarm)?</a></li>
+            <li><a href="#faq-16">Hur justerar jag slumringstiden eller stänger av slumra?</a></li>
+            <li><a href="#faq-17">Hur ändrar jag appens utseende (mörkt eller ljust läge)?</a></li>
+            <li><a href="#faq-18">Vilka språk stöds i WakeUp och hur byter jag språk?</a></li>
+        </ol>
+        <p class="toc-contact-tip">
+            Hittar du inte det du söker? <a href="index.html">Kontakta WakeUp Support &rarr;</a>
+        </p>
+    </nav>
+
+    <div class="faq-item" id="faq-1">
+        <h2>Ringer alarmet om enheten är i ljudlöst läge, i Stör ej eller om appen är stängd?</h2>
+        <p><strong>Ja.</strong> WakeUp använder Apples inbyggda <strong>AlarmKit</strong>, vilket innebär att dina alarm schemaläggs som systemalarm:</p>
+        <ul>
+            <li><strong>Stängd app:</strong> Dina alarm schemaläggs som inbyggda iOS-systemalarm och kan ringa även när appen är stängd. Du behöver inte ha appen öppen över natten.</li>
+            <li><strong>Ljudlöst läge och tyst reglage:</strong> Systemalarm åsidosätter ljudlöst läge och ringer med full ljudvolym även när enheten är satt på ljudlös.</li>
+            <li><strong>Stör ej och Fokus-lägen:</strong> Alarm ringer som vanligt även när Stör ej, Stilla natt eller något annat Fokus-läge är aktivt.</li>
+        </ul>
+        <div class="note">
+            <strong>Viktigt:</strong> Om larmbehörighet saknas eller har nekats visar WakeUp en varning överst i alarmlistan och förhindrar att larm skapas eller sparas tills behörigheten har beviljats. Du kan aktivera behörigheten direkt via varningens <em>Öppna Inställningar</em>-knapp eller i enhetens <strong>Inställningar → WakeUp → Alarm</strong>.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-2">
+        <h2>Hur följer jag alarm och nedräkning på låsskärmen eller i Dynamic Island?</h2>
+        <p>WakeUp använder iOS Live-aktiviteter (Live Activities) och Dynamic Island via AlarmKit och ActivityKit, så att du kan hålla koll på aktiva alarm och snoozenedräkningar utan att låsa upp din iPhone:</p>
+        <ul>
+            <li><strong>Dynamic Island:</strong> Visar en orange larmsymbol och realtidsnedräkning högst upp på skärmen. Håll ned fingret på Dynamic Island för att expandera vyn och se fler detaljer.</li>
+            <li><strong>Låsskärm och Alltid på-skärm:</strong> Visar en stilren banner med alarmstatus och exakt återstående snoozetid direkt på låsskärmen.</li>
+            <li><strong>Automatisk aktivering:</strong> Startar automatiskt när ett alarm ringer eller snoozas.</li>
+        </ul>
+        <p><strong>Så här kontrollerar du inställningarna:</strong> Öppna <strong>Inställningar → WakeUp</strong> på din iPhone och kontrollera att <strong>Live-aktiviteter</strong> är aktiverat. Kontrollera även under <strong>Inställningar → Face ID och kod</strong> att <em>Live-aktiviteter</em> är tillåtet under <em>Tillåt åtkomst när enheten är låst</em>.</p>
+        <div class="note">
+            <strong>Tips:</strong> Du kan följa och hantera snoozenedräkningen direkt från låsskärmens banner eller Dynamic Island utan att behöva öppna appen.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-3">
+        <h2>Varför kräver WakeUp iOS 26 eller senare?</h2>
+        <p>WakeUp är särskilt utvecklat för att använda Apples inbyggda <strong>AlarmKit</strong>-ramverk, som introducerades i iOS 26:</p>
+        <ul>
+            <li><strong>Äkta systemalarm:</strong> Före iOS 26 kunde tredjepartsappar inte schemalägga riktiga systemalarm. De tvingades använda vanliga notiser (som kan tystas av ljudlöst läge eller fördröjas) eller kräva att skärmen lämnades på över natten.</li>
+            <li><strong>Systemintegrerade alarm:</strong> AlarmKit gör att WakeUp kan schemalägga alarm som integreras direkt i iOS, så att de kan ringa med ljud även när enheten är i ljudlöst läge, Stör ej är aktivt eller appen är stängd.</li>
+            <li><strong>Modern systemintegration:</strong> iOS 26 och AlarmKit driver även WakeUps nedräkningar på låsskärmen, Live-aktiviteter och Dynamic Island.</li>
+        </ul>
+        <div class="note">
+            <strong>Obs:</strong> För att kunna erbjuda äkta systemalarm utan föråldrade nödlösningar kräver WakeUp en iPhone eller iPad med iOS 26 eller senare.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-4">
+        <h2>Hur fungerar funktionen för att avfärda nästa alarm (Dismiss)?</h2>
+        <p>Funktionen Avfärda nästa alarm låter dig hoppa över endast nästa förekomst av ett återkommande alarm (till exempel om du redan är vaken eller har en ledig dag) utan att ändra ditt vanliga schema:</p>
+        <ul>
+            <li><strong>Avfärda ett alarm:</strong> När alarmtiden närmar sig visas knappen <strong>Avfärda</strong> (månskäreikon) på alarmraden. Tryck på den för att hoppa över nästa alarm; WakeUp återgår därefter automatiskt till ditt vanliga schema.</li>
+            <li><strong>Återställa alarmet:</strong> Om planerna ändras trycker du bara på <strong>Nästa alarm är avfärdat</strong> på alarmraden för att återställa alarmet direkt.</li>
+            <li><strong>Anpassa knappens synlighet:</strong> I alarminställningarna under <strong>Visa knapp för att avfärda</strong> kan du välja hur många timmar i förväg (2, 4, 8, 12 eller 24 timmar) knappen ska dyka upp i listan.</li>
+        </ul>
+        <div class="note">
+            <strong>Tips:</strong> Du behöver aldrig stänga av ett återkommande alarm och komma ihåg att slå på det igen – avfärdandet gäller enbart nästa tillfälle.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-5">
+        <h2>Hur fungerar snabbjustering (Quick Adjust +/-)?</h2>
+        <p>Snabbjustering låter dig flytta endast nästa tillfälle av ett återkommande alarm tidigare eller senare utan att ändra ditt vanliga schema:</p>
+        <ul>
+            <li><strong>Justera tiden:</strong> När ett alarm är schemalagt för idag eller imorgon visas knapparna <strong>-</strong> och <strong>+</strong> på alarmraden. Tryck på dem för att stegvis flytta nästa alarmtid.</li>
+            <li><strong>Visa och återställa:</strong> Den justerade tiden (t.ex. <code>-10 min</code> eller <code>+20 min</code>) visas som en knapp på alarmraden. Tryck på knappen för att direkt återställa alarmet till ordinarie tid.</li>
+            <li><strong>Automatisk återgång:</strong> När alarmet har ringt återgår WakeUp automatiskt till ditt vanliga återkommande schema.</li>
+            <li><strong>Justeringsintervall:</strong> I alarminställningarna under <strong>Justeringsintervall</strong> kan du välja hur många minuter varje tryck ska flytta tiden: 5, 10, 15 eller 30 minuter (10 min är standard).</li>
+        </ul>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-6">
+        <h2>Jag ska resa. Vad behöver jag tänka på?</h2>
+        <p>När du reser mellan tidszoner är det enkelt att hålla dina alarm i fas:</p>
+        <ul>
+            <li><strong>Vanliga återkommande alarm</strong> följer automatiskt enhetens lokala tid.</li>
+            <li><strong>Alarm med tillfälliga undantag</strong> (som ett justerat nästa alarm, ett avfärdat alarm eller en aktiv paus) kan schemaläggas i Apples AlarmKit vid en fast tidpunkt. När de är schemalagda på detta sätt markeras de i appen med en knappnål.</li>
+        </ul>
+        <p><strong>Vad du ska göra:</strong> När du anländer till en ny tidszon, <strong>öppna bara WakeUp</strong>. Appen känner automatiskt av den nya tidszonen och uppdaterar dina alarm till lokal tid.</p>
+        <p><strong>Tidszonsvarning och detaljer:</strong> När du anländer till en ny tidszon uppdateras dina alarm automatiskt när du öppnar appen. Som en visuell säkerhetsåtgärd visar WakeUp dessutom dess schemalagda tidszon och en varningsikon (en varningstriangel) bredvid knappnålen om ett fäst alarm fortfarande är schemalagt i en annan tidszon (till exempel medan en uppdatering pågår eller behöver göras om). När uppdateringen är klar försvinner varningen. Du kan även välja att alltid visa tidszonen för fästa alarm under <strong>WakeUp → Inställningar → Byter du tidszon? → Visa alltid tidszon för nålade alarm</strong>.</p>
+        <div class="note">
+            <strong>Tips:</strong> WakeUp visar en kort bekräftelse i appen när dina alarm har uppdaterats för den nya tidszonen.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-7">
+        <h2>Vad är alarmkategorier och hur använder jag dem?</h2>
+        <p>Alarmkategorier hjälper dig att gruppera och organisera dina alarm efter sammanhang och rutiner (som Arbete, Morgon, Träning, Medicin eller Helg):</p>
+        <ul>
+            <li><strong>Tilldela en kategori:</strong> Välj önskad grupp under <strong>Kategori</strong> när du skapar eller redigerar ett alarm. Du kan också tilldela kategorier till flera alarm samtidigt via <strong>Redigera alarm</strong> i toppmenyn (•••).</li>
+            <li><strong>Filtrera alarmlistan:</strong> När du har tilldelat kategorier till dina alarm visas ett filterfält överst på huvudskärmen. Tryck på en kategoriikon för att visa endast de alarmen, eller tryck på rutnätsikonen för att se alla alarm.</li>
+            <li><strong>Hantera kategorier:</strong> Öppna menyn (•••) överst i alarmlistan och välj <strong>Alarmkategorier</strong> för att se en översikt över hur många alarm som tillhör varje kategori och justera indelningen.</li>
+        </ul>
+        <div class="note">
+            <strong>Tips:</strong> Genom att filtrera på kategorier håller du alarmlistan överskådlig och fokuserar snabbt på bara de alarm du behöver för stunden.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
+        <h2>Hur fungerar markering av nästa alarm och nedräkning?</h2>
+        <p>WakeUp kan automatiskt markera det alarm som ringer härnäst i din alarmlista och visa en live-nedräkning med återstående tid (till exempel <em>Nästa · 7 tim 25 min</em>):</p>
+        <ul>
+            <li><strong>Visuell markering:</strong> Framhäver raden för nästa schemalagda alarm med ett särskilt märke så att du direkt ser vilket alarm som står på tur.</li>
+            <li><strong>Realtidsnedräkning:</strong> Visar återstående sovtid i timmar och minuter och uppdateras automatiskt varje minut.</li>
+            <li><strong>Smart och dynamisk:</strong> Om du avfärdar nästa förekomst, snabbjusterar tiden eller har ett alarm pausat, räknar WakeUp omedelbart om och markerar nästa aktiva alarm.</li>
+        </ul>
+        <p><strong>Så här slår du på eller av funktionen:</strong> Öppna <strong>WakeUp → Inställningar → Alarmlista</strong> och aktivera eller inaktivera <strong>Markera nästa alarm</strong> (märkt med en stjärnikon ⭐️).</p>
+        <div class="note">
+            <strong>Tips:</strong> Nedräkningen tar automatiskt hänsyn till omställningar för sommar- och vintertid.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-9">
+        <h2>Hur fungerar det att pausa ett återkommande alarm?</h2>
+        <p>Att pausa låter dig tillfälligt stänga av ett återkommande alarm under ett valt datumintervall (till exempel under semestern eller en resa) utan att behöva stänga av alarmet helt:</p>
+        <ul>
+            <li><strong>Schemalägg en paus:</strong> Öppna redigeringen för ett återkommande alarm, fäll ut <strong>Avancerade inställningar</strong> och aktivera <strong>Pausa alarm</strong>. Välj start- och slutdatum i kalendern.</li>
+            <li><strong>Se pausstatus:</strong> I alarmlistan visas tydliga statusetiketter: <strong>Paus schemalagd</strong> innan pausen har börjat och <strong>Pausad till och med [datum]</strong> medan pausen pågår.</li>
+            <li><strong>Automatisk återgång:</strong> När pausperioden är slut aktiverar WakeUp automatiskt alarmet igen enligt ditt vanliga schema.</li>
+            <li><strong>Ändra eller avbryta:</strong> Du kan när som helst ändra datumen eller avbryta pausen genom att öppna larmredigeringen och stänga av Pausa alarm.</li>
+        </ul>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-10">
+        <h2>Hur ändrar jag tidsinmatningsmetod (tidsredigerare)?</h2>
+        <p>WakeUp erbjuder tre olika sätt att ställa in larmtiden så att du kan välja det som passar dig bäst:</p>
+        <ul>
+            <li><strong>Rullhjul (Scroll Wheel):</strong> Det klassiska rullande iOS-reglaget (standard).</li>
+            <li><strong>Sifferknappar (Number Pad):</strong> Knappa snabbt in den exakta alarmtiden med siffror.</li>
+            <li><strong>Urtavla (Clock Dial):</strong> En visuell och intuitiv rund urtavla där du ställer in tiden med visare.</li>
+        </ul>
+        <p><strong>Så här byter du:</strong> Öppna <strong>WakeUp → Inställningar → Tidsinmatning</strong> (under <em>Standardinställningar för alarm</em>) och välj önskat alternativ. Valet används varje gång du skapar eller redigerar alarm.</p>
+        <div class="note">
+            <strong>Tips:</strong> Du kan när som helst växla mellan inmatningsmetoderna i Inställningar för att hitta den som känns smidigast för dig.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-11">
+        <h2>Hur kan jag sortera mina alarm?</h2>
+        <p>Du kan anpassa ordningen på dina alarm i alarmlistan genom att trycka på menyknappen (•••) i det övre hörnet och öppna undermenyn <strong>Sortera alarm</strong> (där den aktiva sorteringen visas under rubriken, såsom <em>Alarmtid</em>, <em>Nästa alarm</em>, <em>Kategori</em>, <em>Namn</em> eller <em>Anpassad</em>):</p>
+        <ul>
+            <li><strong>Alarmtid:</strong> Sorterar alarm efter klockslag (standard).</li>
+            <li><strong>Nästa alarm:</strong> Sorterar alarm efter vilket som ringer nästa gång.</li>
+            <li><strong>Kategori:</strong> Grupperar alarm efter tilldelad kategori (visas när kategorier används).</li>
+            <li><strong>Namn:</strong> Sorterar alarm i bokstavsordning efter namn.</li>
+        </ul>
+        <p><strong>Avancerad sortering:</strong> Från samma undermeny kan du välja <strong>Avancerad sortering…</strong> för att ställa in primär och sekundär sortering (t.ex. först upprepning och sedan alarmtid) samt stigande eller fallande ordning.</p>
+        <div class="note">
+            <strong>Tips:</strong> Att sortera efter "Nästa alarm" är särskilt praktiskt om du har många alarm och alltid vill se det som ringer först högst upp.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-12">
+        <h2>Importera ett eget larmljud till WakeUp</h2>
+        <ol>
+            <li>Leta upp ljudfilen på din Mac eller i appen Musik.</li>
+            <li>Om du använder appen Musik, högerklicka på låten och välj <strong>Visa i Finder</strong>.</li>
+            <li>Kopiera ljudfilen (<code>.m4a</code>, <code>.mp3</code> eller <code>.wav</code>) till en mapp på <strong>iCloud Drive</strong> eller skicka den med <strong>AirDrop</strong> till din iPhone eller iPad.</li>
+            <li>Öppna <strong>WakeUp → Inställningar → Anpassade ljud</strong> på din enhet, tryck på <strong>Välj ljudfil…</strong> och välj filen från appen <strong>Filer</strong>.</li>
+        </ol>
+        <p><strong>Windows och andra molntjänster:</strong> Du kan även importera ljudfiler från en Windows-dator. Överför filen till din iPhone eller iPad via valfri molntjänst (som Google Drive, OneDrive eller Dropbox) eller mejla den till dig själv, och spara den i appen <strong>Filer</strong>.</p>
+        <div class="note">
+            <strong>Obs:</strong> Du måste äga ljudfilen du importerar. Endast DRM-fria filer (såsom köpt musik eller egna inspelningar) stöds. Skyddade låtar från strömningstjänster kan inte importeras.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-13">
+        <h2>Vilka krav och begränsningar gäller för anpassade larmljud?</h2>
+        <p>Du kan anpassa dina alarm med egna ljudfiler:</p>
+        <ul>
+            <li><strong>Maximalt antal ljud:</strong> Du kan importera upp till 20 anpassade ljud. Om gränsen nås måste du ta bort ett befintligt ljud innan du kan importera ett nytt.</li>
+            <li><strong>Format som stöds:</strong> AIF, AIFF, CAF, M4A, MP3 och WAV (måste vara DRM-fria ljudfiler).</li>
+            <li><strong>Automatisk kortning och uttoning:</strong> Ljud som är längre än 30 sekunder kortas automatiskt till 30 sekunder med en mjuk 2-sekunders uttoning (fade-out) i slutet.</li>
+            <li><strong>Förhandslyssning och namnbyte:</strong> Under <strong>Inställningar → Anpassade ljud</strong> kan du trycka på ett ljud för att förhandslyssna eller byta namn på det.</li>
+        </ul>
+        <p><strong>Säker borttagning (Ljudet används):</strong> Du kan när som helst ta bort ljud genom att svepa. Om ett ljud du tar bort används av ett aktivt alarm ber WakeUp dig välja ett ersättande ljud så att alarmet aldrig förblir tyst.</p>
+        <div class="note">
+            <strong>Tips:</strong> Importerade ljud optimeras och sparas lokalt på din enhet, vilket ger snabb uppspelning utan nätverksberoende.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-14">
+        <h2>Hur ändrar jag standardljudet eller uppdaterar alla alarm samtidigt?</h2>
+        <p>WakeUp låter dig välja ett standardljud för alla nya alarm, och till och med uppdatera alla befintliga alarm i listan med ett enda tryck:</p>
+        <ul>
+            <li><strong>Välja standardljud:</strong> Öppna <strong>WakeUp → Inställningar → Standardljud</strong> (under <em>Standardinställningar för alarm</em>) och välj önskad signal, ett eget ljud eller <em>Systemstandard</em>.</li>
+            <li><strong>Uppdatera alla befintliga alarm:</strong> Slå på <strong>Använd på alla befintliga alarm</strong> i ljudväljaren och tryck på <strong>Använd</strong> (eller <em>Tillämpa</em>). WakeUp uppdaterar alla dina sparade alarm direkt.</li>
+            <li><strong>Endast nya alarm:</strong> Om du lämnar reglaget avstängt används det nya standardljudet bara för framtida alarm som du skapar, medan dina befintliga alarm behåller sina inställningar.</li>
+        </ul>
+        <p><strong>Ljudalternativ:</strong> Du kan välja bland WakeUp:s inbyggda alarmsignaler, dina importerade egna ljud under <em>Mina ljud</em> eller iOS-systemets standardljud.</p>
+        <div class="note">
+            <strong>Tips:</strong> Om du bara vill ändra ljud på några specifika alarm istället för alla, använd <strong>Redigera alarm</strong> i toppmenyn (•••).
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-15">
+        <h2>Hur redigerar jag flera alarm samtidigt (Redigera alarm)?</h2>
+        <p>Med funktionen <strong>Redigera alarm</strong> kan du uppdatera inställningar för flera alarm samtidigt utan att behöva ändra varje alarm för sig:</p>
+        <ul>
+            <li><strong>Öppna Redigera alarm:</strong> Tryck på menyknappen (•••) i övre hörnet av alarmlistan och välj <strong>Redigera alarm</strong>.</li>
+            <li><strong>Välj vad som ska ändras:</strong> Slå på endast de inställningar du vill uppdatera:
+                <ul>
+                    <li><strong>Ändra alarmsignal:</strong> Tillämpa ett nytt inbyggt eller anpassat ljud på alla markerade alarm.</li>
+                    <li><strong>Ändra slumringstid:</strong> Välj en gemensam slumringstid (5–30 minuter).</li>
+                    <li><strong>Ändra kategori:</strong> Tilldela markerade alarm till en kategori eller ta bort kategorin.</li>
+                    <li><strong>Ändra justeringssteg eller avfärdandeknapp:</strong> Anpassa tidssteget vid snabbjustering eller knappens synlighet.</li>
+                </ul>
+            </li>
+            <li><strong>Välj alarm:</strong> Markera de alarm du vill ändra, eller tryck på <strong>Välj alla</strong> för att markera samtliga.</li>
+            <li><strong>Spara ändringar:</strong> Tryck på <strong>Tillämpa</strong> för att spara dina ändringar för alla valda alarm.</li>
+        </ul>
+        <div class="note">
+            <strong>Obs:</strong> Alternativet <strong>Redigera alarm</strong> i menyn (•••) är tillgängligt när du har minst ett alarm i listan (det är inaktiverat om du inte har några alarm).<br><br><strong>Tips:</strong> Att redigera flera alarm samtidigt sparar mycket tid när du till exempel vill byta ringsignal för alla dina jobbalarm samtidigt.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-16">
+        <h2>Hur justerar jag slumringstiden eller stänger av slumra?</h2>
+        <p>Till skillnad från traditionella alarm med en fast 9-minuters slumringstid, ger WakeUp dig full kontroll över slumringstiden för varje enskilt alarm, eller låter dig stänga av den helt:</p>
+        <ul>
+            <li><strong>Anpassad slumringstid:</strong> Välj valfri tid mellan <strong>1 och 30 minuter</strong> med stegreglaget i larmredigeraren.</li>
+            <li><strong>Stänga av slumra:</strong> När reglaget för <strong>Slumra</strong> slås av kan alarmet inte slumras, utan endast stängas av.</li>
+            <li><strong>Redigera alarm:</strong> Du kan även uppdatera slumringsinställningar för flera alarm samtidigt via <strong>Redigera alarm</strong> i toppmenyn (•••).</li>
+        </ul>
+        <p><strong>Så här ändrar du tiden:</strong> Tryck på ett alarm för att redigera det, gå till sektionen <strong>Slumra</strong>, se till att funktionen är på och justera minuterna under <strong>Slumringstid</strong> (+/-).</p>
+        <div class="note">
+            <strong>Tips:</strong> När ett alarm slumrar visas nedräkningen i realtid direkt på låsskärmens Live-aktivitet och i Dynamic Island. Dessutom visar snoozenyn klockslaget då larmet ringer nästa gång.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-17">
+        <h2>Hur ändrar jag appens utseende (mörkt eller ljust läge)?</h2>
+        <p>WakeUp är utformad för att se fantastisk ut i både mörka och ljusa miljöer. Som standard använder WakeUp mörkt läge, men du kan när som helst byta tema eller välja att följa enhetens utseende:</p>
+        <ul>
+            <li><strong>Mörkt (standard):</strong> Låser WakeUp till ett behagligt mörkt tema som är skonsamt för ögonen i ett mörkt sovrum.</li>
+            <li><strong>Ljust:</strong> Håller WakeUp i ett ljust och tydligt utseende oavsett enhetens inställning.</li>
+            <li><strong>Systemstandard:</strong> Följer automatiskt din iPhones utseende.</li>
+        </ul>
+        <p><strong>Så här byter du:</strong> Öppna <strong>WakeUp → Inställningar → Utseende</strong> och välj önskat alternativ. Vyn innehåller en förhandsgranskning som visar temat direkt.</p>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-18">
+        <h2>Vilka språk stöds i WakeUp och hur byter jag språk?</h2>
+        <p>WakeUp är fullt lokaliserad till 6 språk. Som standard följer appen automatiskt systemets språk på din iPhone, men du kan när som helst välja ett annat språk direkt i appens inställningar:</p>
+        <ul>
+            <li><strong>Svenska</strong></li>
+            <li><strong>Engelska (English)</strong></li>
+            <li><strong>Finska (Suomi)</strong></li>
+            <li><strong>Tyska (Deutsch)</strong></li>
+            <li><strong>Spanska (Español)</strong></li>
+            <li><strong>Franska (Français)</strong></li>
+        </ul>
+        <p><strong>Så här byter du språk:</strong> Öppna <strong>WakeUp → Inställningar → Allmänt → Språk</strong> och välj önskat språk. Välj <strong>Systemstandard</strong> om du vill att appen automatiskt ska följa språket på din iPhone.</p>
+        <div class="note">
+            <strong>Tips:</strong> Språkbytet slår igenom omedelbart i hela appen, inklusive veckodagar, alarmetiketter och Live-aktiviteter, utan att du behöver starta om appen.
+        </div>
+        <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
+    </div>
+
+    <p class="links-nav">
+        <a href="index.html">WakeUp Support</a>
+        &middot;
+        <a href="marketing.html">Om WakeUp</a>
+        &middot;
+        <a href="privacy.html">Integritetspolicy</a>
+    </p>
+
+    <footer>
+        <nav class="lang-nav" aria-label="Language selection">
+            <a href="../faq.html">English</a>
+            &middot;
+            <a href="../fi/faq.html">Suomi</a>
+            &middot;
+            <a href="faq.html" class="active">Svenska</a>
+            &middot;
+            <a href="../de/faq.html">Deutsch</a>
+            &middot;
+            <a href="../es/faq.html">Español</a>
+            &middot;
+            <a href="../fr/faq.html">Français</a>
+        </nav>
+        <p class="copyright">WakeUp &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

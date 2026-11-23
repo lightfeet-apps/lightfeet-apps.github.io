@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte de WakeUp</title>
+    <meta name="description" content="Obtén ayuda con WakeUp, el despertador flexible para iPhone y iPad, o ponte en contacto con el equipo de soporte.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup/es/">
+    <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup/">
+    <link rel="alternate" hreflang="en" href="https://lightfeet-apps.github.io/wakeup/">
+    <link rel="alternate" hreflang="fi" href="https://lightfeet-apps.github.io/wakeup/fi/">
+    <link rel="alternate" hreflang="sv" href="https://lightfeet-apps.github.io/wakeup/sv/">
+    <link rel="alternate" hreflang="de" href="https://lightfeet-apps.github.io/wakeup/de/">
+    <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup/es/">
+    <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup/fr/">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .card {
+            background: #f6f7f9;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .card h2 {
+            margin: 0 0 12px;
+            font-size: 19px;
+            color: #111;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-card {
+            background: #ffffff;
+            border: 1.5px solid #007aff;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+        }
+
+        .faq-card h2 {
+            color: #007aff;
+        }
+
+        .faq-card-link {
+            display: inline-block;
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .faq-card-link:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #007aff;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
+        }
+
+        .lang-nav {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .lang-nav a {
+            color: #666;
+            text-decoration: none;
+            padding: 2px 4px;
+        }
+
+        .lang-nav a:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .lang-nav a.active {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .copyright {
+            margin: 0;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Soporte de WakeUp</h1>
+
+    <p>
+        Gracias por usar WakeUp.
+    </p>
+
+    <div class="card faq-card">
+        <h2>Consulta primero las preguntas frecuentes</h2>
+        <p>
+            Antes de enviar un correo, te recomendamos revisar nuestra sección de preguntas frecuentes (FAQ). Allí encontrarás respuestas inmediatas y guías sobre la fiabilidad de las alarmas, sonidos propios, posposición, zonas horarias, pausas y más.
+        </p>
+        <p>
+            <a href="faq.html" class="faq-card-link">Ir a las preguntas frecuentes (FAQ) &rarr;</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Solución de problemas e información útil</h2>
+
+        <p>
+            <strong>No se puede crear o guardar una alarma (Falta de permisos):</strong>
+            WakeUp programa alarmas del sistema mediante AlarmKit de Apple. Si no se han concedido los permisos, la app impide intencionadamente crear o guardar alarmas para evitar que queden inactivas. Para habilitarlos, abre <strong>Ajustes → WakeUp → Alarmas</strong> en tu dispositivo y permite los permisos.
+        </p>
+
+        <p>
+            <strong>Cambio de zona horaria (Alarmas periódicas con excepciones):</strong>
+            Las alarmas periódicas con modificaciones temporales (como Quick Adjust, la omisión de la siguiente alarma o una pausa) pueden programarse en AlarmKit de Apple en un momento fijo en el tiempo y no se actualizan en segundo plano por sí solas. Al llegar a una nueva zona horaria, abre WakeUp una vez y tus alarmas se sincronizarán automáticamente con la hora local.
+        </p>
+
+        <p>
+            <strong>Volumen de la alarma (El sonido es muy bajo o el dispositivo solo vibra):</strong>
+            WakeUp utiliza el volumen del sistema de tonos y avisos de tu dispositivo. Si la alarma suena demasiado baja, ajusta el control deslizante en <strong>Ajustes → Sonidos y vibraciones → Tono y alertas</strong>. (Consejo: Si la opción 'Ajustar con botones' está activada en iOS, el volumen puede haberse bajado por error con los botones físicos laterales).
+        </p>
+    </div>
+
+    <p>
+        Si no has encontrado respuesta en las preguntas frecuentes, tienes una incidencia o deseas enviar tus comentarios, ponte en contacto con nosotros:
+    </p>
+
+    <p>
+        <strong>Correo electrónico:</strong>
+        <a href="mailto:wakeup.alarmclock.app@gmail.com">
+            wakeup.alarmclock.app@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Al informar de un problema, resulta útil indicar el modelo de tu dispositivo (iPhone o iPad), la versión de iOS y una breve descripción del problema.
+    </p>
+
+    <p class="links-nav">
+        <a href="marketing.html">Acerca de WakeUp</a>
+        &middot;
+        <a href="faq.html">Preguntas frecuentes</a>
+        &middot;
+        <a href="privacy.html">Política de privacidad</a>
+    </p>
+
+    <footer>
+        <nav class="lang-nav" aria-label="Language selection">
+            <a href="../index.html">English</a>
+            &middot;
+            <a href="../fi/index.html">Suomi</a>
+            &middot;
+            <a href="../sv/index.html">Svenska</a>
+            &middot;
+            <a href="../de/index.html">Deutsch</a>
+            &middot;
+            <a href="index.html" class="active">Español</a>
+            &middot;
+            <a href="../fr/index.html">Français</a>
+        </nav>
+        <p class="copyright">WakeUp &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

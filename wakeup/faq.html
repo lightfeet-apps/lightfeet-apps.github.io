@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WakeUp FAQ – Frequently Asked Questions</title>
+    <meta name="description" content="Frequently asked questions and guides for WakeUp on iPhone and iPad: alarm reliability, custom sounds, default sound, time zones, categories, sorting, dismissing, Quick Adjust, pause, snooze duration, time editors, countdown, Live Activities, appearance themes, and supported languages.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup/faq.html">
+    <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup/faq.html">
+    <link rel="alternate" hreflang="en" href="https://lightfeet-apps.github.io/wakeup/faq.html">
+    <link rel="alternate" hreflang="fi" href="https://lightfeet-apps.github.io/wakeup/fi/faq.html">
+    <link rel="alternate" hreflang="sv" href="https://lightfeet-apps.github.io/wakeup/sv/faq.html">
+    <link rel="alternate" hreflang="de" href="https://lightfeet-apps.github.io/wakeup/de/faq.html">
+    <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup/es/faq.html">
+    <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup/fr/faq.html">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+
+        .toc {
+            background: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .toc-title {
+            margin: 0 0 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.45;
+        }
+
+        .toc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .top-nav a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .top-nav .back-link {
+            font-weight: 600;
+        }
+
+        .top-nav-links {
+            color: #888;
+        }
+
+        .toc-contact-tip {
+            margin: 18px 0 0;
+            padding-top: 14px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        .toc-contact-tip a {
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc-contact-tip a:hover {
+            text-decoration: underline;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            background: #f6f7f9;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+            scroll-margin-top: 24px;
+        }
+
+        .faq-item h2 {
+            margin: 0 0 16px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+            margin: 0 0 16px;
+        }
+
+        ol li, ul li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul ul, ol ul {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+
+        ul ul li, ol ul li {
+            margin-bottom: 6px;
+        }
+
+        .note {
+            background: #fff;
+            border-left: 4px solid #007aff;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #444;
+            margin-top: 16px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-to-top:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        a {
+            color: #007aff;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
+        }
+
+        .lang-nav {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .lang-nav a {
+            color: #666;
+            text-decoration: none;
+            padding: 2px 4px;
+        }
+
+        .lang-nav a:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .lang-nav a.active {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .copyright {
+            margin: 0;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <nav class="top-nav" aria-label="Site navigation">
+        <a href="index.html" class="back-link">← WakeUp Support</a>
+        <span class="top-nav-links">
+            <a href="marketing.html">About WakeUp</a>
+            &middot;
+            <a href="privacy.html">Privacy Policy</a>
+        </span>
+    </nav>
+
+    <h1>Frequently Asked Questions</h1>
+    <p class="subtitle">Help, tips, and guides for WakeUp.</p>
+
+    <nav class="toc" aria-label="On this page">
+        <h2 class="toc-title">On this page</h2>
+        <ol>
+            <li><a href="#faq-1">Will my alarm ring if my device is on silent, in Do Not Disturb, or the app is closed?</a></li>
+            <li><a href="#faq-2">How do Live Activities and Dynamic Island work with WakeUp?</a></li>
+            <li><a href="#faq-3">Why does WakeUp require iOS 26 or later?</a></li>
+            <li><a href="#faq-4">How does Dismiss Next Alarm work?</a></li>
+            <li><a href="#faq-5">How does Quick Adjust (+/-) work?</a></li>
+            <li><a href="#faq-6">I am traveling to a different time zone. What should I keep in mind?</a></li>
+            <li><a href="#faq-7">What are alarm categories and how do I use them?</a></li>
+            <li><a href="#faq-8">How does the next alarm highlight and countdown timer work?</a></li>
+            <li><a href="#faq-9">How does pausing a repeating alarm work?</a></li>
+            <li><a href="#faq-10">How do I change the time input method (Time Editor)?</a></li>
+            <li><a href="#faq-11">How can I sort my alarms?</a></li>
+            <li><a href="#faq-12">How to import custom alarm sounds to WakeUp</a></li>
+            <li><a href="#faq-13">What are the requirements and limits for custom alarm sounds?</a></li>
+            <li><a href="#faq-14">How do I set the default alarm sound or update all alarms at once?</a></li>
+            <li><a href="#faq-15">How do I edit multiple alarms at once (Edit Alarms)?</a></li>
+            <li><a href="#faq-16">How do I adjust the snooze duration or disable snooze?</a></li>
+            <li><a href="#faq-17">How do I change the app appearance (Dark Mode or Light Mode)?</a></li>
+            <li><a href="#faq-18">What languages does WakeUp support, and how do I change the language?</a></li>
+        </ol>
+        <p class="toc-contact-tip">
+            Can't find what you're looking for? <a href="index.html">Contact WakeUp Support &rarr;</a>
+        </p>
+    </nav>
+
+    <div class="faq-item" id="faq-1">
+        <h2>Will my alarm ring if my device is on silent, in Do Not Disturb, or the app is closed?</h2>
+        <p><strong>Yes.</strong> WakeUp uses Apple's native <strong>AlarmKit</strong> framework to schedule your alarms as system alarms:</p>
+        <ul>
+            <li><strong>App closed:</strong> Your alarms are scheduled as native iOS system alarms and can ring even when the app is closed. You do not need to keep the app open overnight.</li>
+            <li><strong>Silent mode & mute switch:</strong> System alarms override silent mode, ringing with audio even when your device is silenced.</li>
+            <li><strong>Do Not Disturb & Focus modes:</strong> Alarms ring normally even when Do Not Disturb, Sleep Focus, or any other Focus mode is active.</li>
+        </ul>
+        <div class="note">
+            <strong>Important:</strong> If alarm permissions have not been granted or are denied, WakeUp displays a warning at the top of your alarm list and prevents creating or saving alarms until permission is allowed. You can grant access directly from the warning's <em>Open Settings</em> button or in your device's <strong>Settings → WakeUp → Alarms</strong>.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-2">
+        <h2>How do Live Activities and Dynamic Island work with WakeUp?</h2>
+        <p>WakeUp integrates directly with iOS Live Activities and the Dynamic Island via AlarmKit and ActivityKit, allowing you to monitor active alarms and snooze countdowns at a glance without unlocking your iPhone:</p>
+        <ul>
+            <li><strong>Dynamic Island:</strong> Displays a compact alarm icon and real-time countdown at the top of your screen. Touch and hold the Dynamic Island to expand it and view detailed alarm controls.</li>
+            <li><strong>Lock Screen & Always-On Display:</strong> Shows a clean, live banner with the active alarm status and exact remaining snooze countdown right on your lock screen.</li>
+            <li><strong>Automatic Activation:</strong> Starts seamlessly when an alarm alerts or is snoozed.</li>
+        </ul>
+        <p><strong>How to ensure Live Activities are enabled:</strong> On your iPhone, open <strong>Settings → WakeUp</strong> and verify that <strong>Live Activities</strong> is switched on. Additionally, check <strong>Settings → Face ID & Passcode</strong> and ensure <em>Live Activities</em> is enabled under <em>Allow Access When Locked</em>.</p>
+        <div class="note">
+            <strong>Tip:</strong> You can interact with or monitor snoozed alarms directly from the Lock Screen banner or expanded Dynamic Island without having to open the app.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-3">
+        <h2>Why does WakeUp require iOS 26 or later?</h2>
+        <p>WakeUp is built specifically around Apple's native <strong>AlarmKit</strong> framework, which was introduced in iOS 26:</p>
+        <ul>
+            <li><strong>Native system alarms:</strong> Prior to iOS 26, third-party apps were unable to schedule true system alarms. They had to rely on standard notifications (which can be muted by silent switches or delayed) or require leaving the screen on overnight.</li>
+            <li><strong>System-level integration:</strong> AlarmKit allows WakeUp to create alarms that integrate directly into iOS, so they can sound with audio even when your device is muted, in Do Not Disturb, or when the app is closed.</li>
+            <li><strong>Modern system integration:</strong> iOS 26 and AlarmKit also power WakeUp's lock screen countdowns, Live Activities, and Dynamic Island presentations.</li>
+        </ul>
+        <div class="note">
+            <strong>Note:</strong> To provide native system alarms without legacy workarounds, WakeUp requires an iPhone or iPad running iOS 26 or later.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-4">
+        <h2>How does Dismiss Next Alarm work?</h2>
+        <p>Dismiss Next Alarm lets you skip only the upcoming occurrence of a repeating alarm (for example, if you woke up early or have a day off) without altering your regular schedule:</p>
+        <ul>
+            <li><strong>Dismissing an alarm:</strong> As the alarm time approaches, a <strong>Dismiss</strong> button (crescent moon icon) appears on the alarm row. Tapping it skips the next alarm, and WakeUp automatically returns to your regular schedule afterward.</li>
+            <li><strong>Restoring an alarm:</strong> If your plans change, tap the <strong>Next alarm is dismissed</strong> button that appears on the alarm row to restore the alarm immediately.</li>
+            <li><strong>Button visibility window:</strong> In the alarm editor, you can adjust <strong>Show Dismiss Button</strong> to control how many hours before the alarm (2, 4, 8, 12, or 24 hours) the Dismiss button appears on your screen.</li>
+        </ul>
+        <div class="note">
+            <strong>Tip:</strong> You never have to turn off a repeating alarm and remember to turn it back on – dismissing only affects the single next occurrence.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-5">
+        <h2>How does Quick Adjust (+/-) work?</h2>
+        <p>Quick Adjust lets you move only the next occurrence of a repeating alarm earlier or later without changing your regular schedule:</p>
+        <ul>
+            <li><strong>Adjusting the time:</strong> When an alarm is set for today or tomorrow, <strong>-</strong> and <strong>+</strong> buttons appear on the alarm row. Tap them to nudge the upcoming alarm earlier or later step by step.</li>
+            <li><strong>Viewing and restoring:</strong> The adjusted offset (such as <code>-10 min</code> or <code>+20 min</code>) appears as a badge on the alarm row. Tap this badge anytime to instantly restore the alarm to its original time.</li>
+            <li><strong>Automatic reset:</strong> Once the alarm rings, WakeUp automatically returns to your regular schedule for all future occurrences.</li>
+            <li><strong>Adjustment Step:</strong> In the alarm editor, you can customize the <strong>Adjustment Step</strong> to change the increment to 5, 10, 15, or 30 minutes (10 minutes is default).</li>
+        </ul>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-6">
+        <h2>I am traveling to a different time zone. What should I keep in mind?</h2>
+        <p>When you travel across time zones, keeping your alarms on schedule is simple:</p>
+        <ul>
+            <li><strong>Regular repeating alarms</strong> automatically follow your device's local time.</li>
+            <li><strong>Alarms with temporary exceptions</strong> (such as an adjusted next alarm, a skipped occurrence, or an active pause) may be scheduled in Apple's AlarmKit using a fixed point in time. When scheduled this way, they are marked in the app with a pin icon.</li>
+        </ul>
+        <p><strong>What to do:</strong> When you arrive in a new time zone, <strong>simply open WakeUp</strong>. The app automatically detects your new time zone and updates your alarms to local time.</p>
+        <p><strong>Time zone warning and details:</strong> When you arrive in a new time zone, your alarms update automatically once you open the app. As a visual safeguard, if any pinned alarm is still scheduled in a different time zone (for example, while an update is in progress or requires a retry), WakeUp displays its scheduled time zone along with a warning icon (an exclamation triangle) next to the pin. Once the update completes, the warning disappears. You can also choose to always display the time zone on pinned alarms in <strong>WakeUp → Settings → Changing time zones? → Always show time zone on pinned alarms</strong>.</p>
+        <div class="note">
+            <strong>Tip:</strong> WakeUp displays a brief confirmation once your alarms have been updated for your new time zone.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-7">
+        <h2>What are alarm categories and how do I use them?</h2>
+        <p>Alarm categories help you group and organize your alarms by routine or purpose (such as Work, Morning, Exercise, Medication, or Weekend):</p>
+        <ul>
+            <li><strong>Assign a category:</strong> When creating or editing an alarm, tap <strong>Category</strong> and choose the category that fits. You can also assign categories to multiple alarms at once using <strong>Edit Alarms</strong> from the top menu (•••).</li>
+            <li><strong>Filter the alarm list:</strong> Once you assign categories to your alarms, a filter bar appears at the top of the main screen. Tap any category icon to instantly show only those alarms, or tap the grid icon to view all alarms.</li>
+            <li><strong>Manage categories:</strong> Open the menu (•••) at the top of the alarm list and select <strong>Alarm Categories</strong> to see how many alarms belong to each category and quickly adjust their memberships.</li>
+        </ul>
+        <div class="note">
+            <strong>Tip:</strong> Filtering by category keeps your alarm list tidy and lets you focus on just the alarms you need for work, workouts, or everyday routines.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
+        <h2>How does the next alarm highlight and countdown timer work?</h2>
+        <p>WakeUp can automatically highlight the next alarm scheduled to ring in your main alarm list and display a live countdown showing exactly how much time remains (for example, <em>Next · 7 hr 25 min</em>):</p>
+        <ul>
+            <li><strong>Visual Highlight:</strong> Marks the row of the upcoming alarm with a dedicated accent badge so you can identify it at a glance.</li>
+            <li><strong>Live Countdown:</strong> Displays the remaining sleep time in hours and minutes, updating smoothly every minute.</li>
+            <li><strong>Dynamic & Smart:</strong> If you dismiss the next occurrence, adjust it earlier/later, or pause an alarm, WakeUp immediately recalculates and highlights the next active alarm.</li>
+        </ul>
+        <p><strong>How to enable or disable it:</strong> Open <strong>WakeUp → Settings → Alarm List</strong> and toggle <strong>Highlight Next Alarm</strong> (indicated with a star icon ⭐️). When turned on, the badge appears directly under the alarm time in your main list.</p>
+        <div class="note">
+            <strong>Tip:</strong> The countdown automatically accounts for Daylight Saving Time transitions.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-9">
+        <h2>How does pausing a repeating alarm work?</h2>
+        <p>Pausing allows you to temporarily suspend a repeating alarm for a specific date range (such as vacations, holidays, or business trips) without disabling the alarm entirely:</p>
+        <ul>
+            <li><strong>Scheduling a pause:</strong> Open the editor for any repeating alarm, expand <strong>Advanced Settings</strong>, and turn on <strong>Pause Alarm</strong>. Choose your desired start and end dates from the calendar.</li>
+            <li><strong>Viewing pause status:</strong> The alarm list displays clear status indicators: <strong>Pause scheduled</strong> before the pause begins, and <strong>Paused through [date]</strong> while the pause is currently active.</li>
+            <li><strong>Automatic resumption:</strong> Once the pause period ends, WakeUp automatically reactivates the alarm according to its regular recurring schedule.</li>
+            <li><strong>Editing or cancelling:</strong> You can adjust the dates or cancel the pause at any time by opening the alarm editor and turning off Pause Alarm.</li>
+        </ul>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-10">
+        <h2>How do I change the time input method (Time Editor)?</h2>
+        <p>WakeUp offers three distinct ways to set your alarm time, letting you pick whichever input method feels most comfortable for you:</p>
+        <ul>
+            <li><strong>Scroll Wheel:</strong> The familiar iOS scrolling wheel picker (default).</li>
+            <li><strong>Number Pad:</strong> Quickly type the exact alarm time using numbers.</li>
+            <li><strong>Clock Dial:</strong> An intuitive, visual round clock face where you set the time by turning the hands.</li>
+        </ul>
+        <p><strong>How to change it:</strong> Open <strong>WakeUp → Settings → Time Input</strong> (under <em>Alarm Defaults</em>) and choose your preferred editor. Your choice will be used whenever you create or edit alarms.</p>
+        <div class="note">
+            <strong>Tip:</strong> You can switch between input methods at any time in Settings to see which one feels quickest and easiest for you.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-11">
+        <h2>How can I sort my alarms?</h2>
+        <p>You can customize how your alarms are ordered in the alarm list by tapping the menu button (•••) in the top corner of the main screen and opening the <strong>Sort Alarms</strong> submenu (which also displays your active sort order, such as <em>Alarm Time</em>, <em>Next Alarm</em>, <em>Category</em>, <em>Name</em>, or <em>Custom</em>):</p>
+        <ul>
+            <li><strong>Alarm Time:</strong> Orders alarms chronologically by their set time (default).</li>
+            <li><strong>Next Alarm:</strong> Orders alarms by whichever will ring next in countdown order.</li>
+            <li><strong>Category:</strong> Groups alarms according to their assigned category (available when categories are in use).</li>
+            <li><strong>Name:</strong> Sorts alarms alphabetically by their label.</li>
+        </ul>
+        <p><strong>Advanced Sorting:</strong> In the same submenu, tap <strong>Advanced Sorting…</strong> to configure two-tier sorting with primary and secondary criteria (such as sorting by recurrence first, then by alarm time) along with ascending or descending order.</p>
+        <div class="note">
+            <strong>Tip:</strong> Sorting by "Next Alarm" is especially useful when managing multiple alarms, keeping the soonest alarm right at the top of your list.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-12">
+        <h2>How to import custom alarm sounds to WakeUp</h2>
+        <ol>
+            <li>Locate the audio file on your Mac, or find it in your Music app.</li>
+            <li>If using the Music app, right-click the track and select <strong>Show in Finder</strong>.</li>
+            <li>Copy the audio file (<code>.m4a</code>, <code>.mp3</code>, or <code>.wav</code>) to an <strong>iCloud Drive</strong> folder, or send it to your iPhone or iPad via <strong>AirDrop</strong>.</li>
+            <li>On your device, open <strong>WakeUp → Settings → Custom Sounds</strong>, tap <strong>Choose Audio File…</strong>, and select the file from the <strong>Files</strong> app.</li>
+        </ol>
+        <p><strong>Windows and other cloud services:</strong> You can also import audio files from a Windows PC. Simply transfer the file to your device using any cloud service (such as Google Drive, OneDrive, or Dropbox) or send it to yourself via email, and save it to the <strong>Files</strong> app.</p>
+        <div class="note">
+            <strong>Note:</strong> You must own the audio file you import. Only DRM-free audio (such as music you have purchased or your own recordings) is supported. Protected tracks from streaming services cannot be imported.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-13">
+        <h2>What are the requirements and limits for custom alarm sounds?</h2>
+        <p>WakeUp allows you to personalize your alarms with your own audio files:</p>
+        <ul>
+            <li><strong>Import Limit:</strong> You can import up to 20 custom sounds. If you reach the limit, delete an existing sound before importing another one.</li>
+            <li><strong>Supported Formats:</strong> AIF, AIFF, CAF, M4A, MP3, and WAV (must be DRM-free audio files).</li>
+            <li><strong>Automatic Shortening & Fade-Out:</strong> Sounds longer than 30 seconds are automatically shortened to 30 seconds, with a smooth 2-second fade-out applied at the end for an optimal alarm experience.</li>
+            <li><strong>Preview & Renaming:</strong> In <strong>Settings → Custom Sounds</strong>, tap any sound to preview it or tap and hold to rename it.</li>
+        </ul>
+        <p><strong>Safe Deletion (Sound in Use):</strong> You can delete sounds at any time by swiping. If you delete a sound that is currently assigned to one or more alarms, WakeUp safeguards your alarms by prompting you to choose a replacement sound so your alarms never ring silently.</p>
+        <div class="note">
+            <strong>Tip:</strong> All imported sounds are converted and stored locally on your device in Apple's optimized audio format, ensuring fast playback and zero network dependency.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-14">
+        <h2>How do I set the default alarm sound or update all alarms at once?</h2>
+        <p>WakeUp allows you to choose a default alarm sound for all newly created alarms, and even update every existing alarm in your list with a single tap:</p>
+        <ul>
+            <li><strong>Setting a default sound:</strong> Open <strong>WakeUp → Settings → Default Sound</strong> (under <em>Alarm Defaults</em>) and select your preferred built-in sound, custom audio file, or <em>System Default</em>.</li>
+            <li><strong>Updating all existing alarms:</strong> In the sound picker, switch on <strong>Apply to All Existing Alarms</strong> and tap <strong>Use</strong> (or <em>Apply</em>). WakeUp will update every alarm in your list instantly without needing manual editing.</li>
+            <li><strong>Individual customizations preserved:</strong> If you leave the toggle off, your new default sound will only apply to future alarms you create, leaving existing alarms unchanged.</li>
+        </ul>
+        <p><strong>Sound options:</strong> You can select any of WakeUp's bundled sounds, your imported custom sounds from <em>My Sounds</em>, or the iOS system default.</p>
+        <div class="note">
+            <strong>Tip:</strong> If you ever want to change sounds for just a few specific alarms rather than all of them, use <strong>Edit Alarms</strong> from the top menu (•••) instead.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-15">
+        <h2>How do I edit multiple alarms at once (Edit Alarms)?</h2>
+        <p>The <strong>Edit Alarms</strong> feature allows you to update settings across multiple alarms simultaneously without editing each alarm individually:</p>
+        <ul>
+            <li><strong>Open Edit Alarms:</strong> Tap the menu button (•••) in the top corner of the alarm list and select <strong>Edit Alarms</strong>.</li>
+            <li><strong>Choose what to change:</strong> Toggle on only the settings you wish to apply:
+                <ul>
+                    <li><strong>Change Alarm Sound:</strong> Apply a new built-in or custom imported sound to all selected alarms.</li>
+                    <li><strong>Change Snooze Duration:</strong> Set a uniform snooze length (5–30 minutes).</li>
+                    <li><strong>Change Category:</strong> Assign the selected alarms to a category or clear their category.</li>
+                    <li><strong>Change Adjustment Step or Dismiss Button:</strong> Customize quick adjust increments or dismiss button visibility.</li>
+                </ul>
+            </li>
+            <li><strong>Select your alarms:</strong> Choose the alarms you want to modify, or tap <strong>Select All</strong> to select all alarms at once.</li>
+            <li><strong>Save changes:</strong> Tap <strong>Apply</strong> to update all selected alarms immediately.</li>
+        </ul>
+        <div class="note">
+            <strong>Note:</strong> <strong>Edit Alarms</strong> is available in the menu (•••) when you have at least one alarm in your list (it is disabled if you have no alarms).<br><br><strong>Tip:</strong> Editing alarms this way is especially useful when you want to change the alarm sound for an entire category of alarms or adjust snooze durations across your whole schedule in seconds.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-16">
+        <h2>How do I adjust the snooze duration or disable snooze?</h2>
+        <p>Unlike standard alarms with a fixed 9-minute snooze, WakeUp gives you full control over snooze duration for each individual alarm, or lets you turn it off completely:</p>
+        <ul>
+            <li><strong>Custom Snooze Duration:</strong> Choose any duration from <strong>1 to 30 minutes</strong> using the stepper in the alarm editor.</li>
+            <li><strong>Disable Snooze:</strong> When the <strong>Snooze</strong> toggle is turned off, the alarm cannot be snoozed and can only be stopped.</li>
+            <li><strong>Edit Alarms:</strong> You can also update snooze settings across multiple alarms simultaneously using <strong>Edit Alarms</strong> in the top menu (•••).</li>
+        </ul>
+        <p><strong>How to adjust it:</strong> Tap an alarm to edit it, scroll to the <strong>Snooze</strong> section, ensure the <em>Snooze</em> toggle is on, and use the <strong>Snooze Duration</strong> stepper (+/-) to set your desired minutes.</p>
+        <div class="note">
+            <strong>Tip:</strong> When an alarm is snoozing, WakeUp displays a real-time countdown on your Lock Screen Live Activity and Dynamic Island. In addition, the snooze screen shows the time when the alarm will sound next.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-17">
+        <h2>How do I change the app appearance (Dark Mode or Light Mode)?</h2>
+        <p>WakeUp is designed to look great in both dark and light environments. By default, WakeUp uses Dark Mode, but you can change the theme or set it to follow your device at any time:</p>
+        <ul>
+            <li><strong>Dark (default):</strong> Locks WakeUp into an eye-friendly, OLED-optimized dark theme, ideal for checking alarms at bedside in a dark bedroom.</li>
+            <li><strong>Light:</strong> Keeps WakeUp in a clean, bright appearance regardless of your device's mode.</li>
+            <li><strong>System Default:</strong> Automatically matches your iPhone's appearance.</li>
+        </ul>
+        <p><strong>How to change it:</strong> Open <strong>WakeUp → Settings → Appearance</strong> and select your preferred theme. The screen includes a live preview so you can see how the interface looks before leaving settings.</p>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-18">
+        <h2>What languages does WakeUp support, and how do I change the language?</h2>
+        <p>WakeUp is fully localized into 6 languages. By default, it automatically matches your iPhone's system language, but you can also choose a different language specifically for WakeUp at any time:</p>
+        <ul>
+            <li><strong>English</strong></li>
+            <li><strong>Finnish (Suomi)</strong></li>
+            <li><strong>Swedish (Svenska)</strong></li>
+            <li><strong>German (Deutsch)</strong></li>
+            <li><strong>Spanish (Español)</strong></li>
+            <li><strong>French (Français)</strong></li>
+        </ul>
+        <p><strong>How to change the language:</strong> Open <strong>WakeUp → Settings → General → Language</strong> and pick your preferred language. You can also select <strong>System Default</strong> at any time to automatically follow your iOS system settings.</p>
+        <div class="note">
+            <strong>Tip:</strong> Changing the language in Settings instantly updates the entire app interface, alarm labels, weekdays, and Live Activities without needing to restart the app.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <p class="links-nav">
+        <a href="index.html">WakeUp Support</a>
+        &middot;
+        <a href="marketing.html">About WakeUp</a>
+        &middot;
+        <a href="privacy.html">Privacy Policy</a>
+    </p>
+
+    <footer>
+        <nav class="lang-nav" aria-label="Language selection">
+            <a href="faq.html" class="active">English</a>
+            &middot;
+            <a href="fi/faq.html">Suomi</a>
+            &middot;
+            <a href="sv/faq.html">Svenska</a>
+            &middot;
+            <a href="de/faq.html">Deutsch</a>
+            &middot;
+            <a href="es/faq.html">Español</a>
+            &middot;
+            <a href="fr/faq.html">Français</a>
+        </nav>
+        <p class="copyright">WakeUp &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
