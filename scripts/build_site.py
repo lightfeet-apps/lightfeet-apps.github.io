@@ -2,7 +2,7 @@
 """Generates Lightfeet Apps root landing pages, PlusMinus support/marketing/FAQ/privacy
 pages (EN & FI), and the unified root sitemap.xml for lightfeetapps.com.
 
-Note: WakeUp pages under /wakeup/ are mirrored separately from wakeup-support and
+Note: WakeUp pages under /wakeup/ are maintained directly in this repository and
 are not overwritten by this script.
 """
 
