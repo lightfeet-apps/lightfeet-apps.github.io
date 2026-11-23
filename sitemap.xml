@@ -2,11 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://lightfeetapps.com/</loc>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://lightfeetapps.com/fi/</loc>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/sv/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/de/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/es/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/fr/</loc>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://lightfeetapps.com/wakeup/</loc>
@@ -113,11 +129,43 @@
         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
+        <loc>https://lightfeetapps.com/plusminus/sv/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/de/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/es/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/fr/</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
         <loc>https://lightfeetapps.com/plusminus/faq.html</loc>
         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://lightfeetapps.com/plusminus/fi/faq.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/sv/faq.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/de/faq.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/es/faq.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/fr/faq.html</loc>
         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
@@ -129,11 +177,43 @@
         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
+        <loc>https://lightfeetapps.com/plusminus/sv/marketing.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/de/marketing.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/es/marketing.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/fr/marketing.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
         <loc>https://lightfeetapps.com/plusminus/privacy.html</loc>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://lightfeetapps.com/plusminus/fi/privacy.html</loc>
-        <lastmod>2026-11-23</lastmod>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/sv/privacy.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/de/privacy.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/es/privacy.html</loc>
+        <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeetapps.com/plusminus/fr/privacy.html</loc>
+        <lastmod>2026-11-24</lastmod>
     </url>
 </urlset>

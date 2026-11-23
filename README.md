@@ -7,13 +7,13 @@ Unified support, FAQ, marketing, and privacy policy website published at `https:
 ```text
 /
 ├── index.html                      # Lightfeet Apps landing page (EN)
-├── fi/index.html                   # Lightfeet Apps landing page (FI)
-├── plusminus/                      # PlusMinus pages (EN + fi/, generated)
+├── fi/, sv/, de/, es/, fr/         # Lightfeet Apps landing page translations
+├── plusminus/                      # PlusMinus pages (EN + fi, sv, de, es, fr; generated)
 │   ├── index.html                  # Support
 │   ├── faq.html                    # Frequently Asked Questions
 │   ├── marketing.html              # App overview / marketing page
 │   ├── privacy.html                # Privacy Policy
-│   └── fi/                         # Finnish translations
+│   └── fi/, sv/, de/, es/, fr/     # Language translations
 ├── wakeup/                         # WakeUp pages (EN + fi, sv, de, es, fr)
 ├── scripts/build_site.py           # Generates root, PlusMinus, and sitemap.xml
 ├── robots.txt
@@ -23,7 +23,7 @@ Unified support, FAQ, marketing, and privacy policy website published at `https:
 
 ## Regenerating Pages
 
-To regenerate the root landing pages (`index.html`, `fi/index.html`), all 8 PlusMinus pages under `plusminus/`, and `sitemap.xml`:
+To regenerate the 6 root landing pages (`index.html`, `fi/index.html`, `sv/index.html`, `de/index.html`, `es/index.html`, `fr/index.html`), all 24 PlusMinus pages under `plusminus/`, and `sitemap.xml`:
 
 ```bash
 python3 scripts/build_site.py
