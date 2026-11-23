@@ -9,12 +9,19 @@ are not overwritten by this script.
 import html
 import json
 import os
+from urllib.parse import quote
 from xml.sax.saxutils import escape as xml_escape
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_URL = "https://lightfeetapps.com"
 CONTACT_EMAIL = "contact@lightfeetapps.com"
-SUPPORT_EMAIL = "support@lightfeetapps.com"
+PLUSMINUS_EMAIL = "plusminus@lightfeetapps.com"
+PLUSMINUS_EMAIL_SUBJECTS = {
+    ("index", "en"): "PlusMinus Support",
+    ("index", "fi"): "PlusMinus-tuki",
+    ("privacy", "en"): "PlusMinus Privacy",
+    ("privacy", "fi"): "PlusMinus - Tietosuoja",
+}
 WAKEUP_LANGS = ["", "fi", "sv", "de", "es", "fr"]
 PLUSMINUS_LANGS = [
     {"code": "en", "name": "English", "dir": ""},
@@ -1019,8 +1026,8 @@ def build_pm_index(lang_code: str) -> str:
 
     <p>
         <strong>{d["email_label"]}</strong>
-        <a href="mailto:{SUPPORT_EMAIL}">
-            {SUPPORT_EMAIL}
+        <a href="mailto:{PLUSMINUS_EMAIL}?subject={quote(PLUSMINUS_EMAIL_SUBJECTS[('index', lang_code)])}">
+            {PLUSMINUS_EMAIL}
         </a>
     </p>
 
@@ -1802,8 +1809,8 @@ def build_pm_privacy(lang_code: str) -> str:
     </p>
 
     <p>
-        <a href="mailto:{SUPPORT_EMAIL}">
-            {SUPPORT_EMAIL}
+        <a href="mailto:{PLUSMINUS_EMAIL}?subject={quote(PLUSMINUS_EMAIL_SUBJECTS[('privacy', lang_code)])}">
+            {PLUSMINUS_EMAIL}
         </a>
     </p>
 
