@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusMinus FAQ – Frequently Asked Questions</title>
-    <meta name="description" content="Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, daily food budget proration, double-deduction protection, custom-month bills, rounding, backups, privacy, and supported languages.">
+    <meta name="description" content="Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, rounding, backups, privacy, and supported languages.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeetapps.com/plusminus/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeetapps.com/plusminus/faq.html">
@@ -255,11 +255,11 @@
             <li><a href="#faq-1">How is Safe to Spend calculated?</a></li>
             <li><a href="#faq-2">What is the difference between Live and Plan?</a></li>
             <li><a href="#faq-3">How does the Food Budget work, and can I override it for the current period?</a></li>
-            <li><a href="#faq-4">How does PlusMinus prevent deducting the same bill twice?</a></li>
+            <li><a href="#faq-4">How does PlusMinus prevent deducting the same expense twice?</a></li>
             <li><a href="#faq-5">How does upcoming income affect Safe to Spend?</a></li>
-            <li><a href="#faq-6">How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?</a></li>
+            <li><a href="#faq-6">How do Custom Months, Yearly, Weekly, Biweekly, One-Time items, and Plan analysis work?</a></li>
             <li><a href="#faq-7">How do Primary Payday and weekend payday shifting work?</a></li>
-            <li><a href="#faq-8">What are Coming Next Period, paying bills early, and older unsettled bills?</a></li>
+            <li><a href="#faq-8">What are Coming Next Period, paying expenses early, and older unsettled expenses?</a></li>
             <li><a href="#faq-9">How are amounts rounded?</a></li>
             <li><a href="#faq-10">Does PlusMinus connect to my bank, collect analytics, or sync automatically to the cloud?</a></li>
             <li><a href="#faq-11">How do Backup & Restore and Reset All Data work?</a></li>
@@ -272,15 +272,15 @@
 
     <div class="faq-item" id="faq-1">
         <h2>How is Safe to Spend calculated?</h2>
-        <p><strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It starts from a clear formula and automatically handles staggered recurring incomes:</p>
+        <p><strong>Live</strong> answers one practical question: <em>How much money can I safely spend right now until my next primary payday?</em> It starts from a clear formula and automatically handles scheduled upcoming income:</p>
         <ul>
-            <li><strong>Current Available Money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.</li>
-            <li><strong>Minus unpaid bills:</strong> Unpaid recurring bills and one-time bills due before your next primary payday, plus any overdue unpaid bills from the immediately preceding pay period.</li>
+            <li><strong>Current money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.</li>
+            <li><strong>Minus unpaid expenses:</strong> Unpaid recurring expenses and one-time expenses due before your next primary payday, plus any overdue unpaid expenses from the immediately preceding pay period.</li>
             <li><strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the active cash-flow horizon.</li>
-            <li><strong>Tightest cash-flow point for multiple incomes:</strong> When scheduled future recurring income arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later bills don't cause false shortages while you never spend money before it arrives. The breakdown card always matches that limiting horizon line by line, and the headline label clearly indicates <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> whenever upcoming income is factored in.</li>
+            <li><strong>Tightest cash-flow point for upcoming income:</strong> When scheduled future income (recurring or one-time) arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later expenses don't cause false shortages while you never spend money before it arrives. Tap the info button beside Safe to Spend to open <strong>Spending calculation</strong>, which always matches that limiting horizon line by line (showing <strong>Income added to this calculation</strong>, <strong>Reserved for expenses before [date]</strong>, <strong>Food estimate</strong>, and any <strong>Later unpaid expenses</strong>), while the hero overline clearly reads <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> whenever upcoming income is factored in.</li>
         </ul>
         <div class="note">
-            <strong>Tip:</strong> You can review the calculation breakdown at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>.
+            <strong>Tip:</strong> You can review the calculation rules at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>.
         </div>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
@@ -289,11 +289,11 @@
         <h2>What is the difference between Live and Plan?</h2>
         <p>PlusMinus separates day-to-day spending awareness from your long-term monthly baseline across two distinct tabs:</p>
         <ul>
-            <li><strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current Available Money</strong>, evaluates unpaid bills, remaining food, and any future scheduled recurring incomes across the tightest cash-flow point, and tells you your current <strong>Safe to Spend</strong>.</li>
-            <li><strong>Plan:</strong> Shows your steady-state <strong>Planned Monthly Remainder</strong> (normalized monthly income minus normalized monthly bills minus your monthly food budget), completely independent of today's bank balance or payday cycle length.</li>
+            <li><strong>Live:</strong> Covers right now until your next primary payday. It starts from your real <strong>Current money</strong>, evaluates unpaid expenses, remaining food, and any future scheduled incomes across the tightest cash-flow point, and tells you your current <strong>Safe to Spend</strong> alongside expandable <strong>Upcoming income</strong> and <strong>Unpaid expenses</strong> lists.</li>
+            <li><strong>Plan:</strong> Shows your steady-state <strong>Planned Monthly Remainder</strong> (normalized monthly income minus normalized monthly expenses minus your monthly food budget), completely independent of today's bank balance or payday cycle length. It also includes <strong>Where your income goes</strong> and <strong>Plan analysis</strong>, comparing your monthly allocation across categories and your food budget as amounts and shares of monthly income.</li>
         </ul>
         <div class="note">
-            <strong>Why both views?</strong> A yearly insurance bill or shorter February pay period affects how much cash you can spend right now in <strong>Live</strong>, while <strong>Plan</strong> tells you whether your normal income covers your regular expenses over time.
+            <strong>Why both views?</strong> A yearly insurance expense or shorter February pay period affects how much cash you can spend right now in <strong>Live</strong>, while <strong>Plan</strong> tells you whether your normal income covers your regular expenses over time.
         </div>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
@@ -313,36 +313,36 @@
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>How does PlusMinus prevent deducting the same bill twice?</h2>
-        <p>Because you update your balance manually without a bank connection, PlusMinus includes built-in safeguards so paid bills never reduce Safe to Spend twice:</p>
+        <h2>How does PlusMinus prevent deducting the same expense twice?</h2>
+        <p>Because you update your balance manually without a bank connection, PlusMinus includes built-in safeguards so paid expenses never reduce Safe to Spend twice:</p>
         <ul>
-            <li><strong>Two-button confirmation on Mark Paid:</strong> When marking a bill paid, PlusMinus asks whether to <strong>Subtract from Current Money</strong> or keep your balance as-is because <strong>Current Money already reflects this</strong> (with smart emphasis if you updated your balance within the last 5 minutes).</li>
-            <li><strong>Quick reconciliation chips:</strong> After a manual balance update, quick chips let you mark recently due bills as settled without subtracting them from your balance again.</li>
-            <li><strong>Safe Undo:</strong> If you tap the wrong option, tap <strong>Undo</strong> right away to restore the bill and any automatic balance change cleanly.</li>
+            <li><strong>Two-button confirmation on Mark Paid:</strong> When marking an expense paid, PlusMinus asks whether to <strong>Subtract from Current Money</strong> or keep your balance as-is because <strong>Current Money already reflects this</strong> (with smart emphasis if you updated your balance within the last 5 minutes).</li>
+            <li><strong>Quick reconciliation chips:</strong> After a manual balance update, quick chips let you mark recently due expenses as settled without subtracting them from your balance again.</li>
+            <li><strong>Safe Undo:</strong> If you tap the wrong option, tap <strong>Undo</strong> right away to restore the expense and any automatic balance change cleanly.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
 
     <div class="faq-item" id="faq-5">
         <h2>How does upcoming income affect Safe to Spend?</h2>
-        <p>PlusMinus works cleanly whether you have one main paycheck or 2&ndash;3 staggered recurring incomes arriving on different days:</p>
+        <p>PlusMinus works cleanly whether you have one main paycheck, 2&ndash;3 staggered recurring incomes, or a scheduled future one-time payment:</p>
         <ul>
-            <li><strong>Future recurring income (automatic cash-flow bottleneck):</strong> Active recurring income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later bills while never letting you spend money before it arrives.</li>
-            <li><strong>Clear labels and exact breakdown:</strong> When upcoming recurring income raises the figure above cash on hand alone, the hero label updates to <code>SAFE TO SPEND &middot; UNTIL NEXT INCOME</code> (with the full-period figure below) or <code>SAFE TO SPEND &middot; WITH UPCOMING INCOME</code> (with a <code>+ Upcoming income</code> row in the breakdown).</li>
-            <li><strong>One-time, overdue, and due-today income:</strong> One-time payments (such as tax refunds) and overdue or due-today incomes are never projected ahead of receipt &mdash; they appear as reminder rows and count once marked <strong>Received</strong> (or reflected in <strong>Current Money</strong>).</li>
-            <li><strong>No double-counting when received:</strong> Marking an included recurring income <strong>Received</strong> and adding it to <strong>Current Money</strong> moves it cleanly into your balance without double-counting.</li>
+            <li><strong>Future scheduled income (automatic cash-flow bottleneck):</strong> Active recurring and one-time income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later expenses while never letting you spend money before it arrives.</li>
+            <li><strong>Clear labels and exact breakdown:</strong> When upcoming income raises Safe to Spend above cash on hand alone, the hero overline updates to <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> (with a <code>Full period through &hellip;</code> footnote below when the limiting point ends earlier). Tap the info button for <strong>Spending calculation</strong> to inspect <strong>Income added to this calculation</strong> (distinct from the overview's total <strong>Upcoming income</strong>) and any <strong>Later unpaid expenses</strong> covered by later income.</li>
+            <li><strong>Overdue and due-today income:</strong> Overdue and due-today incomes (both recurring and one-time) are never projected ahead of receipt &mdash; they appear as reminder rows and count only once marked <strong>Received</strong> (or reflected in <strong>Current money</strong>). You can also mark a missed income as <strong>Income cancelled</strong> without altering your balance.</li>
+            <li><strong>No double-counting when received:</strong> Marking an included upcoming income <strong>Received</strong> and adding it to <strong>Current money</strong> moves it cleanly into your balance without double-counting.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?</h2>
-        <p>PlusMinus handles both regular bills and irregular schedules accurately across <strong>Plan</strong> and <strong>Live</strong>:</p>
+        <h2>How do Custom Months, Yearly, Weekly, Biweekly, One-Time items, and Plan analysis work?</h2>
+        <p>PlusMinus handles regular expenses, irregular schedules, and category breakdowns accurately across <strong>Plan</strong> and <strong>Live</strong>:</p>
         <ul>
             <li><strong>Plan normalization:</strong> Weekly items normalize via <code>&times; 52 &divide; 12</code>, every 2 weeks via <code>&times; 26 &divide; 12</code>, <strong>Custom Months</strong> (such as January &amp; October or Quarterly presets) via <code>&times; selected months &divide; 12</code>, and yearly items via <code>&divide; 12</code>.</li>
-            <li><strong>Live full deductions:</strong> Yearly and custom-month bills are deducted in full during the actual pay period when they fall due, so you see their real cash impact before payday.</li>
-            <li><strong>One-Time items:</strong> One-time income and one-time bills (for example a tax refund or car repair) have an exact date and are excluded from your steady-state <strong>Plan</strong> baseline, appearing only when due in <strong>Live</strong>.</li>
-            <li><strong>Categories &amp; optional due days:</strong> Recurring bills can be organized with optional categories (Housing, Utilities, Subscriptions, Insurance, Loan &amp; Debt, Transport, Hobbies, Saving, Giving, Other), and recurring items can omit a specific due day if needed.</li>
+            <li><strong>Live full deductions:</strong> Yearly and custom-month expenses are deducted in full during the actual pay period when they fall due, so you see their real cash impact before payday.</li>
+            <li><strong>One-Time items:</strong> One-time income and one-time expenses (for example a tax refund or car repair) have an exact date and can be added in <strong>Plan</strong> or via the <code>+</code> menu in <strong>Live</strong>. They are excluded from your steady-state <strong>Plan</strong> baseline: one-time expenses deduct in full when due in <strong>Live</strong>, while future scheduled one-time income before next payday enters the <strong>Safe to Spend</strong> cash-flow check without spending it early.</li>
+            <li><strong>17 categories, Plan analysis &amp; optional due days:</strong> Expenses can be grouped into 17 optional categories (Housing, Utilities, Subscriptions, Insurance, Loans, Credit Cards &amp; Consumer Credit, Transport, Hobbies, Sports &amp; Fitness, Investing, Health &amp; Wellbeing, Children &amp; Family, Pets, Education, Saving, Giving, Other). On <strong>Plan</strong>, <strong>Where your income goes</strong> and <strong>Plan analysis</strong> compare active recurring expense categories (plus Uncategorized and Food Budget) by monthly amount and share of monthly income. Recurring expenses can also omit a specific due day (<strong>No specific day</strong>) if needed.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
@@ -359,11 +359,11 @@
     </div>
 
     <div class="faq-item" id="faq-8">
-        <h2>What are Coming Next Period, paying bills early, and older unsettled bills?</h2>
+        <h2>What are Coming Next Period, paying expenses early, and older unsettled expenses?</h2>
         <p>PlusMinus makes it easy to stay ahead of upcoming cycles and keep older periods tidy:</p>
         <ul>
-            <li><strong>Coming Next Period &amp; early payment:</strong> Expand <strong>Coming Next Period</strong> in <strong>Live</strong> to preview bills due after your next primary payday. If you already paid a next-period bill early, mark it paid there with the same balance consistency check.</li>
-            <li><strong>Older unsettled bills (Mark older settled):</strong> Unpaid bills from before the previous cycle (up to 24 months old) are excluded from deducting against your current <strong>Safe to Spend</strong> and surfaced in a non-destructive catch-up banner with <strong>Mark older settled</strong>.</li>
+            <li><strong>Coming Next Period &amp; early payment:</strong> Expand <strong>Coming Next Period</strong> in <strong>Live</strong> to preview expenses due after your next primary payday. If you already paid a next-period expense early, mark it paid there with the same balance consistency check.</li>
+            <li><strong>Older unsettled expenses (Mark older settled):</strong> Unpaid expenses from before the previous cycle (up to 24 months old) are excluded from deducting against your current <strong>Safe to Spend</strong> and surfaced in a non-destructive catch-up banner with <strong>Mark older settled</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
@@ -383,7 +383,7 @@
         <h2>Does PlusMinus connect to my bank, collect analytics, or sync automatically to the cloud?</h2>
         <p>No. PlusMinus is built strictly as a local-first, zero-tracking app:</p>
         <ul>
-            <li><strong>Stored on your device:</strong> Balances, incomes, bills, payment history, and preferences stay locally on your iPhone or iPad.</li>
+            <li><strong>Stored on your device:</strong> Balances, incomes, expenses, payment history, and preferences stay locally on your iPhone or iPad.</li>
             <li><strong>No accounts or bank links:</strong> PlusMinus requires no account and never asks for bank credentials or Open Banking access.</li>
             <li><strong>Zero tracking or ads:</strong> There are no analytics SDKs, no advertising identifiers, and no automatic cloud sync in the background.</li>
         </ul>
@@ -395,7 +395,7 @@
         <p>You stay in full control of your local budget data at all times:</p>
         <ul>
             <li><strong>Create Backup:</strong> Open <strong>Settings &rarr; Data &amp; Privacy &rarr; Backup &amp; Restore</strong> and tap <strong>Create Backup</strong> to export a readable JSON archive (<code>.plusminusbackup</code>, not password-protected) to iCloud Drive, local storage, or any location in Files.</li>
-            <li><strong>Restore from Backup:</strong> Tap <strong>Restore from Backup</strong> and select a valid <code>.plusminusbackup</code> file (up to 50 MB). Restoring replaces all current budget data and restores the balance from when the backup was created, while keeping your app language unchanged.</li>
+            <li><strong>Restore from Backup:</strong> Tap <strong>Restore from Backup</strong> and select a valid <code>.plusminusbackup</code> file (up to 50 MB). Restoring replaces all current budget data and restores the balance from when the backup was created, while keeping your app language and appearance unchanged.</li>
             <li><strong>Reset All Data:</strong> Under <strong>Settings &rarr; Data &amp; Privacy</strong>, <strong>Reset All Data</strong> uses a two-step confirmation to erase all local budget data and preferences on this device and return to initial setup. Exported backup files and iOS system backups are not deleted.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>

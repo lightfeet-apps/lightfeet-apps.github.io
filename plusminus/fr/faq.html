@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusMinus FAQ – Foire aux questions</title>
-    <meta name="description" content="Questions fréquentes et guides pour PlusMinus sur iPhone et iPad : Disponible à dépenser, Actuel et Plan, budget alimentation, double déduction, mois sélectionnés, arrondis, sauvegardes, confidentialité et langues.">
+    <meta name="description" content="Questions fréquentes et guides pour PlusMinus sur iPhone et iPad : Disponible à dépenser, Actuel et Plan, analyse du plan, budget alimentation, double déduction, mois sélectionnés, arrondis, sauvegardes, confidentialité et langues.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeetapps.com/plusminus/fr/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeetapps.com/plusminus/faq.html">
@@ -255,9 +255,9 @@
             <li><a href="#faq-1">Comment est calculé le montant Disponible à dépenser ?</a></li>
             <li><a href="#faq-2">Quelle est la différence entre Actuel et Plan ?</a></li>
             <li><a href="#faq-3">Comment fonctionne le budget alimentation et puis-je le modifier pour ce cycle ?</a></li>
-            <li><a href="#faq-4">Comment PlusMinus évite-t-il de déduire deux fois la même facture ?</a></li>
+            <li><a href="#faq-4">Comment PlusMinus évite-t-il de déduire deux fois la même dépense ?</a></li>
             <li><a href="#faq-5">Quel est l’impact des revenus à venir sur Disponible à dépenser ?</a></li>
-            <li><a href="#faq-6">Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines et Ponctuel ?</a></li>
+            <li><a href="#faq-6">Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines, Ponctuel et Analyse du plan ?</a></li>
             <li><a href="#faq-7">Comment fonctionnent le Jour de paie principal et le décalage du week-end ?</a></li>
             <li><a href="#faq-8">Que sont À venir pour la prochaine période, le paiement anticipé et Marquer les anciennes comme réglées ?</a></li>
             <li><a href="#faq-9">Comment les montants sont-ils arrondis ?</a></li>
@@ -272,12 +272,12 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Comment est calculé le montant Disponible à dépenser ?</h2>
-        <p><strong>Actuel</strong> répond à une question pratique : <em>De combien puis-je disposer sereinement dès maintenant jusqu’à mon prochain jour de paie principal ?</em> Le calcul part d’une formule limpide et gère automatiquement plusieurs revenus récurrents :</p>
+        <p><strong>Actuel</strong> répond à une question pratique : <em>De combien puis-je disposer sereinement dès maintenant jusqu’à mon prochain jour de paie principal ?</em> Le calcul part d’une formule limpide et gère automatiquement les revenus futurs prévus :</p>
         <ul>
-            <li><strong>Argent disponible actuel :</strong> Le solde de votre compte ou de vos espèces mis à jour manuellement à cet instant, avec un horodatage relatif de la dernière mise à jour.</li>
-            <li><strong>Moins les factures impayées :</strong> Les factures récurrentes impayées et les dépenses ponctuelles arrivant à échéance avant votre prochain jour de paie principal, ainsi que les factures impayées en retard du cycle de paie immédiatement précédent.</li>
+            <li><strong>Argent actuel :</strong> Le solde de votre compte ou de vos espèces mis à jour manuellement à cet instant, avec un horodatage relatif de la dernière mise à jour.</li>
+            <li><strong>Moins les dépenses impayées :</strong> Les dépenses récurrentes impayées et les dépenses ponctuelles arrivant à échéance avant votre prochain jour de paie principal, ainsi que les dépenses impayées en retard du cycle de paie immédiatement précédent.</li>
             <li><strong>Moins l’estimation alimentation restante :</strong> Votre budget alimentation restant estimé sur l’horizon de trésorerie actif.</li>
-            <li><strong>Point de trésorerie le plus serré avec plusieurs revenus :</strong> Lorsqu’un revenu récurrent prévu arrive avant votre prochain jour de paie principal, PlusMinus évalue votre solde avant chaque prochaine date de revenu ainsi qu’à la fin du cycle et retient le point le plus serré : les factures ultérieures ne créent pas de faux déficit, tout en vous empêchant de dépenser l’argent avant de le recevoir. Le détail correspond toujours ligne par ligne à cet horizon contraignant, et l’intitulé indique clairement <code>DISPONIBLE &middot; JUSQU’AU PROCHAIN REVENU</code> ou <code>DISPONIBLE &middot; REVENUS À VENIR INCLUS</code> lorsqu’un revenu à venir entre en jeu.</li>
+            <li><strong>Point de trésorerie le plus serré avec des revenus à venir :</strong> Lorsqu’un revenu futur prévu (récurrent ou ponctuel) arrive avant votre prochain jour de paie principal, PlusMinus évalue votre solde avant chaque prochaine date de revenu ainsi qu’à la fin du cycle et retient le point le plus serré : les dépenses ultérieures ne créent pas de faux déficit, tout en vous empêchant de dépenser l’argent avant de le recevoir. Touchez le bouton d’information à côté de Disponible à dépenser pour ouvrir le <strong>Calcul du disponible</strong> (affichant <strong>Revenus ajoutés à ce calcul</strong>, <strong>Réservé aux dépenses avant le [date]</strong>, <strong>Estimation alimentation</strong> et les éventuelles <strong>Dépenses impayées ultérieures</strong>), et l’intitulé indique clairement <code>DISPONIBLE &middot; REVENUS À VENIR PRIS EN COMPTE</code>.</li>
         </ul>
         <div class="note">
             <strong>Astuce :</strong> Vous pouvez consulter à tout moment le détail des règles dans l’app sous <strong>Réglages &rarr; Comprendre PlusMinus &rarr; Fonctionnement des calculs</strong>.
@@ -289,11 +289,11 @@
         <h2>Quelle est la différence entre Actuel et Plan ?</h2>
         <p>PlusMinus sépare clairement votre marge de manœuvre immédiate de votre référence mensuelle régulière dans deux onglets distincts :</p>
         <ul>
-            <li><strong>Actuel :</strong> Couvre la période de maintenant jusqu’à votre prochain jour de paie principal. Cet onglet part de votre vrai solde <strong>Argent actuel</strong>, examine les factures impayées, l’alimentation restante et les éventuels revenus récurrents futurs au point de trésorerie le plus serré pour afficher votre <strong>Disponible à dépenser</strong>.</li>
-            <li><strong>Plan :</strong> Affiche votre <strong>Reste mensuel prévu</strong> normalisé (revenus mensuels normalisés moins factures mensuelles normalisées moins votre budget alimentation mensuel), totalement indépendant du solde du jour ou de la durée du cycle de paie.</li>
+            <li><strong>Actuel :</strong> Couvre la période de maintenant jusqu’à votre prochain jour de paie principal. Cet onglet part de votre vrai solde <strong>Argent actuel</strong>, examine les dépenses impayées, l’alimentation restante et les éventuels revenus futurs prévus au point de trésorerie le plus serré pour afficher votre <strong>Disponible à dépenser</strong> avec les listes dépliables <strong>Revenus à venir</strong> et <strong>Dépenses impayées</strong>.</li>
+            <li><strong>Plan :</strong> Affiche votre <strong>Reste mensuel prévu</strong> normalisé (revenus mensuels normalisés moins dépenses mensuelles normalisées moins votre budget alimentation mensuel), totalement indépendant du solde du jour ou de la durée du cycle de paie. Il propose également <strong>Où vont vos revenus</strong> et l’<strong>Analyse du plan</strong> pour comparer la répartition mensuelle par catégorie de dépenses et le budget alimentation en montants et en part des revenus mensuels.</li>
         </ul>
         <div class="note">
-            <strong>Pourquoi deux vues ?</strong> Une facture d’assurance annuelle ou un mois de février plus court influe directement sur le cash disponible aujourd’hui dans <strong>Actuel</strong>, tandis que <strong>Plan</strong> vérifie si vos revenus habituels couvrent vos dépenses régulières dans la durée.
+            <strong>Pourquoi deux vues ?</strong> Une dépense d’assurance annuelle ou un mois de février plus court influe directement sur le cash disponible aujourd’hui dans <strong>Actuel</strong>, tandis que <strong>Plan</strong> vérifie si vos revenus habituels couvrent vos dépenses régulières dans la durée.
         </div>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>
     </div>
@@ -313,36 +313,36 @@
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>Comment PlusMinus évite-t-il de déduire deux fois la même facture ?</h2>
+        <h2>Comment PlusMinus évite-t-il de déduire deux fois la même dépense ?</h2>
         <p>Comme vous mettez à jour votre solde manuellement sans connexion bancaire, PlusMinus intègre plusieurs garde-fous contre les doubles déductions :</p>
         <ul>
-            <li><strong>Confirmation à deux choix sur Payée :</strong> Lorsque vous marquez une facture comme <strong>Payée</strong>, PlusMinus demande s’il faut <strong>Soustraire de l’argent actuel</strong> ou garder le solde tel quel parce que <strong>L’argent actuel en tient déjà compte</strong> (avec mise en avant intelligente si vous avez mis à jour votre solde dans les 5 dernières minutes).</li>
-            <li><strong>Raccourcis de rapprochement rapide :</strong> Après une mise à jour manuelle du solde, des pastilles rapides permettent de valider les factures récemment échues sans les soustraire de nouveau de votre solde.</li>
-            <li><strong>Annulation sûre :</strong> En cas d’erreur, touchez aussitôt <strong>Annuler</strong> pour rétablir proprement la facture et tout ajustement automatique du solde.</li>
+            <li><strong>Confirmation à deux choix sur Payée :</strong> Lorsque vous marquez une dépense comme <strong>Payée</strong>, PlusMinus demande s’il faut <strong>Soustraire de l’argent actuel</strong> ou garder le solde tel quel parce que <strong>L’argent actuel en tient déjà compte</strong> (avec mise en avant intelligente si vous avez mis à jour votre solde dans les 5 dernières minutes).</li>
+            <li><strong>Raccourcis de rapprochement rapide :</strong> Après une mise à jour manuelle du solde, des pastilles rapides permettent de valider les dépenses récemment échues sans les soustraire de nouveau de votre solde.</li>
+            <li><strong>Annulation sûre :</strong> En cas d’erreur, touchez aussitôt <strong>Annuler</strong> pour rétablir proprement la dépense et tout ajustement automatique du solde.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>
     </div>
 
     <div class="faq-item" id="faq-5">
         <h2>Quel est l’impact des revenus à venir sur Disponible à dépenser ?</h2>
-        <p>PlusMinus fonctionne avec la même clarté que vous ayez un seul salaire principal ou 2&ndash;3 revenus récurrents versés à des dates différentes :</p>
+        <p>PlusMinus fonctionne avec la même clarté que vous ayez un seul salaire principal, 2&ndash;3 revenus récurrents versés à des dates différentes ou un revenu ponctuel prévu :</p>
         <ul>
-            <li><strong>Revenus récurrents futurs (goulot de trésorerie automatique) :</strong> Les revenus récurrents actifs prévus strictement après aujourd’hui (et après le jour de paie nominal du cycle en cours en cas d’avance au vendredi) et avant le prochain jour de paie principal sont pris en compte automatiquement via le point de contrôle le plus serré &mdash; évitant de faux déficits dus aux factures ultérieures sans jamais dépenser d’argent à l’avance.</li>
-            <li><strong>Libellés clairs et détail exact :</strong> Lorsque des revenus à venir relèvent le disponible par rapport à la seule trésorerie en main, le titre passe à <code>DISPONIBLE &middot; JUSQU’AU PROCHAIN REVENU</code> (avec le total sur l’ensemble du cycle dessous) ou à <code>DISPONIBLE &middot; REVENUS À VENIR INCLUS</code> (avec une ligne <code>+ Revenus à venir</code> dans le détail).</li>
-            <li><strong>Revenus ponctuels, en retard et prévus aujourd’hui :</strong> Les versements ponctuels (comme un remboursement d’impôt) et les revenus en retard ou attendus aujourd’hui ne sont jamais anticipés &mdash; ils figurent en rappel et comptent uniquement une fois marqués comme <strong>Reçu</strong> (ou intégrés dans <strong>Argent actuel</strong>).</li>
-            <li><strong>Aucun double comptage à la réception :</strong> Lorsque vous marquez un revenu récurrent inclus comme <strong>Reçu</strong> et l’ajoutez à <strong>Argent actuel</strong>, il rejoint votre solde sans être compté deux fois.</li>
+            <li><strong>Revenus futurs prévus (goulot de trésorerie automatique) :</strong> Les revenus récurrents et ponctuels actifs prévus strictement après aujourd’hui (et après le jour de paie nominal du cycle en cours en cas d’avance au vendredi) et avant le prochain jour de paie principal sont pris en compte automatiquement via le point de contrôle le plus serré &mdash; évitant de faux déficits dus aux dépenses ultérieures sans jamais dépenser d’argent à l’avance.</li>
+            <li><strong>Libellés clairs et détail exact :</strong> Lorsque des revenus à venir relèvent le disponible par rapport à la seule trésorerie en main, le titre passe à <code>DISPONIBLE &middot; REVENUS À VENIR PRIS EN COMPTE</code> (avec la mention <code>Période complète jusqu’au &hellip;</code> dessous si le point contraignant arrive plus tôt). Touchez le bouton d’information pour ouvrir le <strong>Calcul du disponible</strong> et consulter <strong>Revenus ajoutés à ce calcul</strong> (distinct du total <strong>Revenus à venir</strong> de l’aperçu) ainsi que les éventuelles <strong>Dépenses impayées ultérieures</strong>.</li>
+            <li><strong>Revenus en retard et prévus aujourd’hui :</strong> Les revenus en retard ou attendus aujourd’hui (récurrents comme ponctuels) ne sont jamais anticipés &mdash; ils figurent en rappel et comptent uniquement une fois marqués comme <strong>Reçu</strong> (ou intégrés dans <strong>Argent actuel</strong>). Un revenu annulé peut être marqué comme <strong>Revenu annulé</strong> sans modifier votre solde.</li>
+            <li><strong>Aucun double comptage à la réception :</strong> Lorsque vous marquez un revenu à venir inclus comme <strong>Reçu</strong> et l’ajoutez à <strong>Argent actuel</strong>, il rejoint votre solde sans être compté deux fois.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines et Ponctuel ?</h2>
-        <p>PlusMinus gère avec précision aussi bien les échéances régulières que les fréquences ponctuelles ou espacées entre <strong>Plan</strong> et <strong>Actuel</strong> :</p>
+        <h2>Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines, Ponctuel et Analyse du plan ?</h2>
+        <p>PlusMinus gère avec précision les dépenses régulières, les fréquences ponctuelles ou espacées et la répartition par catégorie entre <strong>Plan</strong> et <strong>Actuel</strong> :</p>
         <ul>
             <li><strong>Normalisation dans Plan :</strong> Les éléments hebdomadaires sont normalisés via <code>&times; 52 &divide; 12</code>, toutes les 2 semaines via <code>&times; 26 &divide; 12</code>, <strong>Mois sélectionnés</strong> (comme janvier &amp; octobre ou trimestriels) via <code>&times; mois sélectionnés &divide; 12</code>, et les éléments annuels via <code>&divide; 12</code>.</li>
-            <li><strong>Déduction intégrale dans Actuel :</strong> Les factures annuelles et des mois sélectionnés sont déduites en entier durant le cycle de paie où elles arrivent à échéance, pour refléter leur impact réel.</li>
-            <li><strong>Éléments ponctuels :</strong> Les revenus et factures de type <strong>Ponctuel</strong> (par exemple un remboursement fiscal ou une réparation auto) ont une date précise, restent exclus de la base mensuelle de <strong>Plan</strong> et n’apparaissent dans <strong>Actuel</strong> que lorsqu’ils sont dus.</li>
-            <li><strong>Catégories et jour d’échéance facultatif :</strong> Les factures récurrentes peuvent être classées par catégorie (Logement, Eau et énergie, Abonnements, Assurance, Prêts et dettes, Transport, Loisirs, Épargne, Dons, Autre), et il est possible d’omettre un jour précis d’échéance au besoin.</li>
+            <li><strong>Déduction intégrale dans Actuel :</strong> Les dépenses annuelles et des mois sélectionnés sont déduites en entier durant le cycle de paie où elles arrivent à échéance, pour refléter leur impact réel.</li>
+            <li><strong>Éléments ponctuels :</strong> Les revenus et dépenses de type <strong>Ponctuel</strong> (par exemple un remboursement fiscal ou une réparation auto) ont une date précise et peuvent être ajoutés dans <strong>Plan</strong> ou via le menu <code>+</code> dans <strong>Actuel</strong>. Ils restent exclus de la base mensuelle de <strong>Plan</strong> : les dépenses ponctuelles sont déduites intégralement à échéance dans <strong>Actuel</strong>, et les revenus ponctuels futurs avant le prochain jour de paie participent au contrôle de trésorerie de <strong>Disponible à dépenser</strong> sans être dépensés d’avance.</li>
+            <li><strong>17 catégories, Analyse du plan et jour d’échéance facultatif :</strong> Les dépenses peuvent être classées parmi 17 catégories facultatives (Logement, Eau et énergie, Abonnements, Assurance, Prêts, Cartes de crédit et crédit à la consommation, Transport, Loisirs, Sport et fitness, Investissement, Santé et bien-être, Enfants et famille, Animaux, Éducation, Épargne, Dons, Autre). Dans <strong>Plan</strong>, <strong>Où vont vos revenus</strong> et <strong>Analyse du plan</strong> comparent les dépenses récurrentes actives par catégorie (plus Sans catégorie et Budget alimentation) par montant mensuel et part des revenus. Pour les dépenses récurrentes, il est aussi possible de choisir <strong>Aucun jour précis</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>
     </div>
@@ -362,8 +362,8 @@
         <h2>Que sont À venir pour la prochaine période, le paiement anticipé et Marquer les anciennes comme réglées ?</h2>
         <p>PlusMinus vous aide à anticiper les cycles suivants tout en gardant les anciens cycles bien ordonnés :</p>
         <ul>
-            <li><strong>À venir pour la prochaine période et paiement anticipé :</strong> Dépliez <strong>À venir pour la prochaine période</strong> dans <strong>Actuel</strong> pour voir les factures échues après votre prochain jour de paie principal. Si vous avez déjà payé l’une d’elles à l’avance, marquez-la payée ici avec la même vérification du solde.</li>
-            <li><strong>Anciennes factures non réglées (Marquer les anciennes comme réglées) :</strong> Les factures impayées antérieures au cycle précédent (jusqu’à 24 mois en arrière) ne sont pas déduites de votre <strong>Disponible à dépenser</strong> actuel et apparaissent dans un bandeau dédié avec l’action <strong>Marquer les anciennes comme réglées</strong>.</li>
+            <li><strong>À venir pour la prochaine période et paiement anticipé :</strong> Dépliez <strong>À venir pour la prochaine période</strong> dans <strong>Actuel</strong> pour voir les dépenses échues après votre prochain jour de paie principal. Si vous avez déjà payé l’une d’elles à l’avance, marquez-la payée ici avec la même vérification du solde.</li>
+            <li><strong>Anciennes dépenses non réglées (Marquer les anciennes comme réglées) :</strong> Les dépenses impayées antérieures au cycle précédent (jusqu’à 24 mois en arrière) ne sont pas déduites de votre <strong>Disponible à dépenser</strong> actuel et apparaissent dans un bandeau dédié avec l’action <strong>Marquer les anciennes comme réglées</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>
     </div>
@@ -383,7 +383,7 @@
         <h2>PlusMinus se connecte-t-elle à ma banque, collecte-t-elle des statistiques ou synchronise-t-elle dans le cloud ?</h2>
         <p>Non. PlusMinus est conçue exclusivement comme une app locale et sans suivi :</p>
         <ul>
-            <li><strong>Stocké sur votre appareil :</strong> Soldes, revenus, factures, historique des paiements et réglages restent localement sur votre iPhone ou iPad.</li>
+            <li><strong>Stocké sur votre appareil :</strong> Soldes, revenus, dépenses, historique des paiements et réglages restent localement sur votre iPhone ou iPad.</li>
             <li><strong>Aucun compte ni connexion bancaire :</strong> PlusMinus ne demande aucun compte et n’exige jamais vos identifiants bancaires ni un accès Open Banking.</li>
             <li><strong>Zéro pistage ni publicité :</strong> L’app n’intègre aucun SDK analytique, aucun identifiant publicitaire et aucune synchronisation cloud automatique en arrière-plan.</li>
         </ul>
@@ -395,7 +395,7 @@
         <p>Vous gardez à tout moment le contrôle total de vos données budgétaires locales :</p>
         <ul>
             <li><strong>Créer une sauvegarde :</strong> Ouvrez <strong>Réglages &rarr; Données et confidentialité &rarr; Sauvegarde et restauration</strong> et touchez <strong>Créer une sauvegarde</strong> pour exporter une archive JSON lisible (<code>.plusminusbackup</code>, non protégée par mot de passe) vers iCloud Drive, le stockage local ou n’importe quel dossier de Fichiers.</li>
-            <li><strong>Restaurer à partir d’une sauvegarde :</strong> Touchez <strong>Restaurer à partir d’une sauvegarde</strong> et sélectionnez un fichier <code>.plusminusbackup</code> valide (jusqu’à 50 Mo). La restauration remplace toutes les données budgétaires actuelles et rétablit le solde tel qu’il était lors de la sauvegarde, tout en conservant la langue actuelle de l’app.</li>
+            <li><strong>Restaurer à partir d’une sauvegarde :</strong> Touchez <strong>Restaurer à partir d’une sauvegarde</strong> et sélectionnez un fichier <code>.plusminusbackup</code> valide (jusqu’à 50 Mo). La restauration remplace toutes les données budgétaires actuelles et rétablit le solde tel qu’il était lors de la sauvegarde, tout en conservant la langue et l’apparence actuelles de l’app.</li>
             <li><strong>Réinitialiser toutes les données :</strong> Sous <strong>Réglages &rarr; Données et confidentialité</strong>, <strong>Réinitialiser toutes les données</strong> efface après double confirmation toutes les données budgétaires et préférences locales sur cet appareil et revient à la configuration initiale. Les sauvegardes exportées et les sauvegardes système iOS ne sont pas supprimées.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Haut de page</a>

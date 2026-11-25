@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusMinus FAQ – Preguntas frecuentes</title>
-    <meta name="description" content="Preguntas frecuentes y guías de PlusMinus para iPhone y iPad: Disponible para gastar, Actual vs. Plan, presupuesto de comida, prevención de cobro doble, meses seleccionados, redondeo, copias de seguridad, privacidad e idiomas.">
+    <meta name="description" content="Preguntas frecuentes y guías de PlusMinus para iPhone y iPad: Disponible para gastar, Actual vs. Plan, análisis del plan, presupuesto de comida, prevención de cobro doble, meses seleccionados, redondeo, copias de seguridad, privacidad e idiomas.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeetapps.com/plusminus/es/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeetapps.com/plusminus/faq.html">
@@ -255,9 +255,9 @@
             <li><a href="#faq-1">¿Cómo se calcula Disponible para gastar?</a></li>
             <li><a href="#faq-2">¿Cuál es la diferencia entre Actual y Plan?</a></li>
             <li><a href="#faq-3">¿Cómo funciona el presupuesto de comida y puedo ajustarlo para este período?</a></li>
-            <li><a href="#faq-4">¿Cómo evita PlusMinus restar la misma factura dos veces?</a></li>
+            <li><a href="#faq-4">¿Cómo evita PlusMinus restar el mismo gasto dos veces?</a></li>
             <li><a href="#faq-5">¿Cómo afectan los ingresos próximos a Disponible para gastar?</a></li>
-            <li><a href="#faq-6">¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas y Puntual?</a></li>
+            <li><a href="#faq-6">¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas, Puntual y Análisis del plan?</a></li>
             <li><a href="#faq-7">¿Cómo funcionan el Día de cobro principal y el ajuste por fin de semana?</a></li>
             <li><a href="#faq-8">¿Qué son Próximo período, el pago anticipado y Marcar anteriores como saldadas?</a></li>
             <li><a href="#faq-9">¿Cómo se redondean los importes?</a></li>
@@ -272,12 +272,12 @@
 
     <div class="faq-item" id="faq-1">
         <h2>¿Cómo se calcula Disponible para gastar?</h2>
-        <p><strong>Actual</strong> responde a una pregunta práctica: <em>¿Cuánto dinero puedo gastar con tranquilidad ahora mismo hasta mi próximo día de cobro principal?</em> Parte de una fórmula clara y contempla automáticamente varios ingresos recurrentes:</p>
+        <p><strong>Actual</strong> responde a una pregunta práctica: <em>¿Cuánto dinero puedo gastar con tranquilidad ahora mismo hasta mi próximo día de cobro principal?</em> Parte de una fórmula clara y contempla automáticamente los ingresos futuros programados:</p>
         <ul>
-            <li><strong>Dinero disponible actual:</strong> Tu saldo bancario o en efectivo actualizado manualmente ahora mismo, junto con la fecha relativa de su última actualización.</li>
-            <li><strong>Menos facturas pendientes:</strong> Las facturas recurrentes pendientes y los gastos puntuales que vencen antes de tu próximo día de cobro principal, además de las facturas pendientes vencidas del ciclo de cobro inmediatamente anterior.</li>
+            <li><strong>Dinero actual:</strong> Tu saldo bancario o en efectivo actualizado manualmente ahora mismo, junto con la fecha relativa de su última actualización.</li>
+            <li><strong>Menos gastos pendientes:</strong> Los gastos recurrentes pendientes y los gastos puntuales que vencen antes de tu próximo día de cobro principal, además de los gastos pendientes vencidos del ciclo de cobro inmediatamente anterior.</li>
             <li><strong>Menos estimación de comida restante:</strong> Tu presupuesto de comida restante estimado para el horizonte de flujo de caja activo.</li>
-            <li><strong>Punto más ajustado del flujo de caja con varios ingresos:</strong> Cuando hay ingresos recurrentes futuros programados antes de tu próximo día de cobro principal, PlusMinus evalúa tu saldo antes de cada próximo ingreso y al final del ciclo, eligiendo el punto más ajustado para que las facturas posteriores no generen déficits falsos sin permitirte gastar dinero antes de recibirlo. El desglose siempre coincide línea por línea con ese horizonte limitante, y el encabezado indica <code>DISPONIBLE &middot; HASTA EL PRÓXIMO INGRESO</code> o <code>DISPONIBLE &middot; CON INGRESOS PRÓXIMOS</code> cuando se incluyen ingresos próximos.</li>
+            <li><strong>Punto más ajustado del flujo de caja con ingresos próximos:</strong> Cuando hay ingresos futuros programados (recurrentes o puntuales) antes de tu próximo día de cobro principal, PlusMinus evalúa tu saldo antes de cada próximo ingreso y al final del ciclo, eligiendo el punto más ajustado para que los gastos posteriores no generen déficits falsos sin permitirte gastar dinero antes de recibirlo. Toca el botón de información junto a Disponible para abrir <strong>Cálculo del disponible</strong> (con <strong>Ingresos añadidos a este cálculo</strong>, <strong>Reservado para gastos anteriores al [fecha]</strong>, <strong>Estimación de comida</strong> y los posibles <strong>Gastos pendientes posteriores</strong>), y el encabezado muestra claramente <code>DISPONIBLE &middot; CONSIDERANDO LOS PRÓXIMOS INGRESOS</code>.</li>
         </ul>
         <div class="note">
             <strong>Consejo:</strong> Puedes revisar las reglas de cálculo en cualquier momento dentro de la app en <strong>Ajustes &rarr; Funcionamiento de PlusMinus &rarr; Cómo funcionan los cálculos</strong>.
@@ -289,8 +289,8 @@
         <h2>¿Cuál es la diferencia entre Actual y Plan?</h2>
         <p>PlusMinus separa el margen del día a día de tu referencia mensual estable en dos pestañas distintas:</p>
         <ul>
-            <li><strong>Actual:</strong> Abarca desde ahora mismo hasta tu próximo día de cobro principal. Parte de tu <strong>Dinero actual</strong> real, evalúa las facturas pendientes, la comida restante y cualquier ingreso recurrente futuro según el punto más ajustado del flujo de caja, y muestra tu importe <strong>Disponible para gastar</strong>.</li>
-            <li><strong>Plan:</strong> Muestra tu <strong>Excedente mensual previsto</strong> normalizado (ingresos mensuales normalizados menos facturas mensuales normalizadas menos tu presupuesto mensual de comida), totalmente independiente del saldo bancario de hoy o de la duración del ciclo.</li>
+            <li><strong>Actual:</strong> Abarca desde ahora mismo hasta tu próximo día de cobro principal. Parte de tu <strong>Dinero actual</strong> real, evalúa los gastos pendientes, la comida restante y cualquier ingreso futuro programado según el punto más ajustado del flujo de caja, y muestra tu importe <strong>Disponible para gastar</strong> junto con listas desplegables de <strong>Ingresos próximos</strong> y <strong>Gastos pendientes</strong>.</li>
+            <li><strong>Plan:</strong> Muestra tu <strong>Excedente mensual previsto</strong> normalizado (ingresos mensuales normalizados menos gastos mensuales normalizados menos tu presupuesto mensual de comida), totalmente independiente del saldo bancario de hoy o de la duración del ciclo. Además incluye <strong>A dónde van tus ingresos</strong> y <strong>Análisis del plan</strong>, comparando tus categorías de gastos y tu presupuesto de comida en importes mensuales y porcentaje sobre los ingresos.</li>
         </ul>
         <div class="note">
             <strong>¿Por qué dos vistas?</strong> Un seguro anual o un febrero más corto afecta al efectivo disponible hoy en <strong>Actual</strong>, mientras que <strong>Plan</strong> te confirma si tus ingresos habituales cubren tus gastos periódicos a largo plazo.
@@ -313,36 +313,36 @@
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>¿Cómo evita PlusMinus restar la misma factura dos veces?</h2>
-        <p>Como actualizas tu saldo manualmente sin conexión bancaria, PlusMinus incorpora controles para que una factura pagada nunca se descuente dos veces:</p>
+        <h2>¿Cómo evita PlusMinus restar el mismo gasto dos veces?</h2>
+        <p>Como actualizas tu saldo manualmente sin conexión bancaria, PlusMinus incorpora controles para que un gasto pagado nunca se descuente dos veces:</p>
         <ul>
-            <li><strong>Confirmación de dos opciones al marcar como pagada:</strong> Al tocar <strong>Marcar como pagada</strong>, PlusMinus pregunta si quieres <strong>Restar del dinero actual</strong> o dejar el saldo igual porque <strong>El dinero actual ya lo refleja</strong> (destacando esta opción si actualizaste tu saldo en los últimos 5 minutos).</li>
-            <li><strong>Chips de conciliación rápida:</strong> Tras una actualización manual del saldo, los chips rápidos te permiten marcar como saldadas las facturas vencidas recientemente sin volver a restarlas del saldo.</li>
-            <li><strong>Deshacer seguro:</strong> Si te equivocas de opción, toca <strong>Deshacer</strong> al instante para restaurar tanto la factura como cualquier cambio automático de saldo.</li>
+            <li><strong>Confirmación de dos opciones al marcar como pagado:</strong> Al tocar <strong>Marcar como pagado</strong>, PlusMinus pregunta si quieres <strong>Restar del dinero actual</strong> o dejar el saldo igual porque <strong>El dinero actual ya lo refleja</strong> (destacando esta opción si actualizaste tu saldo en los últimos 5 minutos).</li>
+            <li><strong>Chips de conciliación rápida:</strong> Tras una actualización manual del saldo, los chips rápidos te permiten marcar como saldados los gastos vencidos recientemente sin volver a restarlos del saldo.</li>
+            <li><strong>Deshacer seguro:</strong> Si te equivocas de opción, toca <strong>Deshacer</strong> al instante para restaurar tanto el gasto como cualquier cambio automático de saldo.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Volver arriba</a>
     </div>
 
     <div class="faq-item" id="faq-5">
         <h2>¿Cómo afectan los ingresos próximos a Disponible para gastar?</h2>
-        <p>PlusMinus funciona con total precisión tanto si tienes una nómina principal como si recibes 2&ndash;3 ingresos recurrentes en distintos días:</p>
+        <p>PlusMinus funciona con total precisión tanto si tienes una nómina principal como si recibes 2&ndash;3 ingresos recurrentes en distintos días o un ingreso puntual futuro programado:</p>
         <ul>
-            <li><strong>Ingresos recurrentes futuros (cuello de botella automático):</strong> Los ingresos recurrentes activos programados estrictamente después de hoy (y después del día de cobro nominal del ciclo actual cuando se aplica el adelanto por fin de semana) y antes del próximo día de cobro principal se incluyen automáticamente en <strong>Disponible para gastar</strong> mediante el punto más ajustado &mdash; evitando déficits falsos por facturas posteriores sin gastar dinero por adelantado.</li>
-            <li><strong>Etiquetas claras y desglose exacto:</strong> Cuando los ingresos próximos elevan la cifra respecto al efectivo disponible, el título se actualiza a <code>DISPONIBLE &middot; HASTA EL PRÓXIMO INGRESO</code> (con la cifra del período completo debajo) o <code>DISPONIBLE &middot; CON INGRESOS PRÓXIMOS</code> (con la línea <code>+ Ingresos próximos</code> en el desglose).</li>
-            <li><strong>Ingresos puntuales, vencidos y de hoy:</strong> Los pagos puntuales (como una devolución de impuestos) y los ingresos vencidos o previstos para hoy nunca se proyectan por adelantado &mdash; aparecen como recordatorios y cuentan solo cuando los marcas como <strong>Recibido</strong> (o los reflejas en <strong>Dinero actual</strong>).</li>
-            <li><strong>Sin doble cómputo al recibirlos:</strong> Al marcar un ingreso recurrente incluido como <strong>Recibido</strong> y sumarlo a <strong>Dinero actual</strong>, pasa limpiamente a tu saldo sin contarse dos veces.</li>
+            <li><strong>Ingresos futuros programados (cuello de botella automático):</strong> Los ingresos activos recurrentes y puntuales programados estrictamente después de hoy (y después del día de cobro nominal del ciclo actual cuando se aplica el adelanto por fin de semana) y antes del próximo día de cobro principal se incluyen automáticamente en <strong>Disponible para gastar</strong> mediante el punto más ajustado &mdash; evitando déficits falsos por gastos posteriores sin gastar dinero por adelantado.</li>
+            <li><strong>Etiquetas claras y desglose exacto:</strong> Cuando los ingresos próximos elevan la cifra respecto al efectivo disponible, el título se actualiza a <code>DISPONIBLE &middot; CONSIDERANDO LOS PRÓXIMOS INGRESOS</code> (con la línea <code>Período completo hasta el &hellip;</code> debajo si el punto limitante llega antes). Toca el botón de información para abrir <strong>Cálculo del disponible</strong> y revisar <strong>Ingresos añadidos a este cálculo</strong> (distinto del total <strong>Ingresos próximos</strong> del resumen) y los posibles <strong>Gastos pendientes posteriores</strong>.</li>
+            <li><strong>Ingresos vencidos y de hoy:</strong> Los ingresos vencidos o previstos para hoy (tanto recurrentes como puntuales) nunca se proyectan por adelantado &mdash; aparecen como recordatorios y cuentan solo cuando los marcas como <strong>Recibido</strong> (o los reflejas en <strong>Dinero actual</strong>). Un ingreso no recibido puede marcarse como <strong>Ingreso cancelado</strong> sin cambiar el saldo.</li>
+            <li><strong>Sin doble cómputo al recibirlos:</strong> Al marcar un ingreso próximo incluido como <strong>Recibido</strong> y sumarlo a <strong>Dinero actual</strong>, pasa limpiamente a tu saldo sin contarse dos veces.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Volver arriba</a>
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas y Puntual?</h2>
-        <p>PlusMinus gestiona con exactitud tanto los gastos periódicos como los horarios menos frecuentes entre <strong>Plan</strong> y <strong>Actual</strong>:</p>
+        <h2>¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas, Puntual y Análisis del plan?</h2>
+        <p>PlusMinus gestiona con exactitud gastos periódicos, frecuencias menos habituales y análisis por categorías entre <strong>Plan</strong> y <strong>Actual</strong>:</p>
         <ul>
             <li><strong>Normalización en Plan:</strong> Los conceptos semanales se normalizan mediante <code>&times; 52 &divide; 12</code>, los quincenales mediante <code>&times; 26 &divide; 12</code>, <strong>Meses seleccionados</strong> (como enero y octubre o trimestrales) mediante <code>&times; meses seleccionados &divide; 12</code> y los anuales mediante <code>&divide; 12</code>.</li>
-            <li><strong>Deducción íntegra en Actual:</strong> Las facturas anuales y de meses seleccionados se descuentan íntegramente durante el ciclo de cobro real en el que vencen, para mostrar su impacto real en efectivo.</li>
-            <li><strong>Elementos puntuales:</strong> Los ingresos y facturas de tipo <strong>Puntual</strong> (por ejemplo una devolución fiscal o una reparación del coche) llevan una fecha exacta, quedan excluidos de la referencia mensual en <strong>Plan</strong> y solo aparecen en <strong>Actual</strong> cuando corresponden.</li>
-            <li><strong>Categorías y día de vencimiento opcional:</strong> Las facturas recurrentes pueden organizarse por categorías (Vivienda, Suministros, Suscripciones, Seguros, Préstamos y deudas, Transporte, Aficiones, Ahorro, Donaciones, Otros) y se puede omitir un día de vencimiento concreto cuando sea necesario.</li>
+            <li><strong>Deducción íntegra en Actual:</strong> Los gastos anuales y de meses seleccionados se descuentan íntegramente durante el ciclo de cobro real en el que vencen, para mostrar su impacto real en efectivo.</li>
+            <li><strong>Elementos puntuales:</strong> Los ingresos y gastos de tipo <strong>Puntual</strong> (por ejemplo una devolución fiscal o una reparación del coche) llevan una fecha exacta y pueden añadirse en <strong>Plan</strong> o desde el menú <code>+</code> en <strong>Actual</strong>. Quedan excluidos de la referencia mensual de <strong>Plan</strong>: los gastos puntuales se descuentan íntegramente al vencer en <strong>Actual</strong>, y los ingresos puntuales futuros antes del próximo día de cobro participan en la comprobación de flujo de caja de <strong>Disponible para gastar</strong> sin gastarse por adelantado.</li>
+            <li><strong>17 categorías, Análisis del plan y día opcional:</strong> Los gastos pueden organizarse en 17 categorías opcionales (Vivienda, Suministros, Suscripciones, Seguros, Préstamos, Tarjetas de crédito y crédito al consumo, Transporte, Aficiones, Deportes y fitness, Inversión, Salud y bienestar, Hijos y familia, Mascotas, Educación, Ahorro, Donaciones, Otros). En <strong>Plan</strong>, <strong>A dónde van tus ingresos</strong> y <strong>Análisis del plan</strong> comparan los gastos recurrentes activos por categoría (más Sin categoría y Presupuesto de comida) según importe mensual y porcentaje sobre ingresos. En gastos recurrentes también es posible elegir <strong>Sin día específico</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Volver arriba</a>
     </div>
@@ -362,8 +362,8 @@
         <h2>¿Qué son Próximo período, el pago anticipado y Marcar anteriores como saldadas?</h2>
         <p>PlusMinus te ayuda a anticiparte al siguiente ciclo y mantener limpios los períodos anteriores:</p>
         <ul>
-            <li><strong>Próximo período y pago anticipado:</strong> Despliega <strong>Próximo período</strong> en <strong>Actual</strong> para previsualizar las facturas que vencen después de tu próximo día de cobro principal. Si ya pagaste una por adelantado, márcala ahí mismo con la misma comprobación de saldo.</li>
-            <li><strong>Facturas antiguas sin saldar (Marcar anteriores como saldadas):</strong> Las facturas impagadas anteriores al ciclo previo (hasta 24 meses atrás) no se descuentan de tu <strong>Disponible para gastar</strong> actual y se muestran en un aviso específico con el botón <strong>Marcar anteriores como saldadas</strong>.</li>
+            <li><strong>Próximo período y pago anticipado:</strong> Despliega <strong>Próximo período</strong> en <strong>Actual</strong> para previsualizar los gastos que vencen después de tu próximo día de cobro principal. Si ya pagaste uno por adelantado, márcalo ahí mismo con la misma comprobación de saldo.</li>
+            <li><strong>Gastos antiguos sin saldar (Marcar anteriores como saldadas):</strong> Los gastos impagados anteriores al ciclo previo (hasta 24 meses atrás) no se descuentan de tu <strong>Disponible para gastar</strong> actual y se muestran en un aviso específico con el botón <strong>Marcar anteriores como saldadas</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Volver arriba</a>
     </div>
@@ -383,7 +383,7 @@
         <h2>¿PlusMinus se conecta a mi banco, recopila analíticas o sincroniza en la nube?</h2>
         <p>No. PlusMinus está diseñada íntegramente como una app local y sin rastreo:</p>
         <ul>
-            <li><strong>Guardado en tu dispositivo:</strong> Saldos, ingresos, facturas, historial de pagos y preferencias permanecen localmente en tu iPhone o iPad.</li>
+            <li><strong>Guardado en tu dispositivo:</strong> Saldos, ingresos, gastos, historial de pagos y preferencias permanecen localmente en tu iPhone o iPad.</li>
             <li><strong>Sin cuentas ni enlaces bancarios:</strong> PlusMinus no requiere ninguna cuenta y nunca solicita credenciales bancarias ni acceso Open Banking.</li>
             <li><strong>Cero rastreo ni anuncios:</strong> No hay SDK de analítica, identificadores publicitarios ni sincronización automática en la nube en segundo plano.</li>
         </ul>
@@ -395,7 +395,7 @@
         <p>Mantienes el control total sobre los datos locales de tu presupuesto en todo momento:</p>
         <ul>
             <li><strong>Crear copia de seguridad:</strong> Abre <strong>Ajustes &rarr; Datos y privacidad &rarr; Copia de seguridad y restauración</strong> y toca <strong>Crear copia de seguridad</strong> para exportar un archivo JSON legible (<code>.plusminusbackup</code>, sin contraseña) a iCloud Drive, almacenamiento local o cualquier ubicación de Archivos.</li>
-            <li><strong>Restaurar desde copia de seguridad:</strong> Toca <strong>Restaurar desde copia de seguridad</strong> y selecciona un archivo <code>.plusminusbackup</code> válido (hasta 50 MB). Al restaurar se reemplazan todos los datos actuales del presupuesto y se restablece el saldo desde el momento de la copia, manteniendo el idioma de la app sin cambios.</li>
+            <li><strong>Restaurar desde copia de seguridad:</strong> Toca <strong>Restaurar desde copia de seguridad</strong> y selecciona un archivo <code>.plusminusbackup</code> válido (hasta 50 MB). Al restaurar se reemplazan todos los datos actuales del presupuesto y se restablece el saldo desde el momento de la copia, manteniendo sin cambios el idioma y el aspecto de la app.</li>
             <li><strong>Restablecer todos los datos:</strong> En <strong>Ajustes &rarr; Datos y privacidad</strong>, <strong>Restablecer todos los datos</strong> utiliza una confirmación en dos pasos para borrar todo el presupuesto y preferencias locales en este dispositivo y volver a la configuración inicial. Las copias exportadas y las copias del sistema iOS no se eliminan.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Volver arriba</a>

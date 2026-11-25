@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusMinus FAQ – Häufig gestellte Fragen</title>
-    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Essensbudget, doppelter Abzug, bestimmte Monate, Rundung, Backups, Datenschutz und Sprachen.">
+    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Rundung, Backups, Datenschutz und Sprachen.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeetapps.com/plusminus/de/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeetapps.com/plusminus/faq.html">
@@ -255,9 +255,9 @@
             <li><a href="#faq-1">Wie wird „Frei verfügbar“ berechnet?</a></li>
             <li><a href="#faq-2">Was ist der Unterschied zwischen Aktuell und Plan?</a></li>
             <li><a href="#faq-3">Wie funktioniert das Essensbudget, und kann ich es für diesen Zeitraum anpassen?</a></li>
-            <li><a href="#faq-4">Wie verhindert PlusMinus, dass dieselbe Rechnung zweimal abgezogen wird?</a></li>
+            <li><a href="#faq-4">Wie verhindert PlusMinus, dass dieselbe Ausgabe zweimal abgezogen wird?</a></li>
             <li><a href="#faq-5">Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</a></li>
-            <li><a href="#faq-6">Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen und Einmalig?</a></li>
+            <li><a href="#faq-6">Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen, Einmalig und die Plananalyse?</a></li>
             <li><a href="#faq-7">Wie funktionieren Hauptzahltag und die Verschiebung aufs Wochenende?</a></li>
             <li><a href="#faq-8">Was sind Im nächsten Zeitraum, vorzeitiges Bezahlen und Ältere als erledigt markieren?</a></li>
             <li><a href="#faq-9">Wie werden Beträge gerundet?</a></li>
@@ -272,15 +272,15 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Wie wird „Frei verfügbar“ berechnet?</h2>
-        <p><strong>Aktuell</strong> beantwortet eine praktische Frage: <em>Wie viel Geld kann ich bis zu meinem nächsten Hauptzahltag bedenkenlos ausgeben?</em> Die Berechnung folgt einer klaren Formel und berücksichtigt automatisch mehrere wiederkehrende Einkommen:</p>
+        <p><strong>Aktuell</strong> beantwortet eine praktische Frage: <em>Wie viel Geld kann ich bis zu meinem nächsten Hauptzahltag bedenkenlos ausgeben?</em> Die Berechnung folgt einer klaren Formel und berücksichtigt automatisch geplante kommende Einnahmen:</p>
         <ul>
-            <li><strong>Aktuell verfügbares Geld:</strong> Dein manuell gepflegter Giro- oder Bargeldbestand im Moment, inklusive relativer Aktualisierungszeit.</li>
-            <li><strong>Minus offene Rechnungen:</strong> Offene wiederkehrende Rechnungen und einmalige Ausgaben, die vor deinem nächsten Hauptzahltag fällig sind, sowie unbezahlte überfällige Rechnungen aus dem unmittelbar vorherigen Zeitraum.</li>
+            <li><strong>Aktuelles Geld:</strong> Dein manuell gepflegter Giro- oder Bargeldbestand im Moment, inklusive relativer Aktualisierungszeit.</li>
+            <li><strong>Minus offene Ausgaben:</strong> Offene wiederkehrende und einmalige Ausgaben, die vor deinem nächsten Hauptzahltag fällig sind, sowie unbezahlte überfällige Ausgaben aus dem unmittelbar vorherigen Zeitraum.</li>
             <li><strong>Minus geschätztes verbleibendes Essensbudget:</strong> Dein geschätztes Restbudget für Essen im aktiven Cashflow-Horizont.</li>
-            <li><strong>Engster Cashflow-Punkt bei mehreren Einkommen:</strong> Wenn geplante zukünftige wiederkehrende Einkommen vor deinem nächsten Hauptzahltag eingehen, prüft PlusMinus deinen Kontostand vor jedem kommenden Einkommenstermin sowie am Ende des Zeitraums und wählt den engsten Punkt. So lösen spätere Rechnungen keinen falschen Fehlbetrag aus, und du gibst nie Geld vor Eingang aus. Die Aufschlüsselung passt immer Zeile für Zeile zu diesem Horizont, und die Überschrift zeigt deutlich <code>FREI VERFÜGBAR &middot; BIS ZUM NÄCHSTEN EINKOMMEN</code> oder <code>FREI VERFÜGBAR &middot; MIT KOMMENDEM EINKOMMEN</code>, sobald kommendes Einkommen einbezogen wird.</li>
+            <li><strong>Engster Cashflow-Punkt bei kommenden Einnahmen:</strong> Wenn geplante zukünftige Einnahmen (wiederkehrend oder einmalig) vor deinem nächsten Hauptzahltag eingehen, prüft PlusMinus deinen Kontostand vor jedem kommenden Einnahmetermin sowie am Ende des Zeitraums und wählt den engsten Punkt. So lösen spätere Ausgaben keinen falschen Fehlbetrag aus, und du gibst nie Geld vor Eingang aus. Über die Info-Taste neben „Frei verfügbar“ öffnest du die <strong>Berechnung</strong> (mit <strong>Hier addierte Einnahmen</strong>, <strong>Für Ausgaben vor dem [Datum] zurückgelegt</strong>, <strong>Essensschätzung</strong> und ggf. <strong>Spätere offene Ausgaben</strong>), und die Überschrift zeigt deutlich <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code>.</li>
         </ul>
         <div class="note">
-            <strong>Tipp:</strong> Du kannst die genaue Berechnung jederzeit in der App unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong> nachlesen.
+            <strong>Tipp:</strong> Du kannst die Berechnungsregeln jederzeit in der App unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong> nachlesen.
         </div>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
@@ -289,11 +289,11 @@
         <h2>Was ist der Unterschied zwischen Aktuell und Plan?</h2>
         <p>PlusMinus trennt deinen alltäglichen Spielraum sauber von deiner langfristigen Monatsbasis in zwei Tabs:</p>
         <ul>
-            <li><strong>Aktuell:</strong> Deckt den Zeitraum von jetzt bis zu deinem nächsten Hauptzahltag ab. Es startet bei deinem echten <strong>aktuellen Geld</strong>, prüft offene Rechnungen, das verbleibende Essensbudget sowie zukünftige wiederkehrende Einkommen am engsten Cashflow-Punkt und nennt dir deinen Betrag <strong>Frei verfügbar</strong>.</li>
-            <li><strong>Plan:</strong> Zeigt deinen normalisierten <strong>Geplanten Monatsrest</strong> (normalisiertes Monatseinkommen minus normalisierte Monatsrechnungen minus monatliches Essensbudget), völlig unabhängig vom heutigen Kontostand oder der Länge des aktuellen Zahlungszeitraums.</li>
+            <li><strong>Aktuell:</strong> Deckt den Zeitraum von jetzt bis zu deinem nächsten Hauptzahltag ab. Es startet bei deinem echten <strong>aktuellen Geld</strong>, prüft offene Ausgaben, das verbleibende Essensbudget sowie zukünftige geplante Einnahmen am engsten Cashflow-Punkt und nennt dir deinen Betrag <strong>Frei verfügbar</strong> samt ausklappbaren Listen für <strong>Kommendes Einkommen</strong> und <strong>Offene Ausgaben</strong>.</li>
+            <li><strong>Plan:</strong> Zeigt deinen normalisierten <strong>Geplanten Monatsrest</strong> (normalisiertes Monatseinkommen minus normalisierte Monatsausgaben minus monatliches Essensbudget), völlig unabhängig vom heutigen Kontostand oder der Länge des aktuellen Zahlungszeitraums. Zudem zeigen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> deine monatliche Aufteilung nach Ausgabenkategorien und Essensbudget als Beträge und Anteile am Monatseinkommen.</li>
         </ul>
         <div class="note">
-            <strong>Warum beide Ansichten?</strong> Eine jährliche Versicherungsrechnung oder ein kürzerer Februar-Zeitraum beeinflusst, wie viel Bargeld dir jetzt in <strong>Aktuell</strong> zur Verfügung steht, während <strong>Plan</strong> dir zeigt, ob dein normales Einkommen deine regulären Ausgaben dauerhaft deckt.
+            <strong>Warum beide Ansichten?</strong> Eine jährliche Versicherungsausgabe oder ein kürzerer Februar-Zeitraum beeinflusst, wie viel Bargeld dir jetzt in <strong>Aktuell</strong> zur Verfügung steht, während <strong>Plan</strong> dir zeigt, ob dein normales Einkommen deine regulären Ausgaben dauerhaft deckt.
         </div>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
@@ -313,36 +313,36 @@
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>Wie verhindert PlusMinus, dass dieselbe Rechnung zweimal abgezogen wird?</h2>
+        <h2>Wie verhindert PlusMinus, dass dieselbe Ausgabe zweimal abgezogen wird?</h2>
         <p>Da du deinen Kontostand manuell ohne Bankverbindung pflegst, schützt PlusMinus dich gezielt vor doppeltem Abzug:</p>
         <ul>
-            <li><strong>Zwei-Optionen-Abfrage beim Bezahlen:</strong> Wenn du eine Rechnung als <strong>Bezahlt</strong> markierst, fragt PlusMinus, ob der Betrag vom <strong>aktuellen Geld abgezogen</strong> werden soll oder dein Kontostand unverändert bleibt, weil er <strong>bereits im aktuellen Geld berücksichtigt</strong> ist (mit automatischer Empfehlung, wenn du deinen Kontostand innerhalb der letzten 5 Minuten aktualisiert hast).</li>
-            <li><strong>Schnellabgleich per Chip:</strong> Nach einer manuellen Kontostandsaktualisierung kannst du kürzlich fällige Rechnungen direkt per Chip als erledigt markieren, ohne sie erneut vom Kontostand abzuziehen.</li>
-            <li><strong>Sicheres Widerrufen:</strong> Wenn du die falsche Option antippst, nutze sofort <strong>Widerrufen</strong>, um Rechnung und Kontostandsänderung sauber zurückzusetzen.</li>
+            <li><strong>Zwei-Optionen-Abfrage beim Bezahlen:</strong> Wenn du eine Ausgabe als <strong>Bezahlt</strong> markierst, fragt PlusMinus, ob der Betrag vom <strong>aktuellen Geld abgezogen</strong> werden soll oder dein Kontostand unverändert bleibt, weil er <strong>bereits im aktuellen Geld berücksichtigt</strong> ist (mit automatischer Empfehlung, wenn du deinen Kontostand innerhalb der letzten 5 Minuten aktualisiert hast).</li>
+            <li><strong>Schnellabgleich per Chip:</strong> Nach einer manuellen Kontostandsaktualisierung kannst du kürzlich fällige Ausgaben direkt per Chip als erledigt markieren, ohne sie erneut vom Kontostand abzuziehen.</li>
+            <li><strong>Sicheres Widerrufen:</strong> Wenn du die falsche Option antippst, nutze sofort <strong>Widerrufen</strong>, um Ausgabe und Kontostandsänderung sauber zurückzusetzen.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
 
     <div class="faq-item" id="faq-5">
         <h2>Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</h2>
-        <p>PlusMinus funktioniert zuverlässig sowohl mit einem Hauptgehalt als auch mit 2&ndash;3 wiederkehrenden Einkommen an verschiedenen Tagen:</p>
+        <p>PlusMinus funktioniert zuverlässig mit einem Hauptgehalt, 2&ndash;3 wiederkehrenden Einnahmen an verschiedenen Tagen oder einer geplanten zukünftigen Einmaleinnahme:</p>
         <ul>
-            <li><strong>Zukünftige wiederkehrende Einkommen (automatischer Cashflow-Engpass):</strong> Aktive wiederkehrende Einnahmen mit Fälligkeit strikt nach heute (und bei Wochenendverschiebung nach dem nominellen Hauptzahltag des Zeitraums) sowie vor dem nächsten Hauptzahltag werden automatisch anhand des engsten Prüfpunkts einbezogen &mdash; spätere Rechnungen lösen keinen Fehlbetrag aus und du gibst nie Geld vor Eingang aus.</li>
-            <li><strong>Klare Beschriftung und exakte Aufschlüsselung:</strong> Sobald kommendes Einkommen den Betrag über den reinen Kassenbestand hebt, wechselt die Überschrift zu <code>FREI VERFÜGBAR &middot; BIS ZUM NÄCHSTEN EINKOMMEN</code> (mit dem Betrag für den Gesamtzeitraum darunter) oder <code>FREI VERFÜGBAR &middot; MIT KOMMENDEM EINKOMMEN</code> (inklusive der Zeile <code>+ Kommendes Einkommen</code>).</li>
-            <li><strong>Einmalige, überfällige und heute fällige Einnahmen:</strong> Einmalige Zahlungen (z. B. Steuerrückerstattung) sowie überfällige oder heute erwartete Einnahmen werden nie im Voraus eingerechnet &mdash; sie erscheinen als Erinnerung und zählen erst, wenn du sie als <strong>Erhalten</strong> markierst (oder ins <strong>aktuelle Geld</strong> übernimmst).</li>
-            <li><strong>Keine Doppelzählung bei Erhalt:</strong> Wenn du ein einbezogenes wiederkehrendes Einkommen als <strong>Erhalten</strong> markierst und zum <strong>aktuellen Geld</strong> addierst, geht es sauber ohne Doppelzählung in deinen Kontostand über.</li>
+            <li><strong>Zukünftige geplante Einnahmen (automatischer Cashflow-Engpass):</strong> Aktive wiederkehrende und einmalige Einnahmen mit Fälligkeit strikt nach heute (und bei Wochenendverschiebung nach dem nominellen Hauptzahltag des Zeitraums) sowie vor dem nächsten Hauptzahltag werden automatisch anhand des engsten Prüfpunkts einbezogen &mdash; spätere Ausgaben lösen keinen Fehlbetrag aus und du gibst nie Geld vor Eingang aus.</li>
+            <li><strong>Klare Beschriftung und exakte Aufschlüsselung:</strong> Sobald kommendes Einkommen den Betrag über den reinen Kassenbestand hebt, wechselt die Überschrift zu <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code> (mit dem Hinweis <code>Gesamter Zeitraum bis &hellip;</code> darunter, falls der Engpass früher endet). Tippe auf die Info-Taste für die <strong>Berechnung</strong>, um <strong>Hier addierte Einnahmen</strong> (getrennt vom <strong>Kommenden Einkommen</strong> der Übersicht) und ggf. <strong>Spätere offene Ausgaben</strong> einzusehen.</li>
+            <li><strong>Überfällige und heute fällige Einnahmen:</strong> Überfällige oder heute erwartete Einnahmen (wiederkehrend wie einmalig) werden nie im Voraus eingerechnet &mdash; sie erscheinen als Erinnerung und zählen erst, wenn du sie als <strong>Erhalten</strong> markierst (oder ins <strong>aktuelle Geld</strong> übernimmst). Ausgefallene Einnahmen lassen sich ohne Kontostandsänderung als <strong>Einnahme ausgefallen</strong> markieren.</li>
+            <li><strong>Keine Doppelzählung bei Erhalt:</strong> Wenn du eine einbezogene kommende Einnahme als <strong>Erhalten</strong> markierst und zum <strong>aktuellen Geld</strong> addierst, geht sie sauber ohne Doppelzählung in deinen Kontostand über.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen und Einmalig?</h2>
-        <p>PlusMinus bildet sowohl regelmäßige als auch unregelmäßige Rhythmen in <strong>Plan</strong> und <strong>Aktuell</strong> präzise ab:</p>
+        <h2>Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen, Einmalig und die Plananalyse?</h2>
+        <p>PlusMinus bildet regelmäßige Ausgaben, unregelmäßige Rhythmen und Kategorien in <strong>Plan</strong> und <strong>Aktuell</strong> präzise ab:</p>
         <ul>
             <li><strong>Monatliche Normalisierung in Plan:</strong> Wöchentliche Posten werden mit <code>&times; 52 &divide; 12</code> normalisiert, zweiwöchentliche mit <code>&times; 26 &divide; 12</code>, <strong>Bestimmte Monate</strong> (z. B. Januar &amp; Oktober oder Quartalsvorlagen) mit <code>&times; ausgewählte Monate &divide; 12</code> und jährliche mit <code>&divide; 12</code>.</li>
-            <li><strong>Voller Abzug in Aktuell:</strong> Jährliche Rechnungen und Rechnungen für bestimmte Monate werden exakt in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden.</li>
-            <li><strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum, bleiben aus dem festen Monatsplan in <strong>Plan</strong> außen vor und erscheinen nur bei Fälligkeit in <strong>Aktuell</strong>.</li>
-            <li><strong>Kategorien &amp; optionales Fälligkeitsdatum:</strong> Wiederkehrende Rechnungen lassen sich in Kategorien ordnen (Wohnen, Nebenkosten, Abos, Versicherungen, Kredite &amp; Schulden, Mobilität, Hobbys, Sparen, Spenden, Sonstiges), und bei Bedarf kann ein genaues Fälligkeitsdatum weggelassen werden.</li>
+            <li><strong>Voller Abzug in Aktuell:</strong> Jährliche Ausgaben und Ausgaben für bestimmte Monate werden exakt in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden.</li>
+            <li><strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum und lassen sich in <strong>Plan</strong> oder über das <code>+</code>-Menü in <strong>Aktuell</strong> anlegen. Sie bleiben aus dem festen Monatsplan in <strong>Plan</strong> außen vor: einmalige Ausgaben werden bei Fälligkeit in <strong>Aktuell</strong> voll abgezogen, und geplante zukünftige Einmaleinnahmen vor dem nächsten Zahltag fließen in die Cashflow-Prüfung von <strong>Frei verfügbar</strong> ein, ohne vorab ausgegeben zu werden.</li>
+            <li><strong>17 Kategorien, Plananalyse &amp; optionaler Fälligkeitstag:</strong> Ausgaben lassen sich in 17 optionale Kategorien einordnen (Wohnen, Nebenkosten, Abos, Versicherungen, Darlehen, Kreditkarten &amp; Konsumkredite, Mobilität, Hobbys, Sport &amp; Fitness, Investieren, Gesundheit &amp; Wohlbefinden, Kinder &amp; Familie, Haustiere, Bildung, Sparen, Spenden, Sonstiges). In <strong>Plan</strong> zeigen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> aktive wiederkehrende Ausgabenkategorien (sowie Ohne Kategorie und Essensbudget) nach Monatsbetrag und Einkommensanteil. Bei wiederkehrenden Ausgaben kann bei Bedarf auch <strong>Kein bestimmter Tag</strong> gewählt werden.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
@@ -362,8 +362,8 @@
         <h2>Was sind Im nächsten Zeitraum, vorzeitiges Bezahlen und Ältere als erledigt markieren?</h2>
         <p>PlusMinus hilft dir, vorauszuschauen und vergangene Zeiträume aufgeräumt zu halten:</p>
         <ul>
-            <li><strong>Im nächsten Zeitraum &amp; vorzeitiges Bezahlen:</strong> Klappe in <strong>Aktuell</strong> den Bereich <strong>Im nächsten Zeitraum</strong> auf, um Rechnungen nach deinem nächsten Hauptzahltag anzusehen. Wenn du eine davon schon vorab bezahlt hast, hake sie dort mit demselben Kontostandsabgleich ab.</li>
-            <li><strong>Ältere unbezahlte Rechnungen (Ältere als erledigt markieren):</strong> Unbezahlte Rechnungen von vor dem vorherigen Zeitraum (bis zu 24 Monate zurück) verringern nicht dein aktuelles <strong>Frei verfügbar</strong>, sondern erscheinen in einem Hinweisbanner mit der Aktion <strong>Ältere als erledigt markieren</strong>.</li>
+            <li><strong>Im nächsten Zeitraum &amp; vorzeitiges Bezahlen:</strong> Klappe in <strong>Aktuell</strong> den Bereich <strong>Im nächsten Zeitraum</strong> auf, um Ausgaben nach deinem nächsten Hauptzahltag anzusehen. Wenn du eine davon schon vorab bezahlt hast, hake sie dort mit demselben Kontostandsabgleich ab.</li>
+            <li><strong>Ältere offene Ausgaben (Ältere als erledigt markieren):</strong> Unbezahlte Ausgaben von vor dem vorherigen Zeitraum (bis zu 24 Monate zurück) verringern nicht dein aktuelles <strong>Frei verfügbar</strong>, sondern erscheinen in einem Hinweisbanner mit der Aktion <strong>Ältere als erledigt markieren</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
@@ -383,7 +383,7 @@
         <h2>Verbindet sich PlusMinus mit meiner Bank, erfasst es Analysen oder synchronisiert es in die Cloud?</h2>
         <p>Nein. PlusMinus wurde konsequent als lokale App ohne Tracking entwickelt:</p>
         <ul>
-            <li><strong>Speicherung auf deinem Gerät:</strong> Kontostände, Einnahmen, Rechnungen, Zahlungsverlauf und Einstellungen bleiben lokal auf deinem iPhone oder iPad.</li>
+            <li><strong>Speicherung auf deinem Gerät:</strong> Kontostände, Einnahmen, Ausgaben, Zahlungsverlauf und Einstellungen bleiben lokal auf deinem iPhone oder iPad.</li>
             <li><strong>Keine Konten oder Bankverbindungen:</strong> PlusMinus erfordert keinen Account und fragt niemals nach Bankzugängen oder Open-Banking-Zugriff.</li>
             <li><strong>Kein Tracking und keine Werbung:</strong> Es gibt keine Analyse-SDKs, keine Werbe-IDs und keine automatische Cloud-Synchronisierung im Hintergrund.</li>
         </ul>
@@ -395,7 +395,7 @@
         <p>Du behältst jederzeit die volle Kontrolle über deine lokalen Budgetdaten:</p>
         <ul>
             <li><strong>Backup erstellen:</strong> Öffne <strong>Einstellungen &rarr; Daten &amp; Datenschutz &rarr; Backup &amp; Wiederherstellung</strong> und tippe auf <strong>Backup erstellen</strong>, um eine lesbare JSON-Datei (<code>.plusminusbackup</code>, nicht passwortgeschützt) in iCloud Drive, lokal oder an einem beliebigen Ort in „Dateien“ zu speichern.</li>
-            <li><strong>Aus Backup wiederherstellen:</strong> Tippe auf <strong>Aus Backup wiederherstellen</strong> und wähle eine gültige <code>.plusminusbackup</code>-Datei (bis zu 50 MB). Dabei werden alle aktuellen Budgetdaten ersetzt und der Kontostand vom Erstellungszeitpunkt des Backups wiederhergestellt; deine App-Sprache bleibt unverändert.</li>
+            <li><strong>Aus Backup wiederherstellen:</strong> Tippe auf <strong>Aus Backup wiederherstellen</strong> und wähle eine gültige <code>.plusminusbackup</code>-Datei (bis zu 50 MB). Dabei werden alle aktuellen Budgetdaten ersetzt und der Kontostand vom Erstellungszeitpunkt des Backups wiederhergestellt; App-Sprache und Erscheinungsbild bleiben unverändert.</li>
             <li><strong>Alle Daten zurücksetzen:</strong> Unter <strong>Einstellungen &rarr; Daten &amp; Datenschutz</strong> löscht <strong>Alle Daten zurücksetzen</strong> nach doppelter Bestätigung alle lokalen Budgetdaten und Einstellungen auf diesem Gerät und kehrt zur Ersteinrichtung zurück. Exportierte Backupdateien und System-Backups von iOS werden nicht gelöscht.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
