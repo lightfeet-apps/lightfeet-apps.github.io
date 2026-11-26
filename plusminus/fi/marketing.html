@@ -172,9 +172,36 @@
             font-weight: 600;
         }
 
+        .button:hover {
+            background: #0066d6;
+        }
+
         .secondary {
             background: #e8e8ed;
             color: #1d1d1f;
+        }
+
+        .secondary:hover {
+            background: #dcdce2;
+        }
+
+        .beta-cta {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero .beta-cta {
+            margin-top: 28px;
+        }
+
+        .beta-cta .beta-note {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
         }
 
         .closing {
@@ -277,6 +304,11 @@
             <p class="subtitle">
                 Määritä toistuvat tulot, menot, palkkapäivä ja kuukauden ruokabudjetti kerran. Kurkkaa saldosi ja näe heti todellinen käyttövarasi — ilman jokaisen kahvin kirjaamista.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Kokeile TestFlightissa</a>
+                <p class="beta-note">Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
         </section>
 
         <section class="section">
@@ -318,11 +350,16 @@
         </section>
 
         <section class="section closing">
-            <h2>Suunniteltu iPhonelle ja iPadille</h2>
+            <h2>Tulossa App Storeen</h2>
 
             <p>
-                PlusMinus toimii iPhonella ja iPadilla, joissa on iOS 26 tai uudempi.
+                PlusMinus on suunniteltu iPhonelle ja iPadille ja sitä valmistellaan julkaisuun.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Kokeile TestFlightissa</a>
+                <p class="beta-note">Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
 
             <div class="links">
                 <a class="button secondary" href="faq.html">

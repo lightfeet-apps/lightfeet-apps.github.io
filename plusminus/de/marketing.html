@@ -172,9 +172,36 @@
             font-weight: 600;
         }
 
+        .button:hover {
+            background: #0066d6;
+        }
+
         .secondary {
             background: #e8e8ed;
             color: #1d1d1f;
+        }
+
+        .secondary:hover {
+            background: #dcdce2;
+        }
+
+        .beta-cta {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero .beta-cta {
+            margin-top: 28px;
+        }
+
+        .beta-cta .beta-note {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
         }
 
         .closing {
@@ -277,6 +304,11 @@
             <p class="subtitle">
                 Lege wiederkehrende Einnahmen, Ausgaben, deinen Zahltag und dein monatliches Essensbudget einmal fest. Ein Blick auf deinen Kontostand zeigt dir, was wirklich frei verfügbar ist – ohne jeden Kaffee zu notieren.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Über TestFlight testen</a>
+                <p class="beta-note">Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
         </section>
 
         <section class="section">
@@ -318,11 +350,16 @@
         </section>
 
         <section class="section closing">
-            <h2>Für iPhone und iPad entwickelt</h2>
+            <h2>Demnächst im App Store</h2>
 
             <p>
-                PlusMinus ist für iPhone und iPad mit iOS 26 oder neuer konzipiert.
+                PlusMinus wurde für iPhone und iPad entwickelt und wird für die Veröffentlichung vorbereitet.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Über TestFlight testen</a>
+                <p class="beta-note">Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
 
             <div class="links">
                 <a class="button secondary" href="faq.html">

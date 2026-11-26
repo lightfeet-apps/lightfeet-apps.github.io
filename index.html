@@ -81,7 +81,10 @@
         }
 
         .app-actions {
-            margin-bottom: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
         }
 
         .button {
@@ -97,6 +100,23 @@
 
         .button:hover {
             background: #0066d6;
+        }
+
+        .button.secondary {
+            background: #e8e8ed;
+            color: #1d1d1f;
+        }
+
+        .button.secondary:hover {
+            background: #dcdce2;
+        }
+
+        .app-card .beta-note {
+            margin: 0 0 14px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #666;
+            flex-grow: 0;
         }
 
         .app-links {
@@ -190,7 +210,9 @@
                 <p>Flexible alarm clock for changing plans. Skip, adjust once, or pause repeating alarms without changing your regular schedule.</p>
                 <div class="app-actions">
                     <a class="button" href="wakeup/marketing.html">About WakeUp</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/KdkHfMKe" target="_blank" rel="noopener noreferrer">TestFlight Beta</a>
                 </div>
+                <p class="beta-note">Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="wakeup/faq.html">FAQ</a>
                     &middot;
@@ -205,7 +227,9 @@
                 <p>Calm, local-first monthly budget and live safe-to-spend clarity. Know what you can safely spend right now without logging every purchase.</p>
                 <div class="app-actions">
                     <a class="button" href="plusminus/marketing.html">About PlusMinus</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">TestFlight Beta</a>
                 </div>
+                <p class="beta-note">Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="plusminus/faq.html">FAQ</a>
                     &middot;

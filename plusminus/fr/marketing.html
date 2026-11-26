@@ -172,9 +172,36 @@
             font-weight: 600;
         }
 
+        .button:hover {
+            background: #0066d6;
+        }
+
         .secondary {
             background: #e8e8ed;
             color: #1d1d1f;
+        }
+
+        .secondary:hover {
+            background: #dcdce2;
+        }
+
+        .beta-cta {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero .beta-cta {
+            margin-top: 28px;
+        }
+
+        .beta-cta .beta-note {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
         }
 
         .closing {
@@ -277,6 +304,11 @@
             <p class="subtitle">
                 Configurez une fois vos revenus récurrents, dépenses, jour de paie et budget alimentation mensuel. Jetez un œil à votre solde et voyez ce qui est vraiment disponible — sans noter chaque café.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Essayer sur TestFlight</a>
+                <p class="beta-note">Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
         </section>
 
         <section class="section">
@@ -318,11 +350,16 @@
         </section>
 
         <section class="section closing">
-            <h2>Conçue pour iPhone et iPad</h2>
+            <h2>Bientôt sur l'App Store</h2>
 
             <p>
-                PlusMinus est conçue pour iPhone et iPad sous iOS 26 ou version ultérieure.
+                PlusMinus est conçue pour iPhone et iPad et est en cours de préparation pour sa sortie.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Essayer sur TestFlight</a>
+                <p class="beta-note">Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
 
             <div class="links">
                 <a class="button secondary" href="faq.html">

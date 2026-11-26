@@ -81,7 +81,10 @@
         }
 
         .app-actions {
-            margin-bottom: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
         }
 
         .button {
@@ -97,6 +100,23 @@
 
         .button:hover {
             background: #0066d6;
+        }
+
+        .button.secondary {
+            background: #e8e8ed;
+            color: #1d1d1f;
+        }
+
+        .button.secondary:hover {
+            background: #dcdce2;
+        }
+
+        .app-card .beta-note {
+            margin: 0 0 14px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #666;
+            flex-grow: 0;
         }
 
         .app-links {
@@ -190,7 +210,9 @@
                 <p>Flexibler Wecker für wechselnde Pläne. Nächsten Wecker auslassen, einmalig anpassen oder pausieren, ohne deine normale Routine zu verändern.</p>
                 <div class="app-actions">
                     <a class="button" href="../wakeup/de/marketing.html">Über WakeUp</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/KdkHfMKe" target="_blank" rel="noopener noreferrer">TestFlight-Beta</a>
                 </div>
+                <p class="beta-note">Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="../wakeup/de/faq.html">FAQ</a>
                     &middot;
@@ -205,7 +227,9 @@
                 <p>Ruhiges Monatsbudget lokal auf deinem Gerät. Sieh auf einen Blick, was du jetzt frei ausgeben kannst – ohne jeden Einkauf einzutragen.</p>
                 <div class="app-actions">
                     <a class="button" href="../plusminus/de/marketing.html">Über PlusMinus</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">TestFlight-Beta</a>
                 </div>
+                <p class="beta-note">Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="../plusminus/de/faq.html">FAQ</a>
                     &middot;

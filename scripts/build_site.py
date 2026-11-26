@@ -16,6 +16,8 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_URL = "https://lightfeetapps.com"
 CONTACT_EMAIL = "contact@lightfeetapps.com"
 PLUSMINUS_EMAIL = "plusminus@lightfeetapps.com"
+WAKEUP_TESTFLIGHT_URL = "https://testflight.apple.com/join/KdkHfMKe"
+PLUSMINUS_TESTFLIGHT_URL = "https://testflight.apple.com/join/YYQWnY7Z"
 PLUSMINUS_EMAIL_SUBJECTS = {
     ("index", "en"): "PlusMinus Support",
     ("index", "fi"): "PlusMinus-tuki",
@@ -85,6 +87,9 @@ ROOT_DATA = {
                 "summary": "Flexible alarm clock for changing plans. Skip, adjust once, or pause repeating alarms without changing your regular schedule.",
                 "primary_href": "wakeup/marketing.html",
                 "primary_label": "About WakeUp",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight Beta",
+                "beta_note": "Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("wakeup/faq.html", "FAQ"),
                     ("wakeup/", "Support"),
@@ -96,6 +101,9 @@ ROOT_DATA = {
                 "summary": "Calm, local-first monthly budget and live safe-to-spend clarity. Know what you can safely spend right now without logging every purchase.",
                 "primary_href": "plusminus/marketing.html",
                 "primary_label": "About PlusMinus",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight Beta",
+                "beta_note": "Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("plusminus/faq.html", "FAQ"),
                     ("plusminus/", "Support"),
@@ -119,6 +127,9 @@ ROOT_DATA = {
                 "summary": "Joustava herätyskello muuttuviin suunnitelmiin. Ohita, säädä kerran tai tauota toistuvia herätyksiä muuttamatta normaalia aikatauluasi.",
                 "primary_href": "../wakeup/fi/marketing.html",
                 "primary_label": "Tietoa WakeUpista",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-beta",
+                "beta_note": "Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../wakeup/fi/faq.html", "UKK"),
                     ("../wakeup/fi/", "Tuki"),
@@ -130,6 +141,9 @@ ROOT_DATA = {
                 "summary": "Rauhallinen, paikallisesti toimiva kuukausibudjetti. Näe yhdellä silmäyksellä, paljonko voit turvallisesti käyttää juuri nyt — ilman jokaisen ostoksen kirjaamista.",
                 "primary_href": "../plusminus/fi/marketing.html",
                 "primary_label": "Tietoa PlusMinusista",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-beta",
+                "beta_note": "Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../plusminus/fi/faq.html", "UKK"),
                     ("../plusminus/fi/", "Tuki"),
@@ -153,6 +167,9 @@ ROOT_DATA = {
                 "summary": "Flexibelt alarm för ändrade planer. Hoppa över, justera en gång eller pausa återkommande alarm utan att ändra ditt vanliga schema.",
                 "primary_href": "../wakeup/sv/marketing.html",
                 "primary_label": "Om WakeUp",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-beta",
+                "beta_note": "Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../wakeup/sv/faq.html", "FAQ"),
                     ("../wakeup/sv/", "Support"),
@@ -164,6 +181,9 @@ ROOT_DATA = {
                 "summary": "Lugn månadsbudget direkt på enheten. Se med en blick vad du tryggt kan spendera just nu — utan att logga varje köp.",
                 "primary_href": "../plusminus/sv/marketing.html",
                 "primary_label": "Om PlusMinus",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-beta",
+                "beta_note": "Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../plusminus/sv/faq.html", "FAQ"),
                     ("../plusminus/sv/", "Support"),
@@ -187,6 +207,9 @@ ROOT_DATA = {
                 "summary": "Flexibler Wecker für wechselnde Pläne. Nächsten Wecker auslassen, einmalig anpassen oder pausieren, ohne deine normale Routine zu verändern.",
                 "primary_href": "../wakeup/de/marketing.html",
                 "primary_label": "Über WakeUp",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-Beta",
+                "beta_note": "Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../wakeup/de/faq.html", "FAQ"),
                     ("../wakeup/de/", "Support"),
@@ -198,6 +221,9 @@ ROOT_DATA = {
                 "summary": "Ruhiges Monatsbudget lokal auf deinem Gerät. Sieh auf einen Blick, was du jetzt frei ausgeben kannst – ohne jeden Einkauf einzutragen.",
                 "primary_href": "../plusminus/de/marketing.html",
                 "primary_label": "Über PlusMinus",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "TestFlight-Beta",
+                "beta_note": "Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../plusminus/de/faq.html", "FAQ"),
                     ("../plusminus/de/", "Support"),
@@ -221,6 +247,9 @@ ROOT_DATA = {
                 "summary": "Despertador flexible para planes que cambian. Omite, ajusta una vez o pausa alarmas recurrentes sin cambiar tu horario habitual.",
                 "primary_href": "../wakeup/es/marketing.html",
                 "primary_label": "Acerca de WakeUp",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "Beta en TestFlight",
+                "beta_note": "Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../wakeup/es/faq.html", "Preguntas frecuentes"),
                     ("../wakeup/es/", "Soporte"),
@@ -232,6 +261,9 @@ ROOT_DATA = {
                 "summary": "Presupuesto mensual sereno que funciona en tu dispositivo. Ve de un vistazo lo que puedes gastar ahora con tranquilidad — sin registrar cada compra.",
                 "primary_href": "../plusminus/es/marketing.html",
                 "primary_label": "Acerca de PlusMinus",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "Beta en TestFlight",
+                "beta_note": "Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../plusminus/es/faq.html", "Preguntas frecuentes"),
                     ("../plusminus/es/", "Soporte"),
@@ -255,6 +287,9 @@ ROOT_DATA = {
                 "summary": "Réveil flexible pour les imprévus. Ignorez, ajustez une fois ou mettez en pause des alarmes récurrentes sans modifier votre routine habituelle.",
                 "primary_href": "../wakeup/fr/marketing.html",
                 "primary_label": "À propos de WakeUp",
+                "testflight_href": WAKEUP_TESTFLIGHT_URL,
+                "testflight_label": "Bêta TestFlight",
+                "beta_note": "Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../wakeup/fr/faq.html", "FAQ"),
                     ("../wakeup/fr/", "Assistance"),
@@ -266,6 +301,9 @@ ROOT_DATA = {
                 "summary": "Budget mensuel serein et local avant tout. Voyez en un coup d’œil ce que vous pouvez dépenser maintenant — sans noter chaque achat.",
                 "primary_href": "../plusminus/fr/marketing.html",
                 "primary_label": "À propos de PlusMinus",
+                "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
+                "testflight_label": "Bêta TestFlight",
+                "beta_note": "Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)",
                 "links": [
                     ("../plusminus/fr/faq.html", "FAQ"),
                     ("../plusminus/fr/", "Assistance"),
@@ -471,8 +509,10 @@ PLUSMINUS_DATA = {
                 "Manual .plusminusbackup export and restore via Files",
                 "Available in 6 languages (English, Finnish, Swedish, German, Spanish, French) with 10 currencies and Light/Dark Mode",
             ],
-            "closing_title": "Built for iPhone and iPad",
-            "closing_body": "PlusMinus is designed for iPhone and iPad running iOS 26 or later.",
+            "closing_title": "Coming to the App Store",
+            "closing_body": "PlusMinus is designed for iPhone and iPad and is being prepared for release.",
+            "testflight_btn": "Try via TestFlight",
+            "beta_note": "Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "FAQ",
             "privacy_btn": "Privacy Policy",
             "support_btn": "Support",
@@ -731,8 +771,10 @@ PLUSMINUS_DATA = {
                 "Manuaalinen varmuuskopiointi ja palautus Tiedostot-apin kautta (.plusminusbackup)",
                 "Saatavilla kuudella kielellä (suomi, englanti, ruotsi, saksa, espanja, ranska), 10 valuuttaa sekä tumma ja vaalea tila",
             ],
-            "closing_title": "Suunniteltu iPhonelle ja iPadille",
-            "closing_body": "PlusMinus toimii iPhonella ja iPadilla, joissa on iOS 26 tai uudempi.",
+            "closing_title": "Tulossa App Storeen",
+            "closing_body": "PlusMinus on suunniteltu iPhonelle ja iPadille ja sitä valmistellaan julkaisuun.",
+            "testflight_btn": "Kokeile TestFlightissa",
+            "beta_note": "Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "UKK",
             "privacy_btn": "Tietosuojaseloste",
             "support_btn": "Tuki",
@@ -991,8 +1033,10 @@ PLUSMINUS_DATA = {
                 "Manuell export och återställning via Filer (.plusminusbackup)",
                 "Tillgänglig på 6 språk (svenska, engelska, finska, tyska, spanska, franska) med 10 valutor samt mörkt och ljust läge",
             ],
-            "closing_title": "Byggd för iPhone och iPad",
-            "closing_body": "PlusMinus är designad för iPhone och iPad med iOS 26 eller senare.",
+            "closing_title": "Kommer snart till App Store",
+            "closing_body": "PlusMinus är designat för iPhone och iPad och förbereds för lansering.",
+            "testflight_btn": "Testa via TestFlight",
+            "beta_note": "Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "FAQ",
             "privacy_btn": "Integritetspolicy",
             "support_btn": "Support",
@@ -1251,8 +1295,10 @@ PLUSMINUS_DATA = {
                 "Manueller Export und Wiederherstellung über „Dateien“ (.plusminusbackup)",
                 "Verfügbar in 6 Sprachen (Deutsch, Englisch, Finnisch, Schwedisch, Spanisch, Französisch) mit 10 Währungen sowie Dunkel- und Hellmodus",
             ],
-            "closing_title": "Für iPhone und iPad entwickelt",
-            "closing_body": "PlusMinus ist für iPhone und iPad mit iOS 26 oder neuer konzipiert.",
+            "closing_title": "Demnächst im App Store",
+            "closing_body": "PlusMinus wurde für iPhone und iPad entwickelt und wird für die Veröffentlichung vorbereitet.",
+            "testflight_btn": "Über TestFlight testen",
+            "beta_note": "Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "FAQ",
             "privacy_btn": "Datenschutzerklärung",
             "support_btn": "Support",
@@ -1511,8 +1557,10 @@ PLUSMINUS_DATA = {
                 "Exportación y restauración manual mediante Archivos (.plusminusbackup)",
                 "Disponible en 6 idiomas (español, inglés, finés, sueco, alemán, francés) con 10 monedas y modo oscuro/claro",
             ],
-            "closing_title": "Diseñada para iPhone y iPad",
-            "closing_body": "PlusMinus está diseñada para iPhone y iPad con iOS 26 o posterior.",
+            "closing_title": "Próximamente en el App Store",
+            "closing_body": "PlusMinus está diseñada para iPhone y iPad y se está preparando para su lanzamiento.",
+            "testflight_btn": "Probar en TestFlight",
+            "beta_note": "Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "Preguntas frecuentes",
             "privacy_btn": "Política de privacidad",
             "support_btn": "Soporte",
@@ -1771,8 +1819,10 @@ PLUSMINUS_DATA = {
                 "Export et restauration manuels via Fichiers (.plusminusbackup)",
                 "Disponible en 6 langues (français, anglais, finnois, suédois, allemand, espagnol) avec 10 devises et mode sombre/clair",
             ],
-            "closing_title": "Conçue pour iPhone et iPad",
-            "closing_body": "PlusMinus est conçue pour iPhone et iPad sous iOS 26 ou version ultérieure.",
+            "closing_title": "Bientôt sur l'App Store",
+            "closing_body": "PlusMinus est conçue pour iPhone et iPad et est en cours de préparation pour sa sortie.",
+            "testflight_btn": "Essayer sur TestFlight",
+            "beta_note": "Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)",
             "faq_btn": "FAQ",
             "privacy_btn": "Politique de confidentialité",
             "support_btn": "Assistance",
@@ -1859,7 +1909,9 @@ def build_root_index(lang_code: str) -> str:
                 <p>{app["summary"]}</p>
                 <div class="app-actions">
                     <a class="button" href="{app["primary_href"]}">{app["primary_label"]}</a>
+                    <a class="button secondary" href="{app["testflight_href"]}" target="_blank" rel="noopener noreferrer">{app["testflight_label"]}</a>
                 </div>
+                <p class="beta-note">{app["beta_note"]}</p>
                 <p class="app-links">
                     {secondary}
                 </p>
@@ -1944,7 +1996,10 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .app-actions {{
-            margin-bottom: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
         }}
 
         .button {{
@@ -1960,6 +2015,23 @@ def build_root_index(lang_code: str) -> str:
 
         .button:hover {{
             background: #0066d6;
+        }}
+
+        .button.secondary {{
+            background: #e8e8ed;
+            color: #1d1d1f;
+        }}
+
+        .button.secondary:hover {{
+            background: #dcdce2;
+        }}
+
+        .app-card .beta-note {{
+            margin: 0 0 14px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #666;
+            flex-grow: 0;
         }}
 
         .app-links {{
@@ -2755,9 +2827,36 @@ def build_pm_marketing(lang_code: str) -> str:
             font-weight: 600;
         }}
 
+        .button:hover {{
+            background: #0066d6;
+        }}
+
         .secondary {{
             background: #e8e8ed;
             color: #1d1d1f;
+        }}
+
+        .secondary:hover {{
+            background: #dcdce2;
+        }}
+
+        .beta-cta {{
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }}
+
+        .hero .beta-cta {{
+            margin-top: 28px;
+        }}
+
+        .beta-cta .beta-note {{
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
         }}
 
         .closing {{
@@ -2860,6 +2959,11 @@ def build_pm_marketing(lang_code: str) -> str:
             <p class="subtitle">
                 {d["subtitle"]}
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="{PLUSMINUS_TESTFLIGHT_URL}" target="_blank" rel="noopener noreferrer">{d["testflight_btn"]}</a>
+                <p class="beta-note">{d["beta_note"]}</p>
+            </div>
         </section>
 
         <section class="section">
@@ -2884,6 +2988,11 @@ def build_pm_marketing(lang_code: str) -> str:
             <p>
                 {d["closing_body"]}
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="{PLUSMINUS_TESTFLIGHT_URL}" target="_blank" rel="noopener noreferrer">{d["testflight_btn"]}</a>
+                <p class="beta-note">{d["beta_note"]}</p>
+            </div>
 
             <div class="links">
                 <a class="button secondary" href="faq.html">
@@ -3046,19 +3155,21 @@ def build_sitemap() -> str:
     # Root landing pages (6)
     for lang in SITE_LANGS:
         prefix = f"{lang['dir']}/" if lang["dir"] else ""
-        urls.append((f"{BASE_URL}/{prefix}", "2026-11-25"))
+        urls.append((f"{BASE_URL}/{prefix}", "2026-11-26"))
 
     # WakeUp pages under /wakeup/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
+        lastmod = "2026-11-26" if page == "marketing.html" else "2026-11-23"
         for lang in WAKEUP_LANGS:
             prefix = f"{lang}/" if lang else ""
-            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", "2026-11-23"))
+            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", lastmod))
 
     # PlusMinus pages under /plusminus/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
+        lastmod = "2026-11-26" if page == "marketing.html" else "2026-11-25"
         for lang in SITE_LANGS:
             prefix = f"{lang['dir']}/" if lang["dir"] else ""
-            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", "2026-11-25"))
+            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", lastmod))
 
     entries = "\n".join(
         f"""    <url>

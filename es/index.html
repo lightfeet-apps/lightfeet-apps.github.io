@@ -81,7 +81,10 @@
         }
 
         .app-actions {
-            margin-bottom: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
         }
 
         .button {
@@ -97,6 +100,23 @@
 
         .button:hover {
             background: #0066d6;
+        }
+
+        .button.secondary {
+            background: #e8e8ed;
+            color: #1d1d1f;
+        }
+
+        .button.secondary:hover {
+            background: #dcdce2;
+        }
+
+        .app-card .beta-note {
+            margin: 0 0 14px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #666;
+            flex-grow: 0;
         }
 
         .app-links {
@@ -190,7 +210,9 @@
                 <p>Despertador flexible para planes que cambian. Omite, ajusta una vez o pausa alarmas recurrentes sin cambiar tu horario habitual.</p>
                 <div class="app-actions">
                     <a class="button" href="../wakeup/es/marketing.html">Acerca de WakeUp</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/KdkHfMKe" target="_blank" rel="noopener noreferrer">Beta en TestFlight</a>
                 </div>
+                <p class="beta-note">Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="../wakeup/es/faq.html">Preguntas frecuentes</a>
                     &middot;
@@ -205,7 +227,9 @@
                 <p>Presupuesto mensual sereno que funciona en tu dispositivo. Ve de un vistazo lo que puedes gastar ahora con tranquilidad — sin registrar cada compra.</p>
                 <div class="app-actions">
                     <a class="button" href="../plusminus/es/marketing.html">Acerca de PlusMinus</a>
+                    <a class="button secondary" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Beta en TestFlight</a>
                 </div>
+                <p class="beta-note">Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)</p>
                 <p class="app-links">
                     <a href="../plusminus/es/faq.html">Preguntas frecuentes</a>
                     &middot;

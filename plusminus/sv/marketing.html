@@ -172,9 +172,36 @@
             font-weight: 600;
         }
 
+        .button:hover {
+            background: #0066d6;
+        }
+
         .secondary {
             background: #e8e8ed;
             color: #1d1d1f;
+        }
+
+        .secondary:hover {
+            background: #dcdce2;
+        }
+
+        .beta-cta {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero .beta-cta {
+            margin-top: 28px;
+        }
+
+        .beta-cta .beta-note {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
         }
 
         .closing {
@@ -277,6 +304,11 @@
             <p class="subtitle">
                 Ställ in återkommande inkomster, utgifter, lönedag och månatlig matbudget en gång. Släng ett öga på saldot och se vad som faktiskt är fritt att spendera — utan att logga varje kaffe.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Testa via TestFlight</a>
+                <p class="beta-note">Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
         </section>
 
         <section class="section">
@@ -318,11 +350,16 @@
         </section>
 
         <section class="section closing">
-            <h2>Byggd för iPhone och iPad</h2>
+            <h2>Kommer snart till App Store</h2>
 
             <p>
-                PlusMinus är designad för iPhone och iPad med iOS 26 eller senare.
+                PlusMinus är designat för iPhone och iPad och förbereds för lansering.
             </p>
+
+            <div class="beta-cta">
+                <a class="button" href="https://testflight.apple.com/join/YYQWnY7Z" target="_blank" rel="noopener noreferrer">Testa via TestFlight</a>
+                <p class="beta-note">Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
 
             <div class="links">
                 <a class="button secondary" href="faq.html">
