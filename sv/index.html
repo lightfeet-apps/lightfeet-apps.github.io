@@ -56,6 +56,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            align-items: start;
         }
 
         .app-card {
@@ -78,6 +79,35 @@
             font-size: 16px;
             color: #444;
             flex-grow: 1;
+        }
+
+        .app-preview {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin: 0 0 20px;
+            padding: 12px;
+            border-radius: 16px;
+            background: #0c0d14;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .app-preview:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+        }
+
+        .app-preview:focus-visible {
+            outline: 2px solid #007aff;
+            outline-offset: 2px;
+        }
+
+        .app-preview img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         .app-actions {
@@ -176,6 +206,16 @@
             font-size: 13px;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            .app-preview {
+                transition: none;
+            }
+
+            .app-preview:hover {
+                transform: none;
+            }
+        }
+
         @media (max-width: 640px) {
             .container {
                 padding: 48px 16px 40px;
@@ -208,6 +248,10 @@
             <article class="app-card">
                 <h2>WakeUp</h2>
                 <p>Flexibelt alarm för ändrade planer. Hoppa över, justera en gång eller pausa återkommande alarm utan att ändra ditt vanliga schema.</p>
+                <a class="app-preview" href="../wakeup/sv/marketing.html" aria-label="Visa skärmbilder och mer om WakeUp">
+                    <img src="../wakeup/images/sv/iphone/01-dismiss.webp" alt="" width="590" height="1280" fetchpriority="high">
+                    <img src="../wakeup/images/sv/iphone/03-time-dial.webp" alt="" width="590" height="1280" fetchpriority="high">
+                </a>
                 <div class="app-actions">
                     <a class="button" href="../wakeup/sv/marketing.html">Om WakeUp</a>
                     <a class="button secondary" href="https://testflight.apple.com/join/KdkHfMKe" target="_blank" rel="noopener noreferrer">TestFlight-beta</a>

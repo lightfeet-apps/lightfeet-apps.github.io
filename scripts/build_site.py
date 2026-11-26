@@ -87,6 +87,11 @@ ROOT_DATA = {
                 "summary": "Flexible alarm clock for changing plans. Skip, adjust once, or pause repeating alarms without changing your regular schedule.",
                 "primary_href": "wakeup/marketing.html",
                 "primary_label": "About WakeUp",
+                "previews": [
+                    "wakeup/images/en/iphone/01-dismiss.webp",
+                    "wakeup/images/en/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "View WakeUp screenshots and details",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "TestFlight Beta",
                 "beta_note": "Limited public beta (up to 100 testers) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
@@ -127,6 +132,11 @@ ROOT_DATA = {
                 "summary": "Joustava herätyskello muuttuviin suunnitelmiin. Ohita, säädä kerran tai tauota toistuvia herätyksiä muuttamatta normaalia aikatauluasi.",
                 "primary_href": "../wakeup/fi/marketing.html",
                 "primary_label": "Tietoa WakeUpista",
+                "previews": [
+                    "../wakeup/images/fi/iphone/01-dismiss.webp",
+                    "../wakeup/images/fi/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "Katso WakeUpin kuvakaappaukset ja tiedot",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "TestFlight-beta",
                 "beta_note": "Rajattu julkinen testi (enintään 100 testaajaa) &middot; iPhone ja iPad (iOS/iPadOS 26&ndash;27)",
@@ -167,6 +177,11 @@ ROOT_DATA = {
                 "summary": "Flexibelt alarm för ändrade planer. Hoppa över, justera en gång eller pausa återkommande alarm utan att ändra ditt vanliga schema.",
                 "primary_href": "../wakeup/sv/marketing.html",
                 "primary_label": "Om WakeUp",
+                "previews": [
+                    "../wakeup/images/sv/iphone/01-dismiss.webp",
+                    "../wakeup/images/sv/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "Visa skärmbilder och mer om WakeUp",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "TestFlight-beta",
                 "beta_note": "Begränsat publikt test (upp till 100 testare) &middot; iPhone och iPad (iOS/iPadOS 26&ndash;27)",
@@ -207,6 +222,11 @@ ROOT_DATA = {
                 "summary": "Flexibler Wecker für wechselnde Pläne. Nächsten Wecker auslassen, einmalig anpassen oder pausieren, ohne deine normale Routine zu verändern.",
                 "primary_href": "../wakeup/de/marketing.html",
                 "primary_label": "Über WakeUp",
+                "previews": [
+                    "../wakeup/images/de/iphone/01-dismiss.webp",
+                    "../wakeup/images/de/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "WakeUp-Screenshots und Details ansehen",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "TestFlight-Beta",
                 "beta_note": "Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)",
@@ -247,6 +267,11 @@ ROOT_DATA = {
                 "summary": "Despertador flexible para planes que cambian. Omite, ajusta una vez o pausa alarmas recurrentes sin cambiar tu horario habitual.",
                 "primary_href": "../wakeup/es/marketing.html",
                 "primary_label": "Acerca de WakeUp",
+                "previews": [
+                    "../wakeup/images/es/iphone/01-dismiss.webp",
+                    "../wakeup/images/es/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "Ver capturas y detalles de WakeUp",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "Beta en TestFlight",
                 "beta_note": "Beta pública limitada (hasta 100 participantes) &middot; iPhone y iPad (iOS/iPadOS 26&ndash;27)",
@@ -287,6 +312,11 @@ ROOT_DATA = {
                 "summary": "Réveil flexible pour les imprévus. Ignorez, ajustez une fois ou mettez en pause des alarmes récurrentes sans modifier votre routine habituelle.",
                 "primary_href": "../wakeup/fr/marketing.html",
                 "primary_label": "À propos de WakeUp",
+                "previews": [
+                    "../wakeup/images/fr/iphone/01-dismiss.webp",
+                    "../wakeup/images/fr/iphone/03-time-dial.webp",
+                ],
+                "preview_aria": "Voir les captures d’écran et les détails de WakeUp",
                 "testflight_href": WAKEUP_TESTFLIGHT_URL,
                 "testflight_label": "Bêta TestFlight",
                 "beta_note": "Bêta publique limitée (jusqu’à 100 testeurs) &middot; iPhone et iPad (iOS/iPadOS 26&ndash;27)",
@@ -1903,10 +1933,20 @@ def build_root_index(lang_code: str) -> str:
         secondary = "\n                    &middot;\n                    ".join(
             f'<a href="{href}">{label}</a>' for href, label in app["links"]
         )
+        preview_block = ""
+        if app.get("previews"):
+            preview_imgs = "\n                    ".join(
+                f'<img src="{src}" alt="" width="590" height="1280" fetchpriority="high">'
+                for src in app["previews"]
+            )
+            preview_block = f"""
+                <a class="app-preview" href="{app["primary_href"]}" aria-label="{html.escape(app["preview_aria"])}">
+                    {preview_imgs}
+                </a>"""
         cards_html.append(
             f"""            <article class="app-card">
                 <h2>{app["name"]}</h2>
-                <p>{app["summary"]}</p>
+                <p>{app["summary"]}</p>{preview_block}
                 <div class="app-actions">
                     <a class="button" href="{app["primary_href"]}">{app["primary_label"]}</a>
                     <a class="button secondary" href="{app["testflight_href"]}" target="_blank" rel="noopener noreferrer">{app["testflight_label"]}</a>
@@ -1971,6 +2011,7 @@ def build_root_index(lang_code: str) -> str:
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            align-items: start;
         }}
 
         .app-card {{
@@ -1993,6 +2034,35 @@ def build_root_index(lang_code: str) -> str:
             font-size: 16px;
             color: #444;
             flex-grow: 1;
+        }}
+
+        .app-preview {{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin: 0 0 20px;
+            padding: 12px;
+            border-radius: 16px;
+            background: #0c0d14;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }}
+
+        .app-preview:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+        }}
+
+        .app-preview:focus-visible {{
+            outline: 2px solid #007aff;
+            outline-offset: 2px;
+        }}
+
+        .app-preview img {{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }}
 
         .app-actions {{
@@ -2089,6 +2159,16 @@ def build_root_index(lang_code: str) -> str:
             margin: 0;
             color: #888;
             font-size: 13px;
+        }}
+
+        @media (prefers-reduced-motion: reduce) {{
+            .app-preview {{
+                transition: none;
+            }}
+
+            .app-preview:hover {{
+                transform: none;
+            }}
         }}
 
         @media (max-width: 640px) {{
