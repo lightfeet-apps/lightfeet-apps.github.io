@@ -18,6 +18,78 @@ CONTACT_EMAIL = "contact@lightfeetapps.com"
 PLUSMINUS_EMAIL = "plusminus@lightfeetapps.com"
 WAKEUP_TESTFLIGHT_URL = "https://testflight.apple.com/join/KdkHfMKe"
 PLUSMINUS_TESTFLIGHT_URL = "https://testflight.apple.com/join/YYQWnY7Z"
+
+THEME_VARS_CSS = """        :root {
+            color-scheme: light dark;
+            --in-oklab: ;
+            --bg-color: #f3f6fc;
+            --bg-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            --text: #151924;
+            --text-secondary: #3b4252;
+            --text-muted: #4b5362;
+            --text-subtle: #525a6a;
+            --link: #005ec4;
+            --accent: #007aff;
+            --accent-hover: #0066d6;
+            --surface: rgba(255, 255, 255, 0.88);
+            --surface-card: rgba(255, 255, 255, 0.86);
+            --surface-strong: rgba(255, 255, 255, 0.94);
+            --surface-subtle: rgba(240, 244, 250, 0.72);
+            --surface-border: rgba(255, 255, 255, 0.92);
+            --divider: rgba(24, 42, 74, 0.10);
+            --card-shadow: 0 2px 6px rgba(24, 42, 74, 0.04), 0 14px 36px rgba(24, 42, 74, 0.08);
+            --card-shadow-sm: 0 2px 6px rgba(24, 42, 74, 0.04), 0 10px 28px rgba(24, 42, 74, 0.07);
+            --btn-sec-bg: #e8e8ed;
+            --btn-sec-hover: #dcdce2;
+            --btn-sec-text: #1d1d1f;
+            --code-bg: #e6ecf5;
+            --note-bg: #f4f7fc;
+            --icon-border: rgba(24, 42, 74, 0.10);
+            accent-color: var(--link);
+        }
+
+        @supports (background: linear-gradient(in oklab, white, black)) {
+            :root {
+                --in-oklab: in oklab;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0b101b;
+                --bg-image:
+                    radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(56, 118, 224, 0.24), transparent 70%),
+                    radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(114, 78, 186, 0.20), transparent 68%),
+                    radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(38, 96, 178, 0.18), transparent 72%),
+                    linear-gradient(165deg var(--in-oklab), #0a0f1d 0%, #0e1424 52%, #131126 100%);
+                --text: #f0f4fa;
+                --text-secondary: #c5cedd;
+                --text-muted: #a6b2c6;
+                --text-subtle: #96a3b8;
+                --link: #70b8ff;
+                --accent: #0a6be0;
+                --accent-hover: #1a7cf0;
+                --surface: rgba(20, 27, 45, 0.82);
+                --surface-card: rgba(20, 27, 45, 0.82);
+                --surface-strong: rgba(24, 33, 54, 0.92);
+                --surface-subtle: rgba(255, 255, 255, 0.05);
+                --surface-border: rgba(255, 255, 255, 0.10);
+                --divider: rgba(255, 255, 255, 0.12);
+                --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.32), 0 16px 40px rgba(0, 0, 0, 0.44);
+                --card-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.28), 0 12px 32px rgba(0, 0, 0, 0.38);
+                --btn-sec-bg: rgba(255, 255, 255, 0.11);
+                --btn-sec-hover: rgba(255, 255, 255, 0.18);
+                --btn-sec-text: #f0f4fa;
+                --code-bg: rgba(255, 255, 255, 0.10);
+                --note-bg: rgba(112, 184, 255, 0.09);
+                --icon-border: rgba(255, 255, 255, 0.16);
+            }
+        }"""
+
 PLUSMINUS_EMAIL_SUBJECTS = {
     ("index", "en"): "PlusMinus Support",
     ("index", "fi"): "PlusMinus-tuki",
@@ -81,9 +153,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/",
         "heading": "Lightfeet Apps",
         "tagline": "Focused, thoughtfully crafted apps for iPhone and iPad.",
+        "apps_aria": "Apps",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "assets/icons/wakeup-icon.webp",
                 "summary": "Flexible alarm clock for changing plans. Skip, adjust once, or pause repeating alarms without changing your regular schedule.",
                 "primary_href": "wakeup/marketing.html",
                 "primary_label": "About WakeUp",
@@ -103,6 +177,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "assets/icons/plusminus-icon.webp",
                 "summary": "Calm, local-first monthly budget and live safe-to-spend clarity. Know what you can safely spend right now without logging every purchase.",
                 "primary_href": "plusminus/marketing.html",
                 "primary_label": "About PlusMinus",
@@ -126,9 +201,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/fi/",
         "heading": "Lightfeet Apps",
         "tagline": "Huolellisesti viimeisteltyjä sovelluksia iPhonelle ja iPadille.",
+        "apps_aria": "Sovellukset",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "../assets/icons/wakeup-icon.webp",
                 "summary": "Joustava herätyskello muuttuviin suunnitelmiin. Ohita, säädä kerran tai tauota toistuvia herätyksiä muuttamatta normaalia aikatauluasi.",
                 "primary_href": "../wakeup/fi/marketing.html",
                 "primary_label": "Tietoa WakeUpista",
@@ -148,6 +225,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "../assets/icons/plusminus-icon.webp",
                 "summary": "Rauhallinen, paikallisesti toimiva kuukausibudjetti. Näe yhdellä silmäyksellä, paljonko voit turvallisesti käyttää juuri nyt — ilman jokaisen ostoksen kirjaamista.",
                 "primary_href": "../plusminus/fi/marketing.html",
                 "primary_label": "Tietoa PlusMinusista",
@@ -171,9 +249,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/sv/",
         "heading": "Lightfeet Apps",
         "tagline": "Fokuserade, omsorgsfullt skapade appar för iPhone och iPad.",
+        "apps_aria": "Appar",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "../assets/icons/wakeup-icon.webp",
                 "summary": "Flexibelt alarm för ändrade planer. Hoppa över, justera en gång eller pausa återkommande alarm utan att ändra ditt vanliga schema.",
                 "primary_href": "../wakeup/sv/marketing.html",
                 "primary_label": "Om WakeUp",
@@ -193,6 +273,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "../assets/icons/plusminus-icon.webp",
                 "summary": "Lugn månadsbudget direkt på enheten. Se med en blick vad du tryggt kan spendera just nu — utan att logga varje köp.",
                 "primary_href": "../plusminus/sv/marketing.html",
                 "primary_label": "Om PlusMinus",
@@ -216,9 +297,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/de/",
         "heading": "Lightfeet Apps",
         "tagline": "Fokussierte, sorgfältig gestaltete Apps für iPhone und iPad.",
+        "apps_aria": "Apps",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "../assets/icons/wakeup-icon.webp",
                 "summary": "Flexibler Wecker für wechselnde Pläne. Nächsten Wecker auslassen, einmalig anpassen oder pausieren, ohne deine normale Routine zu verändern.",
                 "primary_href": "../wakeup/de/marketing.html",
                 "primary_label": "Über WakeUp",
@@ -238,6 +321,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "../assets/icons/plusminus-icon.webp",
                 "summary": "Ruhiges Monatsbudget lokal auf deinem Gerät. Sieh auf einen Blick, was du jetzt frei ausgeben kannst – ohne jeden Einkauf einzutragen.",
                 "primary_href": "../plusminus/de/marketing.html",
                 "primary_label": "Über PlusMinus",
@@ -261,9 +345,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/es/",
         "heading": "Lightfeet Apps",
         "tagline": "Apps centradas y cuidadas al detalle para iPhone y iPad.",
+        "apps_aria": "Apps",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "../assets/icons/wakeup-icon.webp",
                 "summary": "Despertador flexible para planes que cambian. Omite, ajusta una vez o pausa alarmas recurrentes sin cambiar tu horario habitual.",
                 "primary_href": "../wakeup/es/marketing.html",
                 "primary_label": "Acerca de WakeUp",
@@ -283,6 +369,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "../assets/icons/plusminus-icon.webp",
                 "summary": "Presupuesto mensual sereno que funciona en tu dispositivo. Ve de un vistazo lo que puedes gastar ahora con tranquilidad — sin registrar cada compra.",
                 "primary_href": "../plusminus/es/marketing.html",
                 "primary_label": "Acerca de PlusMinus",
@@ -306,9 +393,11 @@ ROOT_DATA = {
         "canonical": f"{BASE_URL}/fr/",
         "heading": "Lightfeet Apps",
         "tagline": "Des apps ciblées et soigneusement conçues pour iPhone et iPad.",
+        "apps_aria": "Applications",
         "apps": [
             {
                 "name": "WakeUp",
+                "icon_src": "../assets/icons/wakeup-icon.webp",
                 "summary": "Réveil flexible pour les imprévus. Ignorez, ajustez une fois ou mettez en pause des alarmes récurrentes sans modifier votre routine habituelle.",
                 "primary_href": "../wakeup/fr/marketing.html",
                 "primary_label": "À propos de WakeUp",
@@ -328,6 +417,7 @@ ROOT_DATA = {
             },
             {
                 "name": "PlusMinus",
+                "icon_src": "../assets/icons/plusminus-icon.webp",
                 "summary": "Budget mensuel serein et local avant tout. Voyez en un coup d’œil ce que vous pouvez dépenser maintenant — sans noter chaque achat.",
                 "primary_href": "../plusminus/fr/marketing.html",
                 "primary_label": "À propos de PlusMinus",
@@ -386,6 +476,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus FAQ – Frequently Asked Questions",
+            "site_nav_aria": "Site navigation",
             "desc": "Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, rounding, backups, privacy, and supported languages.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "About PlusMinus",
@@ -650,6 +741,7 @@ PLUSMINUS_DATA = {
             "title": "PlusMinus UKK – Usein kysytyt kysymykset",
             "desc": "Usein kysyttyjä kysymyksiä ja ohjeita PlusMinus-sovellukseen iPhonella ja iPadilla: Käytettävissä nyt -laskenta, Tilanne ja Kuukausi, suunnitelman analyysi, ruokabudjetin suhteutus, kaksoisvähennysten esto, pyöristykset, varmuuskopiot, tietosuoja ja tuetut kielet.",
             "back_label": "&larr; PlusMinus-tuki",
+            "site_nav_aria": "Sivuston navigaatio",
             "about_link": "Tietoa PlusMinusista",
             "privacy_link": "Tietosuojaseloste",
             "heading": "Usein kysytyt kysymykset",
@@ -910,6 +1002,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus FAQ – Vanliga frågor",
+            "site_nav_aria": "Webbplatsnavigering",
             "desc": "Vanliga frågor och guider för PlusMinus på iPhone och iPad: Kvar att spendera, Läget och Plan, plananalys, matbudget, skydd mot dubbelavdrag, valda månader, avrundning, säkerhetskopior, integritet och språk.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "Om PlusMinus",
@@ -1172,6 +1265,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus FAQ – Häufig gestellte Fragen",
+            "site_nav_aria": "Seitennavigation",
             "desc": "Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Rundung, Backups, Datenschutz und Sprachen.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "Über PlusMinus",
@@ -1436,6 +1530,7 @@ PLUSMINUS_DATA = {
             "title": "PlusMinus FAQ – Preguntas frecuentes",
             "desc": "Preguntas frecuentes y guías de PlusMinus para iPhone y iPad: Disponible para gastar, Actual vs. Plan, análisis del plan, presupuesto de comida, prevención de cobro doble, meses seleccionados, redondeo, copias de seguridad, privacidad e idiomas.",
             "back_label": "&larr; Soporte de PlusMinus",
+            "site_nav_aria": "Navegación del sitio",
             "about_link": "Acerca de PlusMinus",
             "privacy_link": "Política de privacidad",
             "heading": "Preguntas frecuentes",
@@ -1698,6 +1793,7 @@ PLUSMINUS_DATA = {
             "title": "PlusMinus FAQ – Foire aux questions",
             "desc": "Questions fréquentes et guides pour PlusMinus sur iPhone et iPad : Disponible à dépenser, Actuel et Plan, analyse du plan, budget alimentation, double déduction, mois sélectionnés, arrondis, sauvegardes, confidentialité et langues.",
             "back_label": "&larr; Assistance PlusMinus",
+            "site_nav_aria": "Navigation du site",
             "about_link": "À propos de PlusMinus",
             "privacy_link": "Politique de confidentialité",
             "heading": "Foire aux questions",
@@ -1927,6 +2023,7 @@ PLUSMINUS_DATA = {
 def build_root_index(lang_code: str) -> str:
     d = ROOT_DATA[lang_code]
     lang_links = lang_nav_links("index.html", lang_code)
+    root_prefix = "" if lang_code == "en" else "../"
 
     cards_html = []
     for app in d["apps"]:
@@ -1945,7 +2042,10 @@ def build_root_index(lang_code: str) -> str:
                 </a>"""
         cards_html.append(
             f"""            <article class="app-card">
-                <h2>{app["name"]}</h2>
+                <div class="app-header">
+                    <img class="app-icon" src="{app["icon_src"]}" alt="" width="48" height="48">
+                    <h2>{app["name"]}</h2>
+                </div>
                 <p>{app["summary"]}</p>{preview_block}
                 <div class="app-actions">
                     <a class="button" href="{app["primary_href"]}">{app["primary_label"]}</a>
@@ -1964,21 +2064,24 @@ def build_root_index(lang_code: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>{d["title"]}</title>
     <meta name="description" content="{html.escape(d["desc"])}">
     <meta name="robots" content="index, follow">
+    <link rel="icon" href="{root_prefix}favicon.svg" type="image/svg+xml">
     <link rel="canonical" href="{d["canonical"]}">
 {hreflang_links("")}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lightfeet Apps">
+    <meta property="og:title" content="{html.escape(d["title"])}">
+    <meta property="og:description" content="{html.escape(d["desc"])}">
+    <meta property="og:url" content="{d["canonical"]}">
+    <meta property="og:locale" content="{lang_code}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{html.escape(d["title"])}">
+    <meta name="twitter:description" content="{html.escape(d["desc"])}">
     <style>
-        :root {{
-            --in-oklab: ;
-        }}
-
-        @supports (background: linear-gradient(in oklab, white, black)) {{
-            :root {{
-                --in-oklab: in oklab;
-            }}
-        }}
+{THEME_VARS_CSS}
 
         * {{
             box-sizing: border-box;
@@ -1988,14 +2091,10 @@ def build_root_index(lang_code: str) -> str:
             margin: 0;
             min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
-            color: #151924;
+            color: var(--text);
             line-height: 1.6;
         }}
 
@@ -2020,7 +2119,7 @@ def build_root_index(lang_code: str) -> str:
 
         .tagline {{
             font-size: 21px;
-            color: #3b4252;
+            color: var(--text-secondary);
             max-width: 620px;
             margin: 0 auto;
             line-height: 1.45;
@@ -2034,29 +2133,44 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .app-card {{
-            background: rgba(255, 255, 255, 0.88);
+            background: var(--surface);
             -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--surface-border);
             border-radius: 22px;
             padding: 32px;
-            box-shadow:
-                0 2px 6px rgba(24, 42, 74, 0.04),
-                0 14px 36px rgba(24, 42, 74, 0.08);
+            box-shadow: var(--card-shadow);
             display: flex;
             flex-direction: column;
         }}
 
-        .app-card h2 {{
-            margin: 0 0 12px;
+        .app-header {{
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }}
+
+        .app-icon {{
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            border: 1px solid var(--icon-border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            flex-shrink: 0;
+            display: block;
+        }}
+
+        .app-header h2 {{
+            margin: 0;
             font-size: 28px;
-            color: #151924;
+            color: var(--text);
         }}
 
         .app-card > p {{
             margin: 0 0 22px;
             font-size: 16px;
-            color: #3b4252;
+            color: var(--text-secondary);
             flex-grow: 1;
         }}
 
@@ -2078,7 +2192,7 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .app-preview:focus-visible {{
-            outline: 2px solid #007aff;
+            outline: 2px solid var(--link);
             outline-offset: 2px;
         }}
 
@@ -2101,41 +2215,41 @@ def build_root_index(lang_code: str) -> str:
             padding: 12px 18px;
             border-radius: 12px;
             text-decoration: none;
-            background: #007aff;
+            background: var(--accent);
             color: #ffffff;
             font-weight: 600;
             font-size: 15px;
         }}
 
         .button:hover {{
-            background: #0066d6;
+            background: var(--accent-hover);
         }}
 
         .button.secondary {{
-            background: #e8e8ed;
-            color: #1d1d1f;
+            background: var(--btn-sec-bg);
+            color: var(--btn-sec-text);
         }}
 
         .button.secondary:hover {{
-            background: #dcdce2;
+            background: var(--btn-sec-hover);
         }}
 
         .app-card .beta-note {{
             margin: 0 0 14px;
             font-size: 13px;
             line-height: 1.45;
-            color: #4b5362;
+            color: var(--text-muted);
             flex-grow: 0;
         }}
 
         .app-links {{
             margin: 0;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .app-links a {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -2147,7 +2261,7 @@ def build_root_index(lang_code: str) -> str:
             text-align: center;
             margin-top: 56px;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .contact-line {{
@@ -2155,7 +2269,7 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .contact-line a {{
-            color: #005ec4;
+            color: var(--link);
         }}
 
         .lang-nav {{
@@ -2164,24 +2278,24 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }}
 
         .copyright {{
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }}
 
@@ -2229,7 +2343,7 @@ def build_root_index(lang_code: str) -> str:
             <p class="tagline">{d["tagline"]}</p>
         </section>
 
-        <section class="apps-grid" aria-label="Apps">
+        <section class="apps-grid" aria-label="{d["apps_aria"]}">
 {cards_block}
         </section>
 
@@ -2255,6 +2369,7 @@ def build_pm_index(lang_code: str) -> str:
     pm = PLUSMINUS_DATA[lang_code]
     d = pm["index"]
     prefix = "" if lang_code == "en" else f"{lang_code}/"
+    asset_prefix = "../" if lang_code == "en" else "../../"
     canonical = f"{BASE_URL}/plusminus/{prefix}"
     lang_links = lang_nav_links("index.html", lang_code)
 
@@ -2273,30 +2388,21 @@ def build_pm_index(lang_code: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>{d["title"]}</title>
     <meta name="description" content="{html.escape(d["desc"])}">
     <meta name="robots" content="index, follow">
+    <link rel="icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png" type="image/png">
+    <link rel="apple-touch-icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png">
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/")}
     <style>
-        :root {{
-            --in-oklab: ;
-        }}
-
-        @supports (background: linear-gradient(in oklab, white, black)) {{
-            :root {{
-                --in-oklab: in oklab;
-            }}
-        }}
+{THEME_VARS_CSS}
 
         html {{
             min-height: 100%;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
         }}
 
@@ -2306,7 +2412,7 @@ def build_pm_index(lang_code: str) -> str:
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #151924;
+            color: var(--text);
         }}
 
         h1 {{
@@ -2315,29 +2421,27 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .card {{
-            background: rgba(255, 255, 255, 0.86);
+            background: var(--surface-card);
             -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--surface-border);
             border-radius: 16px;
             padding: 24px;
             margin: 28px 0;
-            box-shadow:
-                0 2px 6px rgba(24, 42, 74, 0.04),
-                0 10px 28px rgba(24, 42, 74, 0.07);
+            box-shadow: var(--card-shadow-sm);
         }}
 
         .card h2 {{
             margin: 0 0 12px;
             font-size: 19px;
-            color: #151924;
+            color: var(--text);
         }}
 
         .card p {{
             margin: 0 0 14px;
             font-size: 15px;
             line-height: 1.5;
-            color: #3b4252;
+            color: var(--text-secondary);
         }}
 
         .card p:last-child {{
@@ -2345,19 +2449,19 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .faq-card {{
-            background: rgba(255, 255, 255, 0.94);
-            border: 1.5px solid #007aff;
-            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.08);
+            background: var(--surface-strong);
+            border: 1.5px solid var(--accent);
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.12);
         }}
 
         .faq-card h2 {{
-            color: #005ec4;
+            color: var(--link);
         }}
 
         .faq-card-link {{
             display: inline-block;
             font-weight: 600;
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -2368,19 +2472,19 @@ def build_pm_index(lang_code: str) -> str:
         code {{
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
             font-size: 13px;
-            background: #e6ecf5;
+            background: var(--code-bg);
             padding: 1px 5px;
             border-radius: 4px;
         }}
 
         a {{
-            color: #005ec4;
+            color: var(--link);
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .links-nav {{
@@ -2393,24 +2497,24 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }}
 
         .copyright {{
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }}
 
@@ -2422,6 +2526,8 @@ def build_pm_index(lang_code: str) -> str:
     </style>
 </head>
 <body>
+
+    <main>
 
     <h1>{d["heading"]}</h1>
 
@@ -2470,6 +2576,8 @@ def build_pm_index(lang_code: str) -> str:
         <a href="{pm["home_href"]}">{pm["home_label"]}</a>
     </p>
 
+    </main>
+
     <footer>
         <nav class="lang-nav" aria-label="{d["nav_aria"]}">
             {lang_links}
@@ -2486,6 +2594,7 @@ def build_pm_faq(lang_code: str) -> str:
     pm = PLUSMINUS_DATA[lang_code]
     d = pm["faq"]
     prefix = "" if lang_code == "en" else f"{lang_code}/"
+    asset_prefix = "../" if lang_code == "en" else "../../"
     canonical = f"{BASE_URL}/plusminus/{prefix}faq.html"
     lang_links = lang_nav_links("faq.html", lang_code)
 
@@ -2521,31 +2630,27 @@ def build_pm_faq(lang_code: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>{d["title"]}</title>
     <meta name="description" content="{html.escape(d["desc"])}">
     <meta name="robots" content="index, follow">
+    <link rel="icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png" type="image/png">
+    <link rel="apple-touch-icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png">
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/", "faq.html")}
     <style>
-        :root {{
-            --in-oklab: ;
-        }}
+{THEME_VARS_CSS}
 
-        @supports (background: linear-gradient(in oklab, white, black)) {{
-            :root {{
-                --in-oklab: in oklab;
+        @media (prefers-reduced-motion: no-preference) {{
+            html {{
+                scroll-behavior: smooth;
             }}
         }}
 
         html {{
-            scroll-behavior: smooth;
             min-height: 100%;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
         }}
 
@@ -2555,7 +2660,7 @@ def build_pm_faq(lang_code: str) -> str:
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #151924;
+            color: var(--text);
         }}
 
         h1 {{
@@ -2565,29 +2670,27 @@ def build_pm_faq(lang_code: str) -> str:
 
         .subtitle {{
             font-size: 18px;
-            color: #4b5362;
+            color: var(--text-muted);
             margin-top: 0;
             margin-bottom: 32px;
         }}
 
         .toc {{
-            background: rgba(255, 255, 255, 0.86);
+            background: var(--surface-card);
             -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--surface-border);
             border-radius: 16px;
             padding: 22px 28px;
             margin-bottom: 36px;
-            box-shadow:
-                0 2px 6px rgba(24, 42, 74, 0.04),
-                0 10px 28px rgba(24, 42, 74, 0.07);
+            box-shadow: var(--card-shadow-sm);
         }}
 
         .toc-title {{
             margin: 0 0 14px;
             font-size: 13px;
             font-weight: 600;
-            color: #4b5362;
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }}
@@ -2608,7 +2711,7 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .toc a {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -2627,7 +2730,7 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .top-nav a {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -2640,21 +2743,21 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .top-nav-links {{
-            color: #525a6a;
+            color: var(--text-subtle);
         }}
 
         .toc-contact-tip {{
             margin: 18px 0 0;
             padding-top: 14px;
-            border-top: 1px solid rgba(24, 42, 74, 0.1);
+            border-top: 1px solid var(--divider);
             font-size: 14px;
-            color: #3b4252;
+            color: var(--text-secondary);
             line-height: 1.45;
         }}
 
         .toc-contact-tip a {{
             font-weight: 600;
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -2663,23 +2766,21 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .faq-item {{
-            background: rgba(255, 255, 255, 0.86);
+            background: var(--surface-card);
             -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--surface-border);
             border-radius: 16px;
             padding: 24px 28px;
             margin-bottom: 24px;
             scroll-margin-top: 24px;
-            box-shadow:
-                0 2px 6px rgba(24, 42, 74, 0.04),
-                0 10px 28px rgba(24, 42, 74, 0.07);
+            box-shadow: var(--card-shadow-sm);
         }}
 
         .faq-item h2 {{
             margin: 0 0 16px;
             font-size: 20px;
-            color: #151924;
+            color: var(--text);
         }}
 
         .faq-item p {{
@@ -2702,18 +2803,18 @@ def build_pm_faq(lang_code: str) -> str:
         code {{
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
             font-size: 14px;
-            background: #e6ecf5;
+            background: var(--code-bg);
             padding: 1px 5px;
             border-radius: 4px;
         }}
 
         .note {{
-            background: #f4f7fc;
-            border-left: 4px solid #007aff;
+            background: var(--note-bg);
+            border-left: 4px solid var(--accent);
             border-radius: 8px;
             padding: 12px 16px;
             font-size: 14px;
-            color: #3b4252;
+            color: var(--text-secondary);
             margin-top: 16px;
         }}
 
@@ -2721,24 +2822,24 @@ def build_pm_faq(lang_code: str) -> str:
             display: inline-block;
             margin-top: 14px;
             font-size: 13px;
-            color: #525a6a;
+            color: var(--text-subtle);
             text-decoration: none;
             font-weight: 500;
         }}
 
         .back-to-top:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         a {{
-            color: #005ec4;
+            color: var(--link);
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .links-nav {{
@@ -2751,24 +2852,24 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }}
 
         .copyright {{
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }}
 
@@ -2782,7 +2883,7 @@ def build_pm_faq(lang_code: str) -> str:
 </head>
 <body id="top">
 
-    <nav class="top-nav" aria-label="Site navigation">
+    <nav class="top-nav" aria-label="{d["site_nav_aria"]}">
         <a href="index.html" class="back-link">{d["back_label"]}</a>
         <span class="top-nav-links">
             <a href="marketing.html">{d["about_link"]}</a>
@@ -2792,6 +2893,8 @@ def build_pm_faq(lang_code: str) -> str:
             <a href="{pm["home_href"]}">{pm["home_label"]}</a>
         </span>
     </nav>
+
+    <main>
 
     <h1>{d["heading"]}</h1>
     <p class="subtitle">{d["subtitle"]}</p>
@@ -2818,6 +2921,8 @@ def build_pm_faq(lang_code: str) -> str:
         <a href="{pm["home_href"]}">{pm["home_label"]}</a>
     </p>
 
+    </main>
+
     <footer>
         <nav class="lang-nav" aria-label="{d["nav_aria"]}">
             {lang_links}
@@ -2833,6 +2938,7 @@ def build_pm_faq(lang_code: str) -> str:
 def build_pm_marketing(lang_code: str) -> str:
     pm = PLUSMINUS_DATA[lang_code]
     d = pm["marketing"]
+    asset_prefix = "../" if lang_code == "en" else "../../"
     lang_links = lang_nav_links("marketing.html", lang_code)
 
     ld_json = json.dumps(
@@ -2866,12 +2972,15 @@ def build_pm_marketing(lang_code: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
 
     <title>{d["title"]}</title>
 
     <meta name="description" content="{html.escape(d["desc"])}">
     <meta name="robots" content="index, follow">
 
+    <link rel="icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png" type="image/png">
+    <link rel="apple-touch-icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png">
     <link rel="canonical" href="{d["canonical"]}">
 {hreflang_links("plusminus/", "marketing.html")}
 
@@ -2890,15 +2999,7 @@ def build_pm_marketing(lang_code: str) -> str:
     {ld_json}
     </script>
     <style>
-        :root {{
-            --in-oklab: ;
-        }}
-
-        @supports (background: linear-gradient(in oklab, white, black)) {{
-            :root {{
-                --in-oklab: in oklab;
-            }}
-        }}
+{THEME_VARS_CSS}
 
         * {{
             box-sizing: border-box;
@@ -2908,14 +3009,10 @@ def build_pm_marketing(lang_code: str) -> str:
             margin: 0;
             min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
-            color: #151924;
+            color: var(--text);
         }}
 
         .container {{
@@ -2937,7 +3034,7 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .tagline {{
             font-size: 26px;
-            color: #3b4252;
+            color: var(--text-secondary);
             max-width: 680px;
             margin: 0 auto;
             line-height: 1.4;
@@ -2945,23 +3042,21 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .subtitle {{
             font-size: 19px;
-            color: #4b5362;
+            color: var(--text-muted);
             max-width: 680px;
             margin: 20px auto 0;
             line-height: 1.6;
         }}
 
         .section {{
-            background: rgba(255, 255, 255, 0.88);
+            background: var(--surface);
             -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--surface-border);
             border-radius: 22px;
             padding: 36px;
             margin-bottom: 24px;
-            box-shadow:
-                0 2px 6px rgba(24, 42, 74, 0.04),
-                0 14px 36px rgba(24, 42, 74, 0.08);
+            box-shadow: var(--card-shadow);
         }}
 
         h2 {{
@@ -2977,7 +3072,7 @@ def build_pm_marketing(lang_code: str) -> str:
         p {{
             font-size: 18px;
             line-height: 1.6;
-            color: #3b4252;
+            color: var(--text-secondary);
         }}
 
         .feature-grid {{
@@ -2989,7 +3084,7 @@ def build_pm_marketing(lang_code: str) -> str:
         .feature {{
             padding: 22px;
             border-radius: 16px;
-            background: rgba(240, 244, 250, 0.72);
+            background: var(--surface-subtle);
         }}
 
         .feature p {{
@@ -3022,22 +3117,22 @@ def build_pm_marketing(lang_code: str) -> str:
             padding: 13px 18px;
             border-radius: 12px;
             text-decoration: none;
-            background: #007aff;
+            background: var(--accent);
             color: white;
             font-weight: 600;
         }}
 
         .button:hover {{
-            background: #0066d6;
+            background: var(--accent-hover);
         }}
 
         .secondary {{
-            background: #e8e8ed;
-            color: #1d1d1f;
+            background: var(--btn-sec-bg);
+            color: var(--btn-sec-text);
         }}
 
         .secondary:hover {{
-            background: #dcdce2;
+            background: var(--btn-sec-hover);
         }}
 
         .beta-cta {{
@@ -3056,7 +3151,7 @@ def build_pm_marketing(lang_code: str) -> str:
             margin: 0;
             font-size: 14px;
             line-height: 1.5;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .closing {{
@@ -3075,7 +3170,7 @@ def build_pm_marketing(lang_code: str) -> str:
         footer {{
             text-align: center;
             padding: 40px 0 10px;
-            color: #4b5362;
+            color: var(--text-muted);
             font-size: 14px;
         }}
 
@@ -3085,19 +3180,19 @@ def build_pm_marketing(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }}
 
         .home-nav {{
@@ -3106,7 +3201,7 @@ def build_pm_marketing(lang_code: str) -> str:
         }}
 
         .home-nav a {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: none;
         }}
 
@@ -3116,7 +3211,7 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .copyright {{
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }}
 
@@ -3236,6 +3331,7 @@ def build_pm_privacy(lang_code: str) -> str:
     pm = PLUSMINUS_DATA[lang_code]
     d = pm["privacy"]
     prefix = "" if lang_code == "en" else f"{lang_code}/"
+    asset_prefix = "../" if lang_code == "en" else "../../"
     canonical = f"{BASE_URL}/plusminus/{prefix}privacy.html"
     lang_links = lang_nav_links("privacy.html", lang_code)
 
@@ -3250,30 +3346,21 @@ def build_pm_privacy(lang_code: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>{d["title"]}</title>
     <meta name="description" content="{html.escape(d["desc"])}">
     <meta name="robots" content="index, follow">
+    <link rel="icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png" type="image/png">
+    <link rel="apple-touch-icon" href="{asset_prefix}assets/icons/plusminus-icon-180.png">
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/", "privacy.html")}
     <style>
-        :root {{
-            --in-oklab: ;
-        }}
-
-        @supports (background: linear-gradient(in oklab, white, black)) {{
-            :root {{
-                --in-oklab: in oklab;
-            }}
-        }}
+{THEME_VARS_CSS}
 
         html {{
             min-height: 100%;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
         }}
 
@@ -3283,7 +3370,7 @@ def build_pm_privacy(lang_code: str) -> str:
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #151924;
+            color: var(--text);
         }}
 
         h1 {{
@@ -3295,13 +3382,13 @@ def build_pm_privacy(lang_code: str) -> str:
         }}
 
         a {{
-            color: #005ec4;
+            color: var(--link);
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }}
 
         .lang-nav {{
@@ -3310,29 +3397,31 @@ def build_pm_privacy(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }}
 
         .copyright {{
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }}
     </style>
 </head>
 <body>
+
+    <main>
 
     <h1>{d["heading"]}</h1>
 
@@ -3364,6 +3453,8 @@ def build_pm_privacy(lang_code: str) -> str:
         <a href="{pm["home_href"]}">{pm["home_label"]}</a>
     </p>
 
+    </main>
+
     <footer>
         <nav class="lang-nav" aria-label="{d["nav_aria"]}">
             {lang_links}
@@ -3386,17 +3477,15 @@ def build_sitemap() -> str:
 
     # WakeUp pages under /wakeup/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
-        lastmod = "2026-11-26" if page == "marketing.html" else "2026-11-23"
         for lang in WAKEUP_LANGS:
             prefix = f"{lang}/" if lang else ""
-            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", lastmod))
+            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", "2026-11-26"))
 
     # PlusMinus pages under /plusminus/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
-        lastmod = "2026-11-26" if page == "marketing.html" else "2026-11-25"
         for lang in SITE_LANGS:
             prefix = f"{lang['dir']}/" if lang["dir"] else ""
-            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", lastmod))
+            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", "2026-11-26"))
 
     entries = "\n".join(
         f"""    <url>

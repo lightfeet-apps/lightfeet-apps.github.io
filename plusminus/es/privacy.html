@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>Política de privacidad de PlusMinus</title>
     <meta name="description" content="Lee la política de privacidad de PlusMinus: presupuesto local en tu dispositivo sin cuentas, analíticas, conexiones bancarias ni rastreo.">
     <meta name="robots" content="index, follow">
+    <link rel="icon" href="../../assets/icons/plusminus-icon-180.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/icons/plusminus-icon-180.png">
     <link rel="canonical" href="https://lightfeetapps.com/plusminus/es/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeetapps.com/plusminus/privacy.html">
     <link rel="alternate" hreflang="en" href="https://lightfeetapps.com/plusminus/privacy.html">
@@ -16,7 +19,36 @@
     <link rel="alternate" hreflang="fr" href="https://lightfeetapps.com/plusminus/fr/privacy.html">
     <style>
         :root {
+            color-scheme: light dark;
             --in-oklab: ;
+            --bg-color: #f3f6fc;
+            --bg-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            --text: #151924;
+            --text-secondary: #3b4252;
+            --text-muted: #4b5362;
+            --text-subtle: #525a6a;
+            --link: #005ec4;
+            --accent: #007aff;
+            --accent-hover: #0066d6;
+            --surface: rgba(255, 255, 255, 0.88);
+            --surface-card: rgba(255, 255, 255, 0.86);
+            --surface-strong: rgba(255, 255, 255, 0.94);
+            --surface-subtle: rgba(240, 244, 250, 0.72);
+            --surface-border: rgba(255, 255, 255, 0.92);
+            --divider: rgba(24, 42, 74, 0.10);
+            --card-shadow: 0 2px 6px rgba(24, 42, 74, 0.04), 0 14px 36px rgba(24, 42, 74, 0.08);
+            --card-shadow-sm: 0 2px 6px rgba(24, 42, 74, 0.04), 0 10px 28px rgba(24, 42, 74, 0.07);
+            --btn-sec-bg: #e8e8ed;
+            --btn-sec-hover: #dcdce2;
+            --btn-sec-text: #1d1d1f;
+            --code-bg: #e6ecf5;
+            --note-bg: #f4f7fc;
+            --icon-border: rgba(24, 42, 74, 0.10);
+            accent-color: var(--link);
         }
 
         @supports (background: linear-gradient(in oklab, white, black)) {
@@ -25,14 +57,42 @@
             }
         }
 
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0b101b;
+                --bg-image:
+                    radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(56, 118, 224, 0.24), transparent 70%),
+                    radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(114, 78, 186, 0.20), transparent 68%),
+                    radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(38, 96, 178, 0.18), transparent 72%),
+                    linear-gradient(165deg var(--in-oklab), #0a0f1d 0%, #0e1424 52%, #131126 100%);
+                --text: #f0f4fa;
+                --text-secondary: #c5cedd;
+                --text-muted: #a6b2c6;
+                --text-subtle: #96a3b8;
+                --link: #70b8ff;
+                --accent: #0a6be0;
+                --accent-hover: #1a7cf0;
+                --surface: rgba(20, 27, 45, 0.82);
+                --surface-card: rgba(20, 27, 45, 0.82);
+                --surface-strong: rgba(24, 33, 54, 0.92);
+                --surface-subtle: rgba(255, 255, 255, 0.05);
+                --surface-border: rgba(255, 255, 255, 0.10);
+                --divider: rgba(255, 255, 255, 0.12);
+                --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.32), 0 16px 40px rgba(0, 0, 0, 0.44);
+                --card-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.28), 0 12px 32px rgba(0, 0, 0, 0.38);
+                --btn-sec-bg: rgba(255, 255, 255, 0.11);
+                --btn-sec-hover: rgba(255, 255, 255, 0.18);
+                --btn-sec-text: #f0f4fa;
+                --code-bg: rgba(255, 255, 255, 0.10);
+                --note-bg: rgba(112, 184, 255, 0.09);
+                --icon-border: rgba(255, 255, 255, 0.16);
+            }
+        }
+
         html {
             min-height: 100%;
-            background-color: #f3f6fc;
-            background-image:
-                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
-                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
-                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
-                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
             background-attachment: fixed;
         }
 
@@ -42,7 +102,7 @@
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #151924;
+            color: var(--text);
         }
 
         h1 {
@@ -54,13 +114,13 @@
         }
 
         a {
-            color: #005ec4;
+            color: var(--link);
         }
 
         footer {
             margin-top: 50px;
             font-size: 14px;
-            color: #4b5362;
+            color: var(--text-muted);
         }
 
         .lang-nav {
@@ -69,29 +129,31 @@
         }
 
         .lang-nav a {
-            color: #4b5362;
+            color: var(--text-muted);
             text-decoration: none;
             padding: 2px 4px;
         }
 
         .lang-nav a:hover {
-            color: #005ec4;
+            color: var(--link);
             text-decoration: underline;
         }
 
         .lang-nav a.active {
             font-weight: 600;
-            color: #151924;
+            color: var(--text);
         }
 
         .copyright {
             margin: 0;
-            color: #525a6a;
+            color: var(--text-subtle);
             font-size: 13px;
         }
     </style>
 </head>
 <body>
+
+    <main>
 
     <h1>Política de privacidad de PlusMinus</h1>
 
@@ -164,6 +226,8 @@
         &middot;
         <a href="../../es/index.html">Lightfeet Apps</a>
     </p>
+
+    </main>
 
     <footer>
         <nav class="lang-nav" aria-label="Selección de idioma">
