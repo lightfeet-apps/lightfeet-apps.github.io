@@ -3412,6 +3412,34 @@ def build_pm_privacy(lang_code: str) -> str:
             color: var(--text);
         }}
 
+        .policy-card {{
+            background: var(--surface-card);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--surface-border);
+            border-radius: 20px;
+            padding: 36px 40px;
+            box-shadow: var(--card-shadow-sm);
+        }}
+        .policy-card h1 {{
+            margin-top: 0;
+        }}
+        .policy-card p:last-child {{
+            margin-bottom: 0;
+        }}
+        .links-nav {{
+            margin: 28px 0 20px;
+        }}
+        @media (max-width: 600px) {{
+            .policy-card {{
+                padding: 26px 22px;
+            }}
+        }}
+        @media (forced-colors: active) {{
+            .policy-card {{
+                border: 1px solid CanvasText;
+            }}
+        }}
         .copyright {{
             margin: 0;
             color: var(--text-subtle);
@@ -3422,6 +3450,8 @@ def build_pm_privacy(lang_code: str) -> str:
 <body>
 
     <main>
+
+    <article class="policy-card">
 
     <h1>{d["heading"]}</h1>
 
@@ -3443,7 +3473,9 @@ def build_pm_privacy(lang_code: str) -> str:
         </a>
     </p>
 
-    <p>
+    </article>
+
+    <p class="links-nav">
         <a href="marketing.html">{d["about_link"]}</a>
         &middot;
         <a href="faq.html">{d["faq_link"]}</a>
