@@ -2991,6 +2991,7 @@ def build_pm_marketing(lang_code: str) -> str:
 
             <div class="beta-cta">
                 <a class="button" href="{PLUSMINUS_TESTFLIGHT_URL}" target="_blank" rel="noopener noreferrer">{d["testflight_btn"]}</a>
+                <p class="beta-note">{d["beta_note"]}</p>
             </div>
 
             <div class="links">
