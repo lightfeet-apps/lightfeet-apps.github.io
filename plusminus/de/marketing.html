@@ -57,15 +57,32 @@
 }
     </script>
     <style>
+        :root {
+            --in-oklab: ;
+        }
+
+        @supports (background: linear-gradient(in oklab, white, black)) {
+            :root {
+                --in-oklab: in oklab;
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: #f6f7f9;
-            color: #1d1d1f;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
+            color: #151924;
         }
 
         .container {
@@ -87,7 +104,7 @@
 
         .tagline {
             font-size: 26px;
-            color: #444;
+            color: #3b4252;
             max-width: 680px;
             margin: 0 auto;
             line-height: 1.4;
@@ -95,18 +112,23 @@
 
         .subtitle {
             font-size: 19px;
-            color: #777;
+            color: #4b5362;
             max-width: 680px;
             margin: 20px auto 0;
             line-height: 1.6;
         }
 
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.88);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 22px;
             padding: 36px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 14px 36px rgba(24, 42, 74, 0.08);
         }
 
         h2 {
@@ -122,7 +144,7 @@
         p {
             font-size: 18px;
             line-height: 1.6;
-            color: #444;
+            color: #3b4252;
         }
 
         .feature-grid {
@@ -134,7 +156,7 @@
         .feature {
             padding: 22px;
             border-radius: 16px;
-            background: #f6f7f9;
+            background: rgba(240, 244, 250, 0.72);
         }
 
         .feature p {
@@ -201,7 +223,7 @@
             margin: 0;
             font-size: 14px;
             line-height: 1.5;
-            color: #666;
+            color: #4b5362;
         }
 
         .closing {
@@ -220,7 +242,7 @@
         footer {
             text-align: center;
             padding: 40px 0 10px;
-            color: #777;
+            color: #4b5362;
             font-size: 14px;
         }
 
@@ -230,19 +252,19 @@
         }
 
         .lang-nav a {
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }
 
         .lang-nav a:hover {
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }
 
         .lang-nav a.active {
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }
 
         .home-nav {
@@ -251,7 +273,7 @@
         }
 
         .home-nav a {
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }
 
@@ -261,8 +283,14 @@
 
         .copyright {
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
+        }
+
+        @media (forced-colors: active) {
+            .section {
+                border: 1px solid CanvasText;
+            }
         }
 
         @media (max-width: 600px) {

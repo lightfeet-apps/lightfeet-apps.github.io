@@ -2279,13 +2279,34 @@ def build_pm_index(lang_code: str) -> str:
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/")}
     <style>
+        :root {{
+            --in-oklab: ;
+        }}
+
+        @supports (background: linear-gradient(in oklab, white, black)) {{
+            :root {{
+                --in-oklab: in oklab;
+            }}
+        }}
+
+        html {{
+            min-height: 100%;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
+        }}
+
         body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             max-width: 700px;
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #222;
+            color: #151924;
         }}
 
         h1 {{
@@ -2294,23 +2315,29 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .card {{
-            background: #f6f7f9;
+            background: rgba(255, 255, 255, 0.86);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 16px;
             padding: 24px;
             margin: 28px 0;
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 10px 28px rgba(24, 42, 74, 0.07);
         }}
 
         .card h2 {{
             margin: 0 0 12px;
             font-size: 19px;
-            color: #111;
+            color: #151924;
         }}
 
         .card p {{
             margin: 0 0 14px;
             font-size: 15px;
             line-height: 1.5;
-            color: #444;
+            color: #3b4252;
         }}
 
         .card p:last-child {{
@@ -2318,19 +2345,19 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .faq-card {{
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.94);
             border: 1.5px solid #007aff;
-            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.08);
         }}
 
         .faq-card h2 {{
-            color: #007aff;
+            color: #005ec4;
         }}
 
         .faq-card-link {{
             display: inline-block;
             font-weight: 600;
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -2341,19 +2368,19 @@ def build_pm_index(lang_code: str) -> str:
         code {{
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
             font-size: 13px;
-            background: #e9ecf0;
+            background: #e6ecf5;
             padding: 1px 5px;
             border-radius: 4px;
         }}
 
         a {{
-            color: #007aff;
+            color: #005ec4;
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #666;
+            color: #4b5362;
         }}
 
         .links-nav {{
@@ -2366,25 +2393,31 @@ def build_pm_index(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }}
 
         .copyright {{
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
+        }}
+
+        @media (forced-colors: active) {{
+            .card {{
+                border: 1px solid CanvasText;
+            }}
         }}
     </style>
 </head>
@@ -2494,8 +2527,26 @@ def build_pm_faq(lang_code: str) -> str:
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/", "faq.html")}
     <style>
+        :root {{
+            --in-oklab: ;
+        }}
+
+        @supports (background: linear-gradient(in oklab, white, black)) {{
+            :root {{
+                --in-oklab: in oklab;
+            }}
+        }}
+
         html {{
             scroll-behavior: smooth;
+            min-height: 100%;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
         }}
 
         body {{
@@ -2504,7 +2555,7 @@ def build_pm_faq(lang_code: str) -> str:
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #222;
+            color: #151924;
         }}
 
         h1 {{
@@ -2514,25 +2565,29 @@ def build_pm_faq(lang_code: str) -> str:
 
         .subtitle {{
             font-size: 18px;
-            color: #666;
+            color: #4b5362;
             margin-top: 0;
             margin-bottom: 32px;
         }}
 
         .toc {{
-            background: #ffffff;
-            border: 1px solid #e5e5ea;
+            background: rgba(255, 255, 255, 0.86);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 16px;
             padding: 22px 28px;
             margin-bottom: 36px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 10px 28px rgba(24, 42, 74, 0.07);
         }}
 
         .toc-title {{
             margin: 0 0 14px;
             font-size: 13px;
             font-weight: 600;
-            color: #666;
+            color: #4b5362;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }}
@@ -2553,7 +2608,7 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .toc a {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -2572,7 +2627,7 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .top-nav a {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -2585,21 +2640,21 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .top-nav-links {{
-            color: #888;
+            color: #525a6a;
         }}
 
         .toc-contact-tip {{
             margin: 18px 0 0;
             padding-top: 14px;
-            border-top: 1px solid #e5e5ea;
+            border-top: 1px solid rgba(24, 42, 74, 0.1);
             font-size: 14px;
-            color: #555;
+            color: #3b4252;
             line-height: 1.45;
         }}
 
         .toc-contact-tip a {{
             font-weight: 600;
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -2608,17 +2663,23 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .faq-item {{
-            background: #f6f7f9;
+            background: rgba(255, 255, 255, 0.86);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 16px;
             padding: 24px 28px;
             margin-bottom: 24px;
             scroll-margin-top: 24px;
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 10px 28px rgba(24, 42, 74, 0.07);
         }}
 
         .faq-item h2 {{
             margin: 0 0 16px;
             font-size: 20px;
-            color: #111;
+            color: #151924;
         }}
 
         .faq-item p {{
@@ -2641,18 +2702,18 @@ def build_pm_faq(lang_code: str) -> str:
         code {{
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
             font-size: 14px;
-            background: #e9ecf0;
+            background: #e6ecf5;
             padding: 1px 5px;
             border-radius: 4px;
         }}
 
         .note {{
-            background: #fff;
+            background: #f4f7fc;
             border-left: 4px solid #007aff;
             border-radius: 8px;
             padding: 12px 16px;
             font-size: 14px;
-            color: #444;
+            color: #3b4252;
             margin-top: 16px;
         }}
 
@@ -2660,24 +2721,24 @@ def build_pm_faq(lang_code: str) -> str:
             display: inline-block;
             margin-top: 14px;
             font-size: 13px;
-            color: #8e8e93;
+            color: #525a6a;
             text-decoration: none;
             font-weight: 500;
         }}
 
         .back-to-top:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         a {{
-            color: #007aff;
+            color: #005ec4;
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #666;
+            color: #4b5362;
         }}
 
         .links-nav {{
@@ -2690,25 +2751,32 @@ def build_pm_faq(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }}
 
         .copyright {{
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
+        }}
+
+        @media (forced-colors: active) {{
+            .toc,
+            .faq-item {{
+                border: 1px solid CanvasText;
+            }}
         }}
     </style>
 </head>
@@ -2822,15 +2890,32 @@ def build_pm_marketing(lang_code: str) -> str:
     {ld_json}
     </script>
     <style>
+        :root {{
+            --in-oklab: ;
+        }}
+
+        @supports (background: linear-gradient(in oklab, white, black)) {{
+            :root {{
+                --in-oklab: in oklab;
+            }}
+        }}
+
         * {{
             box-sizing: border-box;
         }}
 
         body {{
             margin: 0;
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: #f6f7f9;
-            color: #1d1d1f;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
+            color: #151924;
         }}
 
         .container {{
@@ -2852,7 +2937,7 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .tagline {{
             font-size: 26px;
-            color: #444;
+            color: #3b4252;
             max-width: 680px;
             margin: 0 auto;
             line-height: 1.4;
@@ -2860,18 +2945,23 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .subtitle {{
             font-size: 19px;
-            color: #777;
+            color: #4b5362;
             max-width: 680px;
             margin: 20px auto 0;
             line-height: 1.6;
         }}
 
         .section {{
-            background: white;
+            background: rgba(255, 255, 255, 0.88);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 22px;
             padding: 36px;
             margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 14px 36px rgba(24, 42, 74, 0.08);
         }}
 
         h2 {{
@@ -2887,7 +2977,7 @@ def build_pm_marketing(lang_code: str) -> str:
         p {{
             font-size: 18px;
             line-height: 1.6;
-            color: #444;
+            color: #3b4252;
         }}
 
         .feature-grid {{
@@ -2899,7 +2989,7 @@ def build_pm_marketing(lang_code: str) -> str:
         .feature {{
             padding: 22px;
             border-radius: 16px;
-            background: #f6f7f9;
+            background: rgba(240, 244, 250, 0.72);
         }}
 
         .feature p {{
@@ -2966,7 +3056,7 @@ def build_pm_marketing(lang_code: str) -> str:
             margin: 0;
             font-size: 14px;
             line-height: 1.5;
-            color: #666;
+            color: #4b5362;
         }}
 
         .closing {{
@@ -2985,7 +3075,7 @@ def build_pm_marketing(lang_code: str) -> str:
         footer {{
             text-align: center;
             padding: 40px 0 10px;
-            color: #777;
+            color: #4b5362;
             font-size: 14px;
         }}
 
@@ -2995,19 +3085,19 @@ def build_pm_marketing(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }}
 
         .home-nav {{
@@ -3016,7 +3106,7 @@ def build_pm_marketing(lang_code: str) -> str:
         }}
 
         .home-nav a {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -3026,8 +3116,14 @@ def build_pm_marketing(lang_code: str) -> str:
 
         .copyright {{
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
+        }}
+
+        @media (forced-colors: active) {{
+            .section {{
+                border: 1px solid CanvasText;
+            }}
         }}
 
         @media (max-width: 600px) {{
@@ -3160,13 +3256,34 @@ def build_pm_privacy(lang_code: str) -> str:
     <link rel="canonical" href="{canonical}">
 {hreflang_links("plusminus/", "privacy.html")}
     <style>
+        :root {{
+            --in-oklab: ;
+        }}
+
+        @supports (background: linear-gradient(in oklab, white, black)) {{
+            :root {{
+                --in-oklab: in oklab;
+            }}
+        }}
+
+        html {{
+            min-height: 100%;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
+        }}
+
         body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             max-width: 700px;
             margin: 60px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #222;
+            color: #151924;
         }}
 
         h1 {{
@@ -3178,13 +3295,13 @@ def build_pm_privacy(lang_code: str) -> str:
         }}
 
         a {{
-            color: #007aff;
+            color: #005ec4;
         }}
 
         footer {{
             margin-top: 50px;
             font-size: 14px;
-            color: #666;
+            color: #4b5362;
         }}
 
         .lang-nav {{
@@ -3193,24 +3310,24 @@ def build_pm_privacy(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }}
 
         .copyright {{
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
         }}
     </style>
