@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>PlusMinus FAQ – Häufig gestellte Fragen</title>
-    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Rundung, Backups, Datenschutz und Sprachen.">
+    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Backups, Datenschutz und Sprachen.">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="../../assets/icons/plusminus-icon-180.png" type="image/png">
     <link rel="apple-touch-icon" href="../../assets/icons/plusminus-icon-180.png">
@@ -355,10 +355,10 @@
             <li><a href="#faq-3">Wie funktioniert das Essensbudget, und kann ich es für diesen Zeitraum anpassen?</a></li>
             <li><a href="#faq-4">Wie verhindert PlusMinus, dass dieselbe Ausgabe zweimal abgezogen wird?</a></li>
             <li><a href="#faq-5">Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</a></li>
-            <li><a href="#faq-6">Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen, Einmalig und die Plananalyse?</a></li>
-            <li><a href="#faq-7">Wie funktionieren Hauptzahltag und die Verschiebung aufs Wochenende?</a></li>
-            <li><a href="#faq-8">Was sind Im nächsten Zeitraum, vorzeitiges Bezahlen und Ältere als erledigt markieren?</a></li>
-            <li><a href="#faq-9">Wie werden Beträge gerundet?</a></li>
+            <li><a href="#faq-6">Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen und Einmalig?</a></li>
+            <li><a href="#faq-7">Wie funktionieren Kategorien und die Plananalyse?</a></li>
+            <li><a href="#faq-8">Wie funktionieren Hauptzahltag und die Verschiebung aufs Wochenende?</a></li>
+            <li><a href="#faq-9">Was sind Im nächsten Zeitraum, vorzeitiges Bezahlen und Ältere als erledigt markieren?</a></li>
             <li><a href="#faq-10">Verbindet sich PlusMinus mit meiner Bank, erfasst es Analysen oder synchronisiert es in die Cloud?</a></li>
             <li><a href="#faq-11">Wie funktionieren Backup &amp; Wiederherstellung sowie Alle Daten zurücksetzen?</a></li>
             <li><a href="#faq-12">Welche Sprachen, Währungen, Erscheinungsbilder und Geräte werden unterstützt?</a></li>
@@ -375,10 +375,10 @@
             <li><strong>Aktuelles Geld:</strong> Dein manuell gepflegter Giro- oder Bargeldbestand im Moment, inklusive relativer Aktualisierungszeit.</li>
             <li><strong>Minus offene Ausgaben:</strong> Offene wiederkehrende und einmalige Ausgaben, die vor deinem nächsten Hauptzahltag fällig sind, sowie unbezahlte überfällige Ausgaben aus dem unmittelbar vorherigen Zeitraum.</li>
             <li><strong>Minus geschätztes verbleibendes Essensbudget:</strong> Dein geschätztes Restbudget für Essen im aktiven Cashflow-Horizont.</li>
-            <li><strong>Engster Cashflow-Punkt bei kommenden Einnahmen:</strong> Wenn geplante zukünftige Einnahmen (wiederkehrend oder einmalig) vor deinem nächsten Hauptzahltag eingehen, prüft PlusMinus deinen Kontostand vor jedem kommenden Einnahmetermin sowie am Ende des Zeitraums und wählt den engsten Punkt. So lösen spätere Ausgaben keinen falschen Fehlbetrag aus, und du gibst nie Geld vor Eingang aus. Über die Info-Taste neben „Frei verfügbar“ öffnest du die <strong>Berechnung</strong> (mit <strong>Hier addierte Einnahmen</strong>, <strong>Für Ausgaben vor dem [Datum] zurückgelegt</strong>, <strong>Essensschätzung</strong> und ggf. <strong>Spätere offene Ausgaben</strong>), und die Überschrift zeigt deutlich <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code>.</li>
+            <li><strong>Engster Cashflow-Punkt bei kommenden Einnahmen:</strong> Geplante zukünftige Einnahmen vor deinem nächsten Hauptzahltag werden an jedem Stichtag sowie am Periodenende geprüft, um den engsten Punkt zu ermitteln – so lösen spätere Ausgaben keinen falschen Fehlbetrag aus und Geld wird nicht vorab ausgegeben. Siehe <a href="#faq-5">Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</a> für alle Details.</li>
         </ul>
         <div class="note">
-            <strong>Tipp:</strong> Du kannst die Berechnungsregeln jederzeit in der App unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong> nachlesen.
+            <strong>Hinweis:</strong> Geldbeträge werden auf den nächsten Cent gerundet, sodass angezeigte Zeilen exakt aufgehen, während die automatische Essensschätzung auf eine ganze Währungseinheit aufrundet. Alle Regeln stehen unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong>.
         </div>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
@@ -423,7 +423,7 @@
 
     <div class="faq-item" id="faq-5">
         <h2>Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</h2>
-        <p>PlusMinus funktioniert zuverlässig mit einem Hauptgehalt, 2&ndash;3 wiederkehrenden Einnahmen an verschiedenen Tagen oder einer geplanten zukünftigen Einmaleinnahme:</p>
+        <p>PlusMinus unterstützt ein Hauptgehalt, mehrere wiederkehrende Einnahmen an verschiedenen Tagen sowie geplante Einmaleinnahmen:</p>
         <ul>
             <li><strong>Zukünftige geplante Einnahmen (automatischer Cashflow-Engpass):</strong> Aktive wiederkehrende und einmalige Einnahmen mit Fälligkeit strikt nach heute (und bei Wochenendverschiebung nach dem nominellen Hauptzahltag des Zeitraums) sowie vor dem nächsten Hauptzahltag werden automatisch anhand des engsten Prüfpunkts einbezogen &mdash; spätere Ausgaben lösen keinen Fehlbetrag aus und du gibst nie Geld vor Eingang aus.</li>
             <li><strong>Klare Beschriftung und exakte Aufschlüsselung:</strong> Sobald kommendes Einkommen den Betrag über den reinen Kassenbestand hebt, wechselt die Überschrift zu <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code> (mit dem Hinweis <code>Gesamter Zeitraum bis &hellip;</code> darunter, falls der Engpass früher endet). Tippe auf die Info-Taste für die <strong>Berechnung</strong>, um <strong>Hier addierte Einnahmen</strong> (getrennt vom <strong>Kommenden Einkommen</strong> der Übersicht) und ggf. <strong>Spätere offene Ausgaben</strong> einzusehen.</li>
@@ -434,18 +434,27 @@
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen, Einmalig und die Plananalyse?</h2>
-        <p>PlusMinus bildet regelmäßige Ausgaben, unregelmäßige Rhythmen und Kategorien in <strong>Plan</strong> und <strong>Aktuell</strong> präzise ab:</p>
+        <h2>Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen und Einmalig?</h2>
+        <p>PlusMinus bildet regelmäßige Intervalle, unregelmäßige Rhythmen und einmalige Posten in <strong>Plan</strong> und <strong>Aktuell</strong> getrennt ab:</p>
         <ul>
             <li><strong>Monatliche Normalisierung in Plan:</strong> Wöchentliche Posten werden mit <code>&times; 52 &divide; 12</code> normalisiert, zweiwöchentliche mit <code>&times; 26 &divide; 12</code>, <strong>Bestimmte Monate</strong> (z. B. Januar &amp; Oktober oder Quartalsvorlagen) mit <code>&times; ausgewählte Monate &divide; 12</code> und jährliche mit <code>&divide; 12</code>.</li>
-            <li><strong>Voller Abzug in Aktuell:</strong> Jährliche Ausgaben und Ausgaben für bestimmte Monate werden exakt in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden.</li>
-            <li><strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum und lassen sich in <strong>Plan</strong> oder über das <code>+</code>-Menü in <strong>Aktuell</strong> anlegen. Sie bleiben aus dem festen Monatsplan in <strong>Plan</strong> außen vor: einmalige Ausgaben werden bei Fälligkeit in <strong>Aktuell</strong> voll abgezogen, und geplante zukünftige Einmaleinnahmen vor dem nächsten Zahltag fließen in die Cashflow-Prüfung von <strong>Frei verfügbar</strong> ein, ohne vorab ausgegeben zu werden.</li>
-            <li><strong>17 Kategorien, Plananalyse &amp; optionaler Fälligkeitstag:</strong> Ausgaben lassen sich in 17 optionale Kategorien einordnen (Wohnen, Nebenkosten, Abos, Versicherungen, Darlehen, Kreditkarten &amp; Konsumkredite, Mobilität, Hobbys, Sport &amp; Fitness, Investieren, Gesundheit &amp; Wohlbefinden, Kinder &amp; Familie, Haustiere, Bildung, Sparen, Spenden, Sonstiges). In <strong>Plan</strong> zeigen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> aktive wiederkehrende Ausgabenkategorien (sowie Ohne Kategorie und Essensbudget) nach Monatsbetrag und Einkommensanteil. Bei wiederkehrenden Ausgaben kann bei Bedarf auch <strong>Kein bestimmter Tag</strong> gewählt werden.</li>
+            <li><strong>Voller Abzug in Aktuell:</strong> Jährliche Ausgaben und Ausgaben für bestimmte Monate werden in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden. Bei wiederkehrenden Ausgaben kann bei Bedarf auch <strong>Kein bestimmter Tag</strong> gewählt werden.</li>
+            <li><strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum und bleiben aus der Monatsbasis in <strong>Plan</strong> außen vor: einmalige Ausgaben werden bei Fälligkeit in <strong>Aktuell</strong> voll abgezogen, und geplante zukünftige Einmaleinnahmen vor dem nächsten Zahltag fließen in die Cashflow-Prüfung von <strong>Frei verfügbar</strong> ein, ohne vorab ausgegeben zu werden.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>Wie funktionieren Kategorien und die Plananalyse?</h2>
+        <p>Kategorien zeigen dir in <strong>Plan</strong>, wie sich deine monatlichen Einnahmen verteilen:</p>
+        <ul>
+            <li><strong>17 optionale Kategorien:</strong> Ausgaben lassen sich 17 optionalen Kategorien zuordnen, etwa Wohnen, Nebenkosten, Abos, Versicherungen und Mobilität.</li>
+            <li><strong>Plananalyse:</strong> In <strong>Plan</strong> vergleichen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> aktive wiederkehrende Kategorien (sowie Ohne Kategorie und Essensbudget) nach Monatsbetrag und Einkommensanteil.</li>
+        </ul>
+        <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
         <h2>Wie funktionieren Hauptzahltag und die Verschiebung aufs Wochenende?</h2>
         <p>Dein <strong>Hauptzahltag</strong> unter <strong>Einstellungen &rarr; Budgetzeitraum</strong> verankert deine Zahlungszeiträume und die Zurücksetzung des Essensbudgets:</p>
         <ul>
@@ -456,7 +465,7 @@
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-9">
         <h2>Was sind Im nächsten Zeitraum, vorzeitiges Bezahlen und Ältere als erledigt markieren?</h2>
         <p>PlusMinus hilft dir, vorauszuschauen und vergangene Zeiträume aufgeräumt zu halten:</p>
         <ul>
@@ -466,20 +475,9 @@
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>Wie werden Beträge gerundet?</h2>
-        <p>Jede angezeigte Zahl ist so aufgebaut, dass die Rechnung exakt aufgeht:</p>
-        <ul>
-            <li><strong>Cent-Genauigkeit &amp; exakte Summen:</strong> Geldposten werden vor dem Addieren oder Subtrahieren auf den nächsten Cent gerundet (genaue halbe Cents werden von null weg gerundet), sodass jede angezeigte Zeile exakt zum Gesamtwert addiert wird.</li>
-            <li><strong>Rundung der Essensschätzung:</strong> Die automatische tägliche Essensschätzung in <strong>Aktuell</strong> rundet auf eine ganze Währungseinheit auf, während selbst gewählte feste Schätzungen Cents beibehalten.</li>
-            <li><strong>Saubere Dezimalanzeige:</strong> Beträge mit Cents zeigen zwei Nachkommastellen, glatte Beträge blenden Nachkommanullen aus.</li>
-        </ul>
-        <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>
-    </div>
-
     <div class="faq-item" id="faq-10">
         <h2>Verbindet sich PlusMinus mit meiner Bank, erfasst es Analysen oder synchronisiert es in die Cloud?</h2>
-        <p>Nein. PlusMinus wurde konsequent als lokale App ohne Tracking entwickelt:</p>
+        <p>Nein. PlusMinus ist eine lokale App ohne Tracking:</p>
         <ul>
             <li><strong>Speicherung auf deinem Gerät:</strong> Kontostände, Einnahmen, Ausgaben, Zahlungsverlauf und Einstellungen bleiben lokal auf deinem iPhone oder iPad.</li>
             <li><strong>Keine Konten oder Bankverbindungen:</strong> PlusMinus erfordert keinen Account und fragt niemals nach Bankzugängen oder Open-Banking-Zugriff.</li>
@@ -490,7 +488,7 @@
 
     <div class="faq-item" id="faq-11">
         <h2>Wie funktionieren Backup &amp; Wiederherstellung sowie Alle Daten zurücksetzen?</h2>
-        <p>Du behältst jederzeit die volle Kontrolle über deine lokalen Budgetdaten:</p>
+        <p>Du kannst deine lokalen Budgetdaten in den Einstellungen sichern, wiederherstellen oder zurücksetzen:</p>
         <ul>
             <li><strong>Backup erstellen:</strong> Öffne <strong>Einstellungen &rarr; Daten &amp; Datenschutz &rarr; Backup &amp; Wiederherstellung</strong> und tippe auf <strong>Backup erstellen</strong>, um eine lesbare JSON-Datei (<code>.plusminusbackup</code>, nicht passwortgeschützt) in iCloud Drive, lokal oder an einem beliebigen Ort in „Dateien“ zu speichern.</li>
             <li><strong>Aus Backup wiederherstellen:</strong> Tippe auf <strong>Aus Backup wiederherstellen</strong> und wähle eine gültige <code>.plusminusbackup</code>-Datei (bis zu 50 MB). Dabei werden alle aktuellen Budgetdaten ersetzt und der Kontostand vom Erstellungszeitpunkt des Backups wiederhergestellt; App-Sprache und Erscheinungsbild bleiben unverändert.</li>
@@ -503,9 +501,9 @@
         <h2>Welche Sprachen, Währungen, Erscheinungsbilder und Geräte werden unterstützt?</h2>
         <p>PlusMinus passt sich an deine bevorzugte Sprache, Währung und Optik an:</p>
         <ul>
-            <li><strong>Sprachen:</strong> Direkt unter <strong>Einstellungen &rarr; Präferenzen &rarr; Sprache</strong> umschaltbar zwischen <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> und <strong>Fran&ccedil;ais</strong> – ohne App-Neustart.</li>
-            <li><strong>Währungen:</strong> Unterstützt <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> und <strong>JPY</strong> unter <strong>Einstellungen &rarr; Präferenzen &rarr; Währung</strong>.</li>
-            <li><strong>Erscheinungsbild:</strong> Wähle <strong>Systemstandard</strong>, <strong>Dunkel</strong> oder <strong>Hell</strong> unter <strong>Einstellungen &rarr; Präferenzen &rarr; Erscheinungsbild</strong>.</li>
+            <li><strong>Sprachen:</strong> Direkt unter <strong>Einstellungen &rarr; Sprache</strong> umschaltbar zwischen <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> und <strong>Fran&ccedil;ais</strong> – ohne App-Neustart.</li>
+            <li><strong>Währungen:</strong> Unterstützt <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> und <strong>JPY</strong> unter <strong>Einstellungen &rarr; Währung</strong>.</li>
+            <li><strong>Erscheinungsbild:</strong> Wähle <strong>Systemstandard</strong>, <strong>Dunkel</strong> oder <strong>Hell</strong> unter <strong>Einstellungen &rarr; Erscheinungsbild</strong>.</li>
             <li><strong>Unterstützte Geräte:</strong> Entwickelt für iPhone und iPad mit <strong>iOS 26 oder neuer</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Zurück nach oben</a>

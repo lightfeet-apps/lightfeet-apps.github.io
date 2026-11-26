@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>PlusMinus FAQ – Frequently Asked Questions</title>
-    <meta name="description" content="Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, rounding, backups, privacy, and supported languages.">
+    <meta name="description" content="Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, backups, privacy, and supported languages.">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="../assets/icons/plusminus-icon-180.png" type="image/png">
     <link rel="apple-touch-icon" href="../assets/icons/plusminus-icon-180.png">
@@ -355,10 +355,10 @@
             <li><a href="#faq-3">How does the Food Budget work, and can I override it for the current period?</a></li>
             <li><a href="#faq-4">How does PlusMinus prevent deducting the same expense twice?</a></li>
             <li><a href="#faq-5">How does upcoming income affect Safe to Spend?</a></li>
-            <li><a href="#faq-6">How do Custom Months, Yearly, Weekly, Biweekly, One-Time items, and Plan analysis work?</a></li>
-            <li><a href="#faq-7">How do Primary Payday and weekend payday shifting work?</a></li>
-            <li><a href="#faq-8">What are Coming Next Period, paying expenses early, and older unsettled expenses?</a></li>
-            <li><a href="#faq-9">How are amounts rounded?</a></li>
+            <li><a href="#faq-6">How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?</a></li>
+            <li><a href="#faq-7">How do categories and Plan analysis work?</a></li>
+            <li><a href="#faq-8">How do Primary Payday and weekend payday shifting work?</a></li>
+            <li><a href="#faq-9">What are Coming Next Period, paying expenses early, and older unsettled expenses?</a></li>
             <li><a href="#faq-10">Does PlusMinus connect to my bank, collect analytics, or sync automatically to the cloud?</a></li>
             <li><a href="#faq-11">How do Backup & Restore and Reset All Data work?</a></li>
             <li><a href="#faq-12">What languages, currencies, themes, and devices are supported?</a></li>
@@ -375,10 +375,10 @@
             <li><strong>Current money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.</li>
             <li><strong>Minus unpaid expenses:</strong> Unpaid recurring expenses and one-time expenses due before your next primary payday, plus any overdue unpaid expenses from the immediately preceding pay period.</li>
             <li><strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the active cash-flow horizon.</li>
-            <li><strong>Tightest cash-flow point for upcoming income:</strong> When scheduled future income (recurring or one-time) arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later expenses don't cause false shortages while you never spend money before it arrives. Tap the info button beside Safe to Spend to open <strong>Spending calculation</strong>, which always matches that limiting horizon line by line (showing <strong>Income added to this calculation</strong>, <strong>Reserved for expenses before [date]</strong>, <strong>Food estimate</strong>, and any <strong>Later unpaid expenses</strong>), while the hero overline clearly reads <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> whenever upcoming income is factored in.</li>
+            <li><strong>Tightest cash-flow point for upcoming income:</strong> Scheduled future income arriving before your next primary payday is checked at each checkpoint and at period end to pick the tightest point, so later expenses don't create false shortages and you never spend money early. See <a href="#faq-5">How does upcoming income affect Safe to Spend?</a> for the full breakdown.</li>
         </ul>
         <div class="note">
-            <strong>Tip:</strong> You can review the calculation rules at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>.
+            <strong>Note:</strong> Monetary amounts round to the nearest cent so displayed lines match the total, while the automatic food estimate rounds up to a whole currency unit. Full calculation rules are available in <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>.
         </div>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
@@ -423,7 +423,7 @@
 
     <div class="faq-item" id="faq-5">
         <h2>How does upcoming income affect Safe to Spend?</h2>
-        <p>PlusMinus works cleanly whether you have one main paycheck, 2&ndash;3 staggered recurring incomes, or a scheduled future one-time payment:</p>
+        <p>PlusMinus supports a single main paycheck, multiple recurring incomes on different dates, and scheduled one-time income:</p>
         <ul>
             <li><strong>Future scheduled income (automatic cash-flow bottleneck):</strong> Active recurring and one-time income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later expenses while never letting you spend money before it arrives.</li>
             <li><strong>Clear labels and exact breakdown:</strong> When upcoming income raises Safe to Spend above cash on hand alone, the hero overline updates to <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> (with a <code>Full period through &hellip;</code> footnote below when the limiting point ends earlier). Tap the info button for <strong>Spending calculation</strong> to inspect <strong>Income added to this calculation</strong> (distinct from the overview's total <strong>Upcoming income</strong>) and any <strong>Later unpaid expenses</strong> covered by later income.</li>
@@ -434,18 +434,27 @@
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>How do Custom Months, Yearly, Weekly, Biweekly, One-Time items, and Plan analysis work?</h2>
-        <p>PlusMinus handles regular expenses, irregular schedules, and category breakdowns accurately across <strong>Plan</strong> and <strong>Live</strong>:</p>
+        <h2>How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?</h2>
+        <p>PlusMinus handles regular expenses, irregular schedules, and one-time entries across <strong>Plan</strong> and <strong>Live</strong>:</p>
         <ul>
             <li><strong>Plan normalization:</strong> Weekly items normalize via <code>&times; 52 &divide; 12</code>, every 2 weeks via <code>&times; 26 &divide; 12</code>, <strong>Custom Months</strong> (such as January &amp; October or Quarterly presets) via <code>&times; selected months &divide; 12</code>, and yearly items via <code>&divide; 12</code>.</li>
-            <li><strong>Live full deductions:</strong> Yearly and custom-month expenses are deducted in full during the actual pay period when they fall due, so you see their real cash impact before payday.</li>
-            <li><strong>One-Time items:</strong> One-time income and one-time expenses (for example a tax refund or car repair) have an exact date and can be added in <strong>Plan</strong> or via the <code>+</code> menu in <strong>Live</strong>. They are excluded from your steady-state <strong>Plan</strong> baseline: one-time expenses deduct in full when due in <strong>Live</strong>, while future scheduled one-time income before next payday enters the <strong>Safe to Spend</strong> cash-flow check without spending it early.</li>
-            <li><strong>17 categories, Plan analysis &amp; optional due days:</strong> Expenses can be grouped into 17 optional categories (Housing, Utilities, Subscriptions, Insurance, Loans, Credit Cards &amp; Consumer Credit, Transport, Hobbies, Sports &amp; Fitness, Investing, Health &amp; Wellbeing, Children &amp; Family, Pets, Education, Saving, Giving, Other). On <strong>Plan</strong>, <strong>Where your income goes</strong> and <strong>Plan analysis</strong> compare active recurring expense categories (plus Uncategorized and Food Budget) by monthly amount and share of monthly income. Recurring expenses can also omit a specific due day (<strong>No specific day</strong>) if needed.</li>
+            <li><strong>Live full deductions:</strong> Yearly and custom-month expenses are deducted in full during the pay period when they fall due. Recurring expenses can also omit a specific due day (<strong>No specific day</strong>) when needed.</li>
+            <li><strong>One-Time items:</strong> One-time income and expenses (for example a tax refund or car repair) have an exact date and are excluded from your <strong>Plan</strong> baseline: expenses deduct in full when due in <strong>Live</strong>, while future one-time income before next payday enters the <strong>Safe to Spend</strong> cash-flow check without spending it early.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>How do categories and Plan analysis work?</h2>
+        <p>Categories let you see where your monthly income goes in <strong>Plan</strong>:</p>
+        <ul>
+            <li><strong>17 optional categories:</strong> Expenses can be assigned to 17 optional categories such as Housing, Utilities, Subscriptions, Insurance, and Transport.</li>
+            <li><strong>Plan analysis:</strong> In <strong>Plan</strong>, <strong>Where your income goes</strong> and <strong>Plan analysis</strong> compare active recurring categories (plus Uncategorized and Food Budget) by monthly amount and share of monthly income.</li>
+        </ul>
+        <a href="#top" class="back-to-top">&uarr; Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
         <h2>How do Primary Payday and weekend payday shifting work?</h2>
         <p>Your <strong>Primary Payday</strong> in <strong>Settings &rarr; Budget Cycle</strong> anchors your pay cycles and food estimate resets:</p>
         <ul>
@@ -456,7 +465,7 @@
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-9">
         <h2>What are Coming Next Period, paying expenses early, and older unsettled expenses?</h2>
         <p>PlusMinus makes it easy to stay ahead of upcoming cycles and keep older periods tidy:</p>
         <ul>
@@ -466,20 +475,9 @@
         <a href="#top" class="back-to-top">&uarr; Back to top</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>How are amounts rounded?</h2>
-        <p>Every visible figure is designed so the arithmetic adds up clearly:</p>
-        <ul>
-            <li><strong>Cent precision &amp; exact totals:</strong> Monetary components are rounded to the nearest cent (with half-cent ties rounding away from zero) before summing or subtracting, so every displayed line adds up to the exact total shown.</li>
-            <li><strong>Food estimate rounding:</strong> The automatic daily food estimate in <strong>Live</strong> rounds up to a whole currency unit, whereas custom fixed food estimates keep cents.</li>
-            <li><strong>Clean decimal display:</strong> Amounts with cents display two decimal places, while whole amounts omit trailing decimals.</li>
-        </ul>
-        <a href="#top" class="back-to-top">&uarr; Back to top</a>
-    </div>
-
     <div class="faq-item" id="faq-10">
         <h2>Does PlusMinus connect to my bank, collect analytics, or sync automatically to the cloud?</h2>
-        <p>No. PlusMinus is built strictly as a local-first, zero-tracking app:</p>
+        <p>No. PlusMinus is a local-first app without tracking:</p>
         <ul>
             <li><strong>Stored on your device:</strong> Balances, incomes, expenses, payment history, and preferences stay locally on your iPhone or iPad.</li>
             <li><strong>No accounts or bank links:</strong> PlusMinus requires no account and never asks for bank credentials or Open Banking access.</li>
@@ -490,7 +488,7 @@
 
     <div class="faq-item" id="faq-11">
         <h2>How do Backup & Restore and Reset All Data work?</h2>
-        <p>You stay in full control of your local budget data at all times:</p>
+        <p>You can back up, restore, or erase your local budget data from Settings:</p>
         <ul>
             <li><strong>Create Backup:</strong> Open <strong>Settings &rarr; Data &amp; Privacy &rarr; Backup &amp; Restore</strong> and tap <strong>Create Backup</strong> to export a readable JSON archive (<code>.plusminusbackup</code>, not password-protected) to iCloud Drive, local storage, or any location in Files.</li>
             <li><strong>Restore from Backup:</strong> Tap <strong>Restore from Backup</strong> and select a valid <code>.plusminusbackup</code> file (up to 50 MB). Restoring replaces all current budget data and restores the balance from when the backup was created, while keeping your app language and appearance unchanged.</li>
@@ -503,9 +501,9 @@
         <h2>What languages, currencies, themes, and devices are supported?</h2>
         <p>PlusMinus adapts to your preferred language, currency, and appearance:</p>
         <ul>
-            <li><strong>Languages:</strong> Switchable directly inside <strong>Settings &rarr; Preferences &rarr; Language</strong> between <strong>System Default</strong>, <strong>English</strong>, <strong>Suomi</strong> (Finnish), <strong>Svenska</strong> (Swedish), <strong>Deutsch</strong> (German), <strong>Espa&ntilde;ol</strong> (Spanish), and <strong>Fran&ccedil;ais</strong> (French) without restarting the app.</li>
-            <li><strong>Currencies:</strong> Supports <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD,</strong> and <strong>JPY</strong> under <strong>Settings &rarr; Preferences &rarr; Currency</strong>.</li>
-            <li><strong>Appearance:</strong> Choose <strong>System Default</strong>, <strong>Dark</strong>, or <strong>Light</strong> under <strong>Settings &rarr; Preferences &rarr; Appearance</strong>.</li>
+            <li><strong>Languages:</strong> Switchable directly inside <strong>Settings &rarr; Language</strong> between <strong>System Default</strong>, <strong>English</strong>, <strong>Suomi</strong> (Finnish), <strong>Svenska</strong> (Swedish), <strong>Deutsch</strong> (German), <strong>Espa&ntilde;ol</strong> (Spanish), and <strong>Fran&ccedil;ais</strong> (French) without restarting the app.</li>
+            <li><strong>Currencies:</strong> Supports <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD,</strong> and <strong>JPY</strong> under <strong>Settings &rarr; Currency</strong>.</li>
+            <li><strong>Appearance:</strong> Choose <strong>System Default</strong>, <strong>Dark</strong>, or <strong>Light</strong> under <strong>Settings &rarr; Appearance</strong>.</li>
             <li><strong>Supported devices:</strong> Built for iPhone and iPad running <strong>iOS 26 or later</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Back to top</a>

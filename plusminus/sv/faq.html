@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>PlusMinus FAQ – Vanliga frågor</title>
-    <meta name="description" content="Vanliga frågor och guider för PlusMinus på iPhone och iPad: Kvar att spendera, Läget och Plan, plananalys, matbudget, skydd mot dubbelavdrag, valda månader, avrundning, säkerhetskopior, integritet och språk.">
+    <meta name="description" content="Vanliga frågor och guider för PlusMinus på iPhone och iPad: Kvar att spendera, Läget och Plan, plananalys, matbudget, skydd mot dubbelavdrag, valda månader, säkerhetskopior, integritet och språk.">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="../../assets/icons/plusminus-icon-180.png" type="image/png">
     <link rel="apple-touch-icon" href="../../assets/icons/plusminus-icon-180.png">
@@ -355,10 +355,10 @@
             <li><a href="#faq-3">Hur fungerar matbudgeten och kan jag ändra den för den här perioden?</a></li>
             <li><a href="#faq-4">Hur förhindrar PlusMinus att samma utgift dras av två gånger?</a></li>
             <li><a href="#faq-5">Hur påverkar kommande inkomster Kvar att spendera?</a></li>
-            <li><a href="#faq-6">Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka, Engångs och Plananalys?</a></li>
-            <li><a href="#faq-7">Hur fungerar Huvudsaklig lönedag och helgjustering?</a></li>
-            <li><a href="#faq-8">Vad är Kommer nästa period, tidig betalning och Markera äldre som avklarade?</a></li>
-            <li><a href="#faq-9">Hur avrundas beloppen?</a></li>
+            <li><a href="#faq-6">Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka och Engångsposter?</a></li>
+            <li><a href="#faq-7">Hur fungerar kategorier och Plananalys?</a></li>
+            <li><a href="#faq-8">Hur fungerar Huvudsaklig lönedag och helgjustering?</a></li>
+            <li><a href="#faq-9">Vad är Kommer nästa period, tidig betalning och Markera äldre som avklarade?</a></li>
             <li><a href="#faq-10">Ansluter PlusMinus till min bank, samlar det in analysdata eller synkar det till molnet?</a></li>
             <li><a href="#faq-11">Hur fungerar Säkerhetskopiering och återställning samt Nollställ alla data?</a></li>
             <li><a href="#faq-12">Vilka språk, valutor, teman och enheter stöds?</a></li>
@@ -375,10 +375,10 @@
             <li><strong>Pengar nu:</strong> Ditt manuellt uppdaterade konto- eller kontantsaldo just nu, med relativ tidsstämpel för senaste uppdatering.</li>
             <li><strong>Minus obetalda utgifter:</strong> Obetalda återkommande utgifter och engångsutgifter som förfaller före din nästa huvudsakliga lönedag, samt obetalda förfallna utgifter från närmast föregående löneperiod.</li>
             <li><strong>Minus uppskattad kvarvarande matbudget:</strong> Din beräknade återstående matbudget för den aktiva kassaflödeshorisonten.</li>
-            <li><strong>Snävaste kassaflödespunkten vid kommande inkomster:</strong> När planerade framtida inkomster (återkommande eller engångs) kommer in före din nästa huvudsakliga lönedag kontrollerar PlusMinus saldot före varje kommande inkomstdatum och vid periodens slut och väljer den snävaste punkten. På så sätt orsakar senare utgifter inga falska underskott, samtidigt som du aldrig kan spendera pengar innan de kommit in. Infoknappen bredvid Kvar att spendera öppnar <strong>Beräkning</strong>, som alltid matchar den begränsande horisonten rad för rad (med <strong>Inkomster som läggs till i beräkningen</strong>, <strong>Reserverat för utgifter före [datum]</strong>, <strong>Matuppskattning</strong> och eventuella <strong>Senare obetalda utgifter</strong>), och rubriken visar tydligt <code>KVAR ATT SPENDERA &middot; MED HÄNSYN TILL KOMMANDE INKOMSTER</code> när kommande inkomster påverkar summan.</li>
+            <li><strong>Snävaste kassaflödespunkten vid kommande inkomster:</strong> Planerade framtida inkomster före din nästa huvudsakliga lönedag kontrolleras före varje inkomstdatum och vid periodens slut för att välja den snävaste punkten, så senare utgifter inte skapar falska underskott och pengar aldrig spenderas i förväg. Se <a href="#faq-5">Hur påverkar kommande inkomster Kvar att spendera?</a> för en fullständig genomgång.</li>
         </ul>
         <div class="note">
-            <strong>Tips:</strong> Du kan när som helst granska beräkningsreglerna i appen under <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>.
+            <strong>Obs!</strong> Belopp avrundas till närmaste öre/cent så att synliga rader summerar exakt till totalen, medan den automatiska matuppskattningen avrundas uppåt till en hel valutaenhet. Alla regler finns under <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>.
         </div>
         <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
     </div>
@@ -423,7 +423,7 @@
 
     <div class="faq-item" id="faq-5">
         <h2>Hur påverkar kommande inkomster Kvar att spendera?</h2>
-        <p>PlusMinus fungerar lika smidigt vare sig du har en huvudlön, 2&ndash;3 återkommande inkomster på olika dagar eller en planerad framtida engångsinkomst:</p>
+        <p>PlusMinus stödjer en enskild huvudlön, flera återkommande inkomster på olika dagar samt planerade engångsinkomster:</p>
         <ul>
             <li><strong>Framtida planerade inkomster (automatisk kassaflödesflaskhals):</strong> Aktiva återkommande inkomster och engångsinkomster med datum strikt efter idag (och efter periodens nominella lönedag vid helgjustering) och före nästa huvudsakliga lönedag räknas automatiskt in i <strong>Kvar att spendera</strong> via den snävaste kontrollpunkten &mdash; så senare utgifter inte skapar falska underskott samtidigt som du aldrig spenderar pengar i förväg.</li>
             <li><strong>Tydliga rubriker och exakt uppställning:</strong> När kommande inkomster höjer beloppet jämfört med enbart kontosaldot visas <code>KVAR ATT SPENDERA &middot; MED HÄNSYN TILL KOMMANDE INKOMSTER</code> (med raden <code>Hela perioden till &hellip;</code> under om den begränsande punkten infaller tidigare). Öppna <strong>Beräkning</strong> via infoknappen för att se <strong>Inkomster som läggs till i beräkningen</strong> (skilt från översiktens <strong>Kommande inkomst</strong>) och eventuella <strong>Senare obetalda utgifter</strong>.</li>
@@ -434,18 +434,27 @@
     </div>
 
     <div class="faq-item" id="faq-6">
-        <h2>Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka, Engångs och Plananalys?</h2>
-        <p>PlusMinus hanterar regelbundna utgifter, oregelbundna intervall och kategorifördelning noggrant i <strong>Plan</strong> och <strong>Läget</strong>:</p>
+        <h2>Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka och Engångsposter?</h2>
+        <p>PlusMinus hanterar regelbundna intervall, oregelbundna utgifter och engångsposter i <strong>Plan</strong> och <strong>Läget</strong>:</p>
         <ul>
             <li><strong>Månadsnormalisering i Plan:</strong> Veckovisa poster normaliseras med <code>&times; 52 &divide; 12</code>, varannan vecka med <code>&times; 26 &divide; 12</code>, <strong>Valda månader</strong> (t.ex. januari &amp; oktober eller kvartalsvis) med <code>&times; valda månader &divide; 12</code>, och årliga med <code>&divide; 12</code>.</li>
-            <li><strong>Fullt avdrag i Läget:</strong> Årliga utgifter och utgifter för valda månader dras av i sin helhet under just den löneperiod då de förfaller.</li>
-            <li><strong>Engångsposter:</strong> Engångsinkomster och engångsutgifter (t.ex. skatteåterbäring eller bilreparation) har ett exakt datum och kan läggas till i <strong>Plan</strong> eller via <code>+</code>-menyn i <strong>Läget</strong>. De ingår inte i den månatliga basen i <strong>Plan</strong>: engångsutgifter dras av i sin helhet i <strong>Läget</strong> när de förfaller, och framtida engångsinkomster före nästa lönedag ingår i kassaflödeskontrollen för <strong>Kvar att spendera</strong> utan att spenderas i förväg.</li>
-            <li><strong>17 kategorier, Plananalys och valfritt förfallodatum:</strong> Utgifter kan ordnas i 17 valfria kategorier (Boende, El och vatten, Prenumerationer, Försäkringar, Lån, Kreditkort och konsumentkrediter, Transport, Hobbyer, Sport och träning, Investering, Hälsa och välbefinnande, Barn och familj, Husdjur, Utbildning, Sparande, Gåvor, Övrigt). I <strong>Plan</strong> visar <strong>Vad din inkomst går till</strong> och <strong>Plananalys</strong> aktiva återkommande utgiftskategorier (samt Okategoriserat och Matbudget) efter månadsbelopp och andel av inkomsten. Regelbundna utgifter kan vid behov sakna ett exakt förfallodatum (<strong>Ingen specifik dag</strong>).</li>
+            <li><strong>Fullt avdrag i Läget:</strong> Årliga utgifter och utgifter för valda månader dras av i sin helhet under den löneperiod då de förfaller. Återkommande utgifter kan vid behov sakna ett exakt förfallodatum (<strong>Ingen specifik dag</strong>).</li>
+            <li><strong>Engångsposter:</strong> Engångsinkomster och engångsutgifter (t.ex. skatteåterbäring eller bilreparation) har ett exakt datum och ingår inte i månadsbasen i <strong>Plan</strong>: engångsutgifter dras av i sin helhet i <strong>Läget</strong> när de förfaller, och framtida engångsinkomster före nästa lönedag ingår i kassaflödeskontrollen för <strong>Kvar att spendera</strong> utan att spenderas i förväg.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>Hur fungerar kategorier och Plananalys?</h2>
+        <p>Kategorier hjälper dig att se hur din månadsinkomst fördelas i <strong>Plan</strong>:</p>
+        <ul>
+            <li><strong>17 valfria kategorier:</strong> Utgifter kan delas in i 17 valfria kategorier som Boende, El och vatten, Prenumerationer, Försäkringar och Transport.</li>
+            <li><strong>Plananalys:</strong> I <strong>Plan</strong> jämför <strong>Vad din inkomst går till</strong> och <strong>Plananalys</strong> aktiva återkommande kategorier (samt Okategoriserat och Matbudget) efter månadsbelopp och andel av inkomsten.</li>
+        </ul>
+        <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
         <h2>Hur fungerar Huvudsaklig lönedag och helgjustering?</h2>
         <p>Din <strong>Huvudsakliga lönedag</strong> under <strong>Inställningar &rarr; Budgetperiod</strong> styr lönecykler och återställning av matuppskattningen:</p>
         <ul>
@@ -456,7 +465,7 @@
         <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-9">
         <h2>Vad är Kommer nästa period, tidig betalning och Markera äldre som avklarade?</h2>
         <p>PlusMinus gör det enkelt att ligga steget före kommande perioder och hålla äldre perioder prydliga:</p>
         <ul>
@@ -466,20 +475,9 @@
         <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>Hur avrundas beloppen?</h2>
-        <p>Alla synliga siffror är utformade så att uträkningen stämmer exakt:</p>
-        <ul>
-            <li><strong>Öre-/centprecision och exakta summor:</strong> Varje delpost avrundas till närmaste öre/cent (halva ören/cent avrundas bort från noll) före summering eller subtraktion, så varje synlig rad summerar exakt till totalsumman.</li>
-            <li><strong>Avrundning av matuppskattningen:</strong> Den automatiska dagliga matuppskattningen i <strong>Läget</strong> avrundas uppåt till en hel valutaenhet, medan egna fasta belopp behåller decimaler.</li>
-            <li><strong>Ren decimalvisning:</strong> Belopp med decimaler visar två decimaler, medan hela belopp döljer avslutande nollor.</li>
-        </ul>
-        <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>
-    </div>
-
     <div class="faq-item" id="faq-10">
         <h2>Ansluter PlusMinus till min bank, samlar det in analysdata eller synkar det till molnet?</h2>
-        <p>Nej. PlusMinus är byggt helt och hållet för lokal lagring utan spårning:</p>
+        <p>Nej. PlusMinus är en lokal app utan spårning:</p>
         <ul>
             <li><strong>Lagras på din enhet:</strong> Saldon, inkomster, utgifter, betalningshistorik och inställningar stannar lokalt på din iPhone eller iPad.</li>
             <li><strong>Inga konton eller bankkopplingar:</strong> PlusMinus kräver inget konto och ber aldrig om bankinloggningar eller Open Banking-åtkomst.</li>
@@ -490,7 +488,7 @@
 
     <div class="faq-item" id="faq-11">
         <h2>Hur fungerar Säkerhetskopiering och återställning samt Nollställ alla data?</h2>
-        <p>Du har alltid full kontroll över dina lokala budgetdata:</p>
+        <p>Du kan säkerhetskopiera, återställa eller radera dina lokala budgetdata i Inställningar:</p>
         <ul>
             <li><strong>Skapa säkerhetskopia:</strong> Öppna <strong>Inställningar &rarr; Data och integritet &rarr; Säkerhetskopiering och återställning</strong> och tryck på <strong>Skapa säkerhetskopia</strong> för att exportera en läsbar JSON-fil (<code>.plusminusbackup</code>, inte lösenordsskyddad) till iCloud Drive, lokal lagring eller valfri plats i Filer.</li>
             <li><strong>Återställ från säkerhetskopia:</strong> Tryck på <strong>Återställ från säkerhetskopia</strong> och välj en giltig <code>.plusminusbackup</code>-fil (upp till 50 MB). Återställning ersätter alla nuvarande budgetdata och återställer saldot från när säkerhetskopian skapades, utan att ändra appens språk eller utseende.</li>
@@ -503,9 +501,9 @@
         <h2>Vilka språk, valutor, teman och enheter stöds?</h2>
         <p>PlusMinus anpassar sig efter ditt önskade språk, din valuta och ditt utseende:</p>
         <ul>
-            <li><strong>Språk:</strong> Kan bytas direkt under <strong>Inställningar &rarr; Preferenser &rarr; Språk</strong> mellan <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> och <strong>Fran&ccedil;ais</strong> utan att starta om appen.</li>
-            <li><strong>Valutor:</strong> Stöder <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> och <strong>JPY</strong> under <strong>Inställningar &rarr; Preferenser &rarr; Valuta</strong>.</li>
-            <li><strong>Utseende:</strong> Välj <strong>Systemstandard</strong>, <strong>Mörkt</strong> eller <strong>Ljust</strong> under <strong>Inställningar &rarr; Preferenser &rarr; Utseende</strong>.</li>
+            <li><strong>Språk:</strong> Kan bytas direkt under <strong>Inställningar &rarr; Språk</strong> mellan <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> och <strong>Fran&ccedil;ais</strong> utan att starta om appen.</li>
+            <li><strong>Valutor:</strong> Stöder <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> och <strong>JPY</strong> under <strong>Inställningar &rarr; Valuta</strong>.</li>
+            <li><strong>Utseende:</strong> Välj <strong>Systemstandard</strong>, <strong>Mörkt</strong> eller <strong>Ljust</strong> under <strong>Inställningar &rarr; Utseende</strong>.</li>
             <li><strong>Enheter som stöds:</strong> Utvecklad för iPhone och iPad med <strong>iOS 26 eller senare</strong>.</li>
         </ul>
         <a href="#top" class="back-to-top">&uarr; Tillbaka till toppen</a>

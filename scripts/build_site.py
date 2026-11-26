@@ -178,7 +178,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "assets/icons/plusminus-icon.webp",
-                "summary": "Calm, local-first monthly budget and live safe-to-spend clarity. Know what you can safely spend right now without logging every purchase.",
+                "summary": "Local-first monthly budget and live safe-to-spend view. See what you can spend right now without logging every purchase.",
                 "primary_href": "plusminus/marketing.html",
                 "primary_label": "About PlusMinus",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -226,7 +226,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "../assets/icons/plusminus-icon.webp",
-                "summary": "Rauhallinen, paikallisesti toimiva kuukausibudjetti. Näe yhdellä silmäyksellä, paljonko voit turvallisesti käyttää juuri nyt — ilman jokaisen ostoksen kirjaamista.",
+                "summary": "Paikallisesti toimiva kuukausibudjetti. Näe yhdellä silmäyksellä, paljonko sinulla on käytettävissä juuri nyt — ilman jokaisen ostoksen kirjaamista.",
                 "primary_href": "../plusminus/fi/marketing.html",
                 "primary_label": "Tietoa PlusMinusista",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -274,7 +274,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "../assets/icons/plusminus-icon.webp",
-                "summary": "Lugn månadsbudget direkt på enheten. Se med en blick vad du tryggt kan spendera just nu — utan att logga varje köp.",
+                "summary": "Lokal månadsbudget på din enhet. Se med en blick vad du har kvar att spendera just nu — utan att logga varje köp.",
                 "primary_href": "../plusminus/sv/marketing.html",
                 "primary_label": "Om PlusMinus",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -322,7 +322,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "../assets/icons/plusminus-icon.webp",
-                "summary": "Ruhiges Monatsbudget lokal auf deinem Gerät. Sieh auf einen Blick, was du jetzt frei ausgeben kannst – ohne jeden Einkauf einzutragen.",
+                "summary": "Lokales Monatsbudget auf deinem Gerät. Sieh auf einen Blick, was jetzt frei verfügbar ist – ohne jeden Einkauf einzutragen.",
                 "primary_href": "../plusminus/de/marketing.html",
                 "primary_label": "Über PlusMinus",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -370,7 +370,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "../assets/icons/plusminus-icon.webp",
-                "summary": "Presupuesto mensual sereno que funciona en tu dispositivo. Ve de un vistazo lo que puedes gastar ahora con tranquilidad — sin registrar cada compra.",
+                "summary": "Presupuesto mensual local en tu dispositivo. Ve de un vistazo lo que tienes disponible para gastar ahora — sin registrar cada compra.",
                 "primary_href": "../plusminus/es/marketing.html",
                 "primary_label": "Acerca de PlusMinus",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -418,7 +418,7 @@ ROOT_DATA = {
             {
                 "name": "PlusMinus",
                 "icon_src": "../assets/icons/plusminus-icon.webp",
-                "summary": "Budget mensuel serein et local avant tout. Voyez en un coup d’œil ce que vous pouvez dépenser maintenant — sans noter chaque achat.",
+                "summary": "Budget mensuel local sur votre appareil. Voyez en un coup d’œil ce qui est disponible à dépenser maintenant — sans noter chaque achat.",
                 "primary_href": "../plusminus/fr/marketing.html",
                 "primary_label": "À propos de PlusMinus",
                 "testflight_href": PLUSMINUS_TESTFLIGHT_URL,
@@ -444,7 +444,7 @@ PLUSMINUS_DATA = {
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
-            "desc": "Get help with PlusMinus, the calm local-first budget app for iPhone and iPad, or contact PlusMinus support.",
+            "desc": "Get help with PlusMinus, the local-first budget app for iPhone and iPad, or contact PlusMinus support.",
             "heading": "PlusMinus Support",
             "thank_you": "Thank you for using PlusMinus.",
             "faq_card_title": "Check the FAQ first for quick answers",
@@ -454,7 +454,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Safe to Spend looks higher or lower than expected:",
-                    "Make sure <strong>Current money</strong> reflects your real balance right now, and review any unpaid or overdue expenses in <strong>Live</strong>. Scheduled future income (recurring or one-time) arriving before your next primary payday is automatically factored into Safe to Spend using the tightest cash-flow point (without letting you spend money before it arrives), while overdue and due-today income waits until you mark it received. Tap the info button beside Safe to Spend for the exact <strong>Spending calculation</strong>, or review all rules in <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>."
+                    "Make sure <strong>Current money</strong> matches your current balance, and review unpaid or overdue expenses in <strong>Live</strong>. Scheduled future income before your next primary payday is included automatically, while overdue and due-today income counts once marked received. Tap the info button beside Safe to Spend for the <strong>Spending calculation</strong>, or see <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>."
                 ),
                 (
                     "Avoiding double-deductions when marking expenses paid:",
@@ -477,7 +477,7 @@ PLUSMINUS_DATA = {
         "faq": {
             "title": "PlusMinus FAQ – Frequently Asked Questions",
             "site_nav_aria": "Site navigation",
-            "desc": "Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, rounding, backups, privacy, and supported languages.",
+            "desc": "Frequently asked questions and guides for PlusMinus on iPhone and iPad: Safe to Spend calculation, Live vs. Plan, Plan analysis, daily food budget proration, double-deduction protection, custom-month expenses, backups, privacy, and supported languages.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "About PlusMinus",
             "privacy_link": "Privacy Policy",
@@ -496,9 +496,9 @@ PLUSMINUS_DATA = {
                         "<strong>Current money:</strong> Your manually maintained checking or cash balance right now, shown with a relative last-updated timestamp.",
                         "<strong>Minus unpaid expenses:</strong> Unpaid recurring expenses and one-time expenses due before your next primary payday, plus any overdue unpaid expenses from the immediately preceding pay period.",
                         "<strong>Minus remaining food estimate:</strong> Your estimated remaining food budget for the active cash-flow horizon.",
-                        "<strong>Tightest cash-flow point for upcoming income:</strong> When scheduled future income (recurring or one-time) arrives before your next primary payday, PlusMinus checks your balance before each upcoming income date and through the end of the cycle, picking the tightest point so later expenses don't cause false shortages while you never spend money before it arrives. Tap the info button beside Safe to Spend to open <strong>Spending calculation</strong>, which always matches that limiting horizon line by line (showing <strong>Income added to this calculation</strong>, <strong>Reserved for expenses before [date]</strong>, <strong>Food estimate</strong>, and any <strong>Later unpaid expenses</strong>), while the hero overline clearly reads <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> whenever upcoming income is factored in."
+                        "<strong>Tightest cash-flow point for upcoming income:</strong> Scheduled future income arriving before your next primary payday is checked at each checkpoint and at period end to pick the tightest point, so later expenses don't create false shortages and you never spend money early. See <a href=\"#faq-5\">How does upcoming income affect Safe to Spend?</a> for the full breakdown."
                     ],
-                    "note": "<strong>Tip:</strong> You can review the calculation rules at any time inside the app under <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>."
+                    "note": "<strong>Note:</strong> Monetary amounts round to the nearest cent so displayed lines match the total, while the automatic food estimate rounds up to a whole currency unit. Full calculation rules are available in <strong>Settings &rarr; Understanding PlusMinus &rarr; How Calculations Work</strong>."
                 },
                 {
                     "question": "What is the difference between Live and Plan?",
@@ -530,7 +530,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "How does upcoming income affect Safe to Spend?",
-                    "intro": "PlusMinus works cleanly whether you have one main paycheck, 2&ndash;3 staggered recurring incomes, or a scheduled future one-time payment:",
+                    "intro": "PlusMinus supports a single main paycheck, multiple recurring incomes on different dates, and scheduled one-time income:",
                     "bullets": [
                         "<strong>Future scheduled income (automatic cash-flow bottleneck):</strong> Active recurring and one-time income scheduled strictly after today (and after the current cycle's nominal primary payday when weekend shifting applies) and before your next primary payday is automatically factored into <strong>Safe to Spend</strong> via the tightest checkpoint &mdash; preventing false shortages from later expenses while never letting you spend money before it arrives.",
                         "<strong>Clear labels and exact breakdown:</strong> When upcoming income raises Safe to Spend above cash on hand alone, the hero overline updates to <code>SAFE TO SPEND &middot; CONSIDERING UPCOMING INCOME</code> (with a <code>Full period through &hellip;</code> footnote below when the limiting point ends earlier). Tap the info button for <strong>Spending calculation</strong> to inspect <strong>Income added to this calculation</strong> (distinct from the overview's total <strong>Upcoming income</strong>) and any <strong>Later unpaid expenses</strong> covered by later income.",
@@ -539,13 +539,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "How do Custom Months, Yearly, Weekly, Biweekly, One-Time items, and Plan analysis work?",
-                    "intro": "PlusMinus handles regular expenses, irregular schedules, and category breakdowns accurately across <strong>Plan</strong> and <strong>Live</strong>:",
+                    "question": "How do Custom Months, Yearly, Weekly, Biweekly, and One-Time items work?",
+                    "intro": "PlusMinus handles regular expenses, irregular schedules, and one-time entries across <strong>Plan</strong> and <strong>Live</strong>:",
                     "bullets": [
                         "<strong>Plan normalization:</strong> Weekly items normalize via <code>&times; 52 &divide; 12</code>, every 2 weeks via <code>&times; 26 &divide; 12</code>, <strong>Custom Months</strong> (such as January &amp; October or Quarterly presets) via <code>&times; selected months &divide; 12</code>, and yearly items via <code>&divide; 12</code>.",
-                        "<strong>Live full deductions:</strong> Yearly and custom-month expenses are deducted in full during the actual pay period when they fall due, so you see their real cash impact before payday.",
-                        "<strong>One-Time items:</strong> One-time income and one-time expenses (for example a tax refund or car repair) have an exact date and can be added in <strong>Plan</strong> or via the <code>+</code> menu in <strong>Live</strong>. They are excluded from your steady-state <strong>Plan</strong> baseline: one-time expenses deduct in full when due in <strong>Live</strong>, while future scheduled one-time income before next payday enters the <strong>Safe to Spend</strong> cash-flow check without spending it early.",
-                        "<strong>17 categories, Plan analysis &amp; optional due days:</strong> Expenses can be grouped into 17 optional categories (Housing, Utilities, Subscriptions, Insurance, Loans, Credit Cards &amp; Consumer Credit, Transport, Hobbies, Sports &amp; Fitness, Investing, Health &amp; Wellbeing, Children &amp; Family, Pets, Education, Saving, Giving, Other). On <strong>Plan</strong>, <strong>Where your income goes</strong> and <strong>Plan analysis</strong> compare active recurring expense categories (plus Uncategorized and Food Budget) by monthly amount and share of monthly income. Recurring expenses can also omit a specific due day (<strong>No specific day</strong>) if needed."
+                        "<strong>Live full deductions:</strong> Yearly and custom-month expenses are deducted in full during the pay period when they fall due. Recurring expenses can also omit a specific due day (<strong>No specific day</strong>) when needed.",
+                        "<strong>One-Time items:</strong> One-time income and expenses (for example a tax refund or car repair) have an exact date and are excluded from your <strong>Plan</strong> baseline: expenses deduct in full when due in <strong>Live</strong>, while future one-time income before next payday enters the <strong>Safe to Spend</strong> cash-flow check without spending it early."
+                    ]
+                },
+                {
+                    "question": "How do categories and Plan analysis work?",
+                    "intro": "Categories let you see where your monthly income goes in <strong>Plan</strong>:",
+                    "bullets": [
+                        "<strong>17 optional categories:</strong> Expenses can be assigned to 17 optional categories such as Housing, Utilities, Subscriptions, Insurance, and Transport.",
+                        "<strong>Plan analysis:</strong> In <strong>Plan</strong>, <strong>Where your income goes</strong> and <strong>Plan analysis</strong> compare active recurring categories (plus Uncategorized and Food Budget) by monthly amount and share of monthly income."
                     ]
                 },
                 {
@@ -566,17 +573,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "How are amounts rounded?",
-                    "intro": "Every visible figure is designed so the arithmetic adds up clearly:",
-                    "bullets": [
-                        "<strong>Cent precision &amp; exact totals:</strong> Monetary components are rounded to the nearest cent (with half-cent ties rounding away from zero) before summing or subtracting, so every displayed line adds up to the exact total shown.",
-                        "<strong>Food estimate rounding:</strong> The automatic daily food estimate in <strong>Live</strong> rounds up to a whole currency unit, whereas custom fixed food estimates keep cents.",
-                        "<strong>Clean decimal display:</strong> Amounts with cents display two decimal places, while whole amounts omit trailing decimals."
-                    ]
-                },
-                {
                     "question": "Does PlusMinus connect to my bank, collect analytics, or sync automatically to the cloud?",
-                    "intro": "No. PlusMinus is built strictly as a local-first, zero-tracking app:",
+                    "intro": "No. PlusMinus is a local-first app without tracking:",
                     "bullets": [
                         "<strong>Stored on your device:</strong> Balances, incomes, expenses, payment history, and preferences stay locally on your iPhone or iPad.",
                         "<strong>No accounts or bank links:</strong> PlusMinus requires no account and never asks for bank credentials or Open Banking access.",
@@ -585,7 +583,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "How do Backup & Restore and Reset All Data work?",
-                    "intro": "You stay in full control of your local budget data at all times:",
+                    "intro": "You can back up, restore, or erase your local budget data from Settings:",
                     "bullets": [
                         "<strong>Create Backup:</strong> Open <strong>Settings &rarr; Data &amp; Privacy &rarr; Backup &amp; Restore</strong> and tap <strong>Create Backup</strong> to export a readable JSON archive (<code>.plusminusbackup</code>, not password-protected) to iCloud Drive, local storage, or any location in Files.",
                         "<strong>Restore from Backup:</strong> Tap <strong>Restore from Backup</strong> and select a valid <code>.plusminusbackup</code> file (up to 50 MB). Restoring replaces all current budget data and restores the balance from when the backup was created, while keeping your app language and appearance unchanged.",
@@ -596,39 +594,36 @@ PLUSMINUS_DATA = {
                     "question": "What languages, currencies, themes, and devices are supported?",
                     "intro": "PlusMinus adapts to your preferred language, currency, and appearance:",
                     "bullets": [
-                        "<strong>Languages:</strong> Switchable directly inside <strong>Settings &rarr; Preferences &rarr; Language</strong> between <strong>System Default</strong>, <strong>English</strong>, <strong>Suomi</strong> (Finnish), <strong>Svenska</strong> (Swedish), <strong>Deutsch</strong> (German), <strong>Espa&ntilde;ol</strong> (Spanish), and <strong>Fran&ccedil;ais</strong> (French) without restarting the app.",
-                        "<strong>Currencies:</strong> Supports <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD,</strong> and <strong>JPY</strong> under <strong>Settings &rarr; Preferences &rarr; Currency</strong>.",
-                        "<strong>Appearance:</strong> Choose <strong>System Default</strong>, <strong>Dark</strong>, or <strong>Light</strong> under <strong>Settings &rarr; Preferences &rarr; Appearance</strong>.",
+                        "<strong>Languages:</strong> Switchable directly inside <strong>Settings &rarr; Language</strong> between <strong>System Default</strong>, <strong>English</strong>, <strong>Suomi</strong> (Finnish), <strong>Svenska</strong> (Swedish), <strong>Deutsch</strong> (German), <strong>Espa&ntilde;ol</strong> (Spanish), and <strong>Fran&ccedil;ais</strong> (French) without restarting the app.",
+                        "<strong>Currencies:</strong> Supports <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD,</strong> and <strong>JPY</strong> under <strong>Settings &rarr; Currency</strong>.",
+                        "<strong>Appearance:</strong> Choose <strong>System Default</strong>, <strong>Dark</strong>, or <strong>Light</strong> under <strong>Settings &rarr; Appearance</strong>.",
                         "<strong>Supported devices:</strong> Built for iPhone and iPad running <strong>iOS 26 or later</strong>."
                     ]
                 },
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Calm Monthly Budget & Safe to Spend for iPhone and iPad",
+            "title": "PlusMinus – Monthly Budget & Safe to Spend for iPhone and iPad",
             "desc": "Know what you can safely spend right now without logging every purchase. Local-first budgeting with payday cycle food proration, Plan analysis, and no bank connections.",
             "canonical": f"{BASE_URL}/plusminus/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Know what you can safely spend right now.",
-            "subtitle": "Set your recurring income, recurring expenses, payday, and monthly food budget once. Glance at your balance and see what is genuinely free to spend — without logging every coffee.",
-            "section1_title": "Clarity in under five seconds",
+            "tagline": "See what you can safely spend right now.",
+            "subtitle": "Set your recurring income, recurring expenses, payday, and monthly food budget once. Glance at your balance to see what is available to spend — without logging every coffee.",
+            "section1_title": "How PlusMinus works",
             "features": [
-                ("Live Safe to Spend", "Current money, unpaid expenses, remaining food estimate, and scheduled upcoming incomes evaluated at the tightest cash-flow point &mdash; always explained step by step."),
+                ("Live Safe to Spend", "Current money, unpaid expenses, remaining food estimate, and scheduled upcoming income evaluated at the tightest cash-flow point, with a step-by-step breakdown."),
                 ("Steady Monthly Plan", "Separate monthly overview normalizing weekly, biweekly, custom-month, and yearly expenses &mdash; with Plan analysis by category &mdash; without today's cash getting in the way."),
-                ("Private & Local-First", "Everything stays on your device. No accounts, no bank logins, no analytics, and no tracking — ever."),
+                ("Private & Local-First", "Everything stays on your device. No accounts, no bank logins, no analytics, and no tracking."),
             ],
-            "section2_title": "Everything you need, nothing you don't",
+            "section2_title": "Key features",
             "list_items": [
-                "Live Safe to Spend calculated up to your next primary payday &mdash; with automatic recurring and one-time upcoming income cash-flow handling",
-                "Transparent Spending calculation breakdown showing exact dates, reserves, and later expenses",
-                "Automatic daily food budget proration with instant custom period override",
-                "Double-deduction protection when marking expenses paid or updating balances",
-                "Weekly, biweekly, monthly, custom-month, yearly, and one-time items",
-                "Plan analysis comparing where your monthly income goes across 17 categories and food",
-                "Weekend payday shifting to Friday and short-month date clamping",
-                "Coming Next Period preview with early payment and older expense catch-up",
-                "Manual .plusminusbackup export and restore via Files",
-                "Available in 6 languages (English, Finnish, Swedish, German, Spanish, French) with 10 currencies and Light/Dark Mode",
+                "Step-by-step Spending calculation showing exact dates, reserves, and upcoming income",
+                "Automatic daily food estimate with optional custom override for the current period",
+                "Double-deduction protection when marking expenses paid or updating your balance",
+                "Weekly, biweekly, monthly, custom-month, yearly, and one-time schedules",
+                "Plan analysis comparing monthly expenses across 17 categories and food",
+                "Weekend payday shifting to Friday, short-month handling, and Coming Next Period preview",
+                "Manual backup and restore via Files, 6 languages, 10 currencies, and Light/Dark Mode",
             ],
             "closing_title": "Coming to the App Store",
             "closing_body": "PlusMinus is designed for iPhone and iPad and is being prepared for release.",
@@ -645,7 +640,7 @@ PLUSMINUS_DATA = {
                 "Automatic daily food budget proration with custom override",
                 "Two-button double-deduction prevention when marking expenses paid",
                 "Custom-month, yearly, weekly, biweekly, and one-time schedules",
-                "100% local-first storage with manual backup and restore via Files",
+                "Local-first storage with manual backup and restore via Files",
             ],
         },
         "privacy": {
@@ -717,7 +712,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Käytettävissä nyt -summa näyttää odotettua suuremmalta tai pienemmältä:",
-                    "Varmista, että <strong>Raha nyt</strong> vastaa tämänhetkistä saldoasi, ja tarkista maksamattomat tai myöhässä olevat menot <strong>Tilanne</strong>-näkymästä. Ennen seuraavaa ensisijaista palkkapäivää tulevat ajastetut tulot (säännölliset ja kertaluontoiset) huomioidaan automaattisesti tiukimman kassavirtakohdan mukaan (ilman että rahaa voi kuluttaa etukäteen), kun taas myöhässä olevat ja tänään erääntyvät tulot odottavat saaduksi kuittaamista. Napauta Käytettävissä nyt -summan vieressä olevaa infopainiketta nähdäksesi tarkan <strong>Käyttövaran laskelman</strong>, tai lue kaikki säännöt kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>."
+                    "Varmista, että <strong>Raha nyt</strong> vastaa tämänhetkistä saldoasi, ja tarkista maksamattomat tai myöhässä olevat menot <strong>Tilanne</strong>-näkymästä. Ennen seuraavaa ensisijaista palkkapäivää tulevat ajastetut tulot huomioidaan automaattisesti, kun taas myöhässä olevat ja tänään erääntyvät tulot lasketaan mukaan vasta saaduksi kuittaamisen jälkeen. Avaa tarkka <strong>Käyttövaran laskelma</strong> summan vieressä olevasta infopainikkeesta tai katso säännöt kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>."
                 ),
                 (
                     "Kaksoisvähennysten estäminen menoja kuitattaessa:",
@@ -739,7 +734,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus UKK – Usein kysytyt kysymykset",
-            "desc": "Usein kysyttyjä kysymyksiä ja ohjeita PlusMinus-sovellukseen iPhonella ja iPadilla: Käytettävissä nyt -laskenta, Tilanne ja Kuukausi, suunnitelman analyysi, ruokabudjetin suhteutus, kaksoisvähennysten esto, pyöristykset, varmuuskopiot, tietosuoja ja tuetut kielet.",
+            "desc": "Usein kysyttyjä kysymyksiä ja ohjeita PlusMinus-sovellukseen iPhonella ja iPadilla: Käytettävissä nyt -laskenta, Tilanne ja Kuukausi, suunnitelman analyysi, ruokabudjetin suhteutus, kaksoisvähennysten esto, varmuuskopiot, tietosuoja ja tuetut kielet.",
             "back_label": "&larr; PlusMinus-tuki",
             "site_nav_aria": "Sivuston navigaatio",
             "about_link": "Tietoa PlusMinusista",
@@ -759,9 +754,9 @@ PLUSMINUS_DATA = {
                         "<strong>Raha nyt:</strong> Käsin päivittämäsi tilin tai käteisen saldo tällä hetkellä, näkyvissä olevan päivitysajankohdan kanssa.",
                         "<strong>Miinus maksamattomat menot:</strong> Kaikki ennen seuraavaa ensisijaista palkkapäivää erääntyvät maksamattomat toistuvat menot ja kertaluontoiset menot sekä edelliseltä jaksolta maksamatta jääneet menot.",
                         "<strong>Miinus arvioitu jäljellä oleva ruoka-arvio:</strong> Aktiivisen tarkastelujakson jäljellä oleville päiville suhteutettu ruokabudjetti.",
-                        "<strong>Tiukin kassavirtakohta tulevilla tuloilla:</strong> Jos ennen seuraavaa ensisijaista palkkapäivää saapuu ajastettuja tulevia tuloja (säännöllisiä tai kertaluontoisia), PlusMinus tarkistaa tilanteen ennen kutakin tulopäivää ja jakson lopussa ja valitsee tiukimman kohdan. Näin myöhemmät menot eivät aiheuta turhaa vajetta, mutta rahaa ei koskaan pääse kuluttamaan etukäteen. Infopainikkeesta avautuva <strong>Käyttövaran laskelma</strong> täsmää aina valitun tarkastelukohdan riveihin (<strong>Laskelmaan lisättävät tulot</strong>, <strong>Menoihin varattu ennen [päivämäärää]</strong>, <strong>Ruoka-arvio</strong> ja mahdolliset <strong>Myöhemmät maksamattomat menot</strong>), ja otsake kertoo selvästi <code>KÄYTETTÄVISSÄ &middot; TULEVAT TULOT HUOMIOITU</code> aina, kun tulevat tulot vaikuttavat laskelmaan."
+                        "<strong>Tiukin kassavirtakohta tulevilla tuloilla:</strong> Ennen seuraavaa ensisijaista palkkapäivää tulevat ajastetut tulot tarkistetaan ennen kutakin tulopäivää ja jakson lopussa, ja laskelma valitsee tiukimman kohdan. Näin myöhemmät menot eivät aiheuta turhaa vajetta, eikä rahaa käytetä etukäteen. Katso tarkempi erittely kohdasta <a href=\"#faq-5\">Miten tulevat tulot vaikuttavat Käytettävissä nyt -summaan?</a>."
                     ],
-                    "note": "<strong>Vinkki:</strong> Voit tarkistaa laskentasäännöt milloin tahansa sovelluksesta kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>."
+                    "note": "<strong>Huomio:</strong> Rahasummat pyöristetään lähimpään senttiin niin, että rivit täsmäävät loppusummaan, ja automaattinen ruoka-arvio pyöristetään ylöspäin kokonaisiin rahayksiköihin. Kaikki laskentasäännöt löytyvät kohdasta <strong>Asetukset &rarr; Tietoa laskennasta &rarr; Miten laskenta toimii</strong>."
                 },
                 {
                     "question": "Mitä eroa on Tilanne- ja Kuukausi-näkymillä?",
@@ -793,7 +788,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Miten tulevat tulot vaikuttavat Käytettävissä nyt -summaan?",
-                    "intro": "PlusMinus toimii luotettavasti riippumatta siitä, saatko yhden pääpalkan, 2&ndash;3 eri päivinä saapuvaa säännöllistä tuloa tai myöhemmin tällä jaksolla tulevan kertaluontoisen tulon:",
+                    "intro": "PlusMinus tukee sekä yhtä pääpalkkaa, useita eri päivinä saapuvia säännöllisiä tuloja että ajastettuja kertaluontoisia tuloja:",
                     "bullets": [
                         "<strong>Tulevat ajastetut tulot (automaattinen kassavirtapullonkaula):</strong> Aktiiviset säännölliset ja kertaluontoiset tulot, joiden maksupäivä on aidosti tulevaisuudessa (tämän päivän sekä viikonloppusiirron mahdollisen nimellisen palkkapäivän jälkeen) ennen seuraavaa ensisijaista palkkapäivää, huomioidaan automaattisesti tiukimman kassavirtakohdan kautta. Näin jakson loppupuolen menot eivät aiheuta turhaa miinusta, mutta tulevaa tuloa ei voi koskaan kuluttaa etukäteen.",
                         "<strong>Selkeä otsake ja täsmäävä erittely:</strong> Kun tulevat tulot nostavat summaa pelkkään käteispohjaan verrattuna, päänäytön otsake tarkentuu muotoon <code>KÄYTETTÄVISSÄ &middot; TULEVAT TULOT HUOMIOITU</code> (ja alla näkyy tarvittaessa <code>Koko jakso [päivämäärä] asti</code>). Infopainikkeesta avautuva <strong>Käyttövaran laskelma</strong> erottelee kohdan <strong>Laskelmaan lisättävät tulot</strong> päänäkymän <strong>Tulevat tulot</strong> -yhteenvedosta ja näyttää tarvittaessa kohdan <strong>Myöhemmät maksamattomat menot</strong>.",
@@ -802,13 +797,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Miten valitut kuukaudet, vuosittaiset, viikoittaiset, kertaluontoiset erät ja suunnitelman analyysi toimivat?",
-                    "intro": "PlusMinus käsittelee säännölliset, harvemmin toistuvat ja kertaluontoiset erät sekä kategoriajakauman tarkasti:",
+                    "question": "Miten valitut kuukaudet, vuosittaiset, viikoittaiset ja kertaluontoiset erät toimivat?",
+                    "intro": "PlusMinus käsittelee säännölliset, harvemmin toistuvat ja kertaluontoiset erät erikseen <strong>Kuukausi</strong>- ja <strong>Tilanne</strong>-näkymissä:",
                     "bullets": [
                         "<strong>Kuukausitasaus (Kuukausi-välilehti):</strong> Viikoittaiset erät tasataan kertoimella <code>&times; 52 &divide; 12</code>, joka 2. viikko toistuvat <code>&times; 26 &divide; 12</code>, <strong>Valitut kuukaudet</strong> (esim. tammi- ja lokakuu tai neljännesvuosi) kertoimella <code>&times; valitut kuukaudet &divide; 12</code> ja vuosittaiset <code>&divide; 12</code>.",
-                        "<strong>Täysi vähennys Tilanne-näkymässä:</strong> Vuosittaiset ja valittujen kuukausien menot vähennetään täysimääräisinä juuri sen palkkajakson käyttövarasta, jonka aikana ne erääntyvät.",
-                        "<strong>Kertaluontoiset tulot ja menot:</strong> Kertaluontoiset erät (esim. veronpalautus tai yksittäinen isompi hankinta) merkitään tarkalla päivämäärällä joko <strong>Kuukausi</strong>-näkymässä tai <strong>Tilanne</strong>-näkymän <code>+</code>-valikosta. Ne eivät kuulu tasattuun kuukausisuunnitelmaan: kertaluontoiset menot vähennetään täysimääräisinä <strong>Tilanne</strong>-näkymässä erääntyessään, ja tulevat kertaluontoiset tulot ennen seuraavaa palkkapäivää huomioidaan <strong>Käytettävissä nyt</strong> -kassavirtatarkistuksessa ilman etukäteiskulutusta.",
-                        "<strong>17 kategoriaa, Suunnitelman analyysi ja valinnainen eräpäivä:</strong> Menoille voi valita kategorian 17 vaihtoehdosta (Asuminen, Sähkö &amp; vesi, Tilaukset, Vakuutukset, Lainat, Luottokortit ja kulutusluotot, Liikenne, Harrastukset, Urheilu ja kuntoilu, Sijoittaminen, Terveys ja hyvinvointi, Lapset ja perhe, Lemmikit, Koulutus, Säästäminen, Antaminen, Muu). <strong>Kuukausi</strong>-välilehden <strong>Mihin tulosi menevät</strong> ja <strong>Suunnitelman analyysi</strong> vertailevat aktiivisten toistuvien menojen kategorioita (sekä luokittelemattomia menoja ja ruokabudjettia) kuukausisummien ja tulo-osuuksien mukaan. Toistuville menoille voi myös jättää tarkan eräpäivän asettamatta (<strong>Ei tarkkaa päivää</strong>)."
+                        "<strong>Täysi vähennys Tilanne-näkymässä:</strong> Vuosittaiset ja valittujen kuukausien menot vähennetään täysimääräisinä sen palkkajakson käyttövarasta, jonka aikana ne erääntyvät. Toistuville menoille voi halutessa valita myös <strong>Ei tarkkaa päivää</strong>.",
+                        "<strong>Kertaluontoiset tulot ja menot:</strong> Kertaluontoisilla erillä (esim. veronpalautus tai yksittäinen hankinta) on tarkka päivämäärä, eivätkä ne kuulu tasattuun <strong>Kuukausi</strong>-suunnitelmaan. Kertaluontoiset menot vähennetään erääntyessään <strong>Tilanne</strong>-näkymässä, ja ennen seuraavaa palkkapäivää tulevat kertaluontoiset tulot huomioidaan kassavirtatarkistuksessa ilman etukäteiskulutusta."
+                    ]
+                },
+                {
+                    "question": "Miten kategoriat ja Suunnitelman analyysi toimivat?",
+                    "intro": "Kategorioiden avulla näet <strong>Kuukausi</strong>-välilehdellä, mihin kuukausittaiset tulosi jakautuvat:",
+                    "bullets": [
+                        "<strong>17 valinnaista kategoriaa:</strong> Menoille voi valita kategorian 17 vaihtoehdosta, kuten Asuminen, Sähkö &amp; vesi, Tilaukset, Vakuutukset ja Liikenne.",
+                        "<strong>Suunnitelman analyysi:</strong> <strong>Kuukausi</strong>-välilehden <strong>Mihin tulosi menevät</strong> ja <strong>Suunnitelman analyysi</strong> vertailevat aktiivisten toistuvien menojen kategorioita (sekä luokittelemattomia menoja ja ruokabudjettia) kuukausisummien ja tulo-osuuksien mukaan."
                     ]
                 },
                 {
@@ -829,17 +831,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Miten summat pyöristetään?",
-                    "intro": "Kaikki näkyvät luvut pyöristetään niin, että laskutoimitukset täsmäävät tarkasti:",
-                    "bullets": [
-                        "<strong>Senttitarkkuus ja täsmäävät rivit:</strong> Summat pyöristetään lähimpään senttiin (tasan puolen sentin erot poispäin nollasta) ennen yhteen- tai vähennyslaskua, joten näkyvät rivit täsmäävät aina tarkalleen loppusummaan.",
-                        "<strong>Ruoka-arvion pyöristys:</strong> Tilanne-näkymän automaattinen ruoka-arvio pyöristetään ylöspäin kokonaisiin rahayksiköihin, kun taas itse asetetuissa arvioissa säilytetään sentit.",
-                        "<strong>Siisti esitystapa:</strong> Sentilliset summat näytetään kahdella desimaalilla ja tasasummat ilman desimaaleja."
-                    ]
-                },
-                {
                     "question": "Yhdistyykö PlusMinus pankkiin, kerääkö se analytiikkaa tai synkronoiko se pilveen?",
-                    "intro": "Ei. PlusMinus on alusta asti suunniteltu paikallisesti laitteella toimivaksi sovellukseksi:",
+                    "intro": "Ei. PlusMinus on paikallisesti laitteella toimiva sovellus ilman seurantaa:",
                     "bullets": [
                         "<strong>Tallennetaan laitteellesi:</strong> Saldot, tulot, menot, maksuhistoria ja asetukset pysyvät paikallisesti iPhonellasi tai iPadillasi.",
                         "<strong>Ei tilejä eikä pankkitunnuksia:</strong> Sovellus ei vaadi käyttäjätiliä eikä kysy pankkitunnuksia tai pankkiyhteyksiä.",
@@ -848,7 +841,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Miten Varmuuskopiointi ja palautus sekä Nollaa kaikki tiedot toimivat?",
-                    "intro": "Hallitset kaikkia omia budjettitietojasi täysin itse:",
+                    "intro": "Voit varmuuskopioida, palauttaa tai poistaa paikalliset budjettitietosi Asetuksista:",
                     "bullets": [
                         "<strong>Luo varmuuskopio:</strong> Avaa <strong>Asetukset &rarr; Tiedot ja yksityisyys &rarr; Varmuuskopiointi ja palautus</strong> ja napauta <strong>Luo varmuuskopio</strong> tallentaaksesi luettavissa olevan JSON-tiedoston (<code>.plusminusbackup</code>, ei salasanasuojattu) iCloud Driveen, laitteelle tai muuhun Tiedostot-apin sijaintiin.",
                         "<strong>Palauta varmuuskopiosta:</strong> Valitse <strong>Palauta varmuuskopiosta</strong> ja avaa kelvollinen <code>.plusminusbackup</code>-tiedosto (enintään 50 Mt). Palautus korvaa kaikki nykyiset budjettitiedot ja palauttaa saldon varmuuskopion luontihetken tilaan. Sovelluksen kieli ja ulkoasu pysyvät ennallaan.",
@@ -868,30 +861,27 @@ PLUSMINUS_DATA = {
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Rauhallinen kuukausibudjetti ja käyttövara iPhonelle ja iPadille",
+            "title": "PlusMinus – Kuukausibudjetti ja käyttövara iPhonelle ja iPadille",
             "desc": "Näe yhdellä silmäyksellä, paljonko voit turvallisesti käyttää juuri nyt — ilman jokaisen ostoksen kirjaamista. Paikallinen budjettisovellus, jossa on suunnitelman analyysi ja ei pankkiyhteyksiä.",
             "canonical": f"{BASE_URL}/plusminus/fi/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Tiedä heti, paljonko voit turvallisesti käyttää.",
-            "subtitle": "Määritä toistuvat tulot, menot, palkkapäivä ja kuukauden ruokabudjetti kerran. Kurkkaa saldosi ja näe heti todellinen käyttövarasi — ilman jokaisen kahvin kirjaamista.",
-            "section1_title": "Selkeyttä alle viidessä sekunnissa",
+            "tagline": "Näe, paljonko voit turvallisesti käyttää juuri nyt.",
+            "subtitle": "Määritä toistuvat tulot, menot, palkkapäivä ja kuukauden ruokabudjetti kerran. Katso saldosi ja näe, paljonko sinulla on käytettävissä — ilman jokaisen kahvin kirjaamista.",
+            "section1_title": "Näin PlusMinus toimii",
             "features": [
-                ("Käytettävissä juuri nyt", "Raha nyt, maksamattomat menot, ruoka-arvio ja tulevat ajastetut tulot tiukimman kassavirtakohdan mukaan &mdash; aina askel askeleelta eriteltynä."),
+                ("Käytettävissä juuri nyt", "Raha nyt, maksamattomat menot, ruoka-arvio ja tulevat ajastetut tulot tiukimman kassavirtakohdan mukaan askel askeleelta eriteltynä."),
                 ("Tasainen kuukausisuunnitelma", "Erillinen kuukausinäkymä, joka tasaa viikoittaiset, valittujen kuukausien ja vuosittaiset menot sekä näyttää kategoria-analyysin ilman että päivän saldo sotkee kokonaiskuvaa."),
                 ("Yksityinen ja paikallinen", "Kaikki tiedot pysyvät laitteellasi. Ei käyttäjätilejä, ei pankkiyhteyksiä, ei analytiikkaa eikä seurantaa."),
             ],
-            "section2_title": "Kaikki oleellinen, ei mitään ylimääräistä",
+            "section2_title": "Keskeiset ominaisuudet",
             "list_items": [
-                "Käytettävissä nyt -laskenta seuraavaan ensisijaiseen palkkapäivään &mdash; myös useammalla tulolla ja tulevilla kertaluontoisilla tuloilla",
-                "Selkeä Käyttövaran laskelma -erittely tarkkoine päivämäärineen, varauksineen ja myöhempine menoineen",
+                "Vaiheittainen Käyttövaran laskelma päivämäärineen, varauksineen ja tulevine tuloineen",
                 "Automaattinen päiväkohtainen ruoka-arvio sekä oma kiinteä arvio tarvittaessa",
                 "Kaksoisvähennysten esto menoja maksetuksi kuitatessa ja saldoa päivittäessä",
                 "Viikoittaiset, joka 2. viikko, kuukausittaiset, valittujen kuukausien, vuosittaiset ja kertaluontoiset erät",
                 "Suunnitelman analyysi 17 menokategorian ja ruokabudjetin kuukausijakaumasta",
-                "Viikonloppuun osuvan palkkapäivän siirto perjantaille ja lyhyiden kuukausien huomiointi",
-                "Seuraavalla jaksolla -ennakko, etukäteismaksu ja vanhempien menojen kuittaus",
-                "Manuaalinen varmuuskopiointi ja palautus Tiedostot-apin kautta (.plusminusbackup)",
-                "Saatavilla kuudella kielellä (suomi, englanti, ruotsi, saksa, espanja, ranska), 10 valuuttaa sekä tumma ja vaalea tila",
+                "Palkkapäivän siirto perjantaille viikonlopusta, lyhyiden kuukausien käsittely ja Seuraavalla jaksolla -ennakko",
+                "Manuaalinen varmuuskopiointi ja palautus Tiedostot-apin kautta, 6 kieltä, 10 valuuttaa sekä tumma ja vaalea tila",
             ],
             "closing_title": "Tulossa App Storeen",
             "closing_body": "PlusMinus on suunniteltu iPhonelle ja iPadille ja sitä valmistellaan julkaisuun.",
@@ -970,7 +960,7 @@ PLUSMINUS_DATA = {
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
-            "desc": "Få hjälp med PlusMinus, den lugna lokala budgetappen för iPhone och iPad, eller kontakta PlusMinus-supporten.",
+            "desc": "Få hjälp med PlusMinus, den lokala budgetappen för iPhone och iPad, eller kontakta PlusMinus-supporten.",
             "heading": "PlusMinus Support",
             "thank_you": "Tack för att du använder PlusMinus.",
             "faq_card_title": "Kolla FAQ först för snabba svar",
@@ -980,7 +970,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Kvar att spendera ser högre eller lägre ut än väntat:",
-                    "Kontrollera att <strong>Pengar nu</strong> stämmer med ditt verkliga saldo just nu, och se över obetalda eller förfallna utgifter i <strong>Läget</strong>. Planerade framtida inkomster (återkommande eller engångs) före din nästa huvudsakliga lönedag räknas automatiskt in i Kvar att spendera utifrån den snävaste kassaflödespunkten (utan att du kan spendera pengar innan de kommer in), medan förfallna och dagens inkomster väntar tills du markerar dem som mottagna. Tryck på infoknappen bredvid Kvar att spendera för exakt <strong>Beräkning</strong>, eller se alla regler under <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>."
+                    "Kontrollera att <strong>Pengar nu</strong> stämmer med ditt nuvarande saldo och se över obetalda eller förfallna utgifter i <strong>Läget</strong>. Planerade framtida inkomster före din nästa huvudsakliga lönedag räknas in automatiskt, medan förfallna och dagens inkomster räknas när de markerats som mottagna. Tryck på infoknappen bredvid Kvar att spendera för <strong>Beräkning</strong>, eller se <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>."
                 ),
                 (
                     "Undvika dubbelavdrag när utgifter markeras som betalda:",
@@ -1003,7 +993,7 @@ PLUSMINUS_DATA = {
         "faq": {
             "title": "PlusMinus FAQ – Vanliga frågor",
             "site_nav_aria": "Webbplatsnavigering",
-            "desc": "Vanliga frågor och guider för PlusMinus på iPhone och iPad: Kvar att spendera, Läget och Plan, plananalys, matbudget, skydd mot dubbelavdrag, valda månader, avrundning, säkerhetskopior, integritet och språk.",
+            "desc": "Vanliga frågor och guider för PlusMinus på iPhone och iPad: Kvar att spendera, Läget och Plan, plananalys, matbudget, skydd mot dubbelavdrag, valda månader, säkerhetskopior, integritet och språk.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "Om PlusMinus",
             "privacy_link": "Integritetspolicy",
@@ -1022,9 +1012,9 @@ PLUSMINUS_DATA = {
                         "<strong>Pengar nu:</strong> Ditt manuellt uppdaterade konto- eller kontantsaldo just nu, med relativ tidsstämpel för senaste uppdatering.",
                         "<strong>Minus obetalda utgifter:</strong> Obetalda återkommande utgifter och engångsutgifter som förfaller före din nästa huvudsakliga lönedag, samt obetalda förfallna utgifter från närmast föregående löneperiod.",
                         "<strong>Minus uppskattad kvarvarande matbudget:</strong> Din beräknade återstående matbudget för den aktiva kassaflödeshorisonten.",
-                        "<strong>Snävaste kassaflödespunkten vid kommande inkomster:</strong> När planerade framtida inkomster (återkommande eller engångs) kommer in före din nästa huvudsakliga lönedag kontrollerar PlusMinus saldot före varje kommande inkomstdatum och vid periodens slut och väljer den snävaste punkten. På så sätt orsakar senare utgifter inga falska underskott, samtidigt som du aldrig kan spendera pengar innan de kommit in. Infoknappen bredvid Kvar att spendera öppnar <strong>Beräkning</strong>, som alltid matchar den begränsande horisonten rad för rad (med <strong>Inkomster som läggs till i beräkningen</strong>, <strong>Reserverat för utgifter före [datum]</strong>, <strong>Matuppskattning</strong> och eventuella <strong>Senare obetalda utgifter</strong>), och rubriken visar tydligt <code>KVAR ATT SPENDERA &middot; MED HÄNSYN TILL KOMMANDE INKOMSTER</code> när kommande inkomster påverkar summan."
+                        "<strong>Snävaste kassaflödespunkten vid kommande inkomster:</strong> Planerade framtida inkomster före din nästa huvudsakliga lönedag kontrolleras före varje inkomstdatum och vid periodens slut för att välja den snävaste punkten, så senare utgifter inte skapar falska underskott och pengar aldrig spenderas i förväg. Se <a href=\"#faq-5\">Hur påverkar kommande inkomster Kvar att spendera?</a> för en fullständig genomgång."
                     ],
-                    "note": "<strong>Tips:</strong> Du kan när som helst granska beräkningsreglerna i appen under <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>."
+                    "note": "<strong>Obs!</strong> Belopp avrundas till närmaste öre/cent så att synliga rader summerar exakt till totalen, medan den automatiska matuppskattningen avrundas uppåt till en hel valutaenhet. Alla regler finns under <strong>Inställningar &rarr; Förstå PlusMinus &rarr; Så fungerar beräkningarna</strong>."
                 },
                 {
                     "question": "Vad är skillnaden mellan Läget och Plan?",
@@ -1056,7 +1046,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Hur påverkar kommande inkomster Kvar att spendera?",
-                    "intro": "PlusMinus fungerar lika smidigt vare sig du har en huvudlön, 2&ndash;3 återkommande inkomster på olika dagar eller en planerad framtida engångsinkomst:",
+                    "intro": "PlusMinus stödjer en enskild huvudlön, flera återkommande inkomster på olika dagar samt planerade engångsinkomster:",
                     "bullets": [
                         "<strong>Framtida planerade inkomster (automatisk kassaflödesflaskhals):</strong> Aktiva återkommande inkomster och engångsinkomster med datum strikt efter idag (och efter periodens nominella lönedag vid helgjustering) och före nästa huvudsakliga lönedag räknas automatiskt in i <strong>Kvar att spendera</strong> via den snävaste kontrollpunkten &mdash; så senare utgifter inte skapar falska underskott samtidigt som du aldrig spenderar pengar i förväg.",
                         "<strong>Tydliga rubriker och exakt uppställning:</strong> När kommande inkomster höjer beloppet jämfört med enbart kontosaldot visas <code>KVAR ATT SPENDERA &middot; MED HÄNSYN TILL KOMMANDE INKOMSTER</code> (med raden <code>Hela perioden till &hellip;</code> under om den begränsande punkten infaller tidigare). Öppna <strong>Beräkning</strong> via infoknappen för att se <strong>Inkomster som läggs till i beräkningen</strong> (skilt från översiktens <strong>Kommande inkomst</strong>) och eventuella <strong>Senare obetalda utgifter</strong>.",
@@ -1065,13 +1055,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka, Engångs och Plananalys?",
-                    "intro": "PlusMinus hanterar regelbundna utgifter, oregelbundna intervall och kategorifördelning noggrant i <strong>Plan</strong> och <strong>Läget</strong>:",
+                    "question": "Hur fungerar Valda månader, Årligen, Veckovis, Varannan vecka och Engångsposter?",
+                    "intro": "PlusMinus hanterar regelbundna intervall, oregelbundna utgifter och engångsposter i <strong>Plan</strong> och <strong>Läget</strong>:",
                     "bullets": [
                         "<strong>Månadsnormalisering i Plan:</strong> Veckovisa poster normaliseras med <code>&times; 52 &divide; 12</code>, varannan vecka med <code>&times; 26 &divide; 12</code>, <strong>Valda månader</strong> (t.ex. januari &amp; oktober eller kvartalsvis) med <code>&times; valda månader &divide; 12</code>, och årliga med <code>&divide; 12</code>.",
-                        "<strong>Fullt avdrag i Läget:</strong> Årliga utgifter och utgifter för valda månader dras av i sin helhet under just den löneperiod då de förfaller.",
-                        "<strong>Engångsposter:</strong> Engångsinkomster och engångsutgifter (t.ex. skatteåterbäring eller bilreparation) har ett exakt datum och kan läggas till i <strong>Plan</strong> eller via <code>+</code>-menyn i <strong>Läget</strong>. De ingår inte i den månatliga basen i <strong>Plan</strong>: engångsutgifter dras av i sin helhet i <strong>Läget</strong> när de förfaller, och framtida engångsinkomster före nästa lönedag ingår i kassaflödeskontrollen för <strong>Kvar att spendera</strong> utan att spenderas i förväg.",
-                        "<strong>17 kategorier, Plananalys och valfritt förfallodatum:</strong> Utgifter kan ordnas i 17 valfria kategorier (Boende, El och vatten, Prenumerationer, Försäkringar, Lån, Kreditkort och konsumentkrediter, Transport, Hobbyer, Sport och träning, Investering, Hälsa och välbefinnande, Barn och familj, Husdjur, Utbildning, Sparande, Gåvor, Övrigt). I <strong>Plan</strong> visar <strong>Vad din inkomst går till</strong> och <strong>Plananalys</strong> aktiva återkommande utgiftskategorier (samt Okategoriserat och Matbudget) efter månadsbelopp och andel av inkomsten. Regelbundna utgifter kan vid behov sakna ett exakt förfallodatum (<strong>Ingen specifik dag</strong>)."
+                        "<strong>Fullt avdrag i Läget:</strong> Årliga utgifter och utgifter för valda månader dras av i sin helhet under den löneperiod då de förfaller. Återkommande utgifter kan vid behov sakna ett exakt förfallodatum (<strong>Ingen specifik dag</strong>).",
+                        "<strong>Engångsposter:</strong> Engångsinkomster och engångsutgifter (t.ex. skatteåterbäring eller bilreparation) har ett exakt datum och ingår inte i månadsbasen i <strong>Plan</strong>: engångsutgifter dras av i sin helhet i <strong>Läget</strong> när de förfaller, och framtida engångsinkomster före nästa lönedag ingår i kassaflödeskontrollen för <strong>Kvar att spendera</strong> utan att spenderas i förväg."
+                    ]
+                },
+                {
+                    "question": "Hur fungerar kategorier och Plananalys?",
+                    "intro": "Kategorier hjälper dig att se hur din månadsinkomst fördelas i <strong>Plan</strong>:",
+                    "bullets": [
+                        "<strong>17 valfria kategorier:</strong> Utgifter kan delas in i 17 valfria kategorier som Boende, El och vatten, Prenumerationer, Försäkringar och Transport.",
+                        "<strong>Plananalys:</strong> I <strong>Plan</strong> jämför <strong>Vad din inkomst går till</strong> och <strong>Plananalys</strong> aktiva återkommande kategorier (samt Okategoriserat och Matbudget) efter månadsbelopp och andel av inkomsten."
                     ]
                 },
                 {
@@ -1092,17 +1089,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Hur avrundas beloppen?",
-                    "intro": "Alla synliga siffror är utformade så att uträkningen stämmer exakt:",
-                    "bullets": [
-                        "<strong>Öre-/centprecision och exakta summor:</strong> Varje delpost avrundas till närmaste öre/cent (halva ören/cent avrundas bort från noll) före summering eller subtraktion, så varje synlig rad summerar exakt till totalsumman.",
-                        "<strong>Avrundning av matuppskattningen:</strong> Den automatiska dagliga matuppskattningen i <strong>Läget</strong> avrundas uppåt till en hel valutaenhet, medan egna fasta belopp behåller decimaler.",
-                        "<strong>Ren decimalvisning:</strong> Belopp med decimaler visar två decimaler, medan hela belopp döljer avslutande nollor."
-                    ]
-                },
-                {
                     "question": "Ansluter PlusMinus till min bank, samlar det in analysdata eller synkar det till molnet?",
-                    "intro": "Nej. PlusMinus är byggt helt och hållet för lokal lagring utan spårning:",
+                    "intro": "Nej. PlusMinus är en lokal app utan spårning:",
                     "bullets": [
                         "<strong>Lagras på din enhet:</strong> Saldon, inkomster, utgifter, betalningshistorik och inställningar stannar lokalt på din iPhone eller iPad.",
                         "<strong>Inga konton eller bankkopplingar:</strong> PlusMinus kräver inget konto och ber aldrig om bankinloggningar eller Open Banking-åtkomst.",
@@ -1111,7 +1099,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Hur fungerar Säkerhetskopiering och återställning samt Nollställ alla data?",
-                    "intro": "Du har alltid full kontroll över dina lokala budgetdata:",
+                    "intro": "Du kan säkerhetskopiera, återställa eller radera dina lokala budgetdata i Inställningar:",
                     "bullets": [
                         "<strong>Skapa säkerhetskopia:</strong> Öppna <strong>Inställningar &rarr; Data och integritet &rarr; Säkerhetskopiering och återställning</strong> och tryck på <strong>Skapa säkerhetskopia</strong> för att exportera en läsbar JSON-fil (<code>.plusminusbackup</code>, inte lösenordsskyddad) till iCloud Drive, lokal lagring eller valfri plats i Filer.",
                         "<strong>Återställ från säkerhetskopia:</strong> Tryck på <strong>Återställ från säkerhetskopia</strong> och välj en giltig <code>.plusminusbackup</code>-fil (upp till 50 MB). Återställning ersätter alla nuvarande budgetdata och återställer saldot från när säkerhetskopian skapades, utan att ändra appens språk eller utseende.",
@@ -1122,39 +1110,36 @@ PLUSMINUS_DATA = {
                     "question": "Vilka språk, valutor, teman och enheter stöds?",
                     "intro": "PlusMinus anpassar sig efter ditt önskade språk, din valuta och ditt utseende:",
                     "bullets": [
-                        "<strong>Språk:</strong> Kan bytas direkt under <strong>Inställningar &rarr; Preferenser &rarr; Språk</strong> mellan <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> och <strong>Fran&ccedil;ais</strong> utan att starta om appen.",
-                        "<strong>Valutor:</strong> Stöder <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> och <strong>JPY</strong> under <strong>Inställningar &rarr; Preferenser &rarr; Valuta</strong>.",
-                        "<strong>Utseende:</strong> Välj <strong>Systemstandard</strong>, <strong>Mörkt</strong> eller <strong>Ljust</strong> under <strong>Inställningar &rarr; Preferenser &rarr; Utseende</strong>.",
+                        "<strong>Språk:</strong> Kan bytas direkt under <strong>Inställningar &rarr; Språk</strong> mellan <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> och <strong>Fran&ccedil;ais</strong> utan att starta om appen.",
+                        "<strong>Valutor:</strong> Stöder <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> och <strong>JPY</strong> under <strong>Inställningar &rarr; Valuta</strong>.",
+                        "<strong>Utseende:</strong> Välj <strong>Systemstandard</strong>, <strong>Mörkt</strong> eller <strong>Ljust</strong> under <strong>Inställningar &rarr; Utseende</strong>.",
                         "<strong>Enheter som stöds:</strong> Utvecklad för iPhone och iPad med <strong>iOS 26 eller senare</strong>."
                     ]
                 },
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Lugn månadsbudget och Kvar att spendera för iPhone och iPad",
+            "title": "PlusMinus – Månadsbudget och Kvar att spendera för iPhone och iPad",
             "desc": "Se vad du tryggt kan spendera just nu utan att logga varje köp. Lokal budgetapp med plananalys, automatisk matbudget och utan bankkoppling.",
             "canonical": f"{BASE_URL}/plusminus/sv/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Vet alltid vad du tryggt kan spendera just nu.",
-            "subtitle": "Ställ in återkommande inkomster, utgifter, lönedag och månatlig matbudget en gång. Släng ett öga på saldot och se vad som faktiskt är fritt att spendera — utan att logga varje kaffe.",
-            "section1_title": "Klarhet på under fem sekunder",
+            "tagline": "Se vad du tryggt kan spendera just nu.",
+            "subtitle": "Ställ in återkommande inkomster, utgifter, lönedag och månatlig matbudget en gång. Titta på saldot och se vad som är tillgängligt att spendera — utan att logga varje kaffe.",
+            "section1_title": "Så fungerar PlusMinus",
             "features": [
-                ("Kvar att spendera i realtid", "Pengar nu, obetalda utgifter, kvarvarande matuppskattning och kommande planerade inkomster utvärderade vid den snävaste kassaflödespunkten &mdash; alltid steg för steg."),
+                ("Kvar att spendera i realtid", "Pengar nu, obetalda utgifter, kvarvarande matuppskattning och kommande planerade inkomster utvärderade vid den snävaste kassaflödespunkten, steg för steg."),
                 ("Stabil månadsplan", "Separat månadsöversikt som normaliserar utgifter för varje vecka, varannan vecka, valda månader och årligen &mdash; med plananalys per kategori &mdash; utan att dagens saldo stör bilden."),
-                ("Privat och lokal först", "Allt stannar på din enhet. Inga konton, inga bankinloggningar, ingen analys och ingen spårning — någonsin."),
+                ("Privat och lokal först", "Allt stannar på din enhet. Inga konton, inga bankinloggningar, ingen analys och ingen spårning."),
             ],
-            "section2_title": "Allt du behöver, inget onödigt",
+            "section2_title": "Viktiga funktioner",
             "list_items": [
-                "Kvar att spendera beräknat fram till nästa huvudsakliga lönedag &mdash; med automatiskt stöd för återkommande och engångsinkomster",
-                "Tydlig Beräkning-vy med exakta datum, reserveringar och senare utgifter",
-                "Automatisk daglig matuppskattning med egen anpassad perioduppskattning vid behov",
+                "Stegvis Beräkning med exakta datum, reserveringar och kommande inkomster",
+                "Automatisk daglig matuppskattning med möjlighet till egen perioduppskattning",
                 "Skydd mot dubbelavdrag när utgifter markeras som betalda eller saldot uppdateras",
                 "Posttyper för varje vecka, varannan vecka, månadsvis, valda månader, årligen och engångsposter",
-                "Plananalys över hur din månadsinkomst fördelas på 17 kategorier och matbudget",
-                "Helgjustering av lönedag till fredag och anpassning för korta månader",
-                "Förhandsvisning för Kommer nästa period med tidig betalning och hantering av äldre utgifter",
-                "Manuell export och återställning via Filer (.plusminusbackup)",
-                "Tillgänglig på 6 språk (svenska, engelska, finska, tyska, spanska, franska) med 10 valutor samt mörkt och ljust läge",
+                "Plananalys som visar hur månadsinkomsten fördelas på 17 kategorier och matbudget",
+                "Helgjustering av lönedag till fredag, anpassning för korta månader och Kommer nästa period",
+                "Manuell säkerhetskopiering och återställning via Filer, 6 språk, 10 valutor samt mörkt och ljust läge",
             ],
             "closing_title": "Kommer snart till App Store",
             "closing_body": "PlusMinus är designat för iPhone och iPad och förbereds för lansering.",
@@ -1171,7 +1156,7 @@ PLUSMINUS_DATA = {
                 "Automatisk daglig matuppskattning med egen periodöverskrivning",
                 "Tvåvalsbekräftelse mot dubbelavdrag när utgifter betalas",
                 "Stöd för valda månader, årligen, veckovis, varannan vecka och engångsposter",
-                "100 % lokal lagring med manuell säkerhetskopiering och återställning via Filer",
+                "Lokal lagring med manuell säkerhetskopiering och återställning via Filer",
             ],
         },
         "privacy": {
@@ -1233,7 +1218,7 @@ PLUSMINUS_DATA = {
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
-            "desc": "Erhalte Hilfe zu PlusMinus, der ruhigen lokalen Budget-App für iPhone und iPad, oder kontaktiere den PlusMinus Support.",
+            "desc": "Erhalte Hilfe zu PlusMinus, der lokalen Budget-App für iPhone und iPad, oder kontaktiere den PlusMinus Support.",
             "heading": "PlusMinus Support",
             "thank_you": "Vielen Dank, dass du PlusMinus nutzt.",
             "faq_card_title": "Schau zuerst in die FAQ für schnelle Antworten",
@@ -1243,7 +1228,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "„Frei verfügbar“ wirkt höher oder niedriger als erwartet:",
-                    "Stelle sicher, dass <strong>Aktuelles Geld</strong> deinem echten Kontostand entspricht, und prüfe offene oder überfällige Ausgaben unter <strong>Aktuell</strong>. Geplante zukünftige Einnahmen (wiederkehrend oder einmalig) vor deinem nächsten Hauptzahltag werden automatisch anhand des engsten Cashflow-Punkts in „Frei verfügbar“ einbezogen (ohne dass du Geld vor Eingang ausgeben kannst), während fällige und überfällige Einnahmen warten, bis du sie als erhalten markierst. Tippe auf die Info-Taste neben „Frei verfügbar“ für die genaue <strong>Berechnung</strong> oder lies alle Regeln unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong>."
+                    "Stelle sicher, dass <strong>Aktuelles Geld</strong> deinem aktuellen Kontostand entspricht, und prüfe offene oder überfällige Ausgaben unter <strong>Aktuell</strong>. Geplante zukünftige Einnahmen vor deinem nächsten Hauptzahltag werden automatisch einbezogen, während fällige und überfällige Einnahmen erst zählen, wenn du sie als erhalten markierst. Tippe auf die Info-Taste neben „Frei verfügbar“ für die <strong>Berechnung</strong> oder lies die Regeln unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong>."
                 ),
                 (
                     "Doppelten Abzug beim Bezahlen von Ausgaben vermeiden:",
@@ -1266,7 +1251,7 @@ PLUSMINUS_DATA = {
         "faq": {
             "title": "PlusMinus FAQ – Häufig gestellte Fragen",
             "site_nav_aria": "Seitennavigation",
-            "desc": "Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Rundung, Backups, Datenschutz und Sprachen.",
+            "desc": "Häufig gestellte Fragen und Anleitungen für PlusMinus auf iPhone und iPad: Frei verfügbar, Aktuell vs. Plan, Plananalyse, Essensbudget, doppelter Abzug, bestimmte Monate, Backups, Datenschutz und Sprachen.",
             "back_label": "&larr; PlusMinus Support",
             "about_link": "Über PlusMinus",
             "privacy_link": "Datenschutzerklärung",
@@ -1285,9 +1270,9 @@ PLUSMINUS_DATA = {
                         "<strong>Aktuelles Geld:</strong> Dein manuell gepflegter Giro- oder Bargeldbestand im Moment, inklusive relativer Aktualisierungszeit.",
                         "<strong>Minus offene Ausgaben:</strong> Offene wiederkehrende und einmalige Ausgaben, die vor deinem nächsten Hauptzahltag fällig sind, sowie unbezahlte überfällige Ausgaben aus dem unmittelbar vorherigen Zeitraum.",
                         "<strong>Minus geschätztes verbleibendes Essensbudget:</strong> Dein geschätztes Restbudget für Essen im aktiven Cashflow-Horizont.",
-                        "<strong>Engster Cashflow-Punkt bei kommenden Einnahmen:</strong> Wenn geplante zukünftige Einnahmen (wiederkehrend oder einmalig) vor deinem nächsten Hauptzahltag eingehen, prüft PlusMinus deinen Kontostand vor jedem kommenden Einnahmetermin sowie am Ende des Zeitraums und wählt den engsten Punkt. So lösen spätere Ausgaben keinen falschen Fehlbetrag aus, und du gibst nie Geld vor Eingang aus. Über die Info-Taste neben „Frei verfügbar“ öffnest du die <strong>Berechnung</strong> (mit <strong>Hier addierte Einnahmen</strong>, <strong>Für Ausgaben vor dem [Datum] zurückgelegt</strong>, <strong>Essensschätzung</strong> und ggf. <strong>Spätere offene Ausgaben</strong>), und die Überschrift zeigt deutlich <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code>."
+                        "<strong>Engster Cashflow-Punkt bei kommenden Einnahmen:</strong> Geplante zukünftige Einnahmen vor deinem nächsten Hauptzahltag werden an jedem Stichtag sowie am Periodenende geprüft, um den engsten Punkt zu ermitteln – so lösen spätere Ausgaben keinen falschen Fehlbetrag aus und Geld wird nicht vorab ausgegeben. Siehe <a href=\"#faq-5\">Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?</a> für alle Details."
                     ],
-                    "note": "<strong>Tipp:</strong> Du kannst die Berechnungsregeln jederzeit in der App unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong> nachlesen."
+                    "note": "<strong>Hinweis:</strong> Geldbeträge werden auf den nächsten Cent gerundet, sodass angezeigte Zeilen exakt aufgehen, während die automatische Essensschätzung auf eine ganze Währungseinheit aufrundet. Alle Regeln stehen unter <strong>Einstellungen &rarr; PlusMinus verstehen &rarr; So funktionieren die Berechnungen</strong>."
                 },
                 {
                     "question": "Was ist der Unterschied zwischen Aktuell und Plan?",
@@ -1319,7 +1304,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Wie wirken sich kommende Einnahmen auf „Frei verfügbar“ aus?",
-                    "intro": "PlusMinus funktioniert zuverlässig mit einem Hauptgehalt, 2&ndash;3 wiederkehrenden Einnahmen an verschiedenen Tagen oder einer geplanten zukünftigen Einmaleinnahme:",
+                    "intro": "PlusMinus unterstützt ein Hauptgehalt, mehrere wiederkehrende Einnahmen an verschiedenen Tagen sowie geplante Einmaleinnahmen:",
                     "bullets": [
                         "<strong>Zukünftige geplante Einnahmen (automatischer Cashflow-Engpass):</strong> Aktive wiederkehrende und einmalige Einnahmen mit Fälligkeit strikt nach heute (und bei Wochenendverschiebung nach dem nominellen Hauptzahltag des Zeitraums) sowie vor dem nächsten Hauptzahltag werden automatisch anhand des engsten Prüfpunkts einbezogen &mdash; spätere Ausgaben lösen keinen Fehlbetrag aus und du gibst nie Geld vor Eingang aus.",
                         "<strong>Klare Beschriftung und exakte Aufschlüsselung:</strong> Sobald kommendes Einkommen den Betrag über den reinen Kassenbestand hebt, wechselt die Überschrift zu <code>FREI VERFÜGBAR &middot; KOMMENDES EINKOMMEN BERÜCKSICHTIGT</code> (mit dem Hinweis <code>Gesamter Zeitraum bis &hellip;</code> darunter, falls der Engpass früher endet). Tippe auf die Info-Taste für die <strong>Berechnung</strong>, um <strong>Hier addierte Einnahmen</strong> (getrennt vom <strong>Kommenden Einkommen</strong> der Übersicht) und ggf. <strong>Spätere offene Ausgaben</strong> einzusehen.",
@@ -1328,13 +1313,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen, Einmalig und die Plananalyse?",
-                    "intro": "PlusMinus bildet regelmäßige Ausgaben, unregelmäßige Rhythmen und Kategorien in <strong>Plan</strong> und <strong>Aktuell</strong> präzise ab:",
+                    "question": "Wie funktionieren Bestimmte Monate, Jährlich, Wöchentlich, Alle 2 Wochen und Einmalig?",
+                    "intro": "PlusMinus bildet regelmäßige Intervalle, unregelmäßige Rhythmen und einmalige Posten in <strong>Plan</strong> und <strong>Aktuell</strong> getrennt ab:",
                     "bullets": [
                         "<strong>Monatliche Normalisierung in Plan:</strong> Wöchentliche Posten werden mit <code>&times; 52 &divide; 12</code> normalisiert, zweiwöchentliche mit <code>&times; 26 &divide; 12</code>, <strong>Bestimmte Monate</strong> (z. B. Januar &amp; Oktober oder Quartalsvorlagen) mit <code>&times; ausgewählte Monate &divide; 12</code> und jährliche mit <code>&divide; 12</code>.",
-                        "<strong>Voller Abzug in Aktuell:</strong> Jährliche Ausgaben und Ausgaben für bestimmte Monate werden exakt in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden.",
-                        "<strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum und lassen sich in <strong>Plan</strong> oder über das <code>+</code>-Menü in <strong>Aktuell</strong> anlegen. Sie bleiben aus dem festen Monatsplan in <strong>Plan</strong> außen vor: einmalige Ausgaben werden bei Fälligkeit in <strong>Aktuell</strong> voll abgezogen, und geplante zukünftige Einmaleinnahmen vor dem nächsten Zahltag fließen in die Cashflow-Prüfung von <strong>Frei verfügbar</strong> ein, ohne vorab ausgegeben zu werden.",
-                        "<strong>17 Kategorien, Plananalyse &amp; optionaler Fälligkeitstag:</strong> Ausgaben lassen sich in 17 optionale Kategorien einordnen (Wohnen, Nebenkosten, Abos, Versicherungen, Darlehen, Kreditkarten &amp; Konsumkredite, Mobilität, Hobbys, Sport &amp; Fitness, Investieren, Gesundheit &amp; Wohlbefinden, Kinder &amp; Familie, Haustiere, Bildung, Sparen, Spenden, Sonstiges). In <strong>Plan</strong> zeigen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> aktive wiederkehrende Ausgabenkategorien (sowie Ohne Kategorie und Essensbudget) nach Monatsbetrag und Einkommensanteil. Bei wiederkehrenden Ausgaben kann bei Bedarf auch <strong>Kein bestimmter Tag</strong> gewählt werden."
+                        "<strong>Voller Abzug in Aktuell:</strong> Jährliche Ausgaben und Ausgaben für bestimmte Monate werden in dem Zahlungszeitraum voll abgezogen, in dem sie fällig werden. Bei wiederkehrenden Ausgaben kann bei Bedarf auch <strong>Kein bestimmter Tag</strong> gewählt werden.",
+                        "<strong>Einmalige Posten:</strong> Einmalige Einnahmen und Ausgaben (z. B. eine Steuerrückzahlung oder Autoreparatur) erhalten ein genaues Datum und bleiben aus der Monatsbasis in <strong>Plan</strong> außen vor: einmalige Ausgaben werden bei Fälligkeit in <strong>Aktuell</strong> voll abgezogen, und geplante zukünftige Einmaleinnahmen vor dem nächsten Zahltag fließen in die Cashflow-Prüfung von <strong>Frei verfügbar</strong> ein, ohne vorab ausgegeben zu werden."
+                    ]
+                },
+                {
+                    "question": "Wie funktionieren Kategorien und die Plananalyse?",
+                    "intro": "Kategorien zeigen dir in <strong>Plan</strong>, wie sich deine monatlichen Einnahmen verteilen:",
+                    "bullets": [
+                        "<strong>17 optionale Kategorien:</strong> Ausgaben lassen sich 17 optionalen Kategorien zuordnen, etwa Wohnen, Nebenkosten, Abos, Versicherungen und Mobilität.",
+                        "<strong>Plananalyse:</strong> In <strong>Plan</strong> vergleichen <strong>Wohin deine Einnahmen fließen</strong> und die <strong>Plananalyse</strong> aktive wiederkehrende Kategorien (sowie Ohne Kategorie und Essensbudget) nach Monatsbetrag und Einkommensanteil."
                     ]
                 },
                 {
@@ -1355,17 +1347,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Wie werden Beträge gerundet?",
-                    "intro": "Jede angezeigte Zahl ist so aufgebaut, dass die Rechnung exakt aufgeht:",
-                    "bullets": [
-                        "<strong>Cent-Genauigkeit &amp; exakte Summen:</strong> Geldposten werden vor dem Addieren oder Subtrahieren auf den nächsten Cent gerundet (genaue halbe Cents werden von null weg gerundet), sodass jede angezeigte Zeile exakt zum Gesamtwert addiert wird.",
-                        "<strong>Rundung der Essensschätzung:</strong> Die automatische tägliche Essensschätzung in <strong>Aktuell</strong> rundet auf eine ganze Währungseinheit auf, während selbst gewählte feste Schätzungen Cents beibehalten.",
-                        "<strong>Saubere Dezimalanzeige:</strong> Beträge mit Cents zeigen zwei Nachkommastellen, glatte Beträge blenden Nachkommanullen aus."
-                    ]
-                },
-                {
                     "question": "Verbindet sich PlusMinus mit meiner Bank, erfasst es Analysen oder synchronisiert es in die Cloud?",
-                    "intro": "Nein. PlusMinus wurde konsequent als lokale App ohne Tracking entwickelt:",
+                    "intro": "Nein. PlusMinus ist eine lokale App ohne Tracking:",
                     "bullets": [
                         "<strong>Speicherung auf deinem Gerät:</strong> Kontostände, Einnahmen, Ausgaben, Zahlungsverlauf und Einstellungen bleiben lokal auf deinem iPhone oder iPad.",
                         "<strong>Keine Konten oder Bankverbindungen:</strong> PlusMinus erfordert keinen Account und fragt niemals nach Bankzugängen oder Open-Banking-Zugriff.",
@@ -1374,7 +1357,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Wie funktionieren Backup &amp; Wiederherstellung sowie Alle Daten zurücksetzen?",
-                    "intro": "Du behältst jederzeit die volle Kontrolle über deine lokalen Budgetdaten:",
+                    "intro": "Du kannst deine lokalen Budgetdaten in den Einstellungen sichern, wiederherstellen oder zurücksetzen:",
                     "bullets": [
                         "<strong>Backup erstellen:</strong> Öffne <strong>Einstellungen &rarr; Daten &amp; Datenschutz &rarr; Backup &amp; Wiederherstellung</strong> und tippe auf <strong>Backup erstellen</strong>, um eine lesbare JSON-Datei (<code>.plusminusbackup</code>, nicht passwortgeschützt) in iCloud Drive, lokal oder an einem beliebigen Ort in „Dateien“ zu speichern.",
                         "<strong>Aus Backup wiederherstellen:</strong> Tippe auf <strong>Aus Backup wiederherstellen</strong> und wähle eine gültige <code>.plusminusbackup</code>-Datei (bis zu 50 MB). Dabei werden alle aktuellen Budgetdaten ersetzt und der Kontostand vom Erstellungszeitpunkt des Backups wiederhergestellt; App-Sprache und Erscheinungsbild bleiben unverändert.",
@@ -1385,39 +1368,36 @@ PLUSMINUS_DATA = {
                     "question": "Welche Sprachen, Währungen, Erscheinungsbilder und Geräte werden unterstützt?",
                     "intro": "PlusMinus passt sich an deine bevorzugte Sprache, Währung und Optik an:",
                     "bullets": [
-                        "<strong>Sprachen:</strong> Direkt unter <strong>Einstellungen &rarr; Präferenzen &rarr; Sprache</strong> umschaltbar zwischen <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> und <strong>Fran&ccedil;ais</strong> – ohne App-Neustart.",
-                        "<strong>Währungen:</strong> Unterstützt <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> und <strong>JPY</strong> unter <strong>Einstellungen &rarr; Präferenzen &rarr; Währung</strong>.",
-                        "<strong>Erscheinungsbild:</strong> Wähle <strong>Systemstandard</strong>, <strong>Dunkel</strong> oder <strong>Hell</strong> unter <strong>Einstellungen &rarr; Präferenzen &rarr; Erscheinungsbild</strong>.",
+                        "<strong>Sprachen:</strong> Direkt unter <strong>Einstellungen &rarr; Sprache</strong> umschaltbar zwischen <strong>Systemstandard</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> und <strong>Fran&ccedil;ais</strong> – ohne App-Neustart.",
+                        "<strong>Währungen:</strong> Unterstützt <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> und <strong>JPY</strong> unter <strong>Einstellungen &rarr; Währung</strong>.",
+                        "<strong>Erscheinungsbild:</strong> Wähle <strong>Systemstandard</strong>, <strong>Dunkel</strong> oder <strong>Hell</strong> unter <strong>Einstellungen &rarr; Erscheinungsbild</strong>.",
                         "<strong>Unterstützte Geräte:</strong> Entwickelt für iPhone und iPad mit <strong>iOS 26 oder neuer</strong>."
                     ]
                 },
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Ruhiges Monatsbudget & Frei verfügbar für iPhone und iPad",
-            "desc": "Sieh sofort, was du aktuell sicher ausgeben kannst, ohne jeden Einkauf einzutragen. Lokale Budget-App mit Plananalyse, Essensbudget-Anteilung und ohne Bankverbindung.",
+            "title": "PlusMinus – Monatsbudget & Frei verfügbar für iPhone und iPad",
+            "desc": "Sieh auf einen Blick, was du aktuell sicher ausgeben kannst, ohne jeden Einkauf einzutragen. Lokale Budget-App mit Plananalyse, Essensbudget-Anteilung und ohne Bankverbindung.",
             "canonical": f"{BASE_URL}/plusminus/de/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Wisse sofort, was du sicher ausgeben kannst.",
-            "subtitle": "Lege wiederkehrende Einnahmen, Ausgaben, deinen Zahltag und dein monatliches Essensbudget einmal fest. Ein Blick auf deinen Kontostand zeigt dir, was wirklich frei verfügbar ist – ohne jeden Kaffee zu notieren.",
-            "section1_title": "Klarheit in unter fünf Sekunden",
+            "tagline": "Sieh, was du aktuell sicher ausgeben kannst.",
+            "subtitle": "Lege wiederkehrende Einnahmen, Ausgaben, deinen Zahltag und dein monatliches Essensbudget einmal fest. Ein Blick auf deinen Kontostand zeigt dir, was frei verfügbar ist – ohne jeden Kaffee zu notieren.",
+            "section1_title": "So funktioniert PlusMinus",
             "features": [
-                ("Frei verfügbar in Echtzeit", "Aktuelles Geld, offene Ausgaben, geschätztes Restbudget für Essen und geplante kommende Einkommen am engsten Cashflow-Punkt bewertet &mdash; Schritt für Schritt nachvollziehbar."),
-                ("Ruhiger Monatsplan", "Getrennte Monatsübersicht, die wöchentliche, zweiwöchentliche, jährliche und für bestimmte Monate geplante Ausgaben glättet &mdash; inklusive Plananalyse nach Kategorien &mdash; ohne dass der heutige Kontostand stört."),
-                ("Privat &amp; lokal zuerst", "Alles bleibt auf deinem Gerät. Keine Konten, keine Bank-Logins, keine Analysen und kein Tracking – niemals."),
+                ("Frei verfügbar in Echtzeit", "Aktuelles Geld, offene Ausgaben, geschätztes Restbudget für Essen und geplante kommende Einnahmen am engsten Cashflow-Punkt bewertet, Schritt für Schritt nachvollziehbar."),
+                ("Monatsplan", "Getrennte Monatsübersicht, die wöchentliche, zweiwöchentliche, jährliche und für bestimmte Monate geplante Ausgaben glättet &mdash; inklusive Plananalyse nach Kategorien &mdash; ohne dass der heutige Kontostand stört."),
+                ("Privat &amp; lokal zuerst", "Alles bleibt auf deinem Gerät. Keine Konten, keine Bank-Logins, keine Analysen und kein Tracking."),
             ],
-            "section2_title": "Alles was du brauchst, nichts Überflüssiges",
+            "section2_title": "Wichtige Funktionen",
             "list_items": [
-                "„Frei verfügbar“-Berechnung bis zum nächsten Hauptzahltag &mdash; inklusive automatischer Prüfung wiederkehrender und einmaliger kommender Einnahmen",
-                "Transparente Berechnungsansicht mit genauen Daten, Rücklagen und späteren Ausgaben",
-                "Automatische tägliche Essensbudget-Anteilung mit eigener Schätzung für den Zeitraum",
-                "Schutz vor doppeltem Abzug beim Abhaken von Ausgaben und Aktualisieren des Kontostands",
+                "Schrittweise Berechnung mit genauen Daten, Rücklagen und kommenden Einnahmen",
+                "Automatische tägliche Essensbudget-Anteilung mit optionaler eigener Schätzung für den Zeitraum",
+                "Schutz vor doppeltem Abzug beim Bezahlen von Ausgaben und Aktualisieren des Kontostands",
                 "Rhythmen für wöchentlich, alle 2 Wochen, monatlich, bestimmte Monate, jährlich und einmalig",
                 "Plananalyse über die monatliche Verteilung auf 17 Ausgabenkategorien und das Essensbudget",
-                "Zahltagsverschiebung auf Freitag bei Wochenenden und Anpassung für kurze Monate",
-                "Vorschau „Im nächsten Zeitraum“ mit vorzeitigem Bezahlen und Nachholen älterer Ausgaben",
-                "Manueller Export und Wiederherstellung über „Dateien“ (.plusminusbackup)",
-                "Verfügbar in 6 Sprachen (Deutsch, Englisch, Finnisch, Schwedisch, Spanisch, Französisch) mit 10 Währungen sowie Dunkel- und Hellmodus",
+                "Zahltagsverschiebung auf Freitag am Wochenende, Monatslängen-Anpassung und Vorschau „Im nächsten Zeitraum“",
+                "Manuelles Backup und Wiederherstellung über „Dateien“, 6 Sprachen, 10 Währungen sowie Dunkel- und Hellmodus",
             ],
             "closing_title": "Demnächst im App Store",
             "closing_body": "PlusMinus wurde für iPhone und iPad entwickelt und wird für die Veröffentlichung vorbereitet.",
@@ -1434,7 +1414,7 @@ PLUSMINUS_DATA = {
                 "Automatische tägliche Essensbudget-Anteilung mit eigener Zeitraum-Anpassung",
                 "Zwei-Optionen-Schutz vor doppeltem Abzug beim Bezahlen von Ausgaben",
                 "Zeitpläne für bestimmte Monate, jährlich, wöchentlich, alle 2 Wochen und einmalig",
-                "100 % lokale Speicherung mit manuellem Backup und Wiederherstellung über Dateien",
+                "Lokale Speicherung mit manuellem Backup und Wiederherstellung über Dateien",
             ],
         },
         "privacy": {
@@ -1496,7 +1476,7 @@ PLUSMINUS_DATA = {
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "Soporte de PlusMinus",
-            "desc": "Obtén ayuda con PlusMinus, la app de presupuestos local y serena para iPhone y iPad, o ponte en contacto con el soporte de PlusMinus.",
+            "desc": "Obtén ayuda con PlusMinus, la app de presupuestos local para iPhone y iPad, o ponte en contacto con el soporte de PlusMinus.",
             "heading": "Soporte de PlusMinus",
             "thank_you": "Gracias por usar PlusMinus.",
             "faq_card_title": "Consulta primero las preguntas frecuentes (FAQ)",
@@ -1506,7 +1486,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "El importe Disponible para gastar parece más alto o más bajo de lo esperado:",
-                    "Asegúrate de que <strong>Dinero actual</strong> refleja tu saldo real en este momento y revisa los gastos pendientes o vencidos en <strong>Actual</strong>. Los ingresos futuros programados (recurrentes o puntuales) antes de tu próximo día de cobro principal se incluyen automáticamente en Disponible según el punto más ajustado del flujo de caja (sin dejarte gastar dinero antes de recibirlo), mientras que los ingresos vencidos y previstos para hoy esperan hasta que los marques como recibidos. Toca el botón de información junto a Disponible para ver el <strong>Cálculo del disponible</strong> exacto, o consulta todas las reglas en <strong>Ajustes &rarr; Funcionamiento de PlusMinus &rarr; Cómo funcionan los cálculos</strong>."
+                    "Asegúrate de que <strong>Dinero actual</strong> coincide con tu saldo actual y revisa los gastos pendientes o vencidos en <strong>Actual</strong>. Los ingresos futuros programados antes de tu próximo día de cobro principal se incluyen automáticamente, mientras que los ingresos vencidos y previstos para hoy cuentan cuando los marcas como recibidos. Toca el botón de información junto a Disponible para ver el <strong>Cálculo del disponible</strong>, o consulta <strong>Ajustes &rarr; Funcionamiento de PlusMinus &rarr; Cómo funcionan los cálculos</strong>."
                 ),
                 (
                     "Evitar deducciones dobles al marcar gastos como pagados:",
@@ -1528,7 +1508,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus FAQ – Preguntas frecuentes",
-            "desc": "Preguntas frecuentes y guías de PlusMinus para iPhone y iPad: Disponible para gastar, Actual vs. Plan, análisis del plan, presupuesto de comida, prevención de cobro doble, meses seleccionados, redondeo, copias de seguridad, privacidad e idiomas.",
+            "desc": "Preguntas frecuentes y guías de PlusMinus para iPhone y iPad: Disponible para gastar, Actual vs. Plan, análisis del plan, presupuesto de comida, prevención de cobro doble, meses seleccionados, copias de seguridad, privacidad e idiomas.",
             "back_label": "&larr; Soporte de PlusMinus",
             "site_nav_aria": "Navegación del sitio",
             "about_link": "Acerca de PlusMinus",
@@ -1548,9 +1528,9 @@ PLUSMINUS_DATA = {
                         "<strong>Dinero actual:</strong> Tu saldo bancario o en efectivo actualizado manualmente ahora mismo, junto con la fecha relativa de su última actualización.",
                         "<strong>Menos gastos pendientes:</strong> Los gastos recurrentes pendientes y los gastos puntuales que vencen antes de tu próximo día de cobro principal, además de los gastos pendientes vencidos del ciclo de cobro inmediatamente anterior.",
                         "<strong>Menos estimación de comida restante:</strong> Tu presupuesto de comida restante estimado para el horizonte de flujo de caja activo.",
-                        "<strong>Punto más ajustado del flujo de caja con ingresos próximos:</strong> Cuando hay ingresos futuros programados (recurrentes o puntuales) antes de tu próximo día de cobro principal, PlusMinus evalúa tu saldo antes de cada próximo ingreso y al final del ciclo, eligiendo el punto más ajustado para que los gastos posteriores no generen déficits falsos sin permitirte gastar dinero antes de recibirlo. Toca el botón de información junto a Disponible para abrir <strong>Cálculo del disponible</strong> (con <strong>Ingresos añadidos a este cálculo</strong>, <strong>Reservado para gastos anteriores al [fecha]</strong>, <strong>Estimación de comida</strong> y los posibles <strong>Gastos pendientes posteriores</strong>), y el encabezado muestra claramente <code>DISPONIBLE &middot; CONSIDERANDO LOS PRÓXIMOS INGRESOS</code>."
+                        "<strong>Punto más ajustado del flujo de caja con ingresos próximos:</strong> Los ingresos futuros programados antes de tu próximo día de cobro principal se evalúan en cada punto de control y al final del ciclo para elegir el punto más ajustado, de modo que los gastos posteriores no generen déficits falsos ni gastes dinero por adelantado. Consulta <a href=\"#faq-5\">¿Cómo afectan los ingresos próximos a Disponible para gastar?</a> para ver el desglose completo."
                     ],
-                    "note": "<strong>Consejo:</strong> Puedes revisar las reglas de cálculo en cualquier momento dentro de la app en <strong>Ajustes &rarr; Funcionamiento de PlusMinus &rarr; Cómo funcionan los cálculos</strong>."
+                    "note": "<strong>Nota:</strong> Los importes se redondean al céntimo más cercano para que las líneas visibles cuadren con el total, mientras que la estimación automática de comida se redondea al alza a una unidad monetaria entera. Todas las reglas están en <strong>Ajustes &rarr; Funcionamiento de PlusMinus &rarr; Cómo funcionan los cálculos</strong>."
                 },
                 {
                     "question": "¿Cuál es la diferencia entre Actual y Plan?",
@@ -1582,7 +1562,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "¿Cómo afectan los ingresos próximos a Disponible para gastar?",
-                    "intro": "PlusMinus funciona con total precisión tanto si tienes una nómina principal como si recibes 2&ndash;3 ingresos recurrentes en distintos días o un ingreso puntual futuro programado:",
+                    "intro": "PlusMinus admite una nómina principal, varios ingresos recurrentes en distintas fechas e ingresos puntuales programados:",
                     "bullets": [
                         "<strong>Ingresos futuros programados (cuello de botella automático):</strong> Los ingresos activos recurrentes y puntuales programados estrictamente después de hoy (y después del día de cobro nominal del ciclo actual cuando se aplica el adelanto por fin de semana) y antes del próximo día de cobro principal se incluyen automáticamente en <strong>Disponible para gastar</strong> mediante el punto más ajustado &mdash; evitando déficits falsos por gastos posteriores sin gastar dinero por adelantado.",
                         "<strong>Etiquetas claras y desglose exacto:</strong> Cuando los ingresos próximos elevan la cifra respecto al efectivo disponible, el título se actualiza a <code>DISPONIBLE &middot; CONSIDERANDO LOS PRÓXIMOS INGRESOS</code> (con la línea <code>Período completo hasta el &hellip;</code> debajo si el punto limitante llega antes). Toca el botón de información para abrir <strong>Cálculo del disponible</strong> y revisar <strong>Ingresos añadidos a este cálculo</strong> (distinto del total <strong>Ingresos próximos</strong> del resumen) y los posibles <strong>Gastos pendientes posteriores</strong>.",
@@ -1591,13 +1571,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas, Puntual y Análisis del plan?",
-                    "intro": "PlusMinus gestiona con exactitud gastos periódicos, frecuencias menos habituales y análisis por categorías entre <strong>Plan</strong> y <strong>Actual</strong>:",
+                    "question": "¿Cómo funcionan Meses seleccionados, Anual, Semanal, Cada 2 semanas y Puntual?",
+                    "intro": "PlusMinus gestiona frecuencias periódicas, intervalos irregulares y elementos puntuales por separado en <strong>Plan</strong> y <strong>Actual</strong>:",
                     "bullets": [
                         "<strong>Normalización en Plan:</strong> Los conceptos semanales se normalizan mediante <code>&times; 52 &divide; 12</code>, los quincenales mediante <code>&times; 26 &divide; 12</code>, <strong>Meses seleccionados</strong> (como enero y octubre o trimestrales) mediante <code>&times; meses seleccionados &divide; 12</code> y los anuales mediante <code>&divide; 12</code>.",
-                        "<strong>Deducción íntegra en Actual:</strong> Los gastos anuales y de meses seleccionados se descuentan íntegramente durante el ciclo de cobro real en el que vencen, para mostrar su impacto real en efectivo.",
-                        "<strong>Elementos puntuales:</strong> Los ingresos y gastos de tipo <strong>Puntual</strong> (por ejemplo una devolución fiscal o una reparación del coche) llevan una fecha exacta y pueden añadirse en <strong>Plan</strong> o desde el menú <code>+</code> en <strong>Actual</strong>. Quedan excluidos de la referencia mensual de <strong>Plan</strong>: los gastos puntuales se descuentan íntegramente al vencer en <strong>Actual</strong>, y los ingresos puntuales futuros antes del próximo día de cobro participan en la comprobación de flujo de caja de <strong>Disponible para gastar</strong> sin gastarse por adelantado.",
-                        "<strong>17 categorías, Análisis del plan y día opcional:</strong> Los gastos pueden organizarse en 17 categorías opcionales (Vivienda, Suministros, Suscripciones, Seguros, Préstamos, Tarjetas de crédito y crédito al consumo, Transporte, Aficiones, Deportes y fitness, Inversión, Salud y bienestar, Hijos y familia, Mascotas, Educación, Ahorro, Donaciones, Otros). En <strong>Plan</strong>, <strong>A dónde van tus ingresos</strong> y <strong>Análisis del plan</strong> comparan los gastos recurrentes activos por categoría (más Sin categoría y Presupuesto de comida) según importe mensual y porcentaje sobre ingresos. En gastos recurrentes también es posible elegir <strong>Sin día específico</strong>."
+                        "<strong>Deducción íntegra en Actual:</strong> Los gastos anuales y de meses seleccionados se descuentan íntegramente durante el ciclo en el que vencen. En gastos recurrentes también es posible elegir <strong>Sin día específico</strong>.",
+                        "<strong>Elementos puntuales:</strong> Los ingresos y gastos de tipo <strong>Puntual</strong> (por ejemplo una devolución fiscal o una reparación del coche) tienen una fecha exacta y quedan fuera de la base mensual de <strong>Plan</strong>: los gastos puntuales se descuentan íntegramente al vencer en <strong>Actual</strong>, y los ingresos puntuales futuros antes del próximo día de cobro participan en la comprobación de flujo de caja de <strong>Disponible para gastar</strong> sin gastarse por adelantado."
+                    ]
+                },
+                {
+                    "question": "¿Cómo funcionan las categorías y el Análisis del plan?",
+                    "intro": "Las categorías te muestran en <strong>Plan</strong> cómo se distribuyen tus ingresos mensuales:",
+                    "bullets": [
+                        "<strong>17 categorías opcionales:</strong> Los gastos pueden asignarse a 17 categorías opcionales como Vivienda, Suministros, Suscripciones, Seguros y Transporte.",
+                        "<strong>Análisis del plan:</strong> En <strong>Plan</strong>, <strong>A dónde van tus ingresos</strong> y <strong>Análisis del plan</strong> comparan los gastos recurrentes activos por categoría (más Sin categoría y Presupuesto de comida) por importe mensual y porcentaje sobre ingresos."
                     ]
                 },
                 {
@@ -1618,17 +1605,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "¿Cómo se redondean los importes?",
-                    "intro": "Cada cifra visible está pensada para que las cuentas cuadren con total exactitud:",
-                    "bullets": [
-                        "<strong>Precisión de céntimo y totales exactos:</strong> Los importes se redondean al céntimo más cercano (con empates de medio céntimo alejándose de cero) antes de sumar o restar, de modo que cada línea visible suma exactamente el total mostrado.",
-                        "<strong>Redondeo de la estimación de comida:</strong> La estimación diaria automática de comida en <strong>Actual</strong> se redondea al alza a una unidad monetaria entera, mientras que las estimaciones fijas personalizadas conservan los céntimos.",
-                        "<strong>Presentación limpia de decimales:</strong> Los importes con céntimos muestran dos decimales y los importes enteros omiten los ceros finales."
-                    ]
-                },
-                {
                     "question": "¿PlusMinus se conecta a mi banco, recopila analíticas o sincroniza en la nube?",
-                    "intro": "No. PlusMinus está diseñada íntegramente como una app local y sin rastreo:",
+                    "intro": "No. PlusMinus es una app local y sin rastreo:",
                     "bullets": [
                         "<strong>Guardado en tu dispositivo:</strong> Saldos, ingresos, gastos, historial de pagos y preferencias permanecen localmente en tu iPhone o iPad.",
                         "<strong>Sin cuentas ni enlaces bancarios:</strong> PlusMinus no requiere ninguna cuenta y nunca solicita credenciales bancarias ni acceso Open Banking.",
@@ -1637,7 +1615,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "¿Cómo funcionan Copia de seguridad y restauración y Restablecer todos los datos?",
-                    "intro": "Mantienes el control total sobre los datos locales de tu presupuesto en todo momento:",
+                    "intro": "Puedes hacer copias de seguridad, restaurar o borrar los datos locales de tu presupuesto desde Ajustes:",
                     "bullets": [
                         "<strong>Crear copia de seguridad:</strong> Abre <strong>Ajustes &rarr; Datos y privacidad &rarr; Copia de seguridad y restauración</strong> y toca <strong>Crear copia de seguridad</strong> para exportar un archivo JSON legible (<code>.plusminusbackup</code>, sin contraseña) a iCloud Drive, almacenamiento local o cualquier ubicación de Archivos.",
                         "<strong>Restaurar desde copia de seguridad:</strong> Toca <strong>Restaurar desde copia de seguridad</strong> y selecciona un archivo <code>.plusminusbackup</code> válido (hasta 50 MB). Al restaurar se reemplazan todos los datos actuales del presupuesto y se restablece el saldo desde el momento de la copia, manteniendo sin cambios el idioma y el aspecto de la app.",
@@ -1648,39 +1626,36 @@ PLUSMINUS_DATA = {
                     "question": "¿Qué idiomas, monedas, aspectos y dispositivos son compatibles?",
                     "intro": "PlusMinus se adapta a tu idioma, moneda y aspecto preferidos:",
                     "bullets": [
-                        "<strong>Idiomas:</strong> Cambia directamente en <strong>Ajustes &rarr; Preferencias &rarr; Idioma</strong> entre <strong>Predeterminado del sistema</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> y <strong>Fran&ccedil;ais</strong> sin reiniciar la app.",
-                        "<strong>Monedas:</strong> Compatible con <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> y <strong>JPY</strong> en <strong>Ajustes &rarr; Preferencias &rarr; Moneda</strong>.",
-                        "<strong>Aspecto:</strong> Elige <strong>Predeterminado del sistema</strong>, <strong>Oscuro</strong> o <strong>Claro</strong> en <strong>Ajustes &rarr; Preferencias &rarr; Aspecto</strong>.",
+                        "<strong>Idiomas:</strong> Cambia directamente en <strong>Ajustes &rarr; Idioma</strong> entre <strong>Predeterminado del sistema</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> y <strong>Fran&ccedil;ais</strong> sin reiniciar la app.",
+                        "<strong>Monedas:</strong> Compatible con <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> y <strong>JPY</strong> en <strong>Ajustes &rarr; Moneda</strong>.",
+                        "<strong>Aspecto:</strong> Elige <strong>Predeterminado del sistema</strong>, <strong>Oscuro</strong> o <strong>Claro</strong> en <strong>Ajustes &rarr; Aspecto</strong>.",
                         "<strong>Dispositivos compatibles:</strong> Diseñada para iPhone y iPad con <strong>iOS 26 o posterior</strong>."
                     ]
                 },
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Presupuesto mensual sereno y Disponible para gastar para iPhone y iPad",
-            "desc": "Ve de un vistazo lo que puedes gastar ahora con tranquilidad sin registrar cada compra. Presupuesto local con análisis del plan, prorrateo diario de comida y sin conexiones bancarias.",
+            "title": "PlusMinus – Presupuesto mensual y Disponible para gastar para iPhone y iPad",
+            "desc": "Ve de un vistazo lo que puedes gastar ahora sin registrar cada compra. Presupuesto local con análisis del plan, prorrateo diario de comida y sin conexiones bancarias.",
             "canonical": f"{BASE_URL}/plusminus/es/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Sabe al instante cuánto puedes gastar con tranquilidad.",
-            "subtitle": "Configura una sola vez tus ingresos recurrentes, gastos, día de cobro y presupuesto mensual de comida. Mira tu saldo y comprueba lo que realmente tienes disponible — sin anotar cada café.",
-            "section1_title": "Claridad en menos de cinco segundos",
+            "tagline": "Ve cuánto puedes gastar con tranquilidad ahora mismo.",
+            "subtitle": "Configura una sola vez tus ingresos recurrentes, gastos, día de cobro y presupuesto mensual de comida. Mira tu saldo para ver lo que tienes disponible — sin anotar cada café.",
+            "section1_title": "Cómo funciona PlusMinus",
             "features": [
-                ("Disponible en tiempo real", "Dinero actual, gastos pendientes, estimación de comida restante e ingresos próximos programados evaluados en el punto más ajustado del flujo de caja &mdash; siempre explicado paso a paso."),
+                ("Disponible en tiempo real", "Dinero actual, gastos pendientes, estimación de comida restante e ingresos próximos programados evaluados en el punto más ajustado del flujo de caja, explicados paso a paso."),
                 ("Plan mensual estable", "Resumen mensual independiente que normaliza gastos semanales, quincenales, anuales y de meses seleccionados &mdash; con análisis del plan por categorías &mdash; sin que el saldo de hoy enturbie la foto."),
-                ("Privado y local ante todo", "Todo permanece en tu dispositivo. Sin cuentas, sin accesos bancarios, sin analíticas y sin rastreo — nunca."),
+                ("Privado y local ante todo", "Todo permanece en tu dispositivo. Sin cuentas, sin accesos bancarios, sin analíticas y sin rastreo."),
             ],
-            "section2_title": "Todo lo necesario, nada superfluo",
+            "section2_title": "Funciones principales",
             "list_items": [
-                "Cálculo de Disponible para gastar hasta tu próximo día de cobro principal &mdash; con gestión automática de ingresos recurrentes y puntuales",
-                "Desglose transparente en Cálculo del disponible con fechas exactas, reservas y gastos posteriores",
-                "Prorrateo diario automático de comida con ajuste instantáneo para el período actual",
-                "Protección contra deducciones dobles al marcar gastos como pagados o actualizar el saldo",
+                "Cálculo del disponible paso a paso con fechas exactas, reservas e ingresos próximos",
+                "Prorrateo diario automático de comida con ajuste opcional para el período actual",
+                "Protección contra deducciones dobles al marcar gastos pagados o actualizar el saldo",
                 "Frecuencias semanales, cada 2 semanas, mensuales, de meses seleccionados, anuales y puntuales",
-                "Análisis del plan para ver a dónde van tus ingresos en 17 categorías de gastos y comida",
-                "Adelanto al viernes cuando el día de cobro cae en fin de semana y ajuste en meses cortos",
-                "Vista previa de Próximo período con pago anticipado y regularización de gastos anteriores",
-                "Exportación y restauración manual mediante Archivos (.plusminusbackup)",
-                "Disponible en 6 idiomas (español, inglés, finés, sueco, alemán, francés) con 10 monedas y modo oscuro/claro",
+                "Análisis del plan que compara gastos mensuales en 17 categorías y comida",
+                "Adelanto al viernes si el cobro cae en fin de semana, ajuste de meses cortos y vista de Próximo período",
+                "Copia de seguridad y restauración manual con Archivos, 6 idiomas, 10 monedas y modo claro/oscuro",
             ],
             "closing_title": "Próximamente en el App Store",
             "closing_body": "PlusMinus está diseñada para iPhone y iPad y se está preparando para su lanzamiento.",
@@ -1697,7 +1672,7 @@ PLUSMINUS_DATA = {
                 "Prorrateo diario automático de comida con ajuste personalizado del período",
                 "Confirmación en dos opciones para evitar deducciones dobles al pagar gastos",
                 "Frecuencias de meses seleccionados, anual, semanal, cada 2 semanas y puntual",
-                "Almacenamiento 100 % local con copia de seguridad y restauración manual en Archivos",
+                "Almacenamiento local con copia de seguridad y restauración manual en Archivos",
             ],
         },
         "privacy": {
@@ -1759,7 +1734,7 @@ PLUSMINUS_DATA = {
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "Assistance PlusMinus",
-            "desc": "Obtenez de l’aide pour PlusMinus, l’app de budget serein et local avant tout sur iPhone et iPad, ou contactez l’assistance PlusMinus.",
+            "desc": "Obtenez de l’aide pour PlusMinus, l’app de budget local sur iPhone et iPad, ou contactez l’assistance PlusMinus.",
             "heading": "Assistance PlusMinus",
             "thank_you": "Merci d’utiliser PlusMinus.",
             "faq_card_title": "Consultez d’abord la FAQ pour des réponses rapides",
@@ -1769,7 +1744,7 @@ PLUSMINUS_DATA = {
             "tips": [
                 (
                     "Le montant Disponible à dépenser semble plus élevé ou plus bas que prévu :",
-                    "Vérifiez que <strong>Argent actuel</strong> correspond bien à votre solde réel du moment et passez en revue les dépenses impayées ou en retard dans <strong>Actuel</strong>. Les revenus futurs prévus (récurrents ou ponctuels) avant votre prochain jour de paie principal sont automatiquement pris en compte selon le point de trésorerie le plus serré (sans vous permettre de dépenser l’argent avant de le recevoir), tandis que les revenus arrivés à échéance ou attendus aujourd’hui attendent d’être marqués comme reçus. Touchez le bouton d’information à côté de Disponible à dépenser pour ouvrir le <strong>Calcul du disponible</strong> exact, ou consultez toutes les règles dans <strong>Réglages &rarr; Comprendre PlusMinus &rarr; Fonctionnement des calculs</strong>."
+                    "Vérifiez que <strong>Argent actuel</strong> correspond à votre solde actuel et passez en revue les dépenses impayées ou en retard dans <strong>Actuel</strong>. Les revenus futurs prévus avant votre prochain jour de paie principal sont inclus automatiquement, tandis que les revenus en retard ou attendus aujourd’hui comptent une fois marqués comme reçus. Touchez le bouton d’information à côté de Disponible à dépenser pour le <strong>Calcul du disponible</strong>, ou consultez <strong>Réglages &rarr; Comprendre PlusMinus &rarr; Fonctionnement des calculs</strong>."
                 ),
                 (
                     "Éviter les doubles déductions lorsque vous marquez une dépense payée :",
@@ -1791,7 +1766,7 @@ PLUSMINUS_DATA = {
         },
         "faq": {
             "title": "PlusMinus FAQ – Foire aux questions",
-            "desc": "Questions fréquentes et guides pour PlusMinus sur iPhone et iPad : Disponible à dépenser, Actuel et Plan, analyse du plan, budget alimentation, double déduction, mois sélectionnés, arrondis, sauvegardes, confidentialité et langues.",
+            "desc": "Questions fréquentes et guides pour PlusMinus sur iPhone et iPad : Disponible à dépenser, Actuel et Plan, analyse du plan, budget alimentation, double déduction, mois sélectionnés, sauvegardes, confidentialité et langues.",
             "back_label": "&larr; Assistance PlusMinus",
             "site_nav_aria": "Navigation du site",
             "about_link": "À propos de PlusMinus",
@@ -1811,9 +1786,9 @@ PLUSMINUS_DATA = {
                         "<strong>Argent actuel :</strong> Le solde de votre compte ou de vos espèces mis à jour manuellement à cet instant, avec un horodatage relatif de la dernière mise à jour.",
                         "<strong>Moins les dépenses impayées :</strong> Les dépenses récurrentes impayées et les dépenses ponctuelles arrivant à échéance avant votre prochain jour de paie principal, ainsi que les dépenses impayées en retard du cycle de paie immédiatement précédent.",
                         "<strong>Moins l’estimation alimentation restante :</strong> Votre budget alimentation restant estimé sur l’horizon de trésorerie actif.",
-                        "<strong>Point de trésorerie le plus serré avec des revenus à venir :</strong> Lorsqu’un revenu futur prévu (récurrent ou ponctuel) arrive avant votre prochain jour de paie principal, PlusMinus évalue votre solde avant chaque prochaine date de revenu ainsi qu’à la fin du cycle et retient le point le plus serré : les dépenses ultérieures ne créent pas de faux déficit, tout en vous empêchant de dépenser l’argent avant de le recevoir. Touchez le bouton d’information à côté de Disponible à dépenser pour ouvrir le <strong>Calcul du disponible</strong> (affichant <strong>Revenus ajoutés à ce calcul</strong>, <strong>Réservé aux dépenses avant le [date]</strong>, <strong>Estimation alimentation</strong> et les éventuelles <strong>Dépenses impayées ultérieures</strong>), et l’intitulé indique clairement <code>DISPONIBLE &middot; REVENUS À VENIR PRIS EN COMPTE</code>."
+                        "<strong>Point de trésorerie le plus serré avec des revenus à venir :</strong> Les revenus futurs prévus avant votre prochain jour de paie principal sont évalués à chaque échéance et en fin de cycle pour retenir le point le plus serré, afin d’éviter de faux déficits dus aux dépenses ultérieures sans dépenser l’argent d’avance. Consultez <a href=\"#faq-5\">Quel est l’impact des revenus à venir sur Disponible à dépenser ?</a> pour le détail complet."
                     ],
-                    "note": "<strong>Astuce :</strong> Vous pouvez consulter à tout moment le détail des règles dans l’app sous <strong>Réglages &rarr; Comprendre PlusMinus &rarr; Fonctionnement des calculs</strong>."
+                    "note": "<strong>Remarque :</strong> Les montants sont arrondis au centime le plus proche pour que les lignes affichées correspondent au total, tandis que l’estimation alimentation automatique est arrondie à l’unité monétaire supérieure. Toutes les règles figurent sous <strong>Réglages &rarr; Comprendre PlusMinus &rarr; Fonctionnement des calculs</strong>."
                 },
                 {
                     "question": "Quelle est la différence entre Actuel et Plan ?",
@@ -1845,7 +1820,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Quel est l’impact des revenus à venir sur Disponible à dépenser ?",
-                    "intro": "PlusMinus fonctionne avec la même clarté que vous ayez un seul salaire principal, 2&ndash;3 revenus récurrents versés à des dates différentes ou un revenu ponctuel prévu :",
+                    "intro": "PlusMinus gère un salaire principal unique, plusieurs revenus récurrents à des dates différentes ainsi que des revenus ponctuels prévus :",
                     "bullets": [
                         "<strong>Revenus futurs prévus (goulot de trésorerie automatique) :</strong> Les revenus récurrents et ponctuels actifs prévus strictement après aujourd’hui (et après le jour de paie nominal du cycle en cours en cas d’avance au vendredi) et avant le prochain jour de paie principal sont pris en compte automatiquement via le point de contrôle le plus serré &mdash; évitant de faux déficits dus aux dépenses ultérieures sans jamais dépenser d’argent à l’avance.",
                         "<strong>Libellés clairs et détail exact :</strong> Lorsque des revenus à venir relèvent le disponible par rapport à la seule trésorerie en main, le titre passe à <code>DISPONIBLE &middot; REVENUS À VENIR PRIS EN COMPTE</code> (avec la mention <code>Période complète jusqu’au &hellip;</code> dessous si le point contraignant arrive plus tôt). Touchez le bouton d’information pour ouvrir le <strong>Calcul du disponible</strong> et consulter <strong>Revenus ajoutés à ce calcul</strong> (distinct du total <strong>Revenus à venir</strong> de l’aperçu) ainsi que les éventuelles <strong>Dépenses impayées ultérieures</strong>.",
@@ -1854,13 +1829,20 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines, Ponctuel et Analyse du plan ?",
-                    "intro": "PlusMinus gère avec précision les dépenses régulières, les fréquences ponctuelles ou espacées et la répartition par catégorie entre <strong>Plan</strong> et <strong>Actuel</strong> :",
+                    "question": "Comment fonctionnent Mois sélectionnés, Annuel, Hebdomadaire, Toutes les 2 semaines et Ponctuel ?",
+                    "intro": "PlusMinus gère séparément les fréquences régulières, les échéances espacées et les éléments ponctuels dans <strong>Plan</strong> et <strong>Actuel</strong> :",
                     "bullets": [
                         "<strong>Normalisation dans Plan :</strong> Les éléments hebdomadaires sont normalisés via <code>&times; 52 &divide; 12</code>, toutes les 2 semaines via <code>&times; 26 &divide; 12</code>, <strong>Mois sélectionnés</strong> (comme janvier &amp; octobre ou trimestriels) via <code>&times; mois sélectionnés &divide; 12</code>, et les éléments annuels via <code>&divide; 12</code>.",
-                        "<strong>Déduction intégrale dans Actuel :</strong> Les dépenses annuelles et des mois sélectionnés sont déduites en entier durant le cycle de paie où elles arrivent à échéance, pour refléter leur impact réel.",
-                        "<strong>Éléments ponctuels :</strong> Les revenus et dépenses de type <strong>Ponctuel</strong> (par exemple un remboursement fiscal ou une réparation auto) ont une date précise et peuvent être ajoutés dans <strong>Plan</strong> ou via le menu <code>+</code> dans <strong>Actuel</strong>. Ils restent exclus de la base mensuelle de <strong>Plan</strong> : les dépenses ponctuelles sont déduites intégralement à échéance dans <strong>Actuel</strong>, et les revenus ponctuels futurs avant le prochain jour de paie participent au contrôle de trésorerie de <strong>Disponible à dépenser</strong> sans être dépensés d’avance.",
-                        "<strong>17 catégories, Analyse du plan et jour d’échéance facultatif :</strong> Les dépenses peuvent être classées parmi 17 catégories facultatives (Logement, Eau et énergie, Abonnements, Assurance, Prêts, Cartes de crédit et crédit à la consommation, Transport, Loisirs, Sport et fitness, Investissement, Santé et bien-être, Enfants et famille, Animaux, Éducation, Épargne, Dons, Autre). Dans <strong>Plan</strong>, <strong>Où vont vos revenus</strong> et <strong>Analyse du plan</strong> comparent les dépenses récurrentes actives par catégorie (plus Sans catégorie et Budget alimentation) par montant mensuel et part des revenus. Pour les dépenses récurrentes, il est aussi possible de choisir <strong>Aucun jour précis</strong>."
+                        "<strong>Déduction intégrale dans Actuel :</strong> Les dépenses annuelles et des mois sélectionnés sont déduites en entier durant le cycle où elles arrivent à échéance. Pour les dépenses récurrentes, il est aussi possible de choisir <strong>Aucun jour précis</strong>.",
+                        "<strong>Éléments ponctuels :</strong> Les revenus et dépenses de type <strong>Ponctuel</strong> (par exemple un remboursement fiscal ou une réparation auto) ont une date précise et restent exclus de la base mensuelle de <strong>Plan</strong> : les dépenses ponctuelles sont déduites intégralement à échéance dans <strong>Actuel</strong>, et les revenus ponctuels futurs avant le prochain jour de paie participent au contrôle de trésorerie de <strong>Disponible à dépenser</strong> sans être dépensés d’avance."
+                    ]
+                },
+                {
+                    "question": "Comment fonctionnent les catégories et l’Analyse du plan ?",
+                    "intro": "Les catégories vous montrent dans <strong>Plan</strong> comment se répartissent vos revenus mensuels :",
+                    "bullets": [
+                        "<strong>17 catégories facultatives :</strong> Les dépenses peuvent être classées parmi 17 catégories facultatives telles que Logement, Eau et énergie, Abonnements, Assurance et Transport.",
+                        "<strong>Analyse du plan :</strong> Dans <strong>Plan</strong>, <strong>Où vont vos revenus</strong> et l’<strong>Analyse du plan</strong> comparent les dépenses récurrentes actives par catégorie (plus Sans catégorie et Budget alimentation) par montant mensuel et part des revenus."
                     ]
                 },
                 {
@@ -1881,17 +1863,8 @@ PLUSMINUS_DATA = {
                     ]
                 },
                 {
-                    "question": "Comment les montants sont-ils arrondis ?",
-                    "intro": "Chaque chiffre affiché est conçu pour que l’arithmétique reste parfaitement exacte :",
-                    "bullets": [
-                        "<strong>Précision au centime et totaux exacts :</strong> Les composantes monétaires sont arrondies au centime le plus proche (demi-centime arrondi en s’éloignant de zéro) avant l’addition ou la soustraction, afin que chaque ligne affichée donne exactement le total indiqué.",
-                        "<strong>Arrondi de l’estimation alimentation :</strong> L’estimation quotidienne automatique dans <strong>Actuel</strong> est arrondie à l’unité monétaire supérieure, tandis que les montants fixes saisis manuellement conservent les centimes.",
-                        "<strong>Affichage sobre des décimales :</strong> Les montants comportant des centimes affichent deux décimales, tandis que les montants entiers omettent les zéros superflus."
-                    ]
-                },
-                {
                     "question": "PlusMinus se connecte-t-elle à ma banque, collecte-t-elle des statistiques ou synchronise-t-elle dans le cloud ?",
-                    "intro": "Non. PlusMinus est conçue exclusivement comme une app locale et sans suivi :",
+                    "intro": "Non. PlusMinus est une app locale et sans suivi :",
                     "bullets": [
                         "<strong>Stocké sur votre appareil :</strong> Soldes, revenus, dépenses, historique des paiements et réglages restent localement sur votre iPhone ou iPad.",
                         "<strong>Aucun compte ni connexion bancaire :</strong> PlusMinus ne demande aucun compte et n’exige jamais vos identifiants bancaires ni un accès Open Banking.",
@@ -1900,7 +1873,7 @@ PLUSMINUS_DATA = {
                 },
                 {
                     "question": "Comment fonctionnent Sauvegarde et restauration ainsi que Réinitialiser toutes les données ?",
-                    "intro": "Vous gardez à tout moment le contrôle total de vos données budgétaires locales :",
+                    "intro": "Vous pouvez sauvegarder, restaurer ou effacer vos données budgétaires locales depuis Réglages :",
                     "bullets": [
                         "<strong>Créer une sauvegarde :</strong> Ouvrez <strong>Réglages &rarr; Données et confidentialité &rarr; Sauvegarde et restauration</strong> et touchez <strong>Créer une sauvegarde</strong> pour exporter une archive JSON lisible (<code>.plusminusbackup</code>, non protégée par mot de passe) vers iCloud Drive, le stockage local ou n’importe quel dossier de Fichiers.",
                         "<strong>Restaurer à partir d’une sauvegarde :</strong> Touchez <strong>Restaurer à partir d’une sauvegarde</strong> et sélectionnez un fichier <code>.plusminusbackup</code> valide (jusqu’à 50 Mo). La restauration remplace toutes les données budgétaires actuelles et rétablit le solde tel qu’il était lors de la sauvegarde, tout en conservant la langue et l’apparence actuelles de l’app.",
@@ -1911,39 +1884,36 @@ PLUSMINUS_DATA = {
                     "question": "Quels sont les langues, devises, thèmes et appareils pris en charge ?",
                     "intro": "PlusMinus s’adapte à votre langue, à votre devise et à votre thème préférés :",
                     "bullets": [
-                        "<strong>Langues :</strong> Modifiable directement dans <strong>Réglages &rarr; Préférences &rarr; Langue</strong> entre <strong>Par défaut du système</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> et <strong>Fran&ccedil;ais</strong> sans redémarrer l’app.",
-                        "<strong>Devises :</strong> Prend en charge <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> et <strong>JPY</strong> dans <strong>Réglages &rarr; Préférences &rarr; Devise</strong>.",
-                        "<strong>Apparence :</strong> Choisissez <strong>Par défaut du système</strong>, <strong>Sombre</strong> ou <strong>Clair</strong> dans <strong>Réglages &rarr; Préférences &rarr; Apparence</strong>.",
+                        "<strong>Langues :</strong> Modifiable directement dans <strong>Réglages &rarr; Langue</strong> entre <strong>Par défaut du système</strong>, <strong>English</strong>, <strong>Suomi</strong>, <strong>Svenska</strong>, <strong>Deutsch</strong>, <strong>Espa&ntilde;ol</strong> et <strong>Fran&ccedil;ais</strong> sans redémarrer l’app.",
+                        "<strong>Devises :</strong> Prend en charge <strong>EUR, USD, GBP, SEK, NOK, DKK, CHF, CAD, AUD</strong> et <strong>JPY</strong> dans <strong>Réglages &rarr; Devise</strong>.",
+                        "<strong>Apparence :</strong> Choisissez <strong>Par défaut du système</strong>, <strong>Sombre</strong> ou <strong>Clair</strong> dans <strong>Réglages &rarr; Apparence</strong>.",
                         "<strong>Appareils compatibles :</strong> Conçue pour iPhone et iPad sous <strong>iOS 26 ou ultérieur</strong>."
                     ]
                 },
             ],
         },
         "marketing": {
-            "title": "PlusMinus – Budget mensuel serein et Disponible à dépenser sur iPhone et iPad",
-            "desc": "Voyez en un coup d’œil ce que vous pouvez dépenser sereinement dès maintenant sans noter chaque achat. Budget local avec analyse du plan, prorata alimentaire et sans connexion bancaire.",
+            "title": "PlusMinus – Budget mensuel et Disponible à dépenser sur iPhone et iPad",
+            "desc": "Voyez en un coup d’œil ce que vous pouvez dépenser maintenant sans noter chaque achat. Budget local avec analyse du plan, prorata alimentaire et sans connexion bancaire.",
             "canonical": f"{BASE_URL}/plusminus/fr/marketing.html",
             "hero_title": "PlusMinus",
-            "tagline": "Sachez instantanément ce que vous pouvez dépenser sereinement.",
-            "subtitle": "Configurez une fois vos revenus récurrents, dépenses, jour de paie et budget alimentation mensuel. Jetez un œil à votre solde et voyez ce qui est vraiment disponible — sans noter chaque café.",
-            "section1_title": "La clarté en moins de cinq secondes",
+            "tagline": "Voyez ce que vous pouvez dépenser sereinement maintenant.",
+            "subtitle": "Configurez une fois vos revenus récurrents, dépenses, jour de paie et budget alimentation mensuel. Consultez votre solde pour voir ce qui est disponible — sans noter chaque café.",
+            "section1_title": "Comment fonctionne PlusMinus",
             "features": [
-                ("Disponible en temps réel", "Argent actuel, dépenses impayées, estimation alimentation restante et revenus à venir prévus évalués au point de trésorerie le plus serré &mdash; toujours détaillé étape par étape."),
+                ("Disponible en temps réel", "Argent actuel, dépenses impayées, estimation alimentation restante et revenus à venir prévus évalués au point de trésorerie le plus serré, détaillés étape par étape."),
                 ("Plan mensuel régulier", "Vue mensuelle distincte qui lisse dépenses hebdomadaires, bimensuelles, annuelles et de mois sélectionnés &mdash; avec analyse du plan par catégorie &mdash; sans que le solde du jour brouille la vision."),
-                ("Privée et locale avant tout", "Tout reste sur votre appareil. Aucun compte, aucun identifiant bancaire, aucune analyse et aucun suivi — jamais."),
+                ("Privée et locale avant tout", "Tout reste sur votre appareil. Aucun compte, aucun identifiant bancaire, aucune analyse et aucun suivi."),
             ],
-            "section2_title": "Tout ce qu’il faut, rien de superflu",
+            "section2_title": "Fonctionnalités principales",
             "list_items": [
-                "Calcul du Disponible à dépenser jusqu’au prochain jour de paie principal &mdash; avec gestion automatique des revenus récurrents et ponctuels à venir",
-                "Fiche Calcul du disponible transparente avec dates exactes, réserves et dépenses ultérieures",
-                "Prorata quotidien automatique du budget alimentation avec personnalisation immédiate pour le cycle en cours",
+                "Calcul du disponible étape par étape avec dates exactes, réserves et revenus à venir",
+                "Prorata quotidien automatique du budget alimentation avec personnalisation facultative pour le cycle",
                 "Protection contre les doubles déductions au paiement des dépenses et à la mise à jour du solde",
                 "Fréquences hebdomadaire, toutes les 2 semaines, mensuelle, mois sélectionnés, annuelle et ponctuelle",
-                "Analyse du plan montrant la répartition mensuelle sur 17 catégories de dépenses et l’alimentation",
-                "Avance au vendredi lorsque le jour de paie tombe un week-end et adaptation aux mois courts",
-                "Aperçu À venir pour la prochaine période avec paiement anticipé et régularisation des anciennes dépenses",
-                "Export et restauration manuels via Fichiers (.plusminusbackup)",
-                "Disponible en 6 langues (français, anglais, finnois, suédois, allemand, espagnol) avec 10 devises et mode sombre/clair",
+                "Analyse du plan comparant les dépenses mensuelles sur 17 catégories et l’alimentation",
+                "Avance au vendredi en cas de week-end, adaptation aux mois courts et aperçu À venir pour la prochaine période",
+                "Sauvegarde et restauration manuelles via Fichiers, 6 langues, 10 devises et mode sombre/clair",
             ],
             "closing_title": "Bientôt sur l'App Store",
             "closing_body": "PlusMinus est conçue pour iPhone et iPad et est en cours de préparation pour sa sortie.",
@@ -1960,7 +1930,7 @@ PLUSMINUS_DATA = {
                 "Prorata quotidien automatique du budget alimentation avec surcharge manuelle par cycle",
                 "Confirmation à deux choix anti-double déduction lors du paiement des dépenses",
                 "Fréquences mois sélectionnés, annuelle, hebdomadaire, toutes les 2 semaines et ponctuelle",
-                "Stockage 100 % local avec sauvegarde et restauration manuelles via Fichiers",
+                "Stockage local avec sauvegarde et restauration manuelles via Fichiers",
             ],
         },
         "privacy": {
