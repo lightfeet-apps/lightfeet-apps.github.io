@@ -244,6 +244,249 @@
             font-size: 13px;
         }
 
+        .screenshots-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .screenshots-header h2 {
+            margin: 0;
+        }
+
+        .screenshots-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .device-switch {
+            display: inline-flex;
+            background: #f0f1f4;
+            padding: 4px;
+            border-radius: 12px;
+            gap: 4px;
+        }
+
+        .device-tab {
+            position: relative;
+            border: 0;
+            background: transparent;
+            color: #555;
+            font: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 7px 14px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .device-tab[aria-selected="true"] {
+            background: #ffffff;
+            color: #1d1d1f;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .device-tab[aria-selected="true"]::after {
+            content: "";
+            position: absolute;
+            inset: auto 10px 3px;
+            border-block-end: 2px solid #007aff;
+            border-radius: 1px;
+        }
+
+        .gallery-nav {
+            display: flex;
+            gap: 6px;
+        }
+
+        .nav-btn {
+            width: 34px;
+            height: 34px;
+            background: #f0f1f4;
+            color: #1d1d1f;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            line-height: 1;
+            touch-action: manipulation;
+        }
+
+        .nav-btn:hover {
+            background: #e2e4ea;
+        }
+
+        .shot-panel[hidden] {
+            display: none;
+        }
+
+        .shot-track {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            overscroll-behavior-x: contain;
+            touch-action: manipulation;
+            padding: 4px 2px 14px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .shot-slide {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+
+        .shot-panel--iphone .shot-slide {
+            width: 224px;
+        }
+
+        .shot-panel--ipad .shot-slide {
+            width: 340px;
+        }
+
+        .shot-button {
+            width: 100%;
+            padding: 0;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 18px;
+            overflow: hidden;
+            background: #0c0d14;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            cursor: zoom-in;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+        }
+
+        .shot-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .shot-button:focus-visible,
+        .shot-track:focus-visible,
+        .device-tab:focus-visible,
+        .nav-btn:focus-visible,
+        .lightbox-btn:focus-visible {
+            outline: 2px solid #007aff;
+            outline-offset: 2px;
+        }
+
+        .shot-track:focus-visible {
+            border-radius: 12px;
+        }
+
+        .shot-button img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        dialog.lightbox {
+            margin: auto;
+            border: 0;
+            padding: 0;
+            background: transparent;
+            max-width: min(94vw, 960px);
+            max-height: 94vh;
+            overflow: auto;
+        }
+
+        dialog.lightbox:modal {
+            overscroll-behavior: contain;
+        }
+
+        dialog.lightbox::backdrop {
+            background: rgba(10, 12, 20, 0.86);
+            backdrop-filter: blur(6px);
+            overflow: hidden;
+            overscroll-behavior: contain;
+        }
+
+        .lightbox-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            padding: 12px;
+        }
+
+        .lightbox-stage {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .lightbox-img {
+            max-width: min(90vw, 920px);
+            max-height: calc(94vh - 84px);
+            width: auto;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .lightbox-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .lightbox-counter {
+            min-width: 48px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .lightbox-btn {
+            border: 0;
+            background: rgba(255, 255, 255, 0.16);
+            color: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+
+        .lightbox-btn:hover {
+            background: rgba(255, 255, 255, 0.28);
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .shot-track {
+                scroll-behavior: smooth;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .shot-button {
+                transition: none;
+            }
+
+            .shot-button:hover {
+                transform: none;
+            }
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 40px 16px;
@@ -264,6 +507,28 @@
             .feature-grid,
             .compact-list {
                 grid-template-columns: 1fr;
+            }
+
+            .gallery-nav {
+                display: none;
+            }
+
+            .shot-panel--iphone .shot-slide {
+                width: 210px;
+            }
+
+            .shot-panel--ipad .shot-slide {
+                width: 280px;
+            }
+
+            .lightbox-inner {
+                padding: 8px;
+            }
+
+            .lightbox-img {
+                max-width: 92vw;
+                max-height: calc(94vh - 80px);
+                border-radius: 14px;
             }
         }
     </style>
@@ -287,6 +552,114 @@
             <div class="beta-cta">
                 <a class="button" href="https://testflight.apple.com/join/KdkHfMKe" target="_blank" rel="noopener noreferrer">Über TestFlight testen</a>
                 <p class="beta-note">Begrenzter öffentlicher Test (bis zu 100 Tester) &middot; iPhone &amp; iPad (iOS/iPadOS 26&ndash;27)</p>
+            </div>
+        </section>
+
+        <section class="section screenshots-section">
+            <div class="screenshots-header">
+                <h2>WakeUp im Überblick</h2>
+
+                <div class="screenshots-controls">
+                    <div class="device-switch" role="tablist" aria-label="Screenshots nach Gerät">
+                        <button type="button" class="device-tab" id="tab-iphone" role="tab" aria-selected="true" data-device="iphone" tabindex="0">iPhone</button>
+                        <button type="button" class="device-tab" id="tab-ipad" role="tab" aria-selected="false" data-device="ipad" tabindex="-1">iPad</button>
+                    </div>
+
+                    <div class="gallery-nav">
+                        <button type="button" class="nav-btn nav-prev" aria-label="Vorherige Screenshots">&#8249;</button>
+                        <button type="button" class="nav-btn nav-next" aria-label="Nächste Screenshots">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shot-panel shot-panel--iphone" id="panel-iphone" role="tabpanel" aria-labelledby="tab-iphone">
+                <div class="shot-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="iPhone">
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="1 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="0" aria-label="Größere Ansicht öffnen: iPhone — Nächsten Wecker auslassen, ohne deine Routine zu ändern">
+                            <img src="../images/de/iphone/01-dismiss.webp" alt="iPhone — Nächsten Wecker auslassen, ohne deine Routine zu ändern" width="590" height="1280" fetchpriority="high">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="2 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="1" aria-label="Größere Ansicht öffnen: iPhone — Nächste Weckzeit in schnellen Schritten anpassen">
+                            <img src="../images/de/iphone/02-quick-adjust.webp" alt="iPhone — Nächste Weckzeit in schnellen Schritten anpassen" width="590" height="1280" fetchpriority="high">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="3 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="2" aria-label="Größere Ansicht öffnen: iPhone — Weckzeit mit dem interaktiven Zifferblatt einstellen">
+                            <img src="../images/de/iphone/03-time-dial.webp" alt="iPhone — Weckzeit mit dem interaktiven Zifferblatt einstellen" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="4 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="3" aria-label="Größere Ansicht öffnen: iPhone — Ausgelassenen Wecker mit einem Tipp wiederherstellen">
+                            <img src="../images/de/iphone/04-dismissed.webp" alt="iPhone — Ausgelassenen Wecker mit einem Tipp wiederherstellen" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="5 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="4" aria-label="Größere Ansicht öffnen: iPhone — Wecker mit einem Tipp nach Kategorie filtern">
+                            <img src="../images/de/iphone/05-exercise-filter.webp" alt="iPhone — Wecker mit einem Tipp nach Kategorie filtern" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="6 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="5" aria-label="Größere Ansicht öffnen: iPhone — Routinen mit Wecker-Kategorien organisieren">
+                            <img src="../images/de/iphone/06-categories.webp" alt="iPhone — Routinen mit Wecker-Kategorien organisieren" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="7 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="6" aria-label="Größere Ansicht öffnen: iPhone — Eigene Audiodateien als Weckton importieren">
+                            <img src="../images/de/iphone/07-custom-sounds.webp" alt="iPhone — Eigene Audiodateien als Weckton importieren" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="8 / 8">
+                        <button type="button" class="shot-button" data-device="iphone" data-index="7" aria-label="Größere Ansicht öffnen: iPhone — Erscheinungsbild, Standardwerte und Datenschutz anpassen">
+                            <img src="../images/de/iphone/08-settings-privacy.webp" alt="iPhone — Erscheinungsbild, Standardwerte und Datenschutz anpassen" width="590" height="1280" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shot-panel shot-panel--ipad" id="panel-ipad" role="tabpanel" aria-labelledby="tab-ipad" hidden>
+                <div class="shot-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="iPad">
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="1 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="0" aria-label="Größere Ansicht öffnen: iPad — Nächsten Wecker auslassen, ohne deine Routine zu ändern">
+                            <img src="../images/de/ipad/01-dismiss.webp" alt="iPad — Nächsten Wecker auslassen, ohne deine Routine zu ändern" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="2 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="1" aria-label="Größere Ansicht öffnen: iPad — Nächste Weckzeit in schnellen Schritten anpassen">
+                            <img src="../images/de/ipad/02-quick-adjust.webp" alt="iPad — Nächste Weckzeit in schnellen Schritten anpassen" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="3 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="2" aria-label="Größere Ansicht öffnen: iPad — Weckzeit mit dem interaktiven Zifferblatt einstellen">
+                            <img src="../images/de/ipad/03-time-dial.webp" alt="iPad — Weckzeit mit dem interaktiven Zifferblatt einstellen" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="4 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="3" aria-label="Größere Ansicht öffnen: iPad — Ausgelassenen Wecker mit einem Tipp wiederherstellen">
+                            <img src="../images/de/ipad/04-dismissed.webp" alt="iPad — Ausgelassenen Wecker mit einem Tipp wiederherstellen" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="5 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="4" aria-label="Größere Ansicht öffnen: iPad — Wecker mit einem Tipp nach Kategorie filtern">
+                            <img src="../images/de/ipad/05-exercise-filter.webp" alt="iPad — Wecker mit einem Tipp nach Kategorie filtern" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="6 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="5" aria-label="Größere Ansicht öffnen: iPad — Routinen mit Wecker-Kategorien organisieren">
+                            <img src="../images/de/ipad/06-categories.webp" alt="iPad — Routinen mit Wecker-Kategorien organisieren" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="7 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="6" aria-label="Größere Ansicht öffnen: iPad — Eigene Audiodateien als Weckton importieren">
+                            <img src="../images/de/ipad/07-custom-sounds.webp" alt="iPad — Eigene Audiodateien als Weckton importieren" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                    <div class="shot-slide" role="group" aria-roledescription="slide" aria-label="8 / 8">
+                        <button type="button" class="shot-button" data-device="ipad" data-index="7" aria-label="Größere Ansicht öffnen: iPad — Erscheinungsbild, Standardwerte und Datenschutz anpassen">
+                            <img src="../images/de/ipad/08-settings-privacy.webp" alt="iPad — Erscheinungsbild, Standardwerte und Datenschutz anpassen" width="1080" height="1440" fetchpriority="low" loading="lazy" decoding="async">
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -371,6 +744,132 @@
         </footer>
 
     </main>
+
+    <dialog class="lightbox" id="screenshot-lightbox" closedby="any" aria-label="Screenshot-Vorschau">
+        <div class="lightbox-inner">
+            <div class="lightbox-stage">
+                <img class="lightbox-img" src="" alt="">
+            </div>
+            <div class="lightbox-bar">
+                <button type="button" class="lightbox-btn lightbox-prev" aria-label="Vorheriger Screenshot">&#8249;</button>
+                <span class="lightbox-counter" aria-live="polite">1 / 8</span>
+                <button type="button" class="lightbox-btn lightbox-next" aria-label="Nächster Screenshot">&#8250;</button>
+                <button type="button" class="lightbox-btn lightbox-close" autofocus aria-label="Schließen">&times;</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+    (() => {
+        const tabs = Array.from(document.querySelectorAll('.device-tab'));
+        const panels = {
+            iphone: document.getElementById('panel-iphone'),
+            ipad: document.getElementById('panel-ipad')
+        };
+        const prevBtn = document.querySelector('.gallery-nav .nav-prev');
+        const nextBtn = document.querySelector('.gallery-nav .nav-next');
+        const dialog = document.getElementById('screenshot-lightbox');
+        const lbImg = dialog.querySelector('.lightbox-img');
+        const lbCounter = dialog.querySelector('.lightbox-counter');
+        const lbPrev = dialog.querySelector('.lightbox-prev');
+        const lbNext = dialog.querySelector('.lightbox-next');
+        const lbClose = dialog.querySelector('.lightbox-close');
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let activeDevice = 'iphone';
+        let currentIndex = 0;
+
+        function getButtons(device) {
+            return Array.from(panels[device].querySelectorAll('.shot-button'));
+        }
+
+        function switchDevice(device) {
+            activeDevice = device;
+            tabs.forEach((tab) => {
+                const selected = tab.dataset.device === device;
+                tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+                tab.tabIndex = selected ? 0 : -1;
+            });
+            Object.entries(panels).forEach(([key, panel]) => {
+                panel.hidden = key !== device;
+            });
+        }
+
+        tabs.forEach((tab, idx) => {
+            tab.addEventListener('click', () => switchDevice(tab.dataset.device));
+            tab.addEventListener('keydown', (e) => {
+                let targetIdx = null;
+                if (e.key === 'ArrowRight') targetIdx = (idx + 1) % tabs.length;
+                else if (e.key === 'ArrowLeft') targetIdx = (idx - 1 + tabs.length) % tabs.length;
+                else if (e.key === 'Home') targetIdx = 0;
+                else if (e.key === 'End') targetIdx = tabs.length - 1;
+                if (targetIdx !== null) {
+                    e.preventDefault();
+                    const nextTab = tabs[targetIdx];
+                    nextTab.focus();
+                    switchDevice(nextTab.dataset.device);
+                }
+            });
+        });
+
+        function scrollTrack(direction) {
+            const track = panels[activeDevice].querySelector('.shot-track');
+            track.scrollBy({
+                left: direction * Math.round(track.clientWidth * 0.8),
+                behavior: reducedMotion.matches ? 'auto' : 'smooth'
+            });
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', () => scrollTrack(-1));
+        if (nextBtn) nextBtn.addEventListener('click', () => scrollTrack(1));
+
+        function showSlide(device, index) {
+            const buttons = getButtons(device);
+            currentIndex = (index + buttons.length) % buttons.length;
+            const img = buttons[currentIndex].querySelector('img');
+            lbImg.src = img.currentSrc || img.src;
+            lbImg.alt = img.alt;
+            lbCounter.textContent = `${currentIndex + 1} / ${buttons.length}`;
+        }
+
+        document.querySelectorAll('.shot-button').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                activeDevice = btn.dataset.device;
+                showSlide(activeDevice, Number(btn.dataset.index));
+                dialog.showModal();
+            });
+        });
+
+        lbPrev.addEventListener('click', () => showSlide(activeDevice, currentIndex - 1));
+        lbNext.addEventListener('click', () => showSlide(activeDevice, currentIndex + 1));
+        lbClose.addEventListener('click', () => dialog.close());
+
+        if (!('closedBy' in HTMLDialogElement.prototype)) {
+            const outside = (e) => {
+                const r = dialog.getBoundingClientRect();
+                return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+            };
+            let pressedOutside = false;
+            dialog.addEventListener('pointerdown', (e) => {
+                pressedOutside = outside(e);
+            });
+            dialog.addEventListener('pointerup', (e) => {
+                if (pressedOutside && outside(e)) {
+                    dialog.close();
+                }
+            });
+        }
+
+        dialog.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                showSlide(activeDevice, currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                showSlide(activeDevice, currentIndex + 1);
+            }
+        });
+    })();
+    </script>
 
 </body>
 </html>
