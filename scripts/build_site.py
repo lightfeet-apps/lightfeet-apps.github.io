@@ -1970,19 +1970,38 @@ def build_root_index(lang_code: str) -> str:
     <link rel="canonical" href="{d["canonical"]}">
 {hreflang_links("")}
     <style>
+        :root {{
+            --in-oklab: ;
+        }}
+
+        @supports (background: linear-gradient(in oklab, white, black)) {{
+            :root {{
+                --in-oklab: in oklab;
+            }}
+        }}
+
         * {{
             box-sizing: border-box;
         }}
 
         body {{
             margin: 0;
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: #f6f7f9;
-            color: #1d1d1f;
+            background-color: #f3f6fc;
+            background-image:
+                radial-gradient(ellipse 68% 50% at 10% 6% var(--in-oklab), rgba(132, 182, 255, 0.28), transparent 70%),
+                radial-gradient(ellipse 60% 48% at 92% 14% var(--in-oklab), rgba(255, 206, 158, 0.26), transparent 68%),
+                radial-gradient(ellipse 55% 45% at 52% 96% var(--in-oklab), rgba(168, 206, 255, 0.20), transparent 72%),
+                linear-gradient(165deg var(--in-oklab), #edf3ff 0%, #faf9f6 48%, #fff3e6 100%);
+            background-attachment: fixed;
+            color: #151924;
             line-height: 1.6;
         }}
 
         .container {{
+            position: relative;
+            z-index: 1;
             max-width: 860px;
             margin: 0 auto;
             padding: 80px 24px 60px;
@@ -2001,7 +2020,7 @@ def build_root_index(lang_code: str) -> str:
 
         .tagline {{
             font-size: 21px;
-            color: #444;
+            color: #3b4252;
             max-width: 620px;
             margin: 0 auto;
             line-height: 1.45;
@@ -2015,10 +2034,15 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .app-card {{
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.88);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.92);
             border-radius: 22px;
             padding: 32px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            box-shadow:
+                0 2px 6px rgba(24, 42, 74, 0.04),
+                0 14px 36px rgba(24, 42, 74, 0.08);
             display: flex;
             flex-direction: column;
         }}
@@ -2026,13 +2050,13 @@ def build_root_index(lang_code: str) -> str:
         .app-card h2 {{
             margin: 0 0 12px;
             font-size: 28px;
-            color: #111;
+            color: #151924;
         }}
 
         .app-card > p {{
             margin: 0 0 22px;
             font-size: 16px;
-            color: #444;
+            color: #3b4252;
             flex-grow: 1;
         }}
 
@@ -2100,18 +2124,18 @@ def build_root_index(lang_code: str) -> str:
             margin: 0 0 14px;
             font-size: 13px;
             line-height: 1.45;
-            color: #666;
+            color: #4b5362;
             flex-grow: 0;
         }}
 
         .app-links {{
             margin: 0;
             font-size: 14px;
-            color: #666;
+            color: #4b5362;
         }}
 
         .app-links a {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: none;
         }}
 
@@ -2123,7 +2147,7 @@ def build_root_index(lang_code: str) -> str:
             text-align: center;
             margin-top: 56px;
             font-size: 14px;
-            color: #666;
+            color: #4b5362;
         }}
 
         .contact-line {{
@@ -2131,7 +2155,7 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .contact-line a {{
-            color: #007aff;
+            color: #005ec4;
         }}
 
         .lang-nav {{
@@ -2140,24 +2164,24 @@ def build_root_index(lang_code: str) -> str:
         }}
 
         .lang-nav a {{
-            color: #666;
+            color: #4b5362;
             text-decoration: none;
             padding: 2px 4px;
         }}
 
         .lang-nav a:hover {{
-            color: #007aff;
+            color: #005ec4;
             text-decoration: underline;
         }}
 
         .lang-nav a.active {{
             font-weight: 600;
-            color: #111;
+            color: #151924;
         }}
 
         .copyright {{
             margin: 0;
-            color: #888;
+            color: #525a6a;
             font-size: 13px;
         }}
 
@@ -2168,6 +2192,12 @@ def build_root_index(lang_code: str) -> str:
 
             .app-preview:hover {{
                 transform: none;
+            }}
+        }}
+
+        @media (forced-colors: active) {{
+            .app-card {{
+                border: 1px solid CanvasText;
             }}
         }}
 
