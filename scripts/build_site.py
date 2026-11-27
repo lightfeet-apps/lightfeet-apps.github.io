@@ -122,11 +122,14 @@ def lang_nav_links(page_name: str, current_lang: str) -> str:
         code = lang["code"]
         is_active = code == current_lang
         if current_lang == "en":
-            href = page_name if code == "en" else f"{lang['dir']}/{page_name}"
+            if code == "en":
+                href = page_name or "./"
+            else:
+                href = f"{lang['dir']}/{page_name}"
         elif code == "en":
             href = f"../{page_name}"
         elif is_active:
-            href = page_name
+            href = page_name or "./"
         else:
             href = f"../{lang['dir']}/{page_name}"
         cls = ' class="active"' if is_active else ""
@@ -148,7 +151,7 @@ def hreflang_links(section_prefix: str, page_name: str = "") -> str:
 
 ROOT_DATA = {
     "en": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Apps for iPhone and iPad",
         "desc": "Focused, thoughtfully crafted apps for iPhone and iPad by Lightfeet Apps: WakeUp and PlusMinus.",
         "canonical": f"{BASE_URL}/",
         "heading": "Lightfeet Apps",
@@ -196,7 +199,7 @@ ROOT_DATA = {
         "nav_aria": "Language selection",
     },
     "fi": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Sovelluksia iPhonelle ja iPadille",
         "desc": "Huolellisesti viimeisteltyjä sovelluksia iPhonelle ja iPadille Lightfeet Appsilta: WakeUp ja PlusMinus.",
         "canonical": f"{BASE_URL}/fi/",
         "heading": "Lightfeet Apps",
@@ -244,7 +247,7 @@ ROOT_DATA = {
         "nav_aria": "Kielivalinta",
     },
     "sv": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Appar för iPhone och iPad",
         "desc": "Fokuserade, omsorgsfullt skapade appar för iPhone och iPad från Lightfeet Apps: WakeUp och PlusMinus.",
         "canonical": f"{BASE_URL}/sv/",
         "heading": "Lightfeet Apps",
@@ -292,7 +295,7 @@ ROOT_DATA = {
         "nav_aria": "Språkval",
     },
     "de": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Apps für iPhone und iPad",
         "desc": "Fokussierte, sorgfältig gestaltete Apps für iPhone und iPad von Lightfeet Apps: WakeUp und PlusMinus.",
         "canonical": f"{BASE_URL}/de/",
         "heading": "Lightfeet Apps",
@@ -340,7 +343,7 @@ ROOT_DATA = {
         "nav_aria": "Sprachauswahl",
     },
     "es": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Apps para iPhone y iPad",
         "desc": "Apps centradas y cuidadas al detalle para iPhone y iPad de Lightfeet Apps: WakeUp y PlusMinus.",
         "canonical": f"{BASE_URL}/es/",
         "heading": "Lightfeet Apps",
@@ -388,7 +391,7 @@ ROOT_DATA = {
         "nav_aria": "Selección de idioma",
     },
     "fr": {
-        "title": "Lightfeet Apps",
+        "title": "Lightfeet Apps – Apps pour iPhone et iPad",
         "desc": "Des apps ciblées et soigneusement conçues pour iPhone et iPad par Lightfeet Apps : WakeUp et PlusMinus.",
         "canonical": f"{BASE_URL}/fr/",
         "heading": "Lightfeet Apps",
@@ -440,7 +443,7 @@ ROOT_DATA = {
 
 PLUSMINUS_DATA = {
     "en": {
-        "home_href": "../index.html",
+        "home_href": "../",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
@@ -484,7 +487,7 @@ PLUSMINUS_DATA = {
             "heading": "Frequently Asked Questions",
             "subtitle": "Help, calculation rules, and guides for PlusMinus.",
             "toc_title": "On this page",
-            "toc_tip": 'Can\'t find what you\'re looking for? <a href="index.html">Contact PlusMinus Support &rarr;</a>',
+            "toc_tip": 'Can\'t find what you\'re looking for? <a href="./">Contact PlusMinus Support &rarr;</a>',
             "back_to_top": "&uarr; Back to top",
             "nav_aria": "Language selection",
             "copyright": "PlusMinus &copy; 2026",
@@ -698,7 +701,7 @@ PLUSMINUS_DATA = {
         },
     },
     "fi": {
-        "home_href": "../../fi/index.html",
+        "home_href": "../../fi/",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus-tuki",
@@ -742,7 +745,7 @@ PLUSMINUS_DATA = {
             "heading": "Usein kysytyt kysymykset",
             "subtitle": "Ohjeita, laskentasääntöjä ja vinkkejä PlusMinusin käyttöön.",
             "toc_title": "Aiheet tällä sivulla",
-            "toc_tip": 'Etkö löytänyt vastausta kysymykseesi? <a href="index.html">Ota yhteyttä PlusMinus-tukeen &rarr;</a>',
+            "toc_tip": 'Etkö löytänyt vastausta kysymykseesi? <a href="./">Ota yhteyttä PlusMinus-tukeen &rarr;</a>',
             "back_to_top": "&uarr; Takaisin alkuun",
             "nav_aria": "Kielivalinta",
             "copyright": "PlusMinus &copy; 2026",
@@ -956,7 +959,7 @@ PLUSMINUS_DATA = {
         },
     },
     "sv": {
-        "home_href": "../../sv/index.html",
+        "home_href": "../../sv/",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
@@ -1000,7 +1003,7 @@ PLUSMINUS_DATA = {
             "heading": "Vanliga frågor",
             "subtitle": "Hjälp, beräkningsregler och guider för PlusMinus.",
             "toc_title": "På den här sidan",
-            "toc_tip": 'Hittar du inte det du söker? <a href="index.html">Kontakta PlusMinus Support &rarr;</a>',
+            "toc_tip": 'Hittar du inte det du söker? <a href="./">Kontakta PlusMinus Support &rarr;</a>',
             "back_to_top": "&uarr; Tillbaka till toppen",
             "nav_aria": "Språkval",
             "copyright": "PlusMinus &copy; 2026",
@@ -1214,7 +1217,7 @@ PLUSMINUS_DATA = {
         },
     },
     "de": {
-        "home_href": "../../de/index.html",
+        "home_href": "../../de/",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "PlusMinus Support",
@@ -1258,7 +1261,7 @@ PLUSMINUS_DATA = {
             "heading": "Häufig gestellte Fragen",
             "subtitle": "Hilfe, Berechnungsregeln und Anleitungen für PlusMinus.",
             "toc_title": "Auf dieser Seite",
-            "toc_tip": 'Nicht gefunden, wonach du suchst? <a href="index.html">PlusMinus Support kontaktieren &rarr;</a>',
+            "toc_tip": 'Nicht gefunden, wonach du suchst? <a href="./">PlusMinus Support kontaktieren &rarr;</a>',
             "back_to_top": "&uarr; Zurück nach oben",
             "nav_aria": "Sprachauswahl",
             "copyright": "PlusMinus &copy; 2026",
@@ -1472,7 +1475,7 @@ PLUSMINUS_DATA = {
         },
     },
     "es": {
-        "home_href": "../../es/index.html",
+        "home_href": "../../es/",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "Soporte de PlusMinus",
@@ -1516,7 +1519,7 @@ PLUSMINUS_DATA = {
             "heading": "Preguntas frecuentes",
             "subtitle": "Ayuda, reglas de cálculo y guías para PlusMinus.",
             "toc_title": "En esta página",
-            "toc_tip": '¿No encuentras lo que buscas? <a href="index.html">Contactar con el soporte de PlusMinus &rarr;</a>',
+            "toc_tip": '¿No encuentras lo que buscas? <a href="./">Contactar con el soporte de PlusMinus &rarr;</a>',
             "back_to_top": "&uarr; Volver arriba",
             "nav_aria": "Selección de idioma",
             "copyright": "PlusMinus &copy; 2026",
@@ -1730,7 +1733,7 @@ PLUSMINUS_DATA = {
         },
     },
     "fr": {
-        "home_href": "../../fr/index.html",
+        "home_href": "../../fr/",
         "home_label": "Lightfeet Apps",
         "index": {
             "title": "Assistance PlusMinus",
@@ -1774,7 +1777,7 @@ PLUSMINUS_DATA = {
             "heading": "Foire aux questions",
             "subtitle": "Aide, règles de calcul et guides pour PlusMinus.",
             "toc_title": "Sur cette page",
-            "toc_tip": 'Vous ne trouvez pas ce que vous cherchez ? <a href="index.html">Contacter l’assistance PlusMinus &rarr;</a>',
+            "toc_tip": 'Vous ne trouvez pas ce que vous cherchez ? <a href="./">Contacter l’assistance PlusMinus &rarr;</a>',
             "back_to_top": "&uarr; Haut de page",
             "nav_aria": "Choix de la langue",
             "copyright": "PlusMinus &copy; 2026",
@@ -1992,7 +1995,7 @@ PLUSMINUS_DATA = {
 
 def build_root_index(lang_code: str) -> str:
     d = ROOT_DATA[lang_code]
-    lang_links = lang_nav_links("index.html", lang_code)
+    lang_links = lang_nav_links("", lang_code)
     root_prefix = "" if lang_code == "en" else "../"
 
     cards_html = []
@@ -2341,7 +2344,7 @@ def build_pm_index(lang_code: str) -> str:
     prefix = "" if lang_code == "en" else f"{lang_code}/"
     asset_prefix = "../" if lang_code == "en" else "../../"
     canonical = f"{BASE_URL}/plusminus/{prefix}"
-    lang_links = lang_nav_links("index.html", lang_code)
+    lang_links = lang_nav_links("", lang_code)
 
     tips_html = []
     for title, body in d["tips"]:
@@ -2854,7 +2857,7 @@ def build_pm_faq(lang_code: str) -> str:
 <body id="top">
 
     <nav class="top-nav" aria-label="{d["site_nav_aria"]}">
-        <a href="index.html" class="back-link">{d["back_label"]}</a>
+        <a href="./" class="back-link">{d["back_label"]}</a>
         <span class="top-nav-links">
             <a href="marketing.html">{d["about_link"]}</a>
             &middot;
@@ -2886,7 +2889,7 @@ def build_pm_faq(lang_code: str) -> str:
         &middot;
         <a href="privacy.html">{d["privacy_link"]}</a>
         &middot;
-        <a href="index.html">{pm["privacy"]["support_link"]}</a>
+        <a href="./">{pm["privacy"]["support_link"]}</a>
         &middot;
         <a href="{pm["home_href"]}">{pm["home_label"]}</a>
     </p>
@@ -3274,7 +3277,7 @@ def build_pm_marketing(lang_code: str) -> str:
                     {d["privacy_btn"]}
                 </a>
 
-                <a class="button secondary" href="index.html">
+                <a class="button secondary" href="./">
                     {d["support_btn"]}
                 </a>
             </div>
@@ -3450,7 +3453,7 @@ def build_pm_privacy(lang_code: str) -> str:
         &middot;
         <a href="faq.html">{d["faq_link"]}</a>
         &middot;
-        <a href="index.html">{d["support_link"]}</a>
+        <a href="./">{d["support_link"]}</a>
         &middot;
         <a href="{pm["home_href"]}">{pm["home_label"]}</a>
     </p>
@@ -3475,19 +3478,19 @@ def build_sitemap() -> str:
     # Root landing pages (6)
     for lang in SITE_LANGS:
         prefix = f"{lang['dir']}/" if lang["dir"] else ""
-        urls.append((f"{BASE_URL}/{prefix}", "2026-11-26"))
+        urls.append((f"{BASE_URL}/{prefix}", "2026-11-27"))
 
     # WakeUp pages under /wakeup/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
         for lang in WAKEUP_LANGS:
             prefix = f"{lang}/" if lang else ""
-            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", "2026-11-26"))
+            urls.append((f"{BASE_URL}/wakeup/{prefix}{page}", "2026-11-27"))
 
     # PlusMinus pages under /plusminus/ (24)
     for page in ["", "faq.html", "marketing.html", "privacy.html"]:
         for lang in SITE_LANGS:
             prefix = f"{lang['dir']}/" if lang["dir"] else ""
-            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", "2026-11-26"))
+            urls.append((f"{BASE_URL}/plusminus/{prefix}{page}", "2026-11-27"))
 
     entries = "\n".join(
         f"""    <url>
